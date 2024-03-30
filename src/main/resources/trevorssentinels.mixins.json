@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.trevorskullcrafter.trevorssentinels.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ArmorItemMixin",
+    "ItemMixin"
+  ],
+  "client": [
+    "StatusEffectMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
