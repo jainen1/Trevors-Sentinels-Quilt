@@ -3,6 +3,7 @@ package net.trevorskullcrafter.trevorssentinels.entity.custom;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
@@ -14,6 +15,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.ItemStackParticleEffect;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
@@ -22,9 +24,11 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
+import net.trevorskullcrafter.trevorssentinels.entity.damage.ModDamageSources;
 import net.trevorskullcrafter.trevorssentinels.item.TechItems;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 import org.jetbrains.annotations.Nullable;
@@ -38,14 +42,21 @@ public class DaggerEntity extends PersistentProjectileEntity {
     public DaggerEntity(EntityType<? extends DaggerEntity> entityType, World world) { super(entityType, world); }
 
     public DaggerEntity(World world, LivingEntity owner, ItemStack stack, float damage, float destroyChance, StatusEffectInstance... effects) {
-        super(ModEntities.DAGGER, owner, world);
+        super(ModEntities.DAGGER_PROJECTILE, owner, world);
         this.dataTracker.set(STORED_STACK, stack.copy()); this.setDamage(damage); this.effects = effects; this.destroyChance = destroyChance;
     }
 
     public DaggerEntity(World world, double x, double y, double z, ItemStack stack, float damage, float destroyChance, StatusEffectInstance... effects) {
-        super(ModEntities.DAGGER, x, y, z, world);
+        super(ModEntities.DAGGER_PROJECTILE, x, y, z, world);
         this.dataTracker.set(STORED_STACK, stack.copy()); this.setDamage(damage); this.effects = effects; this.destroyChance = destroyChance;
     }
+
+	public void setVelocity(float pitch, float yaw, float roll, float speed, float divergence) {
+		float x = -MathHelper.sin(yaw * 0.017453292F) * MathHelper.cos(pitch * 0.017453292F);
+		float y = -MathHelper.sin((pitch + roll) * 0.017453292F);
+		float z = MathHelper.cos(yaw * 0.017453292F) * MathHelper.cos(pitch * 0.017453292F);
+		super.setVelocity(x, y, z, speed, divergence);
+	}
 
     @Override public boolean isCritical() { return getVelocity().length() > 5; }
     @Override public boolean isCollidable() { return inGround; }
@@ -72,16 +83,16 @@ public class DaggerEntity extends PersistentProjectileEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
         this.dealtDamage = true;
-        if (entity.damage(getDamageSources().mobProjectile(this, getOwner() instanceof LivingEntity livingEntity? livingEntity : null), (float) getDamage())) {
-            if (entity.getType() == EntityType.ENDERMAN) return;
-            if (entity instanceof LivingEntity livingEntity){
-                this.onHit(livingEntity);
-                for(StatusEffectInstance effect : effects) livingEntity.addStatusEffect(new StatusEffectInstance(effect.getEffectType(), effect.getDuration(),
-                        effect.getAmplifier(), effect.isAmbient(), effect.shouldShowParticles(), effect.shouldShowIcon()));
-            }
-        }
-        this.setVelocity(this.getVelocity().multiply(-0.01, -0.1, -0.01));
-        this.playSound(SoundEvents.ITEM_TRIDENT_HIT, 1.0f, 1.0F);
+        if (entity.damage(new DamageSource(entity.getWorld().getRegistryManager().get(RegistryKeys.DAMAGE_TYPE)
+			.getHolderOrThrow(ModDamageSources.DAGGER_PROJECTILE)), (float) getDamage())) {
+			if (entity instanceof LivingEntity livingEntity){
+				this.onHit(livingEntity);
+				for(StatusEffectInstance effect : effects) livingEntity.addStatusEffect(new StatusEffectInstance(effect.getEffectType(), effect.getDuration(),
+					effect.getAmplifier(), effect.isAmbient(), effect.shouldShowParticles(), effect.shouldShowIcon()));
+			}
+		}
+		this.setVelocity(this.getVelocity().multiply(-0.01, -0.1, -0.01));
+		this.playSound(SoundEvents.ITEM_TRIDENT_HIT, 1.0f, 1.0F);
     }
 
     @Override protected void onCollision(HitResult hitResult) {

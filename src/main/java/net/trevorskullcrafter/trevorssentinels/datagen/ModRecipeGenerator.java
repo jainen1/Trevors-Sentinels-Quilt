@@ -12,7 +12,6 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
-import net.trevorskullcrafter.trevorssentinels.item.BetaItems;
 import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
 import net.trevorskullcrafter.trevorssentinels.item.TechItems;
@@ -22,7 +21,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 	@Override public void generateRecipes(class_8790 exporter) {
 		//offerReversibleCompactingRecipesWithCompactedItemGroup(exporter, RecipeCategory.MISC, ModBlocks.NUCLEAR_BLOCK, RecipeCategory.BUILDING_BLOCKS, TechItems.NUCLEAR_INGOT, );
-		ShapedRecipeJsonFactory.create(RecipeCategory.TOOLS, TechItems.ENERGY_CELL)
+		ShapedRecipeJsonFactory.create(RecipeCategory.TOOLS, TechItems.PLASMA_CELL)
 			.pattern("#  ").pattern(" $ ").pattern("  #")
 			.ingredient('#', TechItems.STARSTEEL_INGOT).ingredient('$', TechItems.NUCLEAR_INGOT)
 			.criterion(FabricRecipeProvider.hasItem(TechItems.NUCLEAR_INGOT), FabricRecipeProvider.method_10426(TechItems.NUCLEAR_INGOT))

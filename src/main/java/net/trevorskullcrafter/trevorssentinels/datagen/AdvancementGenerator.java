@@ -66,13 +66,6 @@ public class AdvancementGenerator extends FabricAdvancementProvider {
 			.criterion("got_chainsaw", InventoryChangedCriterion.Conditions.items(TechItems.SCRAP_METAL_CHAINSAW))
 			.build(consumer, MOD_ID + ":chainsaw_man");
 
-        /*C_unoypvme forge = Advancement.Builder.create().parent(trevorssentinels)
-                .display(ModBlocks.FORGE, Text.translatable("advancements.trevorssentinels.forge.title"),
-                        Text.translatable("advancements.trevorssentinels.forge.desc"), null,
-                        AdvancementFrame.TASK, true, true, false)
-                .criterion("got_forge", InventoryChangedCriterion.Conditions.items(ModBlocks.FORGE))
-                .build(consumer, MOD_ID + ":forge");*/
-
 		C_unoypvme ancient_metal = Advancement.Builder.create().parent(trevorssentinels)
 			.display(MagicItems.IMPERIAL_ALLOY_INGOT, Text.translatable("advancements.trevorssentinels.ancient_metal.title"),
 				Text.translatable("advancements.trevorssentinels.ancient_metal.desc"), null,

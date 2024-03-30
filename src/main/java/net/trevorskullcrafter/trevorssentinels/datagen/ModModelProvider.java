@@ -9,6 +9,7 @@ import net.minecraft.data.client.model.Model;
 import net.minecraft.data.client.model.Models;
 import net.minecraft.item.Item;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
+import net.trevorskullcrafter.trevorssentinels.item.BetaItems;
 import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
 import net.trevorskullcrafter.trevorssentinels.item.TechItems;
@@ -26,7 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_AGILITY_BLOCK);
         blockStateGenerator.registerSimpleCubeAll(ModBlocks.STAINLESS_STEEL_BLOCK);
         blockStateGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_BLOCK);
-        blockStateGenerator.registerSimpleCubeAll(ModBlocks.STEEL_FAN);
+        blockStateGenerator.registerSimpleCubeAll(ModBlocks.STARSTEEL_FAN);
         blockStateGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_CHAMBER_BLOCK);
         blockStateGenerator.registerSimpleCubeAll(ModBlocks.DARK_CHAMBER_BLOCK);
 
@@ -112,10 +113,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, MagicItems.THANATU_HELMET, MagicItems.THANATU_CHESTPLATE, MagicItems.THANATU_LEGGINGS, MagicItems.THANATU_BOOTS);
 
-        registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, MagicItems.BLACKSMITHS_WELDING_MASK, MagicItems.MAD_SCIENTISTS_LAB_COAT, TechItems.ZENITHIUM_CHESTPLATE,
+        registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, BetaItems.BLACKSMITHS_WELDING_MASK, BetaItems.MAD_SCIENTISTS_LAB_COAT, TechItems.ZENITHIUM_CHESTPLATE,
 			TechItems.ZENITHIUM_LEGGINGS, TechItems.ZENITHIUM_BOOTS);
         registerItems(itemModelGenerator, Models.HANDHELD, TechItems.ZENITHIUM_SWORD, TechItems.ZENITHIUM_DAGGER, TechItems.ZENITHIUM_PICKAXE,
-			TechItems.ZENITHIUM_AXE, TechItems.ZENITHIUM_SHOVEL, TechItems.ZENITHIUM_HOE, MagicItems.MASTER_SWORD);
+			TechItems.ZENITHIUM_AXE, TechItems.ZENITHIUM_SHOVEL, TechItems.ZENITHIUM_HOE);
+		//MagicItems.MASTER_SWORD
 
         //food
         registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, ModItems.ANTIMILK, ModItems.ASH, ModItems.PEARFRUIT, ModItems.MIDAS_FRUIT, ModItems.BANANA, ModItems.BANANA_BREAD,
@@ -129,7 +131,7 @@ public class ModModelProvider extends FabricModelProvider {
                 TechItems.NUCLEAR_INGOT, TechItems.ZENITHIUM_CLUSTER);
 
         //misc
-        registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, TechItems.EMPTY_CAN, MagicItems.EYE_OF_RUIN, TechItems.ENERGY_CELL,
+        registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, TechItems.EMPTY_CAN, MagicItems.EYE_OF_RUIN, TechItems.PLASMA_CELL,
                 TechItems.NUCLEAR_ROCKET, TechItems.MUSIC_DISC_ASSASSINATION_UPLOAD, TechItems.MUSIC_DISC_LAPSE_IN_JUDGEMENT,
                 TechItems.MUSIC_DISC_ODE_TO_TRANQUILITY, TechItems.MUSIC_DISC_RECITAL);
 

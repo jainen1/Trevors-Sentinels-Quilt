@@ -34,8 +34,8 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
 	@Override protected void configure(HolderLookup.Provider arg) {
 		getOrCreateTagBuilder(LASER_REFLECTIVE)
 			.add(Blocks.IRON_BLOCK, Blocks.ICE, Blocks.CHAIN, Blocks.BELL)
-			.add(ModBlocks.STEEL_BLOCK, ModBlocks.CAUTION_STEEL_BLOCK, ModBlocks.STAINLESS_STEEL_BLOCK, ModBlocks.STEEL_LAMP_BLOCK, ModBlocks.STEEL_FAN,
-				ModBlocks.BATTERY, ModBlocks.FUSEBOX, ModBlocks.STEEL_LADDER, ModBlocks.RED_BUTTON, ModBlocks.RED_PLATE, ModBlocks.RECONSTRUCTION_TABLE)
+			.add(ModBlocks.STEEL_BLOCK, ModBlocks.CAUTION_STEEL_BLOCK, ModBlocks.STAINLESS_STEEL_BLOCK, ModBlocks.STARSTEEL_LAMP, ModBlocks.STARSTEEL_FAN,
+				ModBlocks.BATTERY, ModBlocks.FUSEBOX, ModBlocks.STEEL_LADDER, ModBlocks.BIG_RED_BUTTON, ModBlocks.BIG_RED_PLATE, ModBlocks.RECONSTRUCTION_TABLE)
 			.add(ModBlocks.DARKSTEEL_BLOCK, ModBlocks.IRON_GOLD_BLOCK, ModBlocks.ROSE_GOLD_BLOCK, ModBlocks.COPPER_IRON_BLOCK);
 		getOrCreateTagBuilder(SOLID_PROJECTILE_PASS)
 			.addOptionalTag(BlockTags.LEAVES)

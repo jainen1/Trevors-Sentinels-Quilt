@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
+import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import static net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain.*;

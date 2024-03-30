@@ -43,9 +43,9 @@ public class ModBlocks {
 		.mapColor(MapColor.STONE).sounds(ModSounds.STEEL_SOUNDS).requiresTool()));
     public static final Block CAUTION_STEEL_BLOCK = registerBlock("caution_steel_block", new PillarBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
     public static final Block STAINLESS_STEEL_BLOCK = registerBlock("stainless_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block STEEL_LAMP_BLOCK = registerBlock("steel_lamp_block", new ToggleableLampBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)
+    public static final Block STARSTEEL_LAMP = registerBlock("starsteel_lamp", new ToggleableLampBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)
 		.mapColor(MapColor.YELLOW_TERRACOTTA).luminance((state) -> state.get(ToggleableLampBlock.CLICKED) ? 15 : 0)));
-    public static final Block STEEL_FAN = registerBlock("steel_fan", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
+    public static final Block STARSTEEL_FAN = registerBlock("starsteel_fan", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
     public static final Block RUSTED_STEEL_BLOCK = registerBlock("rusted_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
     public static final Block BATTERY = registerBlock("battery", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
     public static final Block FUSEBOX = registerBlock("fusebox", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
@@ -125,9 +125,9 @@ public class ModBlocks {
             .strength(0.7F, 3.0F).luminance((state) -> 0).mapColor(MapColor.RED).sounds(ModSounds.FLESH_SOUNDS)));
     public static final Block FLESHY_EYE = registerBlock("fleshy_eye", new FleshyEyeBlock(QuiltBlockSettings.copy(ModBlocks.FLESH_BLOCK)
             .mapColor(MapColor.YELLOW).luminance((state) -> state.get(ToggleableLampBlock.CLICKED) ? 8 : 0)));
-    public static final Block RED_BUTTON = registerBlock("red_button", new ButtonBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).noCollision().mapColor(MapColor.RED),
+    public static final Block BIG_RED_BUTTON = registerBlock("big_red_button", new ButtonBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).noCollision().mapColor(MapColor.RED),
             BlockSetType.IRON, 5, false));
-    public static final Block RED_PLATE = registerBlock("red_plate",
+    public static final Block BIG_RED_PLATE = registerBlock("big_red_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).mapColor(MapColor.RED), BlockSetType.IRON));
 
     public static final Block PALE_PLANKS = registerBlock("pale_planks", new Block(QuiltBlockSettings.copy(Blocks.WARPED_PLANKS).mapColor(MapColor.WHITE_TERRACOTTA)));

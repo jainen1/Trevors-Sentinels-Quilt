@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
+import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
 import net.trevorskullcrafter.trevorssentinels.item.ModArmory;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
@@ -63,7 +64,7 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.FANCY_COMPUTER));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.BLACK_AGILITY_BLOCK, "Steel Magno-Repulsion Block", "Watch your step.", null));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SENTINEL_CRIMSON_T1), ItemTranslation.of(ModBlocks.BIG_RED_BUTTON),
-			ItemTranslation.of(ModBlocks.BIG_RED_PRESSURE_PLATE, null, "1500 Megawatt Super Colliding Super Plate", null));
+			ItemTranslation.of(ModBlocks.BIG_RED_PLATE, null, "1500 Megawatt Super Colliding Super Plate", null));
 
 		//Tech Equipment
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SCRAP_METAL), ItemTranslation.of(TechItems.SCRAP_METAL_SHARD),
@@ -120,18 +121,22 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 			ItemTranslation.of(ModArmory.SCARA_SHEARS, "SCARA Shears", "A military-grade threat.", DARK_PURPLE),
 			ItemTranslation.of(ModArmory.MASTER_SWORD, "The Master's Sword", "From a distant universe...", AQUA));
         generateItems(translationBuilder,
-			ItemTranslation.of(TechItems.LASER_PISTOL, "NUMA-28 Comet", "\"Fast and portable!\"", STARSTEEL),
+			ItemTranslation.of(TechItems.SCRAP_METAL_PHASER),
+			ItemTranslation.of(TechItems.STARSTEEL_PHASER),
+			ItemTranslation.of(TechItems.NANOTECH_PHASER),
+			ItemTranslation.of(TechItems.ZENITHIUM_PHASER),
+			ItemTranslation.of(TechItems.VILE_SPITTER, null, "It's alive!", FLESH_PINK)
+
+			/*ItemTranslation.of(TechItems.LASER_PISTOL, "NUMA-28 Comet", "\"Fast and portable!\"", STARSTEEL),
 			ItemTranslation.of(TechItems.LASER_TASER, "Enforcer-Standard Taser", "\"Non-lethal.\"", AQUA),
 			ItemTranslation.of(TechItems.LASER_SNIPER_ECHO, "NUMA-52 Echo", "\"They'll never see it coming!\"", DUNE_TAN),
 			ItemTranslation.of(TechItems.LASER_MINIGUN, "UTARI-91 Serenity", "\"Keep the peace!\"", BLUE),
 			ItemTranslation.of(TechItems.LASER_RIFLE, "NUMA-63 Agnostyk", "\"Packs a punch!\"", MOSS),
-			ItemTranslation.of(TechItems.SCRAP_METAL_PHASER, "NUMA-63 Agnostyk", "\"Packs a punch!\"", MOSS),
 			ItemTranslation.of(TechItems.LASER_SHOTGUN, "KHAOS-66 Tremor", "\"Rip and tear!\"", HELLFIRE),
 			ItemTranslation.of(TechItems.LASER_HEALER, "PW49 Firebird", "\"Those who can't do, heal!\"", SHINY_GOLD),
 			ItemTranslation.of(TechItems.LASER_SNIPER, "PW88 Shadow", "\"The assassin's weapon of choice!\"", DARK_PURPLE),
 			ItemTranslation.of(TechItems.LASER_SPREADER, "PW76 Pandemic", "\"Filled with a toxic bioweapon.\"", GREEN),
-			ItemTranslation.of(TechItems.LASER_REVOLVER, "Drunkard's Handcannon", "\"But you have heard of me!\"", null),
-			ItemTranslation.of(TechItems.VILE_SPITTER, "Vile Spitter", "\"Behold, the wrath of Xirang!\"", FLESH_PINK));
+			ItemTranslation.of(TechItems.LASER_REVOLVER, "Drunkard's Handcannon", "\"But you have heard of me!\"", null),*/);
 		generateItems(translationBuilder,
 			ItemTranslation.of(MagicItems.RESISTANCE_ITEM, "Shield Badge", GRAY),
 			ItemTranslation.of(MagicItems.FIRE_RESISTANCE_ITEM, "Flaming Badge", HELLFIRE), //shield badge, fire stuff
@@ -255,7 +260,7 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.TRANQUIL_DUST, "Tranquil Pollen", "Useful in dark alchemy.", TRANQUIL));
 		generateItems(translationBuilder, ItemTranslation.of(MagicItems.DEMONIC_CORE, "Demonic Core", "Use while crouching to bind to a location!", LIGHT_PURPLE));
         generateItems(translationBuilder, ItemTranslation.of(TechItems.DISTANCE_TRACKER, "Lifeform Tracker", "Use on a mob to track it.", SCRAP_METAL));
-        generateItems(translationBuilder, ItemTranslation.of(TechItems.ENERGY_CELL, null, null, null));
+        generateItems(translationBuilder, ItemTranslation.of(TechItems.PLASMA_CELL, null, null, null));
         generateItems(translationBuilder, ItemTranslation.of(TechItems.GAS_CAPSULE, null, null, GAS_TEST));
 		generateItems(translationBuilder, ItemTranslation.of(MagicItems.QUICKSAND_BUCKET));
 
@@ -344,6 +349,13 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         translationBuilder.add("death.attack.redstoned", "%1$s gave into the pain");
         translationBuilder.add("death.attack.infested", "%1$s didn't make it");
         translationBuilder.add("death.attack.irradiated", "%1$s ate one too many bananas");
+        translationBuilder.add("death.attack.phaser_projectile", "%1$s phased away thanks to %2$s");
+        translationBuilder.add("death.attack.phaser_projectile.item", "%1$s phased away thanks to %2$s and their %3$s");
+        translationBuilder.add("death.attack.shard_projectile", "%2$s turned %1$s into a pincushion");
+        translationBuilder.add("death.attack.shard_projectile.item", "%2$s turned %1$s into a pincushion using %3$s");
+        translationBuilder.add("death.attack.dagger_projectile", "%1$s was shot through the heart, and %2$s is to blame");
+        translationBuilder.add("death.attack.dagger_projectile", "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name");
+
 
         translationBuilder.add("key.category.trevorssentinels.trevorssentinels", "Trevor's Sentinels");
         translationBuilder.add("key.trevorssentinels.style_switch", "Style Switch");
@@ -358,8 +370,8 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         generateNumbered(translationBuilder, "color."+MOD_ID+".worldLevelTooLow.", "", String.valueOf(LIGHT_PURPLE.getRGB()), String.valueOf(BLUE.getRGB()));
         translationBuilder.add(MOD_ID+".worldLevelTooLow.other", "A mysterious force pushes back!");
 
-        translationBuilder.add(ModEntities.SCRAP_METAL_SHARD, ModItems.SCRAP_METAL_SHARD.getTranslationKey());
-        translationBuilder.add(ModEntities.LASER_BEAM, "Laser Beam");
+        translationBuilder.add(ModEntities.SHARD_PROJECTILE, TechItems.SCRAP_METAL_SHARD.getTranslationKey());
+        translationBuilder.add(ModEntities.PHASER_PROJECTILE, "Phaser Projectile");
         translationBuilder.add(ModEntities.GRENADE, "Delayed Explosive");
         translationBuilder.add(ModEntities.SENTINEL, "Sentinel");
         translationBuilder.add(ModEntities.GALINITE_ROOMBA, "Sentinel Cleaning Droid");
@@ -375,6 +387,8 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         translationBuilder.add("tooltip.trevorssentinels:milkCuresPotionEffects", "Effects will not be cured!");
         //translationBuilder.add("gamerule.trevorssentinels:milkCuresPotionEffects.description", "If enabled, fall damage will be calculated based on velocity.");
 
+		translationBuilder.add("tooltip.item.trevorssentinels.phaser.stats", "Phaser Stats:");
+
 		translationBuilder.add("tooltip." + MOD_ID + ".set_bonus_active", "Set bonus active!");
 		translationBuilder.add("tooltip." + MOD_ID + ".set_bonus_inactive", "Set bonus inactive!");
         translationBuilder.add("tooltip." + MOD_ID + ".style", "Style: ");
@@ -383,7 +397,7 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         generateNumbered(translationBuilder, "style.item." + MOD_ID + ".pappym_blade.", "Trickster", "Paladin", "Predator", "Guardian");
         generateNumbered(translationBuilder, "style.item." + MOD_ID + ".thanatu_blade.", "Riftwalker", "Riftcaller");
         generateNumbered(translationBuilder, "style.item." + MOD_ID + ".lilith_blade.", "Holy Retribution", "ENDLESS LIGHT");
-        generateNumbered(translationBuilder, "style.item." + MOD_ID + ".gun.", "Manual", "Semi-Auto ▽", "Automatic ▽△");
+        generateNumbered(translationBuilder, "style.item." + MOD_ID + ".phaser.", "Reloading: Manual", "Reloading: Automatic");
 
         if (dataOutput.getModContainer().findPath("assets/trevorssentinels/lang/en_us.existing.json").isPresent()) try {
             translationBuilder.add(dataOutput.getModContainer().findPath("assets/trevorssentinels/lang/en_us.existing.json").get());

@@ -11,7 +11,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 import static net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain.MOD_ID;
 
 public class BetaItems {
-    public static final Item JUMP_DRIVE = registerItem("jump_drive", new JumpItemv2(ModArmorMaterials.ALLOY, ArmorItem.ArmorSlot.CHESTPLATE,
+    public static final Item JUMP_DRIVE = registerItem("jump_drive", new JumpItemv2(ModArmorMaterials.IMPERIAL, ArmorItem.ArmorSlot.CHESTPLATE,
             new QuiltItemSettings().maxDamage(100)));
     public static final Item JETPACK = registerItem("jetpack", new JetpackItem(ModArmorMaterials.NUCLEAR, ArmorItem.ArmorSlot.CHESTPLATE,
             new QuiltItemSettings().maxDamage(100)));

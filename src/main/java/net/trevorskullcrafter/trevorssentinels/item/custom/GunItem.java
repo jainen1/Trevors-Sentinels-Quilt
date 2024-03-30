@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.entity.custom.BulletEntity;
 import net.trevorskullcrafter.trevorssentinels.entity.custom.GasEntity;
-import net.trevorskullcrafter.trevorssentinels.entity.custom.LaserEntity;
+import net.trevorskullcrafter.trevorssentinels.entity.custom.PhaserProjectileEntity;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinels;
 import net.trevorskullcrafter.trevorssentinels.util.Gunclass;
@@ -83,13 +83,13 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
     }
 
     public void launch(ItemStack stack, World world, PlayerEntity user){
-        LaserEntity laser;
+        PhaserProjectileEntity laser;
         switch(type){
             case 2 -> laser = new GasEntity(ModEntities.GAS, world, user, lifetime, damage, getItemBarColor(stack), effects);
             case 3 -> laser = new BulletEntity(ModEntities.BULLET, world, user, lifetime, damage, getItemBarColor(stack), effects);
-            default -> laser = new LaserEntity(ModEntities.LASER, world, user, lifetime, damage, getItemBarColor(stack), effects);
+            default -> laser = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, lifetime, damage, getItemBarColor(stack), effects);
         }
-        laser.setVelocity(user, user.getPitch(), user.getYaw(), user.getRoll(), laserSpeed, divergence+(isDualWielding(user)? dualPenalty: 0.0f));
+        laser.setVelocity(user.getPitch(), user.getYaw(), user.getRoll(), laserSpeed, divergence+(isDualWielding(user)? dualPenalty: 0.0f));
         world.spawnEntity(laser);
         user.addVelocity(laser.getVelocity().multiply(-recoil * (isDualWielding(user)? 1.3 : 1.1)));
     }

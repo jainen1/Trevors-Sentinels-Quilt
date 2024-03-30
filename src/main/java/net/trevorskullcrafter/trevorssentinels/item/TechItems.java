@@ -10,6 +10,7 @@ import net.minecraft.util.Rarity;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
 import net.trevorskullcrafter.trevorssentinels.item.custom.*;
+import net.trevorskullcrafter.trevorssentinels.item.custom.unique.PaintPackItem;
 import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
 import net.trevorskullcrafter.trevorssentinels.util.Gunclasses;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
@@ -111,9 +112,6 @@ public class TechItems {
 	public static final Item ZENITHIUM_HOE = registerItem("zenithium_hoe", new HoeItem(ModToolMaterials.ZENITHIUM, 0, -3f, new QuiltItemSettings().fireproof()));
 
 
-	public static final Item LASER_PISTOL = registerItem("laser_pistol", new GunItem(new QuiltItemSettings().maxDamage(7), Gunclasses.PISTOL,
-		1, 2f, 4.0f, 1.0f, 0.01f, 10, 50, 20, 5, 1, TextUtil.BLOOD_RED));
-
 	public static final Item LASER_TASER = registerItem("laser_taser", new GunItem(new QuiltItemSettings().maxDamage(5), Gunclasses.PISTOL,
 		1, 2f, 3.0f, 0.5f, 0.01f, 100, 20, 10, 1, 3, TextUtil.BLUE,
 		new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 9)));
@@ -148,23 +146,40 @@ public class TechItems {
 		1, 2f, 4.0f, 2.0f, 0.035f, 11, 60, 48, 8, 3, TextUtil.FLESH_PUS,
 		new StatusEffectInstance(ModEffects.INFESTED, 20)));
 
+	public static final Item PLASMA_CELL = registerItem("plasma_cell", new Item(new QuiltItemSettings()));
+	public static final Item PAINT_PACK = registerItem("paint_pack", new PaintPackItem(new QuiltItemSettings()));
 	public static final Item PHOTONIC_LENS = registerItem("photonic_lens", new PhotonicLensItem(new QuiltItemSettings().maxCount(1)));
-	public static final Item PLASMA_DIFFUSER = registerItem("plasma_diffuser", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1)));
+	public static final Item PLASMA_DIFFUSER = registerItem("plasma_diffuser", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		1, 0, 0, 0, -1.0f, 2.0f, 0, 0, false, false));
+	public static final Item MUZZLE_CLAMP = registerItem("muzzle_clamp", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		-1, 0, 0, 0, 3.0f, -3.0f, 0, 0, false, false));
+	public static final Item SMOKE_CAPSULE = registerItem("smoke_capsule", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		0, 0, 0, 0, 0, 0, 0, 0, false, false,
+		new StatusEffectInstance(StatusEffects.BLINDNESS, 40)));
+	public static final Item POISON_CAPSULE = registerItem("poison_capsule", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		0, 0, 0, 0, 0, 0, 0, 0, false, false,
+		new StatusEffectInstance(StatusEffects.POISON, 40)));
+	public static final Item WITHER_CAPSULE = registerItem("wither_capsule", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		0, 0, 0, 0, 0, 0, 0, 0, false, false,
+		new StatusEffectInstance(StatusEffects.WITHER, 40, 1)));
+	public static final Item REGENERATION_CAPSULE = registerItem("regeneration_capsule", new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
+		0, 0, 0, 0, 0, 0, 0, 0, false, false,
+		new StatusEffectInstance(StatusEffects.REGENERATION, 40, 1)));
 
-	public static final Item SCRAP_METAL_PHASER = registerItem("scrap_metal_phaser", new PhaserItem(new QuiltItemSettings().maxCount(1)));
-	public static final Item STARSTEEL_PHASER = registerItem("starsteel_phaser", new PhaserItem(new QuiltItemSettings().maxCount(1)));
-	public static final Item NANOTECH_PHASER = registerItem("nanotech_phaser", new PhaserItem(new QuiltItemSettings().maxCount(1)));
-
+	public static final Item SCRAP_METAL_PHASER = registerItem("scrap_metal_phaser",
+		new PhaserItem(new QuiltItemSettings().maxCount(1), 1, 1, 10, 50, 0.01f, 4.0f, 5, 20, 4));
+	public static final Item STARSTEEL_PHASER = registerItem("starsteel_phaser",
+		new PhaserItem(new QuiltItemSettings().maxCount(1), 3, 1, 10, 50, 0.025f, 2.0f, 7, 20, 8));
+	public static final Item NANOTECH_PHASER = registerItem("nanotech_phaser",
+		new PhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 50, 0.035f, 1.0f, 9, 20, 12));
+	public static final Item ZENITHIUM_PHASER = registerItem("zenithium_phaser",
+		new PhaserItem(new QuiltItemSettings().maxCount(1), 7, 1, 10, 50, 0.04f, 0.0f, 12, 20, 16));
 
 	public static final Item HARD_LIGHT_PROJECTOR = registerItem("hard_light_projector", new HardLightProjectorItem(ModBlocks.HARD_LIGHT, new QuiltItemSettings().maxDamage(129)));
 	public static final Item CAUTION_HARD_LIGHT_PROJECTOR = registerItem("caution_hard_light_projector", new HardLightProjectorItem(ModBlocks.CAUTION_HARD_LIGHT,
 		new QuiltItemSettings().maxDamage(129)));
 	public static final Item SENTINEL_HARD_LIGHT_PROJECTOR = registerItem("sentinel_hard_light_projector", new HardLightProjectorItem(ModBlocks.SENTINEL_HARD_LIGHT,
 		new QuiltItemSettings().maxDamage(129)));
-
-	public static final Item ENERGY_CELL = registerItem("energy_cell", new Item(new QuiltItemSettings()));
-	public static final Item GAS_CAPSULE = registerItem("gas_capsule", new GasCapsuleItem(new QuiltItemSettings(),
-		new StatusEffectInstance(StatusEffects.WITHER, 100, 1), new StatusEffectInstance(StatusEffects.BLINDNESS, 40)));
 	public static final Item NUCLEAR_ROCKET = registerItem("nuclear_rocket", new NuclearRocketItem(new QuiltItemSettings().maxDamage(93)));
 
 	public static final Item EMPTY_CAN = registerItem("empty_can", new Item(new QuiltItemSettings()));

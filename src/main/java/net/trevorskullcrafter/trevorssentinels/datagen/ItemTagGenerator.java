@@ -33,8 +33,7 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
 	@Override protected void configure(HolderLookup.Provider arg) {
 		getOrCreateTagBuilder(CROSSBOW_HOLD)
-			.add(TechItems.LASER_PISTOL, TechItems.LASER_TASER, TechItems.LASER_SNIPER_ECHO, TechItems.LASER_MINIGUN, TechItems.LASER_SHOTGUN, TechItems.LASER_SNIPER,
-				TechItems.LASER_HEALER, TechItems.LASER_SPREADER, TechItems.LASER_RIFLE, TechItems.LASER_REVOLVER, TechItems.VILE_SPITTER);
+			.add(TechItems.SCRAP_METAL_PHASER, TechItems.STARSTEEL_PHASER, TechItems.NANOTECH_PHASER, TechItems.ZENITHIUM_PHASER, TechItems.VILE_SPITTER);
 		getOrCreateTagBuilder(ITEM_BAR_COLOR_OVERRIDE)
 			.add(TechItems.NUCLEAR_SWORD, TechItems.NUCLEAR_DRILL, TechItems.NUCLEAR_AXE, TechItems.NUCLEAR_SHOVEL, TechItems.NUCLEAR_HOE, TechItems.NUCLEAR_HELMET,
 				TechItems.NUCLEAR_CHESTPLATE, TechItems.NUCLEAR_LEGGINGS, TechItems.NUCLEAR_BOOTS, TechItems.NANOTECH_SWORD, TechItems.NANOTECH_DRILL,
@@ -42,13 +41,17 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 				TechItems.NANOTECH_LEGGINGS, TechItems.NANOTECH_BOOTS, TechItems.ZENITHIUM_SWORD, TechItems.ZENITHIUM_PICKAXE, TechItems.ZENITHIUM_AXE,
 				TechItems.ZENITHIUM_SHOVEL, TechItems.ZENITHIUM_HOE, TechItems.ZENITHIUM_CHESTPLATE, TechItems.ZENITHIUM_LEGGINGS, TechItems.ZENITHIUM_BOOTS,
 				MagicItems.DEMONIC_CORE, BetaItems.THANATU_BLADE, TechItems.HARD_LIGHT_PROJECTOR, TechItems.CAUTION_HARD_LIGHT_PROJECTOR, TechItems.SENTINEL_HARD_LIGHT_PROJECTOR,
-				TechItems.LASER_PISTOL, TechItems.LASER_TASER, TechItems.LASER_SNIPER_ECHO, TechItems.LASER_MINIGUN, TechItems.LASER_SHOTGUN, TechItems.LASER_SNIPER,
-				TechItems.LASER_HEALER, TechItems.LASER_SPREADER, TechItems.LASER_RIFLE, TechItems.LASER_REVOLVER, TechItems.VILE_SPITTER);
+				TechItems.SCRAP_METAL_PHASER, TechItems.STARSTEEL_PHASER, TechItems.NANOTECH_PHASER, TechItems.ZENITHIUM_PHASER, TechItems.VILE_SPITTER);
 
-		getOrCreateTagBuilder(CERULII_LOGS).add(ModBlocks.CERULII_LOG.asItem(), ModBlocks.CERULII_WOOD.asItem(), ModBlocks.STRIPPED_CERULII_LOG.asItem(), ModBlocks.STRIPPED_CERULII_WOOD.asItem());
-		getOrCreateTagBuilder(CHARRED_LOGS).add(ModBlocks.CHARRED_LOG.asItem(), ModBlocks.CHARRED_WOOD.asItem(), ModBlocks.STRIPPED_CHARRED_LOG.asItem(), ModBlocks.STRIPPED_CHARRED_WOOD.asItem());
-		getOrCreateTagBuilder(MIDAS_LOGS).add(ModBlocks.MIDAS_LOG.asItem(), ModBlocks.MIDAS_WOOD.asItem(), ModBlocks.STRIPPED_MIDAS_LOG.asItem(), ModBlocks.STRIPPED_MIDAS_WOOD.asItem());
-		getOrCreateTagBuilder(VIRIDIAN_LOGS).add(ModBlocks.VIRIDIAN_LOG.asItem(), ModBlocks.VIRIDIAN_WOOD.asItem(), ModBlocks.STRIPPED_VIRIDIAN_LOG.asItem(), ModBlocks.STRIPPED_VIRIDIAN_WOOD.asItem());
-		getOrCreateTagBuilder(PALE_LOGS).add(ModBlocks.PALE_LOG.asItem(), ModBlocks.PALE_WOOD.asItem(), ModBlocks.STRIPPED_PALE_LOG.asItem(), ModBlocks.STRIPPED_PALE_WOOD.asItem());
+		getOrCreateTagBuilder(CERULII_LOGS)
+			.add(ModBlocks.CERULII_LOG.asItem(), ModBlocks.CERULII_WOOD.asItem(), ModBlocks.STRIPPED_CERULII_LOG.asItem(), ModBlocks.STRIPPED_CERULII_WOOD.asItem());
+		getOrCreateTagBuilder(CHARRED_LOGS)
+			.add(ModBlocks.CHARRED_LOG.asItem(), ModBlocks.CHARRED_WOOD.asItem(), ModBlocks.STRIPPED_CHARRED_LOG.asItem(), ModBlocks.STRIPPED_CHARRED_WOOD.asItem());
+		getOrCreateTagBuilder(MIDAS_LOGS)
+			.add(ModBlocks.MIDAS_LOG.asItem(), ModBlocks.MIDAS_WOOD.asItem(), ModBlocks.STRIPPED_MIDAS_LOG.asItem(), ModBlocks.STRIPPED_MIDAS_WOOD.asItem());
+		getOrCreateTagBuilder(VIRIDIAN_LOGS)
+			.add(ModBlocks.VIRIDIAN_LOG.asItem(), ModBlocks.VIRIDIAN_WOOD.asItem(), ModBlocks.STRIPPED_VIRIDIAN_LOG.asItem(), ModBlocks.STRIPPED_VIRIDIAN_WOOD.asItem());
+		getOrCreateTagBuilder(PALE_LOGS)
+			.add(ModBlocks.PALE_LOG.asItem(), ModBlocks.PALE_WOOD.asItem(), ModBlocks.STRIPPED_PALE_LOG.asItem(), ModBlocks.STRIPPED_PALE_WOOD.asItem());
 	}
 }

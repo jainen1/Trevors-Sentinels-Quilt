@@ -36,8 +36,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FUSEBOX);
         addDrop(ModBlocks.NUCLEAR_CHARGE);
         addDrop(ModBlocks.NUCLEAR_BLOCK);
-        addDrop(ModBlocks.RED_BUTTON);
-        addDrop(ModBlocks.RED_PLATE);
+        addDrop(ModBlocks.BIG_RED_BUTTON);
+        addDrop(ModBlocks.BIG_RED_PLATE);
         addDrop(ModBlocks.BLACK_AGILITY_BLOCK);
         addDrop(ModBlocks.BLUE_AGILITY_BLOCK);
         addDrop(ModBlocks.CAUTION_STEEL_BLOCK);
@@ -64,9 +64,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STAINLESS_STEEL_BLOCK);
         addDrop(ModBlocks.RUSTED_STEEL_BLOCK);
         addDrop(ModBlocks.WAX_INFUSED_COPPER_BLOCK);
-        addDrop(ModBlocks.STEEL_FAN);
+        addDrop(ModBlocks.STARSTEEL_FAN);
         addDrop(ModBlocks.STEEL_LADDER);
-        addDrop(ModBlocks.STEEL_LAMP_BLOCK);
+        addDrop(ModBlocks.STARSTEEL_LAMP);
         addDrop(ModBlocks.RECONSTRUCTION_TABLE);
         addDrop(ModBlocks.TRANQUIL_ROSE);
         addPottedPlantDrops(ModBlocks.POTTED_TRANQUIL_ROSE);
