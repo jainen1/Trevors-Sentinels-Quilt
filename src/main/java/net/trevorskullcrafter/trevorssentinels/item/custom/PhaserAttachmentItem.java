@@ -1,7 +1,9 @@
 package net.trevorskullcrafter.trevorssentinels.item.custom;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class PhaserAttachmentItem extends Item {
 	int countModifier; int damageModifier; int shotCooldownModifier; int reloadCooldownModifier; float recoilModifier; float divergenceModifier; int maxAgeModifier;

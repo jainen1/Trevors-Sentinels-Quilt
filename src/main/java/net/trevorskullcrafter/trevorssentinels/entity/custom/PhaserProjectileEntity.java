@@ -29,15 +29,20 @@ import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
 
 public class PhaserProjectileEntity extends ThrownEntity {
     private static final TrackedData<Integer> COLOR = DataTracker.registerData(PhaserProjectileEntity.class, TrackedDataHandlerRegistry.INTEGER);
-    float damage; int lifetime; StatusEffectInstance[] effects;
+    private static final TrackedData<Integer> AGE = DataTracker.registerData(PhaserProjectileEntity.class, TrackedDataHandlerRegistry.INTEGER);
+    private static final TrackedData<Integer> LIFETIME = DataTracker.registerData(PhaserProjectileEntity.class, TrackedDataHandlerRegistry.INTEGER);
+    public float damage;StatusEffectInstance[] effects;
 
     public PhaserProjectileEntity(EntityType<? extends PhaserProjectileEntity> type, World world) { super(type, world); }
 
-    public PhaserProjectileEntity(EntityType<? extends PhaserProjectileEntity> type, double x, double y, double z, World world, int lifetime, float damage, int color, StatusEffectInstance... effects) {
-        this(type, world); this.setPosition(x, y, z); this.damage = damage; this.lifetime = lifetime; this.effects = effects; this.dataTracker.set(COLOR, color);
+    public PhaserProjectileEntity(EntityType<? extends PhaserProjectileEntity> type, double x, double y, double z, World world,
+								  int lifetime, float damage, int color, StatusEffectInstance... effects) {
+        this(type, world); this.setPosition(x, y, z); this.damage = damage; this.effects = effects;
+		this.dataTracker.set(COLOR, color); this.dataTracker.set(LIFETIME, lifetime);
     }
 
-    public PhaserProjectileEntity(EntityType<? extends PhaserProjectileEntity> type, World world, LivingEntity owner, int lifetime, float damage, int color, StatusEffectInstance... effects) {
+    public PhaserProjectileEntity(EntityType<? extends PhaserProjectileEntity> type, World world, LivingEntity owner,
+								  int lifetime, float damage, int color, StatusEffectInstance... effects) {
         this(type, owner.getX(), owner.getEyeY(), owner.getZ(), world, lifetime, damage, color, effects); setOwner(owner);
     }
 
@@ -48,7 +53,13 @@ public class PhaserProjectileEntity extends ThrownEntity {
         super.setVelocity(x, y, z, speed, divergence);
     }
 
-    @Override public void tick() { super.tick(); if(!getWorld().isClient()) { if(this.lifetime < 1 || getVelocity().length() <= 0.2f) { this.discard(); } else { this.lifetime--; }}}
+    @Override public void tick() {
+		super.tick();
+		if(!getWorld().isClient()) {
+			if(this.getAge() >= getLifetime() || getVelocity().length() <= 0.2f) { this.discard(); }
+			else { this.setAge(this.getAge()+1); }
+		}
+	}
 
     @Override protected void onCollision(HitResult hitResult) {
         HitResult.Type type = hitResult.getType();
@@ -104,18 +115,27 @@ public class PhaserProjectileEntity extends ThrownEntity {
     }
 
     @Override protected float getGravity() { return 0.0F; }
-    @Override protected void initDataTracker() { this.dataTracker.startTracking(COLOR, TextUtil.BLOOD_RED.getRGB()); }
+    @Override protected void initDataTracker() { this.dataTracker.startTracking(COLOR, TextUtil.BLOOD_RED.getRGB());
+		this.dataTracker.startTracking(LIFETIME, 20); this.dataTracker.startTracking(AGE, 0); }
     @Override public boolean collidesWithStateAtPos(BlockPos pos, BlockState state) { return !state.isIn(BlockTagGenerator.LASER_PROJECTILE_PASS); }
     public void setColor(Integer color) { this.getDataTracker().set(COLOR, color); }
     public Integer getColor() { return this.getDataTracker().get(COLOR); }
+	public void setAge(Integer age) { this.getDataTracker().set(AGE, age); }
+	public Integer getAge() { return this.getDataTracker().get(AGE); }
+	public void setLifetime(Integer age) { this.getDataTracker().set(LIFETIME, age); }
+	public Integer getLifetime() { return this.getDataTracker().get(LIFETIME); }
 
     @Override protected void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
         nbt.putInt("Color", getColor());
+        nbt.putInt("Age", getAge());
+        nbt.putInt("Lifetime", getLifetime());
     }
 
     @Override protected void readCustomDataFromNbt(NbtCompound nbt) {
         super.readCustomDataFromNbt(nbt);
         this.setColor(nbt.getInt("Color"));
+        this.setAge(nbt.getInt("Age"));
+        this.setLifetime(nbt.getInt("Lifetime"));
     }
 }

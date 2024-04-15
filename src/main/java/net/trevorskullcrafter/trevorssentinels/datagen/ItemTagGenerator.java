@@ -9,9 +9,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
-import net.trevorskullcrafter.trevorssentinels.item.BetaItems;
-import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
-import net.trevorskullcrafter.trevorssentinels.item.TechItems;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -33,15 +31,15 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
 	@Override protected void configure(HolderLookup.Provider arg) {
 		getOrCreateTagBuilder(CROSSBOW_HOLD)
-			.add(TechItems.SCRAP_METAL_PHASER, TechItems.STARSTEEL_PHASER, TechItems.NANOTECH_PHASER, TechItems.ZENITHIUM_PHASER, TechItems.VILE_SPITTER);
+			.add(TSItems.Tech.SCRAP_METAL_PHASER, TSItems.Tech.STARSTEEL_PHASER, TSItems.Tech.NANOTECH_PHASER, TSItems.Tech.ZENITHIUM_PHASER, TSItems.Tech.VILE_SPITTER);
 		getOrCreateTagBuilder(ITEM_BAR_COLOR_OVERRIDE)
-			.add(TechItems.NUCLEAR_SWORD, TechItems.NUCLEAR_DRILL, TechItems.NUCLEAR_AXE, TechItems.NUCLEAR_SHOVEL, TechItems.NUCLEAR_HOE, TechItems.NUCLEAR_HELMET,
-				TechItems.NUCLEAR_CHESTPLATE, TechItems.NUCLEAR_LEGGINGS, TechItems.NUCLEAR_BOOTS, TechItems.NANOTECH_SWORD, TechItems.NANOTECH_DRILL,
-				TechItems.NANOTECH_AXE, TechItems.NANOTECH_SHOVEL, TechItems.NANOTECH_HOE, TechItems.NANOTECH_HELMET, TechItems.NANOTECH_CHESTPLATE,
-				TechItems.NANOTECH_LEGGINGS, TechItems.NANOTECH_BOOTS, TechItems.ZENITHIUM_SWORD, TechItems.ZENITHIUM_PICKAXE, TechItems.ZENITHIUM_AXE,
-				TechItems.ZENITHIUM_SHOVEL, TechItems.ZENITHIUM_HOE, TechItems.ZENITHIUM_CHESTPLATE, TechItems.ZENITHIUM_LEGGINGS, TechItems.ZENITHIUM_BOOTS,
-				MagicItems.DEMONIC_CORE, BetaItems.THANATU_BLADE, TechItems.HARD_LIGHT_PROJECTOR, TechItems.CAUTION_HARD_LIGHT_PROJECTOR, TechItems.SENTINEL_HARD_LIGHT_PROJECTOR,
-				TechItems.SCRAP_METAL_PHASER, TechItems.STARSTEEL_PHASER, TechItems.NANOTECH_PHASER, TechItems.ZENITHIUM_PHASER, TechItems.VILE_SPITTER);
+			.add(TSItems.Tech.NUCLEAR_SWORD, TSItems.Tech.NUCLEAR_DRILL, TSItems.Tech.NUCLEAR_AXE, TSItems.Tech.NUCLEAR_SHOVEL, TSItems.Tech.NUCLEAR_HOE, TSItems.Tech.NUCLEAR_HELMET,
+				TSItems.Tech.NUCLEAR_CHESTPLATE, TSItems.Tech.NUCLEAR_LEGGINGS, TSItems.Tech.NUCLEAR_BOOTS, TSItems.Tech.NANOTECH_SWORD, TSItems.Tech.NANOTECH_DRILL,
+				TSItems.Tech.NANOTECH_AXE, TSItems.Tech.NANOTECH_SHOVEL, TSItems.Tech.NANOTECH_HOE, TSItems.Tech.NANOTECH_HELMET, TSItems.Tech.NANOTECH_CHESTPLATE,
+				TSItems.Tech.NANOTECH_LEGGINGS, TSItems.Tech.NANOTECH_BOOTS, TSItems.Tech.ZENITHIUM_SWORD, TSItems.Tech.ZENITHIUM_PICKAXE, TSItems.Tech.ZENITHIUM_AXE,
+				TSItems.Tech.ZENITHIUM_SHOVEL, TSItems.Tech.ZENITHIUM_HOE, TSItems.Tech.ZENITHIUM_CHESTPLATE, TSItems.Tech.ZENITHIUM_LEGGINGS, TSItems.Tech.ZENITHIUM_BOOTS,
+				TSItems.Magic.DEMONIC_CORE, TSItems.Beta.THANATU_BLADE, TSItems.Tech.HARD_LIGHT_PROJECTOR, TSItems.Tech.CAUTION_HARD_LIGHT_PROJECTOR, TSItems.Tech.SENTINEL_HARD_LIGHT_PROJECTOR,
+				TSItems.Tech.SCRAP_METAL_PHASER, TSItems.Tech.STARSTEEL_PHASER, TSItems.Tech.NANOTECH_PHASER, TSItems.Tech.ZENITHIUM_PHASER, TSItems.Tech.VILE_SPITTER);
 
 		getOrCreateTagBuilder(CERULII_LOGS)
 			.add(ModBlocks.CERULII_LOG.asItem(), ModBlocks.CERULII_WOOD.asItem(), ModBlocks.STRIPPED_CERULII_LOG.asItem(), ModBlocks.STRIPPED_CERULII_WOOD.asItem());

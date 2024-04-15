@@ -7,17 +7,18 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial{
-    SCRAP_METAL(0, 37, 1.5f, 1.0f, 8, () -> Ingredient.ofItems(TechItems.SCRAP_METAL_SHARD)),
-    ROSE_GOLD(1, 94, 14.0f, 1.0f, 8, () -> Ingredient.ofItems(MagicItems.ROSE_GOLD_INGOT)), //rose gold
+    SCRAP_METAL(0, 37, 1.5f, 1.0f, 8, () -> Ingredient.ofItems(TSItems.Tech.SCRAP_METAL_SHARD)),
+    DRYADIC(1, 256, 8f, 1.0f, 12, () -> Ingredient.ofItems(TSItems.Magic.ENCHANTED_LEAF)),
+    ROSE_GOLD(1, 94, 14.0f, 1.0f, 8, () -> Ingredient.ofItems(TSItems.Magic.ROSE_GOLD_INGOT)), //rose gold
+    DRUIDIC(2, 532, 8.0f, 3.0f, 14, () -> Ingredient.ofItems(TSItems.Magic.ROSE_GOLD_INGOT)), //rose gold
     COPPER(2, 532, 6.0f, 2.0f, 4, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
-    STARSTEEL(2, 532, 6.0f, 2.0f, 4, () -> Ingredient.ofItems(TechItems.STARSTEEL_INGOT)), //industrial
-    IMPERIAL_ALLOY(2, 532, 6.0f, 2.0f, 4, () -> Ingredient.ofItems(MagicItems.IMPERIAL_ALLOY_INGOT)),
-    GUNMETAL(4, 131, 8.0f, 4.0f, 6, () -> Ingredient.ofItems(ModItems.GUNMETAL_INGOT)), //spacefarer
-    DARKSTEEL(5, 1738, 9.0f, 5.0f, 17, () -> Ingredient.ofItems(MagicItems.UNHOLY_INGOT)),
-    NUCLEAR(5, 2642, 11.0f, 6.5f, 0, () -> Ingredient.ofItems(TechItems.NUCLEAR_INGOT)),
-    ARMADEI(5, 1738, 9.0f, 5.0f, 20, () -> Ingredient.ofItems(Items.GOLD_INGOT)), //arma dei
-    NANOTECH(5, 2642, 11.0f, 6.0f, 0, () -> Ingredient.ofItems(TechItems.NANOTECH_CAPSULE)),
-    ZENITHIUM(6, 3333, 13.0f, 8.0f, 10, () -> Ingredient.ofItems(TechItems.ZENITHIUM_CLUSTER));
+    STARSTEEL(2, 532, 6.0f, 2.0f, 4, () -> Ingredient.ofItems(TSItems.Tech.STARSTEEL_INGOT)), //industrial
+    IMPERIAL_ALLOY(2, 532, 6.0f, 2.0f, 4, () -> Ingredient.ofItems(TSItems.Magic.IMPERIAL_ALLOY_INGOT)),
+    UNHOLY(5, 1738, 9.0f, 5.0f, 17, () -> Ingredient.ofItems(TSItems.Magic.UNHOLY_INGOT)),
+    NUCLEAR(5, 2642, 11.0f, 6.5f, 0, () -> Ingredient.ofItems(TSItems.Tech.NUCLEAR_INGOT)),
+    ARMA_DEI(5, 1738, 9.0f, 5.0f, 20, () -> Ingredient.ofItems(Items.GOLD_INGOT)), //arma dei
+    NANOTECH(5, 2642, 11.0f, 6.0f, 0, () -> Ingredient.ofItems(TSItems.Tech.NANOTECH_CAPSULE)),
+    ZENITHIUM(6, 3333, 13.0f, 8.0f, 10, () -> Ingredient.ofItems(TSItems.Tech.ZENITHIUM_CLUSTER));
 
     private final int miningLevel;
     private final int itemDurability;

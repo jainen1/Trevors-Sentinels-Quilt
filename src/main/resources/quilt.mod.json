@@ -21,7 +21,7 @@
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": "net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain",
-			"client": ["net.trevorskullcrafter.trevorssentinels.trevorssentinelsClient"],
+			"client_init": ["net.trevorskullcrafter.trevorssentinels.trevorssentinelsClient"],
 			"fabric-datagen": ["net.trevorskullcrafter.trevorssentinels.trevorssentinelsDatagen"]
 		},
 		"depends": [

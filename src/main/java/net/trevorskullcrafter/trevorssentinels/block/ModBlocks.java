@@ -1,10 +1,9 @@
 package net.trevorskullcrafter.trevorssentinels.block;
 
-import com.terraformersmc.terraform.sign.block.*;
+//import com.terraformersmc.terraform.sign.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.sapling.SaplingBlock;
-import net.minecraft.block.sign.SignBlock;
-import net.minecraft.block.sign.WallSignBlock;
+import net.trevorskullcrafter.trevorssentinels.block.sign.*;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 import net.minecraft.block.*;
@@ -21,81 +20,135 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.block.custom.*;
 import net.trevorskullcrafter.trevorssentinels.block.sapling.*;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
 import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
 import net.trevorskullcrafter.trevorssentinels.util.ModRegistries;
 
 import static net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain.*;
 
 public class ModBlocks {
-    public static final Block GALINITE_BLOCK = registerBlock("galinite_block", new Block(QuiltBlockSettings.create()
+    public static final Block SCRAP_METAL_BLOCK = registerBlock("scrap_metal_block", new Block(QuiltBlockSettings.create()
 		.pistonBehavior(PistonBehavior.NORMAL).sounds(BlockSoundGroup.CALCITE).mapColor(MapColor.GRAY).strength(3.5f,3f).requiresTool()));
-    public static final Block CHISELED_GALINITE_BLOCK = registerBlock("chiseled_galinite_block", new Block(QuiltBlockSettings.copy(ModBlocks.GALINITE_BLOCK)));
-    public static final Block GALINITE_PILLAR = registerBlock("galinite_pillar", new PillarBlock(QuiltBlockSettings.copy(ModBlocks.GALINITE_BLOCK)));
-    public static final Block DATA_BLOCK = registerBlock("data_block", new DataBlock(QuiltBlockSettings.create().mapColor(MapColor.CYAN)
-		.sounds(BlockSoundGroup.HONEY).nonOpaque().dynamicBounds().allowsSpawning(Blocks::never).pistonBehavior(PistonBehavior.PUSH_ONLY).solidBlock(Blocks::never)));
+    public static final Block CHISELED_SCRAP_METAL_BLOCK = registerBlock("chiseled_scrap_metal_block", new Block(QuiltBlockSettings.copy(ModBlocks.SCRAP_METAL_BLOCK)));
+    public static final Block SCRAP_METAL_PILLAR = registerBlock("scrap_metal_pillar", new PillarBlock(QuiltBlockSettings.copy(ModBlocks.SCRAP_METAL_BLOCK)));
     public static final Block RICE_PLANT = registerBlockWithoutBlockItem("rice_plant", new RiceCropBlock(QuiltBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
-    public static final Block GOLDEN_RICE_PLANT = registerBlockWithoutBlockItem("golden_rice_plant", new RiceCropBlock(QuiltBlockSettings.copy(Blocks.WHEAT).mapColor(MapColor.GOLD).nonOpaque()));
     public static final Block RICE_BLOCK = registerBlock("rice_block", new PillarBlock(QuiltBlockSettings.copy(Blocks.HAY_BLOCK)));
-    public static final Block GOLDEN_RICE_BLOCK = registerBlock("golden_rice_block", new PillarBlock(QuiltBlockSettings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.GOLD)));
 
-    public static final Block STEEL_BLOCK = registerBlock("steel_block", new Block(QuiltBlockSettings.create().strength(6f,8f)
+    public static final Block STARSTEEL_BLOCK = registerBlock("starsteel_block", new Block(QuiltBlockSettings.create().strength(6f,8f)
 		.mapColor(MapColor.STONE).sounds(ModSounds.STEEL_SOUNDS).requiresTool()));
-    public static final Block CAUTION_STEEL_BLOCK = registerBlock("caution_steel_block", new PillarBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block STAINLESS_STEEL_BLOCK = registerBlock("stainless_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block STARSTEEL_LAMP = registerBlock("starsteel_lamp", new ToggleableLampBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)
+    public static final Block CHISELED_STARSTEEL_BLOCK = registerBlock("chiseled_starsteel_block", new PillarBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block STAINLESS_STEEL_BLOCK = registerBlock("stainless_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block STARSTEEL_LAMP = registerBlock("starsteel_lamp", new ToggleableLampBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)
 		.mapColor(MapColor.YELLOW_TERRACOTTA).luminance((state) -> state.get(ToggleableLampBlock.CLICKED) ? 15 : 0)));
-    public static final Block STARSTEEL_FAN = registerBlock("starsteel_fan", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block RUSTED_STEEL_BLOCK = registerBlock("rusted_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block BATTERY = registerBlock("battery", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block FUSEBOX = registerBlock("fusebox", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK)));
-    public static final Block STEEL_LADDER = registerBlock("steel_ladder", new LadderBlock(QuiltBlockSettings.copy(Blocks.LADDER).nonOpaque()
+    public static final Block STARSTEEL_FAN = registerBlock("starsteel_fan", new Block(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block RUSTED_STEEL_BLOCK = registerBlock("rusted_steel_block", new Block(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block BATTERY = registerBlock("battery", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block FUSEBOX = registerBlock("fusebox", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+    public static final Block STARSTEEL_LADDER = registerBlock("starsteel_ladder", new LadderBlock(QuiltBlockSettings.copy(Blocks.LADDER).nonOpaque()
 		.sounds(ModSounds.STEEL_SOUNDS).strength(6f, 8f).requiresTool()));
-    public static final Block VENDOR = registerBlock("vendor", new VendorBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).mapColor(MapColor.RED).luminance((state) -> 5)));
-    public static final Block FANCY_COMPUTER = registerBlock("fancy_computer", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).nonOpaque()));
+    public static final Block VENDOR = registerBlock("vendor", new VendorBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).mapColor(MapColor.RED).luminance((state) -> 5)));
+    public static final Block FANCY_COMPUTER = registerBlock("fancy_computer", new DirectionalBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).nonOpaque()));
 
-    public static final Identifier STEEL_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/steel");
-    public static final Identifier STEEL_HANGING_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/hanging/steel");
-    public static final Identifier STEEL_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/steel");
+	public static final BlockFamily STARSTEEL_FAMILY = BlockFamilies.register(ModBlocks.STARSTEEL_BLOCK).chiseled(ModBlocks.CHISELED_STARSTEEL_BLOCK)
+		.polished(ModBlocks.STAINLESS_STEEL_BLOCK).cracked(ModBlocks.RUSTED_STEEL_BLOCK).pressurePlate(ModBlocks.BIG_RED_PLATE).button(ModBlocks.BIG_RED_BUTTON)
+		.sign(ModBlocks.STARSTEEL_SIGN, ModBlocks.STARSTEEL_WALL_SIGN).unlockCriterionName("has_steel").build();
 
-    public static final Block STARSTEEL_SIGN = registerBlockWithoutBlockItem("steel_sign",
-		new TerraformSignBlock(STEEL_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).noCollision().instrument(NoteBlockInstrument.BASS)));
-    public static final Block STARSTEEL_WALL_SIGN = registerBlockWithoutBlockItem("steel_wall_sign",
-		new TerraformWallSignBlock(STEEL_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
-    public static final Block STEEL_HANGING_SIGN = registerBlockWithoutBlockItem("steel_hanging_sign",
-		new TerraformHangingSignBlock(STEEL_HANGING_SIGN_TEXTURE, STEEL_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
-    public static final Block STEEL_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("steel_wall_hanging_sign",
-		new TerraformWallHangingSignBlock(STEEL_HANGING_SIGN_TEXTURE, STEEL_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
+	public static final Identifier STARSTEEL_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/starsteel");
+    public static final Identifier STARSTEEL_HANGING_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/hanging/starsteel");
+    public static final Identifier STARSTEEL_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/starsteel");
 
-    public static final BlockFamily STEEL_FAMILY = BlockFamilies.register(ModBlocks.STEEL_BLOCK).sign(ModBlocks.STARSTEEL_SIGN, ModBlocks.STARSTEEL_WALL_SIGN).unlockCriterionName("has_steel").build();
+    public static final Block STARSTEEL_SIGN = registerBlockWithoutBlockItem("starsteel_sign",
+		new TrevorSignBlock(STARSTEEL_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).noCollision().instrument(NoteBlockInstrument.BASS)));
+    public static final Block STARSTEEL_WALL_SIGN = registerBlockWithoutBlockItem("starsteel_wall_sign",
+		new TrevorWallSignBlock(STARSTEEL_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
+    public static final Block STARSTEEL_HANGING_SIGN = registerBlockWithoutBlockItem("starsteel_hanging_sign",
+		new TrevorHangingSignBlock(STARSTEEL_HANGING_SIGN_TEXTURE, STARSTEEL_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
+    public static final Block STARSTEEL_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("starsteel_wall_hanging_sign",
+		new TrevorWallHangingSignBlock(STARSTEEL_HANGING_SIGN_TEXTURE, STARSTEEL_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_SIGN)));
 
-    public static final Block HOLOGRAPHIC_BLUE_WALL_SIGN_BLOCK = registerBlockWithoutBlockItem("holographic_blue_wall_sign", new WallSignBlock(QuiltBlockSettings.copy(STARSTEEL_WALL_SIGN), ModRegistries.HOLOGRAPHIC_BLUE_WOOD));
-    public static final Block HOLOGRAPHIC_BLUE_SIGN_BLOCK = registerBlockWithoutBlockItem("holographic_blue_sign", new SignBlock(QuiltBlockSettings.copy(STARSTEEL_SIGN), ModRegistries.HOLOGRAPHIC_BLUE_WOOD));
-    public static final Block HOLOGRAPHIC_RED_WALL_SIGN_BLOCK = registerBlockWithoutBlockItem("holographic_red_wall_sign", new WallSignBlock(QuiltBlockSettings.copy(STARSTEEL_WALL_SIGN), ModRegistries.HOLOGRAPHIC_RED_WOOD));
-    public static final Block HOLOGRAPHIC_RED_SIGN_BLOCK = registerBlockWithoutBlockItem("holographic_red_sign", new SignBlock(QuiltBlockSettings.copy(STARSTEEL_SIGN), ModRegistries.HOLOGRAPHIC_RED_WOOD));
+	public static final Identifier HOLOGRAPHIC_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/holographic");
+	public static final Identifier HOLOGRAPHIC_HANGING_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/hanging/holographic");
+	public static final Identifier HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/holographic");
+
+	public static final Block HOLOGRAPHIC_SIGN = registerBlockWithoutBlockItem("holographic_sign",
+		new TrevorSignBlock(HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+	public static final Block HOLOGRAPHIC_WALL_SIGN = registerBlockWithoutBlockItem("holographic_wall_sign",
+		new TrevorWallSignBlock(HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.HOLOGRAPHIC_SIGN)));
+	public static final Block HOLOGRAPHIC_HANGING_SIGN = registerBlockWithoutBlockItem("holographic_hanging_sign",
+		new TrevorHangingSignBlock(HOLOGRAPHIC_HANGING_SIGN_TEXTURE, HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.HOLOGRAPHIC_SIGN)));
+	public static final Block HOLOGRAPHIC_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("holographic_wall_hanging_sign",
+		new TrevorWallHangingSignBlock(HOLOGRAPHIC_HANGING_SIGN_TEXTURE, HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.HOLOGRAPHIC_SIGN)));
+
+	public static final Identifier CAUTION_HOLOGRAPHIC_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/caution_holographic");
+	public static final Identifier CAUTION_HOLOGRAPHIC_HANGING_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/hanging/caution_holographic");
+	public static final Identifier CAUTION_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/caution_holographic");
+
+	public static final Block CAUTION_HOLOGRAPHIC_SIGN = registerBlockWithoutBlockItem("caution_holographic_sign",
+		new TrevorSignBlock(CAUTION_HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+	public static final Block CAUTION_HOLOGRAPHIC_WALL_SIGN = registerBlockWithoutBlockItem("caution_holographic_wall_sign",
+		new TrevorWallSignBlock(CAUTION_HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CAUTION_HOLOGRAPHIC_SIGN)));
+	public static final Block CAUTION_HOLOGRAPHIC_HANGING_SIGN = registerBlockWithoutBlockItem("caution_holographic_hanging_sign",
+		new TrevorHangingSignBlock(CAUTION_HOLOGRAPHIC_HANGING_SIGN_TEXTURE, CAUTION_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CAUTION_HOLOGRAPHIC_SIGN)));
+	public static final Block CAUTION_HOLOGRAPHIC_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("caution_holographic_wall_hanging_sign",
+		new TrevorWallHangingSignBlock(CAUTION_HOLOGRAPHIC_HANGING_SIGN_TEXTURE, CAUTION_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CAUTION_HOLOGRAPHIC_SIGN)));
+
+	public static final Identifier SENTINEL_HOLOGRAPHIC_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/sentinel_holographic");
+	public static final Identifier SENTINEL_HOLOGRAPHIC_HANGING_SIGN_TEXTURE = new Identifier(MOD_ID, "entity/signs/hanging/sentinel_holographic");
+	public static final Identifier SENTINEL_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/sentinel_holographic");
+
+	public static final Block SENTINEL_HOLOGRAPHIC_SIGN = registerBlockWithoutBlockItem("sentinel_holographic_sign",
+		new TrevorSignBlock(SENTINEL_HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK)));
+	public static final Block SENTINEL_HOLOGRAPHIC_WALL_SIGN = registerBlockWithoutBlockItem("sentinel_holographic_wall_sign",
+		new TrevorWallSignBlock(SENTINEL_HOLOGRAPHIC_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.SENTINEL_HOLOGRAPHIC_SIGN)));
+	public static final Block SENTINEL_HOLOGRAPHIC_HANGING_SIGN = registerBlockWithoutBlockItem("sentinel_holographic_hanging_sign",
+		new TrevorHangingSignBlock(SENTINEL_HOLOGRAPHIC_HANGING_SIGN_TEXTURE, SENTINEL_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.SENTINEL_HOLOGRAPHIC_SIGN)));
+	public static final Block SENTINEL_HOLOGRAPHIC_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("sentinel_holographic_wall_hanging_sign",
+		new TrevorWallHangingSignBlock(SENTINEL_HOLOGRAPHIC_HANGING_SIGN_TEXTURE, SENTINEL_HOLOGRAPHIC_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.SENTINEL_HOLOGRAPHIC_SIGN)));
 
     public static final Block WAX_INFUSED_COPPER_BLOCK = registerBlock("wax_infused_copper_block", new Block(QuiltBlockSettings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.ORANGE)));
 
-    public static final Block HARD_LIGHT = registerBlockWithoutBlockItem("hard_light", new HardLightBlock(ModItems.HARD_LIGHT_PROJECTOR, QuiltBlockSettings.create().mapColor(MapColor.CYAN)
-		.sounds(ModSounds.HARD_LIGHT_SOUNDS).luminance((state) -> 5).emissiveLighting(Blocks::always).noBlockBreakParticles().nonOpaque().dynamicBounds().allowsSpawning(Blocks::never)
+    public static final Block HARD_LIGHT = registerBlockWithoutBlockItem("hard_light", new HardLightBlock(QuiltBlockSettings.create().mapColor(MapColor.CYAN)
+		.sounds(ModSounds.HARD_LIGHT_SOUNDS).luminance((state) -> 5).emissiveLighting(Blocks::always).withoutDustParticles().nonOpaque().dynamicBounds().allowsSpawning(Blocks::never)
 		.blockVision(Blocks::never).pistonBehavior(PistonBehavior.IGNORE).strength(-1f, 3600000f)));
-    public static final Block CAUTION_HARD_LIGHT = registerBlockWithoutBlockItem("caution_hard_light", new HardLightBlock(ModItems.CAUTION_HARD_LIGHT_PROJECTOR, QuiltBlockSettings.copy(HARD_LIGHT).mapColor(MapColor.GOLD)));
-    public static final Block SENTINEL_HARD_LIGHT = registerBlockWithoutBlockItem("sentinel_hard_light", new HardLightBlock(ModItems.SENTINEL_HARD_LIGHT_PROJECTOR, QuiltBlockSettings.copy(HARD_LIGHT).mapColor(MapColor.RED)));
+    public static final Block CAUTION_HARD_LIGHT = registerBlockWithoutBlockItem("caution_hard_light", new HardLightBlock(QuiltBlockSettings.copy(HARD_LIGHT).mapColor(MapColor.GOLD)));
+    public static final Block SENTINEL_HARD_LIGHT = registerBlockWithoutBlockItem("sentinel_hard_light", new HardLightBlock(QuiltBlockSettings.copy(HARD_LIGHT).mapColor(MapColor.RED)));
     public static final Block HARD_LIGHT_BARRIER = registerBlock("hard_light_barrier", new GlassBlock(QuiltBlockSettings.copy(HARD_LIGHT)));
     public static final Block CAUTION_HARD_LIGHT_BARRIER = registerBlock("caution_hard_light_barrier", new GlassBlock(QuiltBlockSettings.copy(CAUTION_HARD_LIGHT)));
     public static final Block SENTINEL_HARD_LIGHT_BARRIER = registerBlock("sentinel_hard_light_barrier", new GlassBlock(QuiltBlockSettings.copy(SENTINEL_HARD_LIGHT)));
 
     public static final Block NUCLEAR_BLOCK = registerBlock("nuclear_block",
-		new NuclearBlock(QuiltBlockSettings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(50f,1200f).mapColor(MapColor.EMERALD).requiresTool()),
+		new Block(QuiltBlockSettings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(20f,1200f).mapColor(MapColor.EMERALD).requiresTool()),
 		new QuiltItemSettings().fireproof());
     public static final Block NUCLEAR_ORE = registerBlock("nuclear_ore",
-		new ExperienceDroppingBlock(QuiltBlockSettings.create().sounds(BlockSoundGroup.STONE).strength(50f,1200f).mapColor(MapColor.EMERALD).requiresTool()),
+		new ExperienceDroppingBlock(QuiltBlockSettings.create().sounds(BlockSoundGroup.STONE).strength(20f,1200f).mapColor(MapColor.EMERALD).requiresTool()),
 		new QuiltItemSettings().fireproof());
-    public static final Block NUCLEAR_CHARGE = registerBlock("nuclear_charge",
-		new NuclearChargeBlock(QuiltBlockSettings.create().mapColor(MapColor.EMERALD).sounds(ModSounds.STEEL_SOUNDS)), new QuiltItemSettings().fireproof());
+
+	public static final Block NANOTECH_BLOCK = registerBlock("nanotech_block",
+		new Block(QuiltBlockSettings.create().sounds(BlockSoundGroup.NETHERITE).strength(35f, 2000f).mapColor(MapColor.BLACK).requiresTool()),
+		new QuiltItemSettings().fireproof());
+
     public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks", new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS)));
     public static final Block CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks", new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS)));
     public static final Block END_STONE_BRICK_COLUMN = registerBlock("end_stone_brick_column", new PillarBlock(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS)));
+
+	public static final Block IMPIOUS_END_STONE = registerBlock("impious_end_stone", new Block(QuiltBlockSettings.copy(Blocks.END_STONE).mapColor(MapColor.WOOL)));
+	public static final Block IMPIOUS_END_STONE_BRICKS = registerBlock("impious_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block CRACKED_IMPIOUS_END_STONE_BRICKS = registerBlock("cracked_impious_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block CHISELED_IMPIOUS_END_STONE_BRICKS = registerBlock("chiseled_impious_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block IMPIOUS_END_STONE_BRICK_COLUMN = registerBlock("impious_end_stone_brick_column",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+
+	public static final Block DEIFIC_END_STONE = registerBlock("deific_end_stone", new Block(QuiltBlockSettings.copy(Blocks.END_STONE).mapColor(MapColor.WOOL)));
+	public static final Block DEIFIC_END_STONE_BRICKS = registerBlock("deific_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block CRACKED_DEIFIC_END_STONE_BRICKS = registerBlock("cracked_deific_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block CHISELED_DEIFIC_END_STONE_BRICKS = registerBlock("chiseled_deific_end_stone_bricks",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
+	public static final Block DEIFIC_END_STONE_BRICK_COLUMN = registerBlock("deific_end_stone_brick_column",
+		new Block(QuiltBlockSettings.copy(Blocks.END_STONE_BRICKS).mapColor(MapColor.WOOL)));
 
     public static final Block SNOWSTONE = registerBlock("snowstone", new Block(QuiltBlockSettings.copy(Blocks.SANDSTONE).mapColor(MapColor.WHITE_TERRACOTTA)));
     public static final Block SNOWSTONE_STAIRS = registerBlock("snowstone_stairs", new StairsBlock(ModBlocks.SNOWSTONE.getDefaultState(), QuiltBlockSettings.copy(Blocks.SANDSTONE_STAIRS).mapColor(MapColor.WHITE_TERRACOTTA)));
@@ -114,9 +167,6 @@ public class ModBlocks {
     public static final Block DIRT_SLAB = registerBlock("dirt_slab", new SlabBlock(QuiltBlockSettings.copy(Blocks.DIRT)));
     public static final Block COARSE_DIRT_STAIRS = registerBlock("coarse_dirt_stairs", new StairsBlock(Blocks.COARSE_DIRT.getDefaultState(), QuiltBlockSettings.copy(Blocks.COARSE_DIRT)));
     public static final Block COARSE_DIRT_SLAB = registerBlock("coarse_dirt_slab", new SlabBlock(QuiltBlockSettings.copy(Blocks.COARSE_DIRT)));
-    public static final Block OVERGROWN_GRASS_BLOCK = registerBlock("overgrown_grass_block", new Block(QuiltBlockSettings.copy(Blocks.GRASS_BLOCK)));
-    public static final Block GRASS_STAIRS = registerBlock("grass_stairs", new StairsBlock(Blocks.GRASS_BLOCK.getDefaultState(), QuiltBlockSettings.copy(Blocks.GRASS_BLOCK)));
-    public static final Block GRASS_SLAB = registerBlock("grass_slab", new SlabBlock(QuiltBlockSettings.copy(Blocks.GRASS_BLOCK)));
     public static final Block MOSS_STAIRS = registerBlock("moss_stairs", new StairsBlock(Blocks.MOSS_BLOCK.getDefaultState(), QuiltBlockSettings.copy(Blocks.MOSS_BLOCK)));
     public static final Block MOSS_SLAB = registerBlock("moss_slab", new SlabBlock(QuiltBlockSettings.copy(Blocks.MOSS_BLOCK)));
     public static final Block FLESH_BLOCK = registerBlock("flesh_block", new FleshBlock(0.5f, ModSounds.FLESH_AMBIENT,
@@ -125,13 +175,13 @@ public class ModBlocks {
             .strength(0.7F, 3.0F).luminance((state) -> 0).mapColor(MapColor.RED).sounds(ModSounds.FLESH_SOUNDS)));
     public static final Block FLESHY_EYE = registerBlock("fleshy_eye", new FleshyEyeBlock(QuiltBlockSettings.copy(ModBlocks.FLESH_BLOCK)
             .mapColor(MapColor.YELLOW).luminance((state) -> state.get(ToggleableLampBlock.CLICKED) ? 8 : 0)));
-    public static final Block BIG_RED_BUTTON = registerBlock("big_red_button", new ButtonBlock(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).noCollision().mapColor(MapColor.RED),
+    public static final Block BIG_RED_BUTTON = registerBlock("big_red_button", new ButtonBlock(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).noCollision().mapColor(MapColor.RED),
             BlockSetType.IRON, 5, false));
     public static final Block BIG_RED_PLATE = registerBlock("big_red_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).mapColor(MapColor.RED), BlockSetType.IRON));
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).mapColor(MapColor.RED), BlockSetType.IRON));
 
     public static final Block PALE_PLANKS = registerBlock("pale_planks", new Block(QuiltBlockSettings.copy(Blocks.WARPED_PLANKS).mapColor(MapColor.WHITE_TERRACOTTA)));
-    public static final Block PALE_SAPLING = registerBlock("pale_sapling",new SaplingBlock(new YggdrasilSaplingGenerator(), QuiltBlockSettings.copy(Blocks.OAK_SAPLING).mapColor(MapColor.WHITE_TERRACOTTA)));
+    public static final Block PALE_SAPLING = registerBlock("pale_sapling",new SaplingBlock(new PaleSaplingGenerator(), QuiltBlockSettings.copy(Blocks.OAK_SAPLING).mapColor(MapColor.WHITE_TERRACOTTA)));
     public static final Block POTTED_PALE_SAPLING = registerBlockWithoutBlockItem("potted_pale_sapling", new FlowerPotBlock(PALE_SAPLING, QuiltBlockSettings.copy(Blocks.POTTED_OAK_SAPLING).mapColor(MapColor.WHITE_TERRACOTTA)));
     public static final Block PALE_LOG = registerBlock("pale_log", new PillarBlock(QuiltBlockSettings.copy(Blocks.OAK_LOG).mapColor(MapColor.WHITE_TERRACOTTA)));
     public static final Block STRIPPED_PALE_LOG = registerBlock("stripped_pale_log", new PillarBlock(QuiltBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).mapColor(MapColor.WHITE_TERRACOTTA)));
@@ -154,13 +204,13 @@ public class ModBlocks {
     public static final Identifier PALE_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/pale");
 
     public static final Block PALE_SIGN = registerBlockWithoutBlockItem("pale_sign",
-            new TerraformSignBlock(PALE_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
+            new TrevorSignBlock(PALE_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
     public static final Block PALE_WALL_SIGN = registerBlockWithoutBlockItem("pale_wall_sign",
-            new TerraformWallSignBlock(PALE_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
+            new TrevorWallSignBlock(PALE_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
     public static final Block PALE_HANGING_SIGN = registerBlockWithoutBlockItem("pale_hanging_sign",
-            new TerraformHangingSignBlock(PALE_HANGING_SIGN_TEXTURE, PALE_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
+            new TrevorHangingSignBlock(PALE_HANGING_SIGN_TEXTURE, PALE_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
     public static final Block PALE_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("pale_wall_hanging_sign",
-            new TerraformWallHangingSignBlock(PALE_HANGING_SIGN_TEXTURE, PALE_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
+            new TrevorWallHangingSignBlock(PALE_HANGING_SIGN_TEXTURE, PALE_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.PALE_SIGN)));
 
     public static final BlockFamily PALE_FAMILY = BlockFamilies.register(PALE_PLANKS).stairs(PALE_STAIRS).slab(PALE_SLAB).button(PALE_BUTTON)
             .pressurePlate(PALE_PRESSURE_PLATE).fence(PALE_FENCE).fenceGate(PALE_FENCE_GATE).door(PALE_DOOR).trapdoor(PALE_TRAPDOOR)
@@ -187,13 +237,13 @@ public class ModBlocks {
     public static final Identifier CHARRED_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/charred");
 
     public static final Block CHARRED_SIGN = registerBlockWithoutBlockItem("charred_sign",
-            new TerraformSignBlock(CHARRED_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
+            new TrevorSignBlock(CHARRED_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
     public static final Block CHARRED_WALL_SIGN = registerBlockWithoutBlockItem("charred_wall_sign",
-            new TerraformWallSignBlock(CHARRED_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
+            new TrevorWallSignBlock(CHARRED_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
     public static final Block CHARRED_HANGING_SIGN = registerBlockWithoutBlockItem("charred_hanging_sign",
-            new TerraformHangingSignBlock(CHARRED_HANGING_SIGN_TEXTURE, CHARRED_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
+            new TrevorHangingSignBlock(CHARRED_HANGING_SIGN_TEXTURE, CHARRED_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
     public static final Block CHARRED_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("charred_wall_hanging_sign",
-            new TerraformWallHangingSignBlock(CHARRED_HANGING_SIGN_TEXTURE, CHARRED_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
+            new TrevorWallHangingSignBlock(CHARRED_HANGING_SIGN_TEXTURE, CHARRED_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CHARRED_SIGN)));
 
     public static final BlockFamily CHARRED_FAMILY = BlockFamilies.register(CHARRED_PLANKS).stairs(CHARRED_STAIRS).slab(CHARRED_SLAB).button(CHARRED_BUTTON)
             .pressurePlate(CHARRED_PRESSURE_PLATE).fence(CHARRED_FENCE).fenceGate(CHARRED_FENCE_GATE).door(CHARRED_DOOR).trapdoor(CHARRED_TRAPDOOR)
@@ -223,13 +273,13 @@ public class ModBlocks {
     public static final Identifier MIDAS_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/midas");
 
     public static final Block MIDAS_SIGN = registerBlockWithoutBlockItem("midas_sign",
-            new TerraformSignBlock(MIDAS_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
+            new TrevorSignBlock(MIDAS_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
     public static final Block MIDAS_WALL_SIGN = registerBlockWithoutBlockItem("midas_wall_sign",
-            new TerraformWallSignBlock(MIDAS_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
+            new TrevorWallSignBlock(MIDAS_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
     public static final Block MIDAS_HANGING_SIGN = registerBlockWithoutBlockItem("midas_hanging_sign",
-            new TerraformHangingSignBlock(MIDAS_HANGING_SIGN_TEXTURE, MIDAS_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
+            new TrevorHangingSignBlock(MIDAS_HANGING_SIGN_TEXTURE, MIDAS_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
     public static final Block MIDAS_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("midas_wall_hanging_sign",
-            new TerraformWallHangingSignBlock(MIDAS_HANGING_SIGN_TEXTURE, MIDAS_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
+            new TrevorWallHangingSignBlock(MIDAS_HANGING_SIGN_TEXTURE, MIDAS_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.MIDAS_SIGN)));
 
     public static final BlockFamily MIDAS_FAMILY = BlockFamilies.register(MIDAS_PLANKS).stairs(MIDAS_STAIRS).slab(MIDAS_SLAB).button(MIDAS_BUTTON)
             .pressurePlate(MIDAS_PRESSURE_PLATE).fence(MIDAS_FENCE).fenceGate(MIDAS_FENCE_GATE).door(MIDAS_DOOR).trapdoor(MIDAS_TRAPDOOR)
@@ -259,13 +309,13 @@ public class ModBlocks {
     public static final Identifier VIRIDIAN_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/viridian");
 
     public static final Block VIRIDIAN_SIGN = registerBlockWithoutBlockItem("viridian_sign",
-            new TerraformSignBlock(VIRIDIAN_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
+            new TrevorSignBlock(VIRIDIAN_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
     public static final Block VIRIDIAN_WALL_SIGN = registerBlockWithoutBlockItem("viridian_wall_sign",
-            new TerraformWallSignBlock(VIRIDIAN_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
+            new TrevorWallSignBlock(VIRIDIAN_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
     public static final Block VIRIDIAN_HANGING_SIGN = registerBlockWithoutBlockItem("viridian_hanging_sign",
-            new TerraformHangingSignBlock(VIRIDIAN_HANGING_SIGN_TEXTURE, VIRIDIAN_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
+            new TrevorHangingSignBlock(VIRIDIAN_HANGING_SIGN_TEXTURE, VIRIDIAN_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
     public static final Block VIRIDIAN_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("viridian_wall_hanging_sign",
-            new TerraformWallHangingSignBlock(VIRIDIAN_HANGING_SIGN_TEXTURE, VIRIDIAN_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
+            new TrevorWallHangingSignBlock(VIRIDIAN_HANGING_SIGN_TEXTURE, VIRIDIAN_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.VIRIDIAN_SIGN)));
 
     public static final BlockFamily VIRIDIAN_FAMILY = BlockFamilies.register(VIRIDIAN_PLANKS).stairs(VIRIDIAN_STAIRS).slab(VIRIDIAN_SLAB).button(VIRIDIAN_BUTTON)
             .pressurePlate(VIRIDIAN_PRESSURE_PLATE).fence(VIRIDIAN_FENCE).fenceGate(VIRIDIAN_FENCE_GATE).door(VIRIDIAN_DOOR).trapdoor(VIRIDIAN_TRAPDOOR)
@@ -295,21 +345,21 @@ public class ModBlocks {
     public static final Identifier CERULII_HANGING_GUI_SIGN_TEXTURE = new Identifier(MOD_ID, "textures/gui/hanging_signs/cerulii");
 
     public static final Block CERULII_SIGN = registerBlockWithoutBlockItem("cerulii_sign",
-            new TerraformSignBlock(CERULII_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
+            new TrevorSignBlock(CERULII_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_PLANKS).noCollision().instrument(NoteBlockInstrument.BASS)));
     public static final Block CERULII_WALL_SIGN = registerBlockWithoutBlockItem("cerulii_wall_sign",
-            new TerraformWallSignBlock(CERULII_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
+            new TrevorWallSignBlock(CERULII_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
     public static final Block CERULII_HANGING_SIGN = registerBlockWithoutBlockItem("cerulii_hanging_sign",
-            new TerraformHangingSignBlock(CERULII_HANGING_SIGN_TEXTURE, CERULII_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
+            new TrevorHangingSignBlock(CERULII_HANGING_SIGN_TEXTURE, CERULII_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
     public static final Block CERULII_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("cerulii_wall_hanging_sign",
-            new TerraformWallHangingSignBlock(CERULII_HANGING_SIGN_TEXTURE, CERULII_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
+            new TrevorWallHangingSignBlock(CERULII_HANGING_SIGN_TEXTURE, CERULII_HANGING_GUI_SIGN_TEXTURE, QuiltBlockSettings.copy(ModBlocks.CERULII_SIGN)));
 
     public static final BlockFamily CERULII_FAMILY = BlockFamilies.register(CERULII_PLANKS).stairs(CERULII_STAIRS).slab(CERULII_SLAB).button(CERULII_BUTTON)
             .pressurePlate(CERULII_PRESSURE_PLATE).fence(CERULII_FENCE).fenceGate(CERULII_FENCE_GATE).door(CERULII_DOOR).trapdoor(CERULII_TRAPDOOR)
             .sign(CERULII_SIGN, CERULII_WALL_SIGN).unlockCriterionName("has_planks").group("wooden").build();
 
-    public static final Block DARKSTEEL_BLOCK = registerBlock("darksteel_block", new Block(QuiltBlockSettings.create()
+    public static final Block UNHOLY_BLOCK = registerBlock("unholy_block", new Block(QuiltBlockSettings.create()
 		.sounds(BlockSoundGroup.NETHERITE).mapColor(MapColor.PURPLE_TERRACOTTA).strength(8f,12f).requiresTool()));
-    public static final Block IRON_GOLD_BLOCK = registerBlock("iron_gold_block", new Block(QuiltBlockSettings.create()
+    public static final Block IMPERIAL_ALLOY_BLOCK = registerBlock("imperial_alloy_block", new Block(QuiltBlockSettings.create()
 		.strength(6f,8f).mapColor(MapColor.YELLOW).requiresTool()));
     public static final Block COPPER_IRON_BLOCK = registerBlock("copper_iron_block", new Block(QuiltBlockSettings.create()
 		.strength(6f,8f).mapColor(MapColor.RAW_IRON).requiresTool()));
@@ -326,9 +376,7 @@ public class ModBlocks {
     public static final Block ORANGE_AGILITY_BLOCK = registerBlock("orange_agility_block", new FallDamagelessBlock(0.0f,
             QuiltBlockSettings.copy(ModBlocks.DARK_CHAMBER_BLOCK).sounds(BlockSoundGroup.SLIME).mapColor(MapColor.ORANGE).velocityMultiplier(1.4f).slipperiness(0.75f)));
     public static final Block BLACK_AGILITY_BLOCK = registerBlock("black_agility_block",
-            new Block(QuiltBlockSettings.copy(ModBlocks.STEEL_BLOCK).slipperiness(/*1.098*/1.2f).mapColor(MapColor.LIGHT_BLUE)));
-    //public static final Block FORGE = registerBlock("forge",
-    //        new ForgeBlock(QuiltBlockSettings.create().strength(3.5f,3.5f).mapColor(MapColor.GRAY).requiresTool()));
+            new Block(QuiltBlockSettings.copy(ModBlocks.STARSTEEL_BLOCK).slipperiness(/*1.098*/1.2f).mapColor(MapColor.LIGHT_BLUE)));
     public static final Block RECONSTRUCTION_TABLE = registerBlock("reconstruction_table", new ReconstructionTableBlock(QuiltBlockSettings.create()
             .sounds(ModSounds.STEEL_SOUNDS).mapColor(MapColor.WARPED_WART_BLOCK).strength(35f,1200f).nonOpaque().requiresTool()),
             new QuiltItemSettings().fireproof());
@@ -349,10 +397,20 @@ public class ModBlocks {
             new FlowerPotBlock(ModBlocks.SKULLWEED, QuiltBlockSettings.copy(Blocks.POTTED_ALLIUM)));
     public static final Block FEATHERCORN = registerBlockWithoutBlockItem("feathercorn", new TallFlowerBlock(QuiltBlockSettings.copy(Blocks.ROSE_BUSH)));
 
-    private static Block registerBlock(String name, Block block){ registerBlockItem(name, block, new QuiltItemSettings()); return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block); }
-    private static Block registerBlock(String name, Block block, QuiltItemSettings settings){ registerBlockItem(name, block, settings); return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block); }
-    private static void registerBlockItem(String name, Block block, QuiltItemSettings settings) { Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, settings)); }
-    private static Block registerBlockWithoutBlockItem(String name, Block block){ return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block); }
+    private static Block registerBlock(String name, Block block){
+		registerBlockItem(name, block, new QuiltItemSettings());
+		return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block);
+	}
+    private static Block registerBlock(String name, Block block, QuiltItemSettings settings){
+		registerBlockItem(name, block, settings);
+		return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block);
+	}
+    private static void registerBlockItem(String name, Block block, QuiltItemSettings settings) {
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, settings));
+	}
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
+		return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block);
+	}
 
     public static void registerModBlocks(){ LOGGER.info("Registering blocks... (" + MOD_ID + ")"); }
 }

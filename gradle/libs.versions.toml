@@ -7,8 +7,8 @@ quilt_mappings = "1.20.2+build.3"
 quilt_loader = "0.23.1"
 
 quilted_fabric_api = "8.0.0-alpha.3+0.91.2-1.20.2"
-gecko_lib = "4.3.1"
-owo_version="0.11.4+1.20.2"
+owo_version = "0.11.4+1.20.2"
+terraformers_version = "9.0.0"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -18,9 +18,10 @@ quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loade
 quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
 quilted_fabric_api_deprecated = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api-deprecated", version.ref = "quilted_fabric_api" }
 
-gecko_lib = { module = "software.bernie.geckolib:geckolib-fabric-1.20.2", version.ref = "gecko_lib" }
 owo_lib = { module = "io.wispforest:owo-lib", version.ref = "owo_version" }
 owo_sentinel = { module = "io.wispforest:owo-sentinel", version.ref = "owo_version" }
+
+terraformersmc = { module = "com.terraformersmc.terraform-api:terraform-wood-api-v1", version.ref = "terraformers_version" }
 
 # If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
 [bundles]

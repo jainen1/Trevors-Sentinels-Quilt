@@ -57,23 +57,26 @@ public class LangGenUtils {
 		else { return item.asItem().getTranslationKey(); }
 	}
 
-	public static void generateTooltip(FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation item){
-		translationBuilder.add("tooltip." + getItemKey(item.item), item.tooltip);
+	public static void generateTooltip(FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation itemTranslation){
+		translationBuilder.add("tooltip." + getItemKey(itemTranslation.item), itemTranslation.tooltip);
 	}
 
-	public static void generateItems(@NotNull FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation... items){
-		for (ItemTranslation item:items) { if(item.item != null) {
-			translationBuilder.add(getItemKey(item.item), item.name);
-			if (item.tooltip != null) { generateTooltip(translationBuilder, item); }
-		}}
+	public static void generateItems(@NotNull FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation... itemTranslations){
+		for (ItemTranslation itemTranslation:itemTranslations) {
+			if(itemTranslation.item != null) {
+				translationBuilder.add(getItemKey(itemTranslation.item), itemTranslation.name);
+				if (itemTranslation.tooltip != null) { generateTooltip(translationBuilder, itemTranslation); }
+				//if (itemTranslation.color != null) { }
+			}
+		}
 	}
 
-	public static void generateItemsWithParent(@NotNull FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation parent, ItemTranslation... items){
-		for (ItemTranslation item:items) { if(item.item != null) {
-			String name = item.name == null? parent.name : item.name;
-			String tooltip = item.tooltip == null? parent.tooltip : item.tooltip;
-			Color color = item.color == null? parent.color : item.color;
-			generateItems(translationBuilder, ItemTranslation.of(item.item, name, tooltip, color));
+	public static void generateItemsWithParent(@NotNull FabricLanguageProvider.TranslationBuilder translationBuilder, ItemTranslation parent, ItemTranslation... itemTranslations){
+		for (ItemTranslation itemTranslation:itemTranslations) { if(itemTranslation != null && itemTranslation.item != null) {
+			String name = itemTranslation.name == null? parent.name : itemTranslation.name;
+			String tooltip = itemTranslation.tooltip == null? parent.tooltip : itemTranslation.tooltip;
+			Color color = itemTranslation.color == null? parent.color : itemTranslation.color;
+			generateItems(translationBuilder, ItemTranslation.of(itemTranslation.item, name, tooltip, color));
 		}}
 	}
 
@@ -92,10 +95,13 @@ public class LangGenUtils {
 		ItemConvertible item; String name; String tooltip; Color color;
 		private ItemTranslation(ItemConvertible item, String name, String tooltip, Color color){ this.item = item; this.name = name; this.tooltip = tooltip; this.color = color; }
 
-		public static ItemTranslation of(ItemConvertible item, String name, String tooltip, Color color) { return new ItemTranslation(item, name, tooltip, color); }
+		public static ItemTranslation of(ItemConvertible item, String name, String tooltip, Color color) {
+			if(name == null && item != null) { name = capitalize(getItemKey(item).substring(getItemKey(item).lastIndexOf(".") + 1).replace("_", " ")); }
+			return new ItemTranslation(item, name, tooltip, color);
+		}
+		public static ItemTranslation of(ItemConvertible item, String name, String tooltip) { return of(item, name, tooltip, null); }
 		public static ItemTranslation of(ItemConvertible item, String name, Color color) { return of(item, name, null, color); }
 		public static ItemTranslation of(ItemConvertible item, String name) { return of(item, name, null, null); }
-		public static ItemTranslation of(ItemConvertible item) {
-			return of(item, capitalize(getItemKey(item).substring(getItemKey(item).lastIndexOf(".") + 1).replace("_", " ")), null, null); }
+		public static ItemTranslation of(ItemConvertible item) { return of(item, null, null, null); }
 	}
 }

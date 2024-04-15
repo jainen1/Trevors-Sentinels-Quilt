@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffectType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -22,7 +23,7 @@ public class InfiniteEffectItem extends Item {
     public InfiniteEffectItem(Settings settings, StatusEffectInstance... effects) { super(settings); this.effects = effects; }
 
     @Override public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if(!world.isClient() && entity instanceof LivingEntity livingEntity && selected){ for(StatusEffectInstance effect : effects){
+        if(world instanceof ServerWorld && entity instanceof LivingEntity livingEntity && selected){ for(StatusEffectInstance effect : effects){
 			if(!livingEntity.hasStatusEffect(effect.getEffectType())) { livingEntity.addStatusEffect(new StatusEffectInstance(effect.getEffectType(),
 				effect.getDuration(), effect.getAmplifier(), effect.isAmbient(), effect.shouldShowParticles(), effect.shouldShowIcon()));
 			}

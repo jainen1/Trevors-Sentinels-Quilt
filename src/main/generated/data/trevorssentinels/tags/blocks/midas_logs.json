@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "trevorssentinels:midas_log",
+    "trevorssentinels:midas_wood",
+    "trevorssentinels:stripped_midas_log",
+    "trevorssentinels:stripped_midas_wood"
+  ]
+}

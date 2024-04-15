@@ -15,15 +15,14 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 
 public class GrenadeEntity extends ThrownItemEntity {
     public GrenadeEntity(EntityType<? extends GrenadeEntity> entityType, World world) { super(entityType, world); }
     public GrenadeEntity(World world, LivingEntity owner) { super(ModEntities.GRENADE, owner, world); }
     public GrenadeEntity(World world, double x, double y, double z) { super(ModEntities.GRENADE, x, y, z, world); }
 
-    @Override
-    protected Item getDefaultItem() { return ModItems.SCRAP_METAL_SHARD; }
+    @Override protected Item getDefaultItem() { return TSItems.Tech.SCRAP_METAL_SHARD; }
 
     @Environment(EnvType.CLIENT)
     private ParticleEffect getParticleParameters() { // Not entirely sure, but probably has to do with the snowball's particles. (OPTIONAL)
@@ -40,20 +39,15 @@ public class GrenadeEntity extends ThrownItemEntity {
         }
     }
 
-    @Override
-    protected void onEntityHit(EntityHitResult entityHitResult) {
+    @Override protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
         entity.damage(entity.getDamageSources().mobProjectile(this, this.getOwner() instanceof LivingEntity livingEntity? livingEntity : null), 3);
     }
 
-    @Override
-    protected float getGravity() {
-        return 0.06f;
-    }
+    @Override protected float getGravity() { return 0.06f; }
 
-    @Override
-    protected void onCollision(HitResult hitResult) {
+    @Override protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
         if (!getWorld().isClient) {
             getWorld().sendEntityStatus(this, EntityStatuses.PLAY_DEATH_SOUND_OR_ADD_PROJECTILE_HIT_PARTICLES); this.discard();

@@ -20,15 +20,14 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.entity.damage.ModDamageSources;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.item.TechItems;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 
 public class ShardEntity extends ThrownItemEntity {
     public ShardEntity(EntityType<? extends ShardEntity> entityType, World world) { super(entityType, world); }
     public ShardEntity(World world, LivingEntity owner) { super(ModEntities.SHARD_PROJECTILE, owner, world); }
     public ShardEntity(World world, double x, double y, double z) { super(ModEntities.SHARD_PROJECTILE, x, y, z, world); }
 
-    @Override protected Item getDefaultItem() { return TechItems.SCRAP_METAL_SHARD; }
+    @Override protected Item getDefaultItem() { return TSItems.Tech.SCRAP_METAL_SHARD; }
 
 	public void setVelocity(float pitch, float yaw, float roll, float speed, float divergence) {
 		float x = -MathHelper.sin(yaw * 0.017453292F) * MathHelper.cos(pitch * 0.017453292F);
@@ -38,7 +37,7 @@ public class ShardEntity extends ThrownItemEntity {
 	}
 
     @Environment(EnvType.CLIENT) private ParticleEffect getParticleParameters() { // Not entirely sure, but probably has to do with the snowball's particles. (OPTIONAL)
-        ItemStack itemStack = TechItems.SCRAP_METAL_SHARD.getDefaultStack();
+        ItemStack itemStack = TSItems.Tech.SCRAP_METAL_SHARD.getDefaultStack();
         return itemStack.isEmpty() ? ParticleTypes.ITEM_SNOWBALL : new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack);
     }
 

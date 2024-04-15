@@ -9,9 +9,8 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.trevorssentinels;
-
-import static net.trevorskullcrafter.trevorssentinels.trevorssentinels.MOD_ID;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
+import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 
 public class ModLootTableModifiers {
     private static final Identifier GRASS_BLOCK_ID = new Identifier("minecraft", "blocks/grass");
@@ -20,15 +19,14 @@ public class ModLootTableModifiers {
     private static final Identifier ENDERMAN_ID = new Identifier("minecraft", "entities/enderman");
 
     public static void modifyLootTables(){
-        trevorssentinels.LOGGER.info("Placing shards in grass... (" + MOD_ID + ")");
+        trevorssentinelsMain.LOGGER.info("Placing shards in grass... (" + trevorssentinelsMain.MOD_ID + ")");
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 
             if(id.equals(GRASS_BLOCK_ID)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.RICE_SEEDS))
-                        .with(ItemEntry.builder(ModItems.SCRAP_METAL_SHARD))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
@@ -46,7 +44,7 @@ public class ModLootTableModifiers {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(3))
                         .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModItems.TRANSITITE_SHARDS))
+                        .with(ItemEntry.builder(TSItems.Magic.UNHOLY_SHARDS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 3.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

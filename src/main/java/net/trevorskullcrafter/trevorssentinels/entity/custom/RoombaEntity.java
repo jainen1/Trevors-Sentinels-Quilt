@@ -5,6 +5,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.ai.goal.LookAroundGoal;
+import net.minecraft.entity.ai.goal.TargetGoal;
 import net.minecraft.entity.ai.goal.WanderAroundGoal;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -17,23 +18,14 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib.constant.DefaultAnimations;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class RoombaEntity extends PassiveEntity implements GeoAnimatable {
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private static final RawAnimation BUMP = RawAnimation.begin().thenPlay("bump");
-
+public class RoombaEntity extends PassiveEntity {
     public RoombaEntity(EntityType<? extends PassiveEntity> entityType, World world) { super(entityType, world); }
 
     @Nullable @Override public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) { return null; }
 
     public static DefaultAttributeContainer.Builder setAttributes(){
-        return PassiveEntity.createMobAttributes()
+        return PassiveEntity.createAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 0.5D)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1f)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 1f);
@@ -47,19 +39,11 @@ public class RoombaEntity extends PassiveEntity implements GeoAnimatable {
         this.goalSelector.add(2, new WanderAroundGoal(this, 0.1f, 1));
         this.goalSelector.add(3, new LookAroundGoal(this));
 
-        this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(1, new TargetGoal<>(this, PlayerEntity.class, true));
     }
 
     @Override protected SoundEvent getAmbientSound(){ return SoundEvents.ENTITY_SILVERFISH_AMBIENT; }
     @Override protected SoundEvent getHurtSound(DamageSource source){ return SoundEvents.ENTITY_SILVERFISH_HURT; }
     @Override protected SoundEvent getDeathSound(){ return SoundEvents.ENTITY_SILVERFISH_DEATH; }
     @Override protected void playStepSound(BlockPos pos, BlockState state){ this.playSound(SoundEvents.ENTITY_SILVERFISH_STEP, 0.15f, 1.0f); }
-
-    @Override public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(DefaultAnimations.genericWalkController(this));
-    }
-
-    @Override public AnimatableInstanceCache getAnimatableInstanceCache() { return this.cache; }
-
-    @Override public double getTick(Object o) { return 0; }
 }

@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.BlockSetType;
-import net.minecraft.block.WoodType;
 import net.minecraft.block.sign.SignType;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.entity.EntityType;
@@ -24,9 +23,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.command.WorldLevelCommand;
-import net.trevorskullcrafter.trevorssentinels.item.BetaItems;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 import org.quiltmc.qsl.command.api.CommandRegistrationCallback;
 import org.quiltmc.qsl.networking.api.ServerPlayConnectionEvents;
 
@@ -40,37 +38,28 @@ public class ModRegistries {
     public static final Identifier midas = new Identifier(MOD_ID, "midas");
     public static final Identifier viridescent = new Identifier(MOD_ID, "viridescent");
     public static final Identifier cerulii = new Identifier(MOD_ID, "cerulii");
-    public static final Identifier steel = new Identifier(MOD_ID, "steel");
-    public static final Identifier holographic_blue = new Identifier(MOD_ID, "holographic_blue");
-    public static final Identifier holographic_red = new Identifier(MOD_ID, "holographic_red");
 
     public static final BlockSetType YGGDRASIL_SET = BlockSetTypeBuilder.copyOf(BlockSetType.CRIMSON).build(yggdrasil);
     public static final BlockSetType CHARRED_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(charred);
     public static final BlockSetType MIDAS_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(midas);
     public static final BlockSetType VIRIDESCENT_SET = BlockSetTypeBuilder.copyOf(BlockSetType.CHERRY).build(viridescent);
     public static final BlockSetType CERULII_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(cerulii);
-    public static final BlockSetType STEEL_SET = BlockSetTypeBuilder.copyOf(BlockSetType.IRON).soundGroup(ModSounds.STEEL_SOUNDS).build(steel);
-    public static final BlockSetType HOLOGRAPHIC_BLUE_SET = BlockSetTypeBuilder.copyOf(STEEL_SET).build(holographic_blue);
-    public static final BlockSetType HOLOGRAPHIC_RED_SET = BlockSetTypeBuilder.copyOf(STEEL_SET).build(holographic_red);
 
     public static final SignType YGGDRASIL_WOOD = WoodTypeBuilder.copyOf(SignType.CRIMSON).build(yggdrasil, YGGDRASIL_SET);
     public static final SignType CHARRED_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(charred, CHARRED_SET);
     public static final SignType MIDAS_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(midas, MIDAS_SET);
     public static final SignType VIRIDESCENT_WOOD = WoodTypeBuilder.copyOf(SignType.CHERRY).build(viridescent, VIRIDESCENT_SET);
     public static final SignType CERULII_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(cerulii, CERULII_SET);
-    public static final SignType STEEL_WOOD = WoodTypeBuilder.copyOf(SignType.ACACIA).hangingSignSoundGroup(ModSounds.STEEL_SOUNDS).build(steel, STEEL_SET);
-    public static final SignType HOLOGRAPHIC_BLUE_WOOD = WoodTypeBuilder.copyOf(STEEL_WOOD).build(holographic_blue, HOLOGRAPHIC_BLUE_SET);
-    public static final SignType HOLOGRAPHIC_RED_WOOD = WoodTypeBuilder.copyOf(STEEL_WOOD).build(holographic_red, HOLOGRAPHIC_RED_SET);
 
     public static final DefaultParticleType FLESH_PUS = FabricParticleTypes.simple();
     public static final DefaultParticleType MUZZLE_FLASH = FabricParticleTypes.simple();
 
     public static void registerModelPredicates() {
         LOGGER.info("Registering model predicates... ("+ MOD_ID + ")");
-        ModelPredicateProviderRegistry.register(BetaItems.PAPPYM_BLADE, new Identifier(MOD_ID, "bad"), (stack, world, entity, seed) -> {
+        ModelPredicateProviderRegistry.register(TSItems.Beta.PAPPYM_BLADE, new Identifier(MOD_ID, "bad"), (stack, world, entity, seed) -> {
             if (StyleUtil.getStyle(stack) == 1 || StyleUtil.getStyle(stack) == 3) return 0.2f; return 0f;}
 		);
-        ModelPredicateProviderRegistry.register(BetaItems.DISTANCE_TRACKER, new Identifier(MOD_ID, "model"), (stack, world, entity, seed) -> {
+        ModelPredicateProviderRegistry.register(TSItems.Tech.DISTANCE_TRACKER, new Identifier(MOD_ID, "model"), (stack, world, entity, seed) -> {
             if(stack.getSubNbt("trevorssentinels:model") == null) return 0.0f;
             else{
                 switch (Objects.requireNonNull(stack.getSubNbt("trevorssentinels:model")).getInt("trevorssentinels:modelNum")){
@@ -160,7 +149,7 @@ public class ModRegistries {
                 leftovers.setCustomName(TextUtil.coloredText("Cerberus, Darkness Incarnate", TextUtil.DARK_PURPLE));
                 witherEntity.getWorld().spawnEntity(leftovers);
                 for (PlayerEntity player:world.getPlayers()) {
-                    player.sendMessage(Text.literal(witherEntity.getName().getString() + " grows restless!").formatted(Formatting.RED));
+                    player.sendMessage(Text.literal(witherEntity.getName().getString() + " grows restless!").formatted(Formatting.RED), false);
                 }
                 if(serverState.worldLevel < 2) {
                     serverState.worldLevel = 2;
@@ -171,13 +160,13 @@ public class ModRegistries {
             if(serverState.worldLevel != originalLevel){ for (PlayerEntity player:world.getPlayers()) {
                 player.sendMessage(Text.empty().append(Text.literal((serverState.worldLevel > originalLevel)? "World level upgraded to " : "World level reverted to "))
                         .append(Text.literal(String.valueOf(serverState.worldLevel)).formatted(Formatting.GOLD)).append(Text.literal(" from "))
-                        .append(Text.literal(String.valueOf(originalLevel)).formatted(Formatting.RED)).append(Text.literal("!")));
+                        .append(Text.literal(String.valueOf(originalLevel)).formatted(Formatting.RED)).append(Text.literal("!")), false);
             }}
         });
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             server.getCommandManager();
-            handler.player.sendMessage(Text.literal("Welcome back, " + handler.player.getEntityName()+"!").formatted(Formatting.GREEN));
+            handler.player.sendMessage(Text.literal("Welcome back, " + handler.player.getEntityName()+"!").formatted(Formatting.GREEN), false);
             //handler.player.sendMessage(Text.translatable(new Identifier(MOD_ID, "join.");
         });
     }

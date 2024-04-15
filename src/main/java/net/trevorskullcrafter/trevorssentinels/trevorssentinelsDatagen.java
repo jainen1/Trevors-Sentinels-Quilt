@@ -7,7 +7,6 @@ import net.minecraft.registry.RegistrySetBuilder;
 import net.trevorskullcrafter.trevorssentinels.datagen.*;
 import net.trevorskullcrafter.trevorssentinels.datagen.lang.EnglishLangGenerator;
 import net.trevorskullcrafter.trevorssentinels.world.feature.ModConfiguredFeatures;
-import org.apache.http.config.RegistryBuilder;
 
 public class trevorssentinelsDatagen implements DataGeneratorEntrypoint {
     @Override public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {

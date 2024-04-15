@@ -19,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -73,12 +74,12 @@ public class DaggerItem extends Item {
     @Override public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         if (user instanceof PlayerEntity playerEntity) {
             int i = this.getMaxUseTime(stack) - remainingUseTicks;
-            if(i >= 10) { if (!world.isClient) {
-                DaggerEntity dagger = new DaggerEntity(world, user, stack.getItem().getDefaultStack(), attackDamage, destroyChance, effects);
+            if(i >= 10) { if (world instanceof ServerWorld serverWorld) {
+                DaggerEntity dagger = new DaggerEntity(serverWorld, user, stack.getItem().getDefaultStack(), attackDamage, destroyChance, effects);
                 dagger.setProperties(user, user.getPitch(), user.getYaw(), 0.0f, BowItem.getPullProgress(i) * 3.0f, 0.0f);
                 if (playerEntity.getAbilities().creativeMode) dagger.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
-                world.spawnEntity(dagger);
-                world.playSoundFromEntity(null, dagger, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS,
+                serverWorld.spawnEntity(dagger);
+                serverWorld.playSoundFromEntity(null, dagger, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS,
                         user.isSneaking()? 0.2f : 1f, 1f);
                 if (!playerEntity.getAbilities().creativeMode) stack.decrement(1);
             } playerEntity.incrementStat(Stats.USED.getOrCreateStat(stack.getItem()));

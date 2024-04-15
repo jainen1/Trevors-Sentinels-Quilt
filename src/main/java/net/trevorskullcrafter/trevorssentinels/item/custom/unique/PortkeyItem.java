@@ -5,6 +5,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -24,7 +25,7 @@ public class PortkeyItem extends Item {
 
     @Override public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand){
         ItemStack itemStack = user.getStackInHand(hand);
-        if(!world.isClient() && hand == Hand.MAIN_HAND){
+        if(world instanceof ServerWorld serverWorld && hand == Hand.MAIN_HAND){
             if(!user.isSneaking()){
                 if (itemStack.getSubNbt("trevorssentinels:teleportData") != null) {
                     if(itemStack.getDamage() <= 0){
@@ -32,19 +33,19 @@ public class PortkeyItem extends Item {
                                 Objects.requireNonNull(itemStack.getSubNbt("trevorssentinels:teleportData")).getInt("trevorssentinels:playerPosX"),
                                 Objects.requireNonNull(itemStack.getSubNbt("trevorssentinels:teleportData")).getInt("trevorssentinels:playerPosY"),
                                 Objects.requireNonNull(itemStack.getSubNbt("trevorssentinels:teleportData")).getInt("trevorssentinels:playerPosZ"));
-                        world.playSoundFromEntity(null, user, SoundEvents.ENTITY_WARDEN_SONIC_BOOM, SoundCategory.BLOCKS, 2.0f, 2.0f);
+                        serverWorld.playSoundFromEntity(null, user, SoundEvents.ENTITY_WARDEN_SONIC_BOOM, SoundCategory.BLOCKS, 2.0f, 2.0f);
                         user.getItemCooldownManager().set(this, 20);
                         itemStack.damage(itemStack.getMaxDamage()-1, user, p -> p.sendToolBreakStatus(hand));
-                        if(itemStack.getDamage() >= 0) world.playSoundFromEntity(null, user, SoundEvents.BLOCK_RESPAWN_ANCHOR_SET_SPAWN,
+                        if(itemStack.getDamage() >= 0) serverWorld.playSoundFromEntity(null, user, SoundEvents.BLOCK_RESPAWN_ANCHOR_SET_SPAWN,
                                 SoundCategory.BLOCKS, 1.0f, 1.0f);
                         return TypedActionResult.success(itemStack);
                     } else user.sendMessage(Text.literal("This item must be repaired!").formatted(Formatting.YELLOW),true);
                 } else user.sendMessage(Text.literal("You must first bind this item to a location!").formatted(Formatting.YELLOW),true);
             } else {
                 if(itemStack.getDamage() > 0){
-                    world.playSoundFromEntity(null, user, SoundEvents.BLOCK_AMETHYST_CLUSTER_BREAK, SoundCategory.BLOCKS, 1.0f,-2.0f);
+                    serverWorld.playSoundFromEntity(null, user, SoundEvents.BLOCK_AMETHYST_CLUSTER_BREAK, SoundCategory.BLOCKS, 1.0f,-2.0f);
                     itemStack.damage(-1, user, p -> p.sendToolBreakStatus(hand));
-                    if(itemStack.getDamage() <= 0) world.playSoundFromEntity(null, user, SoundEvents.BLOCK_RESPAWN_ANCHOR_SET_SPAWN,
+                    if(itemStack.getDamage() <= 0) serverWorld.playSoundFromEntity(null, user, SoundEvents.BLOCK_RESPAWN_ANCHOR_SET_SPAWN,
                             SoundCategory.BLOCKS, 1.0f,1.0f);
                     user.getItemCooldownManager().set(this,100);
                 } else {
@@ -58,7 +59,7 @@ public class PortkeyItem extends Item {
 
                     user.sendMessage(Text.literal(Objects.requireNonNull(itemStack.getSubNbt("trevorssentinels:teleportData")).getString("trevorssentinels:boundText"))
                             .formatted(Formatting.DARK_PURPLE), true);
-                    world.playSoundFromEntity(null, user, SoundEvents.ENTITY_WARDEN_SONIC_CHARGE, SoundCategory.BLOCKS, 2.0F, 2.0F);
+                    serverWorld.playSoundFromEntity(null, user, SoundEvents.ENTITY_WARDEN_SONIC_CHARGE, SoundCategory.BLOCKS, 2.0F, 2.0F);
                     user.getItemCooldownManager().set(this, 10);
                     return TypedActionResult.success(itemStack);
                 }

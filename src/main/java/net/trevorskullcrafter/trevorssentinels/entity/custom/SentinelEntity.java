@@ -1,6 +1,8 @@
 package net.trevorskullcrafter.trevorssentinels.entity.custom;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.AboveGroundTargeting;
@@ -22,6 +24,7 @@ import net.minecraft.entity.mob.*;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -32,16 +35,16 @@ import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib.core.animation.RawAnimation;
 
 import java.util.EnumSet;
 import java.util.List;
 
 public class SentinelEntity extends PathAwareEntity implements Monster, RangedAttackMob {
-    private static final RawAnimation ATTACK = RawAnimation.begin().thenPlay("attack");
     private static final TrackedData<Integer> AMMO = DataTracker.registerData(SentinelEntity.class, TrackedDataHandlerRegistry.INTEGER);
+	public final AnimationState IDLE_ANIMATION_STATE = new AnimationState();
+	private int idleAnimationTimeout = 0;
 
-    public SentinelEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
+	public SentinelEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
         this.moveControl = new FlightMoveControl(this, 30, true);
         this.lookControl = new SentinelLookControl(this);
@@ -58,6 +61,27 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 8D);
     }
 
+	private void updateAnimations(){
+		if(this.idleAnimationTimeout <= 0){
+			this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+			this.IDLE_ANIMATION_STATE.start(this.age);
+		} else { --this.idleAnimationTimeout; }
+	}
+
+	@Override
+	protected void updateLimbs(float limbDistance) {
+		float f = this.getPose() == EntityPose.STANDING ? Math.min(limbDistance * 6.0f, 1.0f) : 0.0f;
+		this.limbData.updateLimbs(f, 0.2f);
+	}
+
+	@Override
+	public void tick() {
+		super.tick();
+		if(this.getWorld() instanceof ServerWorld serverWorld){
+			updateAnimations();
+		}
+	}
+
     protected void initDataTracker() {
         super.initDataTracker();
         this.dataTracker.startTracking(AMMO, 0);
@@ -71,14 +95,15 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
     @Override public boolean isClimbing() { return false; }
 
     @Override protected void initGoals(){
-        this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.add(5, new ProjectileAttackGoal(this, 1.0f, 10, 8));
+		//this.goalSelector.add(0, new SwimGoal(this)); // otherwise mobs will drown
+        this.goalSelector.add(3, new ProjectileAttackGoal(this, 1.0f, 10, 8)); //Guardian - FireBeamGoal (?)
         this.goalSelector.add(2, new RevengeGoal(this, SentinelEntity.class));
 
-        this.goalSelector.add(6, new LookAroundGoal(this));
-        this.goalSelector.add(6, new SentinelWanderGoal());
+        this.goalSelector.add(4, new SentinelWanderGoal(this));
+		this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
+		this.goalSelector.add(6, new LookAroundGoal(this));
 
-        this.targetSelector.add(1, new TargetGoal<>(this, PlayerEntity.class, 10, true, false,
+		this.targetSelector.add(1, new TargetGoal<>(this, PlayerEntity.class, 10, true, false,
                 (entity) -> Math.abs(entity.getY() - this.getY()) <= 4.0));
         this.targetSelector.add(2, new TargetGoal<>(this, IronGolemEntity.class, true));
         this.targetSelector.add(2, new TargetGoal<>(this, PillagerEntity.class, true));
@@ -125,20 +150,21 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
         @Override protected boolean shouldStayHorizontal() { return false; }
     }
 
-    class SentinelWanderGoal extends Goal {
-        SentinelWanderGoal() { this.setControls(EnumSet.of(Control.MOVE)); }
-        public boolean canStart() { return SentinelEntity.this.navigation.isIdle() && SentinelEntity.this.random.nextInt(10) == 0; }
-        public boolean shouldContinue() { return SentinelEntity.this.navigation.isFollowingPath(); }
+    static class SentinelWanderGoal extends Goal {
+		PathAwareEntity mob;
+        SentinelWanderGoal(PathAwareEntity mob) { this.setControls(EnumSet.of(Control.MOVE)); this.mob = mob; }
+        public boolean canStart() { return mob.getNavigation().isIdle() && mob.getRandom().nextInt(10) == 0; }
+        public boolean shouldContinue() { return mob.getNavigation().isFollowingPath(); }
 
         public void start() {
             Vec3d vec3d = this.getRandomLocation();
-            if (vec3d != null) { SentinelEntity.this.navigation.startMovingAlong(SentinelEntity.this.navigation.findPathTo(BlockPos.fromPosition(vec3d), 1), 1.0); }
+            if (vec3d != null) { mob.getNavigation().startMovingAlong(mob.getNavigation().findPathTo(BlockPos.fromPosition(vec3d), 1), 1.0); }
         }
 
         @Nullable private Vec3d getRandomLocation() {
-            Vec3d vec3d2 = SentinelEntity.this.getRotationVec(0.0F);
-            Vec3d vec3d3 = AboveGroundTargeting.find(SentinelEntity.this, 8, 7, vec3d2.x, vec3d2.z, 1.5707964F, 3, 1);
-            return vec3d3 != null ? vec3d3 : NoPenaltySolidTargeting.find(SentinelEntity.this, 8, 4, -2, vec3d2.x, vec3d2.z, 1.5707963705062866);
+            Vec3d vec3d2 = mob.getRotationVec(0.0F);
+            Vec3d vec3d3 = AboveGroundTargeting.find(mob, 8, 7, vec3d2.x, vec3d2.z, 1.5707964F, 3, 1);
+            return vec3d3 != null ? vec3d3 : NoPenaltySolidTargeting.find(mob, 8, 4, -2, vec3d2.x, vec3d2.z, 1.5707963705062866);
         }
     }
 

@@ -14,10 +14,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
-import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
-import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.item.TechItems;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 import org.quiltmc.qsl.entity.extensions.api.PointOfInterestHelper;
 import org.quiltmc.qsl.entity.extensions.api.TradeOfferHelper;
@@ -69,13 +65,13 @@ public class ModVillagers {
 				8,2,0.02f));
         });
 
-        TradeOfferHelper.registerVillagerOffers(WITHERSEER,1, factories -> {
-			factories.add((entity, random) -> new TradeOffer(
-				new ItemStack(MagicItems.SOUL, 2),
-				new ItemStack(MagicItems.TRANQUIL_ESSENCE,8),
-				new ItemStack(MagicItems.DEMON_SOUL, 1),
-				16,5,0.02f));
-        });
+        //TradeOfferHelper.registerVillagerOffers(WITHERSEER,1, factories -> {
+		//	factories.add((entity, random) -> new TradeOffer(
+		//		new ItemStack(Magic.SOUL, 2),
+		//		new ItemStack(Magic.TRANQUIL_ESSENCE,8),
+		//		new ItemStack(Magic.DEMON_SOUL, 1),
+		//		16,5,0.02f));
+        //});
         TradeOfferHelper.registerVillagerOffers(WITHERSEER,2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
 				new ItemStack(Items.EMERALD, 3),

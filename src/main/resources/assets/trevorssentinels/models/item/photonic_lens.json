@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "trevorssentinels:item/photonic_lens",
+    "layer1": "trevorssentinels:item/photonic_lens_overlay"
+  }
+}

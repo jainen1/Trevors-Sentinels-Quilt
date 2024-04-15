@@ -6,10 +6,7 @@ import net.minecraft.util.Identifier;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
-import net.trevorskullcrafter.trevorssentinels.item.MagicItems;
-import net.trevorskullcrafter.trevorssentinels.item.ModArmory;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.item.TechItems;
+import net.trevorskullcrafter.trevorssentinels.item.*;
 import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 
@@ -22,39 +19,40 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 
     @Override public void generateTranslations(TranslationBuilder translationBuilder) {
 		//Magic Equipment
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, VIRIDIAN), ItemTranslation.of(MagicItems.DRYADIC_HELMET),
-			ItemTranslation.of(MagicItems.DRYADIC_CHESTPLATE), ItemTranslation.of(MagicItems.DRYADIC_LEGGINGS), ItemTranslation.of(MagicItems.DRYADIC_BOOTS),
-			ItemTranslation.of(MagicItems.DRYADIC_SWORD), ItemTranslation.of(MagicItems.DRYADIC_DAGGER));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, ROSE_GOLD), ItemTranslation.of(MagicItems.ROSE_GOLD_INGOT),
-			ItemTranslation.of(ModBlocks.ROSE_GOLD_BLOCK, "Block of Rose Gold"), ItemTranslation.of(MagicItems.ROSE_GOLD_HELMET),
-			ItemTranslation.of(MagicItems.ROSE_GOLD_CHESTPLATE, "Rose Gold Cuirass"), ItemTranslation.of(MagicItems.ROSE_GOLD_LEGGINGS),
-			ItemTranslation.of(MagicItems.ROSE_GOLD_BOOTS), ItemTranslation.of(MagicItems.ROSE_GOLD_SWORD), ItemTranslation.of(MagicItems.ROSE_GOLD_DAGGER),
-			ItemTranslation.of(MagicItems.ROSE_GOLD_PICKAXE), ItemTranslation.of(MagicItems.ROSE_GOLD_BATTLEAXE), ItemTranslation.of(MagicItems.ROSE_GOLD_SHOVEL),
-			ItemTranslation.of(MagicItems.ROSE_GOLD_SICKLE, null, "Functions as a Hoe.", null));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, VIRIDIAN), ItemTranslation.of(MagicItems.DRUIDIC_HELMET),
-			ItemTranslation.of(MagicItems.DRUIDIC_CHESTPLATE), ItemTranslation.of(MagicItems.DRUIDIC_LEGGINGS), ItemTranslation.of(MagicItems.DRUIDIC_BOOTS),
-			ItemTranslation.of(MagicItems.DRUIDIC_SWORD), ItemTranslation.of(MagicItems.DRUIDIC_DAGGER), ItemTranslation.of(MagicItems.DRUIDIC_BOW));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, IMPERIAL_ALLOY), ItemTranslation.of(MagicItems.IMPERIAL_ALLOY_INGOT),
-			ItemTranslation.of(ModBlocks.IMPERIAL_ALLOY_BLOCK, "Block of Imperial Alloy"), ItemTranslation.of(MagicItems.IMPERIAL_HELMET),
-			ItemTranslation.of(MagicItems.IMPERIAL_CHESTPLATE), ItemTranslation.of(MagicItems.IMPERIAL_LEGGINGS), ItemTranslation.of(MagicItems.IMPERIAL_BOOTS),
-			ItemTranslation.of(MagicItems.IMPERIAL_SWORD), ItemTranslation.of(MagicItems.IMPERIAL_GLADIUS), ItemTranslation.of(MagicItems.IMPERIAL_PICKAXE),
-			ItemTranslation.of(MagicItems.IMPERIAL_BATTLEAXE), ItemTranslation.of(MagicItems.IMPERIAL_SHOVEL),
-			ItemTranslation.of(MagicItems.IMPERIAL_SICKLE, null, "Functions as a Hoe.", null));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, VIRIDIAN), ItemTranslation.of(TSItems.Magic.DRYADIC_HELMET),
+			ItemTranslation.of(TSItems.Magic.DRYADIC_CHESTPLATE), ItemTranslation.of(TSItems.Magic.DRYADIC_LEGGINGS), ItemTranslation.of(TSItems.Magic.DRYADIC_BOOTS),
+			ItemTranslation.of(TSItems.Magic.DRYADIC_SWORD), ItemTranslation.of(TSItems.Magic.DRYADIC_DAGGER), ItemTranslation.of(TSItems.Magic.ENCHANTED_LEAF));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, ROSE_GOLD), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_INGOT),
+			ItemTranslation.of(ModBlocks.ROSE_GOLD_BLOCK, "Block of Rose Gold"), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_HELMET),
+			ItemTranslation.of(TSItems.Magic.ROSE_GOLD_CHESTPLATE, "Rose Gold Cuirass"), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_LEGGINGS),
+			ItemTranslation.of(TSItems.Magic.ROSE_GOLD_BOOTS), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_SWORD), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_DAGGER),
+			ItemTranslation.of(TSItems.Magic.ROSE_GOLD_PICKAXE), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_BATTLEAXE), ItemTranslation.of(TSItems.Magic.ROSE_GOLD_SHOVEL),
+			ItemTranslation.of(TSItems.Magic.ROSE_GOLD_SICKLE, null, "Functions as a Hoe."));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, VIRIDIAN), ItemTranslation.of(TSItems.Magic.DRUIDIC_HELMET),
+			ItemTranslation.of(TSItems.Magic.DRUIDIC_CHESTPLATE), ItemTranslation.of(TSItems.Magic.DRUIDIC_LEGGINGS), ItemTranslation.of(TSItems.Magic.DRUIDIC_BOOTS),
+			ItemTranslation.of(TSItems.Magic.DRUIDIC_SWORD), ItemTranslation.of(TSItems.Magic.DRUIDIC_DAGGER), ItemTranslation.of(TSItems.Magic.DRUIDIC_BOW),
+			ItemTranslation.of(TSItems.Magic.DRUIDIC_GEM));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, IMPERIAL_ALLOY), ItemTranslation.of(TSItems.Magic.IMPERIAL_ALLOY_INGOT),
+			ItemTranslation.of(ModBlocks.IMPERIAL_ALLOY_BLOCK, "Block of Imperial Alloy"), ItemTranslation.of(TSItems.Magic.IMPERIAL_HELMET),
+			ItemTranslation.of(TSItems.Magic.IMPERIAL_CHESTPLATE), ItemTranslation.of(TSItems.Magic.IMPERIAL_LEGGINGS), ItemTranslation.of(TSItems.Magic.IMPERIAL_BOOTS),
+			ItemTranslation.of(TSItems.Magic.IMPERIAL_SWORD), ItemTranslation.of(TSItems.Magic.IMPERIAL_GLADIUS), ItemTranslation.of(TSItems.Magic.IMPERIAL_PICKAXE),
+			ItemTranslation.of(TSItems.Magic.IMPERIAL_BATTLEAXE), ItemTranslation.of(TSItems.Magic.IMPERIAL_SHOVEL),
+			ItemTranslation.of(TSItems.Magic.IMPERIAL_SICKLE, null, "Functions as a Hoe."));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, LIGHT_PURPLE),
-			ItemTranslation.of(MagicItems.THANATU_HELMET, "Macabre Skull", "The skull of the demon king.", null),
-			ItemTranslation.of(MagicItems.THANATU_CHESTPLATE, "Macabre Shoulderpads"), ItemTranslation.of(MagicItems.THANATU_LEGGINGS, "Macabre Loincloth"),
-			ItemTranslation.of(MagicItems.THANATU_BOOTS, "Macabre Sandals"));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, LIGHT_PURPLE), ItemTranslation.of(MagicItems.UNHOLY_SHARDS),
-			ItemTranslation.of(MagicItems.UNHOLY_INGOT, null, "Reflects only the light in darkness.", null),
-			ItemTranslation.of(ModBlocks.UNHOLY_BLOCK, "Block of Unholy Alloy"), ItemTranslation.of(MagicItems.UNHOLY_HELMET),
-			ItemTranslation.of(MagicItems.UNHOLY_CHESTPLATE, "Unholy Cuirass"), ItemTranslation.of(MagicItems.UNHOLY_LEGGINGS),
-			ItemTranslation.of(MagicItems.UNHOLY_BOOTS), ItemTranslation.of(MagicItems.UNHOLY_SWORD), ItemTranslation.of(MagicItems.UNHOLY_DAGGER),
-			ItemTranslation.of(MagicItems.UNHOLY_PICKAXE), ItemTranslation.of(MagicItems.UNHOLY_BATTLEAXE), ItemTranslation.of(MagicItems.UNHOLY_SHOVEL),
-			ItemTranslation.of(MagicItems.UNHOLY_SICKLE, null, "Functions as a Hoe.", null));
-		generateItems(translationBuilder, ItemTranslation.of(MagicItems.ARMA_DEI_HELMET), ItemTranslation.of(MagicItems.ARMA_DEI_CHESTPLATE),
-			ItemTranslation.of(MagicItems.ARMA_DEI_LEGGINGS), ItemTranslation.of(MagicItems.ARMA_DEI_BOOTS), ItemTranslation.of(MagicItems.ARMA_DEI_SWORD),
-			ItemTranslation.of(MagicItems.ARMA_DEI_DAGGER), ItemTranslation.of(MagicItems.ARMA_DEI_PICKAXE), ItemTranslation.of(MagicItems.ARMA_DEI_BATTLEAXE),
-			ItemTranslation.of(MagicItems.ARMA_DEI_SHOVEL), ItemTranslation.of(MagicItems.ARMA_DEI_SICKLE, null, "Functions as a Hoe.", null));
+			ItemTranslation.of(TSItems.Magic.THANATU_HELMET, "Macabre Skull", "The skull of the demon king."),
+			ItemTranslation.of(TSItems.Magic.THANATU_CHESTPLATE, "Macabre Shoulderpads"), ItemTranslation.of(TSItems.Magic.THANATU_LEGGINGS, "Macabre Loincloth"),
+			ItemTranslation.of(TSItems.Magic.THANATU_BOOTS, "Macabre Sandals"));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, LIGHT_PURPLE), ItemTranslation.of(TSItems.Magic.UNHOLY_SHARDS),
+			ItemTranslation.of(TSItems.Magic.UNHOLY_INGOT, null, "Reflects only the light in darkness."),
+			ItemTranslation.of(ModBlocks.UNHOLY_BLOCK, "Block of Unholy Alloy"), ItemTranslation.of(TSItems.Magic.UNHOLY_HELMET),
+			ItemTranslation.of(TSItems.Magic.UNHOLY_CHESTPLATE, "Unholy Cuirass"), ItemTranslation.of(TSItems.Magic.UNHOLY_LEGGINGS),
+			ItemTranslation.of(TSItems.Magic.UNHOLY_BOOTS), ItemTranslation.of(TSItems.Magic.UNHOLY_SWORD), ItemTranslation.of(TSItems.Magic.UNHOLY_DAGGER),
+			ItemTranslation.of(TSItems.Magic.UNHOLY_PICKAXE), ItemTranslation.of(TSItems.Magic.UNHOLY_BATTLEAXE), ItemTranslation.of(TSItems.Magic.UNHOLY_SHOVEL),
+			ItemTranslation.of(TSItems.Magic.UNHOLY_SICKLE, null, "Functions as a Hoe."));
+		generateItems(translationBuilder, ItemTranslation.of(TSItems.Magic.ARMA_DEI_HELMET), ItemTranslation.of(TSItems.Magic.ARMA_DEI_CHESTPLATE),
+			ItemTranslation.of(TSItems.Magic.ARMA_DEI_LEGGINGS), ItemTranslation.of(TSItems.Magic.ARMA_DEI_BOOTS), ItemTranslation.of(TSItems.Magic.ARMA_DEI_SWORD),
+			ItemTranslation.of(TSItems.Magic.ARMA_DEI_DAGGER), ItemTranslation.of(TSItems.Magic.ARMA_DEI_PICKAXE), ItemTranslation.of(TSItems.Magic.ARMA_DEI_BATTLEAXE),
+			ItemTranslation.of(TSItems.Magic.ARMA_DEI_SHOVEL), ItemTranslation.of(TSItems.Magic.ARMA_DEI_SICKLE, null, "Functions as a Hoe."));
 
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.WAX_INFUSED_COPPER_BLOCK, "Wax-Infused Block of Copper"));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.STARSTEEL_LAMP));
@@ -62,112 +60,114 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.BATTERY));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.FUSEBOX));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.FANCY_COMPUTER));
-		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.BLACK_AGILITY_BLOCK, "Steel Magno-Repulsion Block", "Watch your step.", null));
+		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.BLACK_AGILITY_BLOCK, "Steel Magno-Repulsion Block", "Watch your step."));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SENTINEL_CRIMSON_T1), ItemTranslation.of(ModBlocks.BIG_RED_BUTTON),
-			ItemTranslation.of(ModBlocks.BIG_RED_PLATE, null, "1500 Megawatt Super Colliding Super Plate", null));
+			ItemTranslation.of(ModBlocks.BIG_RED_PLATE, null, "1500 Megawatt Super Colliding Super Plate"));
 
 		//Tech Equipment
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SCRAP_METAL), ItemTranslation.of(TechItems.SCRAP_METAL_SHARD),
-			ItemTranslation.of(ModBlocks.SCRAP_METAL_BLOCK), ItemTranslation.of(ModBlocks.CHISELED_SCRAP_METAL_BLOCK), ItemTranslation.of(TechItems.SCRAP_METAL_HELMET),
-			ItemTranslation.of(TechItems.SCRAP_METAL_CHESTPLATE), ItemTranslation.of(TechItems.SCRAP_METAL_LEGGINGS), ItemTranslation.of(TechItems.SCRAP_METAL_BOOTS),
-			ItemTranslation.of(TechItems.SCRAP_METAL_SWORD), ItemTranslation.of(TechItems.SCRAP_METAL_KNIFE), ItemTranslation.of(TechItems.SCRAP_METAL_DRILL),
-			ItemTranslation.of(TechItems.SCRAP_METAL_CHAINSAW, null, "Right click to launch shards at enemies!", null),
-			ItemTranslation.of(TechItems.SCRAP_METAL_SHOVEL), ItemTranslation.of(TechItems.SCRAP_METAL_HOE));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TechItems.INDUSTRIAL_HELMET),
-			ItemTranslation.of(TechItems.INDUSTRIAL_HARNESS), ItemTranslation.of(TechItems.INDUSTRIAL_PANTS), ItemTranslation.of(TechItems.INDUSTRIAL_BOOTS),
-			ItemTranslation.of(TechItems.INDUSTRIAL_CROWBAR, null, "Rise, and... shine.", null));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TechItems.STARSTEEL_INGOT),
-			ItemTranslation.of(ModBlocks.STARSTEEL_BLOCK, "Block of Starsteel"),
-			ItemTranslation.of(ModBlocks.CHISELED_STARSTEEL_BLOCK, "Chiseled Block of Starsteel"), ItemTranslation.of(ModBlocks.STAINLESS_STEEL_BLOCK),
-			ItemTranslation.of(ModBlocks.STARSTEEL_LADDER), ItemTranslation.of(TechItems.STARSTEEL_HANGING_SIGN), ItemTranslation.of(TechItems.STARSTEEL_HANGING_SIGN),
-			ItemTranslation.of(TechItems.STARSTEEL_HELMET), ItemTranslation.of(TechItems.STARSTEEL_CHESTPLATE), ItemTranslation.of(TechItems.STARSTEEL_LEGGINGS),
-			ItemTranslation.of(TechItems.STARSTEEL_BOOTS), ItemTranslation.of(TechItems.STARSTEEL_SWORD), ItemTranslation.of(TechItems.STARSTEEL_KNIFE),
-			ItemTranslation.of(TechItems.STARSTEEL_DRILL), ItemTranslation.of(TechItems.STARSTEEL_AXE), ItemTranslation.of(TechItems.STARSTEEL_SHOVEL),
-			ItemTranslation.of(TechItems.STARSTEEL_HOE));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, NUCLEAR), ItemTranslation.of(TechItems.NUCLEAR_INGOT),
-			ItemTranslation.of(ModBlocks.NUCLEAR_ORE), ItemTranslation.of(ModBlocks.NUCLEAR_BLOCK, "Nuclear Storage Block"), ItemTranslation.of(TechItems.NUCLEAR_ROCKET),
-			ItemTranslation.of(TechItems.NUCLEAR_HELMET), ItemTranslation.of(TechItems.NUCLEAR_CHESTPLATE), ItemTranslation.of(TechItems.NUCLEAR_LEGGINGS),
-			ItemTranslation.of(TechItems.NUCLEAR_BOOTS), ItemTranslation.of(TechItems.NUCLEAR_SWORD, null, "Irradiates enemies.", null),
-			ItemTranslation.of(TechItems.NUCLEAR_VIBROKNIFE, null, "Irradiates enemies.", null), ItemTranslation.of(TechItems.NUCLEAR_DRILL),
-			ItemTranslation.of(TechItems.NUCLEAR_AXE), ItemTranslation.of(TechItems.NUCLEAR_SHOVEL), ItemTranslation.of(TechItems.NUCLEAR_HOE));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, BLOOD_RED), ItemTranslation.of(TechItems.NANOTECH_CAPSULE),
-			ItemTranslation.of(ModBlocks.NANOTECH_BLOCK, "Nanotech Storage Block"), ItemTranslation.of(TechItems.NANOTECH_HELMET),
-			ItemTranslation.of(TechItems.NANOTECH_CHESTPLATE), ItemTranslation.of(TechItems.NANOTECH_LEGGINGS), ItemTranslation.of(TechItems.NANOTECH_BOOTS),
-			ItemTranslation.of(TechItems.NANOTECH_SWORD, null, "\"I've even forgotten my name...\"", null),
-			ItemTranslation.of(TechItems.NANOTECH_VIBROKNIFE), ItemTranslation.of(TechItems.NANOTECH_DRILL), ItemTranslation.of(TechItems.NANOTECH_AXE),
-			ItemTranslation.of(TechItems.NANOTECH_SHOVEL), ItemTranslation.of(TechItems.NANOTECH_HOE));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SCRAP_METAL), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_SHARD),
+			ItemTranslation.of(ModBlocks.SCRAP_METAL_BLOCK), ItemTranslation.of(ModBlocks.CHISELED_SCRAP_METAL_BLOCK), ItemTranslation.of(ModBlocks.SCRAP_METAL_PILLAR),
+			ItemTranslation.of(TSItems.Tech.SCRAP_METAL_HELMET),
+			ItemTranslation.of(TSItems.Tech.SCRAP_METAL_CHESTPLATE), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_LEGGINGS), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_BOOTS),
+			ItemTranslation.of(TSItems.Tech.SCRAP_METAL_SWORD), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_KNIFE), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_DRILL),
+			ItemTranslation.of(TSItems.Tech.SCRAP_METAL_CHAINSAW, null, "Right click to launch shards at enemies!"),
+			ItemTranslation.of(TSItems.Tech.SCRAP_METAL_SHOVEL), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_HOE), ItemTranslation.of(TSItems.Tech.SCRAP_METAL_PHASER));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TSItems.Tech.INDUSTRIAL_HELMET),
+			ItemTranslation.of(TSItems.Tech.INDUSTRIAL_HARNESS), ItemTranslation.of(TSItems.Tech.INDUSTRIAL_PANTS), ItemTranslation.of(TSItems.Tech.INDUSTRIAL_BOOTS),
+			ItemTranslation.of(TSItems.Tech.INDUSTRIAL_CROWBAR, null, "Rise, and... shine."), ItemTranslation.of(TSItems.Tech.INDUSTRIAL_PHASER));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TSItems.Tech.STARSTEEL_INGOT),
+			ItemTranslation.of(ModBlocks.STARSTEEL_BLOCK, "Block of Starsteel"), ItemTranslation.of(ModBlocks.CHISELED_STARSTEEL_BLOCK, "Chiseled Block of Starsteel"),
+			ItemTranslation.of(ModBlocks.STAINLESS_STEEL_BLOCK), ItemTranslation.of(ModBlocks.STARSTEEL_LADDER), ItemTranslation.of(TSItems.Tech.STARSTEEL_SIGN),
+			ItemTranslation.of(TSItems.Tech.STARSTEEL_HANGING_SIGN), ItemTranslation.of(TSItems.Tech.STARSTEEL_HELMET), ItemTranslation.of(TSItems.Tech.STARSTEEL_CHESTPLATE),
+			ItemTranslation.of(TSItems.Tech.STARSTEEL_LEGGINGS), ItemTranslation.of(TSItems.Tech.STARSTEEL_BOOTS), ItemTranslation.of(TSItems.Tech.STARSTEEL_SWORD),
+			ItemTranslation.of(TSItems.Tech.STARSTEEL_KNIFE), ItemTranslation.of(TSItems.Tech.STARSTEEL_DRILL), ItemTranslation.of(TSItems.Tech.STARSTEEL_AXE),
+			ItemTranslation.of(TSItems.Tech.STARSTEEL_SHOVEL), ItemTranslation.of(TSItems.Tech.STARSTEEL_HOE), ItemTranslation.of(TSItems.Tech.STARSTEEL_PHASER));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, NUCLEAR), ItemTranslation.of(TSItems.Tech.NUCLEAR_INGOT),
+			ItemTranslation.of(ModBlocks.NUCLEAR_ORE), ItemTranslation.of(ModBlocks.NUCLEAR_BLOCK, "Nuclear Storage Block"), ItemTranslation.of(TSItems.Tech.NUCLEAR_ROCKET),
+			ItemTranslation.of(TSItems.Tech.NUCLEAR_HELMET), ItemTranslation.of(TSItems.Tech.NUCLEAR_CHESTPLATE), ItemTranslation.of(TSItems.Tech.NUCLEAR_LEGGINGS),
+			ItemTranslation.of(TSItems.Tech.NUCLEAR_BOOTS), ItemTranslation.of(TSItems.Tech.NUCLEAR_SWORD, null, "Irradiates enemies."),
+			ItemTranslation.of(TSItems.Tech.NUCLEAR_VIBROKNIFE, null, "Irradiates enemies."), ItemTranslation.of(TSItems.Tech.NUCLEAR_DRILL),
+			ItemTranslation.of(TSItems.Tech.NUCLEAR_AXE), ItemTranslation.of(TSItems.Tech.NUCLEAR_SHOVEL), ItemTranslation.of(TSItems.Tech.NUCLEAR_HOE),
+			ItemTranslation.of(TSItems.Tech.NUCLEAR_PHASER));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, BLOOD_RED), ItemTranslation.of(TSItems.Tech.NANOTECH_CAPSULE),
+			ItemTranslation.of(ModBlocks.NANOTECH_BLOCK, "Nanotech Storage Block"), ItemTranslation.of(TSItems.Tech.NANOTECH_HELMET),
+			ItemTranslation.of(TSItems.Tech.NANOTECH_CHESTPLATE), ItemTranslation.of(TSItems.Tech.NANOTECH_LEGGINGS), ItemTranslation.of(TSItems.Tech.NANOTECH_BOOTS),
+			ItemTranslation.of(TSItems.Tech.NANOTECH_SWORD, null, "\"I've even forgotten my name...\""),
+			ItemTranslation.of(TSItems.Tech.NANOTECH_VIBROKNIFE), ItemTranslation.of(TSItems.Tech.NANOTECH_DRILL), ItemTranslation.of(TSItems.Tech.NANOTECH_AXE),
+			ItemTranslation.of(TSItems.Tech.NANOTECH_SHOVEL), ItemTranslation.of(TSItems.Tech.NANOTECH_HOE), ItemTranslation.of(TSItems.Tech.NANOTECH_PHASER));
 
 		//Transcendent Equipment
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, DARK_GREEN),
-			ItemTranslation.of(TechItems.ZENITHIUM_CLUSTER, null, "The concentrated essence of a galaxy.", null),
-			ItemTranslation.of(TechItems.ZENITHIUM_HELMET), ItemTranslation.of(TechItems.ZENITHIUM_CHESTPLATE), ItemTranslation.of(TechItems.ZENITHIUM_LEGGINGS),
-			ItemTranslation.of(TechItems.ZENITHIUM_BOOTS), ItemTranslation.of(TechItems.ZENITHIUM_SWORD), ItemTranslation.of(TechItems.ZENITHIUM_DAGGER),
-			ItemTranslation.of(TechItems.ZENITHIUM_PICKAXE), ItemTranslation.of(TechItems.ZENITHIUM_AXE), ItemTranslation.of(TechItems.ZENITHIUM_SHOVEL),
-			ItemTranslation.of(TechItems.ZENITHIUM_HOE));
+			ItemTranslation.of(TSItems.Tech.ZENITHIUM_CLUSTER, null, "The concentrated essence of a galaxy."),
+			ItemTranslation.of(TSItems.Tech.ZENITHIUM_HELMET), ItemTranslation.of(TSItems.Tech.ZENITHIUM_CHESTPLATE), ItemTranslation.of(TSItems.Tech.ZENITHIUM_LEGGINGS),
+			ItemTranslation.of(TSItems.Tech.ZENITHIUM_BOOTS), ItemTranslation.of(TSItems.Tech.ZENITHIUM_SWORD), ItemTranslation.of(TSItems.Tech.ZENITHIUM_DAGGER),
+			ItemTranslation.of(TSItems.Tech.ZENITHIUM_PICKAXE), ItemTranslation.of(TSItems.Tech.ZENITHIUM_AXE), ItemTranslation.of(TSItems.Tech.ZENITHIUM_SHOVEL),
+			ItemTranslation.of(TSItems.Tech.ZENITHIUM_HOE), ItemTranslation.of(TSItems.Tech.ZENITHIUM_PHASER));
 
-		generateItems(translationBuilder, ItemTranslation.of(MagicItems.COPPER_GLADIUS, null, "An ornamental blade of goblin tradition.", COPPER));
-		generateItems(translationBuilder, ItemTranslation.of(MagicItems.COPPER_ARM, null, "Contains a remnant of the goddess's power.", COPPER));
+		generateItems(translationBuilder, ItemTranslation.of(TSItems.Magic.COPPER_GLADIUS, null, "An ornamental blade of goblin tradition.", COPPER));
 		//Blacksmith's Welding Mask, Mad Scientist's Lab Coat
 
         generateItems(translationBuilder,
-			ItemTranslation.of(MagicItems.PAPPYM_BLADE, "Jade Seraphim", "Passed down through ancient tradition... and now it has found its way to you.", GREEN),
-			ItemTranslation.of(MagicItems.PAPPYD_BLADE, "Hell's Flaming Fury", HELLFIRE),
-			ItemTranslation.of(MagicItems.THANATU_BLADE, "Harmonious Rapture", LIGHT_PURPLE),
-			ItemTranslation.of(MagicItems.MORPHEUS_BLADE, "Thunderous Legacy", AQUA),
-			ItemTranslation.of(MagicItems.SKYLAR_BLADE, "Equitous Retribution", SHINY_GOLD),
-			ItemTranslation.of(MagicItems.LILITH_BLADE, "Unwavering Judgement", DUNE_TAN),
-			ItemTranslation.of(MagicItems.TREVOR_BLADE, "blade_null", SENTINEL_AQUA_T1),
-			ItemTranslation.of(MagicItems.KINGS_BLADE, "Stainless Resolve"),
+			ItemTranslation.of(TSItems.Beta.PAPPYM_BLADE, "Jade Seraphim", "Passed down through ancient tradition... and now it has found its way to you.", GREEN),
+			ItemTranslation.of(TSItems.Beta.PAPPYD_BLADE, "Hell's Flaming Fury", HELLFIRE),
+			ItemTranslation.of(TSItems.Beta.THANATU_BLADE, "Harmonious Rapture", LIGHT_PURPLE),
+			ItemTranslation.of(TSItems.Beta.SKYLAR_BLADE, "Equitous Retribution", SHINY_GOLD),
+			ItemTranslation.of(TSItems.Beta.LILITH_BLADE, "Unwavering Judgement", DUNE_TAN),
+			ItemTranslation.of(TSItems.Beta.KINGS_BLADE, "Stainless Resolve", WHITE),
 			ItemTranslation.of(ModArmory.SCARA_SHEARS, "SCARA Shears", "A military-grade threat.", DARK_PURPLE),
 			ItemTranslation.of(ModArmory.MASTER_SWORD, "The Master's Sword", "From a distant universe...", AQUA));
-        generateItems(translationBuilder,
-			ItemTranslation.of(TechItems.SCRAP_METAL_PHASER),
-			ItemTranslation.of(TechItems.STARSTEEL_PHASER),
-			ItemTranslation.of(TechItems.NANOTECH_PHASER),
-			ItemTranslation.of(TechItems.ZENITHIUM_PHASER),
-			ItemTranslation.of(TechItems.VILE_SPITTER, null, "It's alive!", FLESH_PINK)
+        generateItems(translationBuilder, ItemTranslation.of(TSItems.Tech.VILE_SPITTER, null, "It's alive!", FLESH_PINK)
 
-			/*ItemTranslation.of(TechItems.LASER_PISTOL, "NUMA-28 Comet", "\"Fast and portable!\"", STARSTEEL),
-			ItemTranslation.of(TechItems.LASER_TASER, "Enforcer-Standard Taser", "\"Non-lethal.\"", AQUA),
-			ItemTranslation.of(TechItems.LASER_SNIPER_ECHO, "NUMA-52 Echo", "\"They'll never see it coming!\"", DUNE_TAN),
-			ItemTranslation.of(TechItems.LASER_MINIGUN, "UTARI-91 Serenity", "\"Keep the peace!\"", BLUE),
-			ItemTranslation.of(TechItems.LASER_RIFLE, "NUMA-63 Agnostyk", "\"Packs a punch!\"", MOSS),
-			ItemTranslation.of(TechItems.LASER_SHOTGUN, "KHAOS-66 Tremor", "\"Rip and tear!\"", HELLFIRE),
-			ItemTranslation.of(TechItems.LASER_HEALER, "PW49 Firebird", "\"Those who can't do, heal!\"", SHINY_GOLD),
-			ItemTranslation.of(TechItems.LASER_SNIPER, "PW88 Shadow", "\"The assassin's weapon of choice!\"", DARK_PURPLE),
-			ItemTranslation.of(TechItems.LASER_SPREADER, "PW76 Pandemic", "\"Filled with a toxic bioweapon.\"", GREEN),
-			ItemTranslation.of(TechItems.LASER_REVOLVER, "Drunkard's Handcannon", "\"But you have heard of me!\"", null),*/);
+			/*ItemTranslation.of(TSItems.Tech.LASER_PISTOL, "NUMA-28 Comet", "\"Fast and portable!\"", STARSTEEL),
+			ItemTranslation.of(TSItems.Tech.LASER_TASER, "Enforcer-Standard Taser", "\"Non-lethal.\"", AQUA),
+			ItemTranslation.of(TSItems.Tech.LASER_SNIPER_ECHO, "NUMA-52 Echo", "\"They'll never see it coming!\"", DUNE_TAN),
+			ItemTranslation.of(TSItems.Tech.LASER_MINIGUN, "UTARI-91 Serenity", "\"Keep the peace!\"", BLUE),
+			ItemTranslation.of(TSItems.Tech.LASER_RIFLE, "NUMA-63 Agnostyk", "\"Packs a punch!\"", MOSS),
+			ItemTranslation.of(TSItems.Tech.LASER_SHOTGUN, "KHAOS-66 Tremor", "\"Rip and tear!\"", HELLFIRE),
+			ItemTranslation.of(TSItems.Tech.LASER_HEALER, "PW49 Firebird", "\"Those who can't do, heal!\"", SHINY_GOLD),
+			ItemTranslation.of(TSItems.Tech.LASER_SNIPER, "PW88 Shadow", "\"The assassin's weapon of choice!\"", DARK_PURPLE),
+			ItemTranslation.of(TSItems.Tech.LASER_SPREADER, "PW76 Pandemic", "\"Filled with a toxic bioweapon.\"", GREEN),
+			ItemTranslation.of(TSItems.Tech.LASER_REVOLVER, "Drunkard's Handcannon", "\"But you have heard of me!\"", null),*/);
 		generateItems(translationBuilder,
-			ItemTranslation.of(MagicItems.RESISTANCE_ITEM, "Shield Badge", GRAY),
-			ItemTranslation.of(MagicItems.FIRE_RESISTANCE_ITEM, "Flaming Badge", HELLFIRE), //shield badge, fire stuff
-			ItemTranslation.of(MagicItems.JUMP_BOOST_ITEM, "Icarus' Gust", NUCLEAR),
-			ItemTranslation.of(MagicItems.STRENGTH_ITEM, "Sword Badge", GRAY), //shattered sword, iron ingots?
-			ItemTranslation.of(MagicItems.WEAKNESS_ITEM, "Shattered Sword", "A reminder of past failures.", null),
-			ItemTranslation.of(MagicItems.REGENERATION_ITEM, "Ever-Beating Heart"), //leviathan stuff
-			ItemTranslation.of(MagicItems.WATER_BREATHING_ITEM, "Abyssal Bubbles"),
-			ItemTranslation.of(MagicItems.INVISIBILITY_ITEM, "Vampire's Mirror"),
-			ItemTranslation.of(MagicItems.DOLPHINS_GRACE_ITEM, "Foam Dolphin Plush", "Its silky skin makes one feel hydrodynamic.", DOLPHIN),
-			ItemTranslation.of(MagicItems.CONDUIT_POWER_ITEM, "Eye of the Sea"),
-			ItemTranslation.of(MagicItems.NIGHT_VISION_ITEM, "Feline Eye"),
-			ItemTranslation.of(MagicItems.HERO_OF_THE_VILLAGE_ITEM, "Hero's Emerald", "Gifted to heroes of legend.", NUCLEAR),
-			ItemTranslation.of(MagicItems.PALADINS_BADGE, null, "The mark of a true warrior of light.", SHINY_GOLD), //flaming badge, sword badge
-			ItemTranslation.of(MagicItems.CYBERNETIC_STOMACH, null, null, SCRAP_METAL),
-			ItemTranslation.of(MagicItems.ONE_PENCE, "The One Pence", "Wealth, Fame, Power.", COPPER));
+			ItemTranslation.of(TSItems.Tech.PAINT_PACK),
+			ItemTranslation.of(TSItems.Tech.PHOTONIC_LENS),
+			ItemTranslation.of(TSItems.Tech.COUNTERFORCE_DIFFUSER),
+			ItemTranslation.of(TSItems.Tech.PHASE_ASSIMILATOR),
+			ItemTranslation.of(TSItems.Tech.SMOKE_CAPSULE),
+			ItemTranslation.of(TSItems.Tech.POISON_CAPSULE),
+			ItemTranslation.of(TSItems.Tech.WITHER_CAPSULE),
+			ItemTranslation.of(TSItems.Tech.REGENERATION_CAPSULE));
+		generateItems(translationBuilder,
+			ItemTranslation.of(TSItems.Magic.RESISTANCE_ITEM, "Shield Badge", GRAY),
+			ItemTranslation.of(TSItems.Magic.FIRE_RESISTANCE_ITEM, "Flaming Badge", HELLFIRE), //shield badge, fire stuff
+			ItemTranslation.of(TSItems.Magic.JUMP_BOOST_ITEM, "Icarus' Gust", NUCLEAR),
+			ItemTranslation.of(TSItems.Magic.STRENGTH_ITEM, "Sword Badge", GRAY), //shattered sword, iron ingots?
+			ItemTranslation.of(TSItems.Magic.WEAKNESS_ITEM, "Shattered Sword", "A reminder of past failures."),
+			ItemTranslation.of(TSItems.Magic.REGENERATION_ITEM, "Ever-Beating Heart"), //leviathan stuff
+			ItemTranslation.of(TSItems.Magic.WATER_BREATHING_ITEM, "Abyssal Bubbles"),
+			ItemTranslation.of(TSItems.Magic.INVISIBILITY_ITEM, "Vampire's Mirror"),
+			ItemTranslation.of(TSItems.Magic.DOLPHINS_GRACE_ITEM, "Foam Dolphin Plush", "Its silky skin makes one feel hydrodynamic.", DOLPHIN),
+			ItemTranslation.of(TSItems.Magic.CONDUIT_POWER_ITEM, "Eye of the Sea"),
+			ItemTranslation.of(TSItems.Magic.NIGHT_VISION_ITEM, "Feline Eye"),
+			ItemTranslation.of(TSItems.Magic.HERO_OF_THE_VILLAGE_ITEM, "Hero's Emerald", "Gifted to heroes of legend.", NUCLEAR),
+			ItemTranslation.of(TSItems.Magic.PALADINS_BADGE, null, "The mark of a true warrior of light.", SHINY_GOLD), //flaming badge, sword badge
+			ItemTranslation.of(TSItems.Magic.CYBERNETIC_STOMACH, null, SCRAP_METAL),
+			ItemTranslation.of(TSItems.Magic.ONE_PENCE, "The One Pence", "Wealth, Fame, Power.", COPPER));
 
 		generateItems(translationBuilder,
 			ItemTranslation.of(ModItems.SENTINEL_SPAWN_EGG, "Sentinel Spawn Beacon", "A mindless drone for the hive.", SCRAP_METAL),
 			ItemTranslation.of(ModItems.ROOMBA_SPAWN_EGG, "Sentinel Cleaning Droid", "Once a human, now a living sanitizer.", SCRAP_METAL),
 			ItemTranslation.of(ModItems.FLORBUS_SPAWN_EGG, "Florbus Spawn Sac"));
-		generateItems(translationBuilder, ItemTranslation.of(ModItems.VENDOR_TOKEN, null, null, VENDOR_TOKEN), ItemTranslation.of(ModItems.LEGENDARY_TOKEN));
+		generateItems(translationBuilder, ItemTranslation.of(ModItems.VENDOR_TOKEN, null, VENDOR_TOKEN), ItemTranslation.of(ModItems.LEGENDARY_TOKEN));
 
-		generateMusicDisc(translationBuilder, ItemTranslation.of(TechItems.MUSIC_DISC_ASSASSINATION_UPLOAD, "Scrapped Cassette"),
+		generateMusicDisc(translationBuilder, ItemTranslation.of(TSItems.Tech.MUSIC_DISC_ASSASSINATION_UPLOAD, "Scrapped Cassette"),
 			"Kristoffer Kaufmann - Assassination Upload", ModSounds.ASSASSINATION_UPLOAD);
-		generateMusicDisc(translationBuilder, ItemTranslation.of(TechItems.MUSIC_DISC_ODE_TO_TRANQUILITY, "Music Disc"),
+		generateMusicDisc(translationBuilder, ItemTranslation.of(TSItems.Tech.MUSIC_DISC_ODE_TO_TRANQUILITY, "Music Disc"),
 			"Kristoffer Kaufmann - Ode to Tranquility", ModSounds.ODE_TO_TRANQUILITY);
-		generateMusicDisc(translationBuilder, ItemTranslation.of(TechItems.MUSIC_DISC_LAPSE_IN_JUDGEMENT, "War-Torn Music Disc"),
+		generateMusicDisc(translationBuilder, ItemTranslation.of(TSItems.Tech.MUSIC_DISC_LAPSE_IN_JUDGEMENT, "War-Torn Music Disc"),
 			"Kristoffer Kaufmann - Lapse in Judgement", ModSounds.LAPSE_IN_JUDGEMENT);
-		generateMusicDisc(translationBuilder, ItemTranslation.of(TechItems.MUSIC_DISC_RECITAL, "Aged Cassette",
-			"It's in remarkably good condition.", null), "Trevor Skullcrafter - recital", ModSounds.RECITAL);
+		generateMusicDisc(translationBuilder, ItemTranslation.of(TSItems.Tech.MUSIC_DISC_RECITAL, "Aged Cassette", "It's in remarkably good condition."),
+			"Trevor Skullcrafter - recital", ModSounds.RECITAL);
 
 		//Wood
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, YGGDRASIL), ItemTranslation.of(ModBlocks.PALE_LOG),
@@ -176,39 +176,39 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 			ItemTranslation.of(ModBlocks.POTTED_PALE_SAPLING), ItemTranslation.of(ModBlocks.PALE_SLAB), ItemTranslation.of(ModBlocks.PALE_STAIRS),
 			ItemTranslation.of(ModBlocks.PALE_FENCE), ItemTranslation.of(ModBlocks.PALE_FENCE_GATE), ItemTranslation.of(ModBlocks.PALE_BUTTON),
 			ItemTranslation.of(ModBlocks.PALE_PRESSURE_PLATE), ItemTranslation.of(ModBlocks.PALE_DOOR), ItemTranslation.of(ModBlocks.PALE_TRAPDOOR),
-			ItemTranslation.of(ModBlocks.PALE_SIGN), ItemTranslation.of(ModBlocks.PALE_HANGING_SIGN), ItemTranslation.of(MagicItems.PALE_BOAT),
-			ItemTranslation.of(MagicItems.PALE_CHEST_BOAT));
+			ItemTranslation.of(ModBlocks.PALE_SIGN), ItemTranslation.of(ModBlocks.PALE_HANGING_SIGN), ItemTranslation.of(TSItems.Magic.PALE_BOAT),
+			ItemTranslation.of(TSItems.Magic.PALE_CHEST_BOAT));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, CHARRED), ItemTranslation.of(ModBlocks.CHARRED_LOG),
 			ItemTranslation.of(ModBlocks.CHARRED_WOOD), ItemTranslation.of(ModBlocks.STRIPPED_CHARRED_LOG), ItemTranslation.of(ModBlocks.STRIPPED_CHARRED_WOOD),
 			ItemTranslation.of(ModBlocks.CHARRED_PLANKS), null, null, null, ItemTranslation.of(ModBlocks.CHARRED_SLAB), ItemTranslation.of(ModBlocks.CHARRED_STAIRS),
 			ItemTranslation.of(ModBlocks.CHARRED_FENCE), ItemTranslation.of(ModBlocks.CHARRED_FENCE_GATE), ItemTranslation.of(ModBlocks.CHARRED_BUTTON),
 			ItemTranslation.of(ModBlocks.CHARRED_PRESSURE_PLATE), ItemTranslation.of(ModBlocks.CHARRED_DOOR), ItemTranslation.of(ModBlocks.CHARRED_TRAPDOOR),
-			ItemTranslation.of(ModBlocks.CHARRED_SIGN), ItemTranslation.of(ModBlocks.CHARRED_HANGING_SIGN), ItemTranslation.of(MagicItems.CHARRED_BOAT),
-			ItemTranslation.of(MagicItems.CHARRED_CHEST_BOAT));
+			ItemTranslation.of(ModBlocks.CHARRED_SIGN), ItemTranslation.of(ModBlocks.CHARRED_HANGING_SIGN), ItemTranslation.of(TSItems.Magic.CHARRED_BOAT),
+			ItemTranslation.of(TSItems.Magic.CHARRED_CHEST_BOAT));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, MIDAS), ItemTranslation.of(ModBlocks.MIDAS_LOG),
 			ItemTranslation.of(ModBlocks.MIDAS_WOOD), ItemTranslation.of(ModBlocks.STRIPPED_MIDAS_LOG), ItemTranslation.of(ModBlocks.STRIPPED_MIDAS_WOOD),
 			ItemTranslation.of(ModBlocks.MIDAS_PLANKS), ItemTranslation.of(ModBlocks.MIDAS_LEAVES), ItemTranslation.of(ModBlocks.MIDAS_SAPLING),
 			ItemTranslation.of(ModBlocks.POTTED_MIDAS_SAPLING), ItemTranslation.of(ModBlocks.MIDAS_SLAB), ItemTranslation.of(ModBlocks.MIDAS_STAIRS),
 			ItemTranslation.of(ModBlocks.MIDAS_FENCE), ItemTranslation.of(ModBlocks.MIDAS_FENCE_GATE), ItemTranslation.of(ModBlocks.MIDAS_BUTTON),
 			ItemTranslation.of(ModBlocks.MIDAS_PRESSURE_PLATE), ItemTranslation.of(ModBlocks.MIDAS_DOOR), ItemTranslation.of(ModBlocks.MIDAS_TRAPDOOR),
-			ItemTranslation.of(ModBlocks.MIDAS_SIGN), ItemTranslation.of(ModBlocks.MIDAS_HANGING_SIGN), ItemTranslation.of(MagicItems.MIDAS_BOAT),
-			ItemTranslation.of(MagicItems.MIDAS_CHEST_BOAT));
+			ItemTranslation.of(ModBlocks.MIDAS_SIGN), ItemTranslation.of(ModBlocks.MIDAS_HANGING_SIGN), ItemTranslation.of(TSItems.Magic.MIDAS_BOAT),
+			ItemTranslation.of(TSItems.Magic.MIDAS_CHEST_BOAT));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, VIRIDIAN), ItemTranslation.of(ModBlocks.VIRIDIAN_LOG),
 			ItemTranslation.of(ModBlocks.VIRIDIAN_WOOD), ItemTranslation.of(ModBlocks.STRIPPED_VIRIDIAN_LOG), ItemTranslation.of(ModBlocks.STRIPPED_VIRIDIAN_WOOD),
 			ItemTranslation.of(ModBlocks.VIRIDIAN_PLANKS), ItemTranslation.of(ModBlocks.VIRIDIAN_LEAVES), ItemTranslation.of(ModBlocks.VIRIDIAN_SAPLING),
 			ItemTranslation.of(ModBlocks.POTTED_VIRIDIAN_SAPLING), ItemTranslation.of(ModBlocks.VIRIDIAN_SLAB), ItemTranslation.of(ModBlocks.VIRIDIAN_STAIRS),
 			ItemTranslation.of(ModBlocks.VIRIDIAN_FENCE), ItemTranslation.of(ModBlocks.VIRIDIAN_FENCE_GATE), ItemTranslation.of(ModBlocks.VIRIDIAN_BUTTON),
 			ItemTranslation.of(ModBlocks.VIRIDIAN_PRESSURE_PLATE), ItemTranslation.of(ModBlocks.VIRIDIAN_DOOR), ItemTranslation.of(ModBlocks.VIRIDIAN_TRAPDOOR),
-			ItemTranslation.of(ModBlocks.VIRIDIAN_SIGN), ItemTranslation.of(ModBlocks.VIRIDIAN_HANGING_SIGN), ItemTranslation.of(MagicItems.VIRIDIAN_BOAT),
-			ItemTranslation.of(MagicItems.VIRIDIAN_CHEST_BOAT));
+			ItemTranslation.of(ModBlocks.VIRIDIAN_SIGN), ItemTranslation.of(ModBlocks.VIRIDIAN_HANGING_SIGN), ItemTranslation.of(TSItems.Magic.VIRIDIAN_BOAT),
+			ItemTranslation.of(TSItems.Magic.VIRIDIAN_CHEST_BOAT));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, CERULII), ItemTranslation.of(ModBlocks.CERULII_LOG),
 			ItemTranslation.of(ModBlocks.CERULII_WOOD), ItemTranslation.of(ModBlocks.STRIPPED_CERULII_LOG), ItemTranslation.of(ModBlocks.STRIPPED_CERULII_WOOD),
 			ItemTranslation.of(ModBlocks.CERULII_PLANKS), ItemTranslation.of(ModBlocks.CERULII_LEAVES), ItemTranslation.of(ModBlocks.CERULII_SAPLING),
 			ItemTranslation.of(ModBlocks.POTTED_CERULII_SAPLING), ItemTranslation.of(ModBlocks.CERULII_SLAB), ItemTranslation.of(ModBlocks.CERULII_STAIRS),
 			ItemTranslation.of(ModBlocks.CERULII_FENCE), ItemTranslation.of(ModBlocks.CERULII_FENCE_GATE), ItemTranslation.of(ModBlocks.CERULII_BUTTON),
 			ItemTranslation.of(ModBlocks.CERULII_PRESSURE_PLATE), ItemTranslation.of(ModBlocks.CERULII_DOOR), ItemTranslation.of(ModBlocks.CERULII_TRAPDOOR),
-			ItemTranslation.of(ModBlocks.CERULII_SIGN), ItemTranslation.of(ModBlocks.CERULII_HANGING_SIGN), ItemTranslation.of(MagicItems.CERULII_BOAT),
-			ItemTranslation.of(MagicItems.CERULII_CHEST_BOAT));
+			ItemTranslation.of(ModBlocks.CERULII_SIGN), ItemTranslation.of(ModBlocks.CERULII_HANGING_SIGN), ItemTranslation.of(TSItems.Magic.CERULII_BOAT),
+			ItemTranslation.of(TSItems.Magic.CERULII_CHEST_BOAT));
 
         generateStatusEffect(translationBuilder, ModEffects.REDSTONED, "Redstoned", true);
         generateStatusEffect(translationBuilder, ModEffects.FLIGHT, "Flight", true);
@@ -217,8 +217,6 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         generateStatusEffect(translationBuilder, ModEffects.INFESTED, "☣ Infested ☣", false);
         generateStatusEffect(translationBuilder, ModEffects.IRRADIATED, "☢ Irradiated ☢", false);
 
-        generateItems(translationBuilder, ItemTranslation.of(ModItems.ANTIMILK, "Doctor Chadd's Ultimate Anti-Milk of Wondrous Effects",
-			"Contains brief, yet unlimited, power.", null));
         generateItems(translationBuilder, ItemTranslation.of(ModItems.SALT, null, "Used for keeping meat fresh.", SALT));
 
 		generatePot(translationBuilder, ModBlocks.TRANQUIL_ROSE, ModBlocks.POTTED_TRANQUIL_ROSE, null, "Smells delightful.", TRANQUIL);
@@ -226,24 +224,23 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.RICE_SEEDS), ItemTranslation.of(ModItems.RICE_CAKE),
 			ItemTranslation.of(ModBlocks.RICE_PLANT), ItemTranslation.of(ModBlocks.RICE_BLOCK));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SHINY_GOLD), ItemTranslation.of(ModItems.GOLDEN_RICE_SEEDS),
-			ItemTranslation.of(ModItems.GOLDEN_RICE_CAKE), ItemTranslation.of(ModBlocks.GOLDEN_RICE_PLANT), ItemTranslation.of(ModBlocks.GOLDEN_RICE_BLOCK),
-			ItemTranslation.of(ModBlocks.FEATHERCORN, null, "Soft and warm", null), ItemTranslation.of(ModItems.BANANA), ItemTranslation.of(ModItems.BANANA_BREAD));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SHINY_GOLD),
+			ItemTranslation.of(ModItems.GOLDEN_APPLE_JUICE), ItemTranslation.of(ModItems.BANANA), ItemTranslation.of(ModItems.BANANA_BREAD),
+			ItemTranslation.of(ModBlocks.FEATHERCORN, null, "Soft and warm."));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, PEARFRUIT),
+			ItemTranslation.of(ModItems.PEARFRUIT, null, "As good as gold.", PEARFRUIT), ItemTranslation.of(ModItems.PEARFRUIT_JUICE, null));
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.SUSHI_ROLL), ItemTranslation.of(ModItems.TORTILLA), ItemTranslation.of(ModItems.BURRITO),
-			ItemTranslation.of(ModItems.FRIED_EGG), ItemTranslation.of(ModItems.PEARFRUIT, null, "As good as gold.", PEARFRUIT),
-			ItemTranslation.of(ModItems.PEARFRUIT_JUICE, null, PEARFRUIT), ItemTranslation.of(ModItems.APPLE_JUICE), ItemTranslation.of(ModItems.GOLDEN_APPLE_JUICE),
-			ItemTranslation.of(ModItems.SWEET_BERRY_JUICE), ItemTranslation.of(ModItems.MIDAS_FRUIT, null, "22 karats", SHINY_GOLD),
-			ItemTranslation.of(ModItems.BROWNIE), ItemTranslation.of(ModItems.CHORUS_COBBLER), ItemTranslation.of(ModItems.SANDFISH),
-			ItemTranslation.of(ModItems.COOKED_SANDFISH), ItemTranslation.of(ModItems.DUNE_EEL), ItemTranslation.of(ModItems.SMOKED_FISH, null, SMOKED_FISH));
-		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TechItems.EMPTY_CAN),
-			ItemTranslation.of(TechItems.BEETROOT_SOUP_CAN, "Can of Beetroot Soup"), ItemTranslation.of(TechItems.MUSHROOM_STEW_CAN, "Can of Mushroom Stew"),
-			ItemTranslation.of(TechItems.RABBIT_STEW_CAN, "Can of Rabbit Stew"), ItemTranslation.of(TechItems.MILK_CAN, "Can of Evaporated Milk"),
-			ItemTranslation.of(TechItems.COLA_ORANGE, "Can of A&L"), ItemTranslation.of(TechItems.COLA_GREEN, "Can of Trola-Cola"),
-			ItemTranslation.of(TechItems.COLA_CYAN, "Can of AquaDei Lite"));
+			ItemTranslation.of(ModItems.FRIED_EGG), ItemTranslation.of(ModItems.APPLE_JUICE), ItemTranslation.of(ModItems.SWEET_BERRY_JUICE),
+			ItemTranslation.of(ModItems.MIDAS_FRUIT, null, "22 karats", SHINY_GOLD), ItemTranslation.of(ModItems.SMOKED_FISH, null, SMOKED_FISH));
+		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, STARSTEEL), ItemTranslation.of(TSItems.Tech.EMPTY_CAN),
+			ItemTranslation.of(TSItems.Tech.BEETROOT_SOUP_CAN, "Can of Beetroot Soup"), ItemTranslation.of(TSItems.Tech.MUSHROOM_STEW_CAN, "Can of Mushroom Stew"),
+			ItemTranslation.of(TSItems.Tech.RABBIT_STEW_CAN, "Can of Rabbit Stew"), ItemTranslation.of(TSItems.Tech.MILK_CAN, "Can of Evaporated Milk"),
+			ItemTranslation.of(TSItems.Tech.COLA_ORANGE, "Can of A&L"), ItemTranslation.of(TSItems.Tech.COLA_GREEN, "Can of Trola-Cola"),
+			ItemTranslation.of(TSItems.Tech.COLA_CYAN, "Can of AquaDei Lite"));
 
-        generateItems(translationBuilder, ItemTranslation.of(ModItems.BROWNIE, null, "Comes from outer space?", null));
+        generateItems(translationBuilder, ItemTranslation.of(ModItems.BROWNIE, null, "Comes from outer space?"));
         generateItems(translationBuilder, ItemTranslation.of(ModItems.CHORUS_COBBLER, null, "Memah's favorite recipe", CHORUS));
-        generateItems(translationBuilder, ItemTranslation.of(ModItems.SANDFISH, null, "This isn't a fish...", DUNE_TAN));
+        generateItems(translationBuilder, ItemTranslation.of(ModItems.SANDFISH, null, "This is not a fish...", DUNE_TAN));
         generateItems(translationBuilder, ItemTranslation.of(ModItems.COOKED_SANDFISH, null, DUNE_TAN));
         generateItems(translationBuilder, ItemTranslation.of(ModItems.DUNE_EEL, null, "Isn't this a snake?", DUNE_TAN));
 
@@ -251,34 +248,32 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 			ItemTranslation.of(ModBlocks.FLESH_BLOCK, null, "It's strangely warm...", FLESH_PINK),
 			ItemTranslation.of(ModBlocks.FLESH_VEINS, null, "They're spreading...", FLESH_PINK),
 			ItemTranslation.of(ModBlocks.FLESHY_EYE, null, "It's staring...", FLESH_PINK),
-			ItemTranslation.of(MagicItems.EYE_OF_RUIN, null, "What a troubling gaze...", FLESH_PINK),
-			ItemTranslation.of(MagicItems.DUBIOUS_BACON, null, "Don't ask where it came from...", FLESH_PINK));
+			ItemTranslation.of(TSItems.Magic.EYE_OF_RUIN, null, "What a troubling gaze...", FLESH_PINK),
+			ItemTranslation.of(TSItems.Magic.DUBIOUS_BACON, null, "Don't ask where it came from...", FLESH_PINK));
 
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.REDSTONE_CRYSTAL, "Crystallized Redstone", "Sparkles with potential.", BLOOD_RED));
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.BLOOD_DIAMOND, null, "Chaos itself shines through.", BLOOD_RED));
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.ASH, "Wither Ash", "Contains traces of dark magic.", TRANQUIL));
 		generateItems(translationBuilder, ItemTranslation.of(ModItems.TRANQUIL_DUST, "Tranquil Pollen", "Useful in dark alchemy.", TRANQUIL));
-		generateItems(translationBuilder, ItemTranslation.of(MagicItems.DEMONIC_CORE, "Demonic Core", "Use while crouching to bind to a location!", LIGHT_PURPLE));
-        generateItems(translationBuilder, ItemTranslation.of(TechItems.DISTANCE_TRACKER, "Lifeform Tracker", "Use on a mob to track it.", SCRAP_METAL));
-        generateItems(translationBuilder, ItemTranslation.of(TechItems.PLASMA_CELL, null, null, null));
-        generateItems(translationBuilder, ItemTranslation.of(TechItems.GAS_CAPSULE, null, null, GAS_TEST));
-		generateItems(translationBuilder, ItemTranslation.of(MagicItems.QUICKSAND_BUCKET));
+		generateItems(translationBuilder, ItemTranslation.of(TSItems.Magic.DEMONIC_CORE, "Demonic Core", "Use while crouching to bind to a location!", LIGHT_PURPLE));
+        generateItems(translationBuilder, ItemTranslation.of(TSItems.Tech.DISTANCE_TRACKER, "Lifeform Tracker", "Use on a mob to track it.", SCRAP_METAL));
+        generateItems(translationBuilder, ItemTranslation.of(TSItems.Tech.PLASMA_CELL, null));
 
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SENTINEL_AQUA_T1),
-			ItemTranslation.of(TechItems.HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.HARD_LIGHT, "Hard Light"),
-			ItemTranslation.of(ModBlocks.HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!", null),
-			ItemTranslation.of(TechItems.HOLOGRAPHIC_SIGN, "Holographic Sign"),
-			ItemTranslation.of(TechItems.HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
+			ItemTranslation.of(TSItems.Tech.HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.HARD_LIGHT, "Hard Light"),
+			ItemTranslation.of(ModBlocks.HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!"),
+			ItemTranslation.of(TSItems.Tech.HOLOGRAPHIC_SIGN, "Holographic Sign"),
+			ItemTranslation.of(TSItems.Tech.HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SENTINEL_GOLD_T1),
-			ItemTranslation.of(TechItems.CAUTION_HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.CAUTION_HARD_LIGHT, "Hard Light"),
-			ItemTranslation.of(ModBlocks.CAUTION_HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!", null),
-			ItemTranslation.of(TechItems.CAUTION_HOLOGRAPHIC_SIGN, "Holographic Sign"),
-			ItemTranslation.of(TechItems.CAUTION_HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
+			ItemTranslation.of(TSItems.Tech.CAUTION_HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.CAUTION_HARD_LIGHT, "Hard Light"),
+			ItemTranslation.of(ModBlocks.CAUTION_HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!"),
+			ItemTranslation.of(TSItems.Tech.CAUTION_HOLOGRAPHIC_SIGN, "Holographic Sign"),
+			ItemTranslation.of(TSItems.Tech.CAUTION_HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
 		generateItemsWithParent(translationBuilder, ItemTranslation.of(null, null, SENTINEL_CRIMSON_T1),
-			ItemTranslation.of(TechItems.SENTINEL_HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.SENTINEL_HARD_LIGHT, "Hard Light"),
-			ItemTranslation.of(ModBlocks.SENTINEL_HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!", null),
-			ItemTranslation.of(TechItems.SENTINEL_HOLOGRAPHIC_SIGN, "Holographic Sign"),
-			ItemTranslation.of(TechItems.SENTINEL_HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
+			ItemTranslation.of(TSItems.Tech.SENTINEL_HARD_LIGHT_PROJECTOR, "Hard Light Projector"), ItemTranslation.of(ModBlocks.SENTINEL_HARD_LIGHT, "Hard Light"),
+			ItemTranslation.of(ModBlocks.SENTINEL_HARD_LIGHT_BARRIER, "Hard Light Barrier", "Creative only!"),
+			ItemTranslation.of(TSItems.Tech.SENTINEL_HOLOGRAPHIC_SIGN, "Holographic Sign"),
+			ItemTranslation.of(TSItems.Tech.SENTINEL_HOLOGRAPHIC_HANGING_SIGN, "Holographic Hanging Sign"));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.CHAMBER_BLOCK), ItemTranslation.of(ModBlocks.LIGHT_CHAMBER_BLOCK),
 			ItemTranslation.of(ModBlocks.DARK_CHAMBER_BLOCK), ItemTranslation.of(ModBlocks.BLUE_AGILITY_BLOCK, null, SENTINEL_AQUA_T2),
 			ItemTranslation.of(ModBlocks.ORANGE_AGILITY_BLOCK, null, GOLD));
@@ -298,7 +293,6 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
 			ItemTranslation.of(ModBlocks.SMOOTH_SNOWSTONE_WALL), ItemTranslation.of(ModBlocks.CUT_SNOWSTONE),
 			ItemTranslation.of(ModBlocks.CUT_SNOWSTONE_SLAB), ItemTranslation.of(ModBlocks.CHISELED_SNOWSTONE));
 		generateItems(translationBuilder, ItemTranslation.of(ModBlocks.MOSS_STAIRS), ItemTranslation.of(ModBlocks.MOSS_SLAB),
-			ItemTranslation.of(ModBlocks.OVERGROWN_GRASS_BLOCK), ItemTranslation.of(ModBlocks.GRASS_STAIRS), ItemTranslation.of(ModBlocks.GRASS_SLAB),
 			ItemTranslation.of(ModBlocks.DIRT_STAIRS), ItemTranslation.of(ModBlocks.DIRT_SLAB), ItemTranslation.of(ModBlocks.COARSE_DIRT_STAIRS),
 			ItemTranslation.of(ModBlocks.COARSE_DIRT_SLAB));
 
@@ -354,7 +348,7 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         translationBuilder.add("death.attack.shard_projectile", "%2$s turned %1$s into a pincushion");
         translationBuilder.add("death.attack.shard_projectile.item", "%2$s turned %1$s into a pincushion using %3$s");
         translationBuilder.add("death.attack.dagger_projectile", "%1$s was shot through the heart, and %2$s is to blame");
-        translationBuilder.add("death.attack.dagger_projectile", "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name");
+        translationBuilder.add("death.attack.dagger_projectile.item", "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name");
 
 
         translationBuilder.add("key.category.trevorssentinels.trevorssentinels", "Trevor's Sentinels");
@@ -370,11 +364,11 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         generateNumbered(translationBuilder, "color."+MOD_ID+".worldLevelTooLow.", "", String.valueOf(LIGHT_PURPLE.getRGB()), String.valueOf(BLUE.getRGB()));
         translationBuilder.add(MOD_ID+".worldLevelTooLow.other", "A mysterious force pushes back!");
 
-        translationBuilder.add(ModEntities.SHARD_PROJECTILE, TechItems.SCRAP_METAL_SHARD.getTranslationKey());
+        translationBuilder.add(ModEntities.SHARD_PROJECTILE, TSItems.Tech.SCRAP_METAL_SHARD.getTranslationKey());
         translationBuilder.add(ModEntities.PHASER_PROJECTILE, "Phaser Projectile");
         translationBuilder.add(ModEntities.GRENADE, "Delayed Explosive");
         translationBuilder.add(ModEntities.SENTINEL, "Sentinel");
-        translationBuilder.add(ModEntities.GALINITE_ROOMBA, "Sentinel Cleaning Droid");
+        translationBuilder.add(ModEntities.ROOMBA, "Sentinel Cleaning Droid");
         translationBuilder.add(ModEntities.FLORBUS, "Florbus");
         translationBuilder.add("entity.minecraft.villager.engineer", "§6Engineer");
         translationBuilder.add("entity.minecraft.villager.demolitionist", "§cDemolitionist");
@@ -386,6 +380,12 @@ public class EnglishLangGenerator extends FabricLanguageProvider {
         translationBuilder.add("gamerule.trevorssentinels:milkCuresPotionEffects", "Drinking milk cures potion effects");
         translationBuilder.add("tooltip.trevorssentinels:milkCuresPotionEffects", "Effects will not be cured!");
         //translationBuilder.add("gamerule.trevorssentinels:milkCuresPotionEffects.description", "If enabled, fall damage will be calculated based on velocity.");
+
+		translationBuilder.add("itemGroup." + MOD_ID + ".sentinels", "Trevor's Sentinels");
+		translationBuilder.add("itemGroup." + MOD_ID + ".sentinels.tab.magic", "Magic");
+		translationBuilder.add("itemGroup." + MOD_ID + ".sentinels.tab.tech", "Tech");
+		translationBuilder.add("itemGroup." + MOD_ID + ".sentinels.tab.beta", "Beta");
+		translationBuilder.add("itemGroup." + MOD_ID + ".sentinels.button.wiki", "Wiki");
 
 		translationBuilder.add("tooltip.item.trevorssentinels.phaser.stats", "Phaser Stats:");
 

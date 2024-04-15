@@ -9,7 +9,8 @@ public class RedstonedStatusEffect extends StatusEffect {
     float storedHealth; float changeInHealth; LivingEntity bearer;
     public RedstonedStatusEffect(StatusEffectType type, int color) { super(type, color); }
 
-    @Override public boolean canApplyUpdateEffect(int duration, int amplifier) { return true; }
+	@Override public boolean shouldApplyUpdateEffect(int tick, int amplifier) { return true; }
+
     @Override public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         super.applyUpdateEffect(entity, amplifier);
         if(!entity.getWorld().isClient()){
@@ -18,7 +19,10 @@ public class RedstonedStatusEffect extends StatusEffect {
         }
     }
 
-    @Override public void onApplied(LivingEntity entity, int amplifier) { super.onApplied(entity.getAttributes(), amplifier); storedHealth = entity.getHealth(); bearer = entity; }
+	@Override public void onApplied(AttributeContainer attributes, int amplifier) {
+		super.onApplied(attributes, amplifier); storedHealth = bearer.getHealth();
+	}
+
     @Override public void onRemoved(AttributeContainer attributes) {
         super.onRemoved(attributes);
         if (changeInHealth < 0) bearer.damage(bearer.getDamageSources().generic(), Math.abs(changeInHealth));

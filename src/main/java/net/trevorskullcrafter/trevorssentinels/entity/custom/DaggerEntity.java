@@ -29,7 +29,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.entity.damage.ModDamageSources;
-import net.trevorskullcrafter.trevorssentinels.item.TechItems;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 import org.jetbrains.annotations.Nullable;
 
@@ -106,7 +106,7 @@ public class DaggerEntity extends PersistentProjectileEntity {
         } super.onCollision(hitResult);
     }
 
-    protected void initDataTracker() { super.initDataTracker(); this.dataTracker.startTracking(STORED_STACK, TechItems.SCRAP_METAL_KNIFE.getDefaultStack()); }
+    protected void initDataTracker() { super.initDataTracker(); this.dataTracker.startTracking(STORED_STACK, TSItems.Tech.SCRAP_METAL_KNIFE.getDefaultStack()); }
     @Override public ItemStack asItemStack() { return dataTracker.get(STORED_STACK); }
 
     public void writeCustomDataToNbt(NbtCompound nbt) {

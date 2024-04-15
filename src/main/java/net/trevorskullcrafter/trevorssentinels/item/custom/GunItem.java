@@ -3,14 +3,15 @@ package net.trevorskullcrafter.trevorssentinels.item.custom;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffectType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -19,11 +20,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
-import net.trevorskullcrafter.trevorssentinels.entity.custom.BulletEntity;
-import net.trevorskullcrafter.trevorssentinels.entity.custom.GasEntity;
 import net.trevorskullcrafter.trevorssentinels.entity.custom.PhaserProjectileEntity;
-import net.trevorskullcrafter.trevorssentinels.item.ModItems;
-import net.trevorskullcrafter.trevorssentinels.trevorssentinels;
+import net.trevorskullcrafter.trevorssentinels.item.TSItems;
+import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 import net.trevorskullcrafter.trevorssentinels.util.Gunclass;
 import net.trevorskullcrafter.trevorssentinels.util.StyleUtil;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
@@ -34,7 +33,7 @@ import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Optional;
 
-public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitcher, Reloadable {
+public class GunItem extends Item implements StyleUtil.StyleSwitcher, Reloadable {
     Hand lastHand = Hand.OFF_HAND;
 
     int lasers; float laserSpeed; float divergence; float dualPenalty; float recoil; int cooldownTime; int reloadCooldown; Item fuelItem; int styles;
@@ -43,12 +42,12 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
     public GunItem(Settings settings, Gunclass gunclass, int lasers, float laserSpeed, float divergence, float dualPenalty, float recoil, int cooldown, int reloadCooldown,
                    int lifetime, float damage, int type, Color color, StatusEffectInstance... effects) {
         super(settings); this.lasers = lasers; this.laserSpeed = laserSpeed; this.divergence = divergence; this.dualPenalty = dualPenalty; this.recoil = recoil;
-        this.cooldownTime = cooldown; this.reloadCooldown = reloadCooldown; this.fuelItem = ModItems.ENERGY_CELL; this.styles = 3;
+        this.cooldownTime = cooldown; this.reloadCooldown = reloadCooldown; this.fuelItem = TSItems.Tech.PLASMA_CELL; this.styles = 3;
         this.gunclass = gunclass; this.lifetime = lifetime;this.damage = damage; this.type = type; this.color = color; this.effects = effects;
     }
 
     @Override public Text getSwitchMessagePrefix(ItemStack stack) { return StyleUtil.mode; }
-    @Override public Text getCurrentStyleTranslation(ItemStack stack) { return Text.translatable("style.item."+ trevorssentinels.MOD_ID +".gun."+StyleUtil.getStyle(stack)); }
+    @Override public Text getCurrentStyleTranslation(ItemStack stack) { return Text.translatable("style.item."+ trevorssentinelsMain.MOD_ID +".gun."+StyleUtil.getStyle(stack)); }
     @Override public int getStyles(ItemStack stack) { return styles; }
     @Override public Formatting getStyleSwitchFormatting(ItemStack stack){
         return switch(StyleUtil.getStyle(stack)){ case 2 -> Formatting.YELLOW; case 3 -> Formatting.GREEN; default -> Formatting.RED; };
@@ -58,8 +57,8 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
 
     @Override public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand){
         if(isDualWielding(user)) {
-            if (lastHand == Hand.OFF_HAND) { shoot(user.getMainHandStack(), world, user, hand); if(!world.isClient()) { lastHand = Hand.MAIN_HAND; }}
-            else { shoot(user.getOffHandStack(), world, user, hand); if(!world.isClient()) lastHand = Hand.OFF_HAND; }}
+            if (lastHand == Hand.OFF_HAND) { shoot(user.getMainHandStack(), world, user, hand); if(world instanceof ServerWorld) { lastHand = Hand.MAIN_HAND; }}
+            else { shoot(user.getOffHandStack(), world, user, hand); if(world instanceof ServerWorld) lastHand = Hand.OFF_HAND; }}
         else if(hand == Hand.MAIN_HAND || (hand == Hand.OFF_HAND && !(user.getStackInHand(Hand.MAIN_HAND).getItem() instanceof GunItem))){
             shoot(user.getStackInHand(hand), world, user, hand);
         }
@@ -68,27 +67,24 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
 
     public void shoot(ItemStack stack, World world, PlayerEntity user, Hand hand){
         if(stack.getDamage() < stack.getMaxDamage() - 1) {
-            for (int i = 1; i <= lasers; i++) { launch(stack, world, user); }
+			for (int i = 1; i <= lasers; i++) { launch(stack, world, user); }
             if (user instanceof ServerPlayerEntity serverPlayerEntity) { serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(stack.getItem())); }
-            if (!world.isClient()) {
+            if (world instanceof ServerWorld serverWorld) {
                 user.fallDistance = (float) Math.abs(user.getVelocity().y) * 4;
-                world.playSoundFromEntity(null, user, gunclass.getShootSound(), SoundCategory.BLOCKS, Math.min(3.0F, (lasers * 0.5F)), 1.0F);
+                serverWorld.playSoundFromEntity(null, user, gunclass.getShootSound(), SoundCategory.BLOCKS, Math.min(3.0F, (lasers * 0.5F)), 1.0F);
                 stack.damage(1, user, p -> p.sendToolBreakStatus(hand));
                 int magazine = stack.getMaxDamage() - stack.getDamage() - 1;
                 user.sendMessage(Text.empty().append(Text.literal(String.valueOf(magazine)).formatted(TextUtil.quotientToolTipFormatting(magazine,
                         stack.getMaxDamage() - 1))).append(Text.literal(" / " + (stack.getMaxDamage() - 1) + " ⚡").formatted(Formatting.GRAY)), true);
                 user.getItemCooldownManager().set(this, cooldownTime);
             }
-        } else { if (!world.isClient()){ world.playSoundFromEntity(null, user, gunclass.getShootFailSound(), SoundCategory.BLOCKS, 1.0F, 1.0F); } }
+		} else { if (world instanceof ServerWorld serverWorld){
+			serverWorld.playSoundFromEntity(null, user, gunclass.getShootFailSound(), SoundCategory.BLOCKS, 1.0F, 1.0F);
+		}}
     }
 
     public void launch(ItemStack stack, World world, PlayerEntity user){
-        PhaserProjectileEntity laser;
-        switch(type){
-            case 2 -> laser = new GasEntity(ModEntities.GAS, world, user, lifetime, damage, getItemBarColor(stack), effects);
-            case 3 -> laser = new BulletEntity(ModEntities.BULLET, world, user, lifetime, damage, getItemBarColor(stack), effects);
-            default -> laser = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, lifetime, damage, getItemBarColor(stack), effects);
-        }
+        PhaserProjectileEntity laser = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, lifetime, damage, getItemBarColor(stack), effects);
         laser.setVelocity(user.getPitch(), user.getYaw(), user.getRoll(), laserSpeed, divergence+(isDualWielding(user)? dualPenalty: 0.0f));
         world.spawnEntity(laser);
         user.addVelocity(laser.getVelocity().multiply(-recoil * (isDualWielding(user)? 1.3 : 1.1)));
@@ -99,9 +95,9 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
     }
 
     @Override public void reload(ItemStack stack, World world, Entity user) {
-        if (!world.isClient()) {
+        if (world instanceof ServerWorld serverWorld) {
             stack.setDamage(0); if(user instanceof PlayerEntity player) { player.getItemCooldownManager().set(this, reloadCooldown + (StyleUtil.getStyle(stack) == 2 ? cooldownTime : 0)); }
-            world.playSoundFromEntity(null, user, gunclass.getReloadSound(), SoundCategory.BLOCKS, 3.0F, 0.0F);
+            serverWorld.playSoundFromEntity(null, user, gunclass.getReloadSound(), SoundCategory.BLOCKS, 3.0F, 0.0F);
         }
     }
 
@@ -115,18 +111,18 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
         } return false;
     }
 
-    public boolean onStackClicked(ItemStack stack, Slot slot, ClickType clickType, PlayerEntity player) {
-        if (clickType == ClickType.RIGHT) {
-            ItemStack otherStack = slot.getStack();
-            if (otherStack.isEmpty()) {
-                this.playRemoveOneSound(player);
-                removeFuel(stack).ifPresent((removedStack) -> addFuel(stack, slot.insertStack(removedStack)));
-            } else if (otherStack.isOf(fuelItem)) { playInsertSound(stack, otherStack, player); }
-            return true;
-        } return false;
-    }
+	@Override public boolean onClickedOnOther(ItemStack thisStack, Slot otherSlot, ClickType clickType, PlayerEntity player) {
+		if (clickType == ClickType.RIGHT) {
+			ItemStack otherStack = otherSlot.getStack();
+			if (otherStack.isEmpty()) {
+				this.playRemoveOneSound(player);
+				removeFuel(thisStack).ifPresent((removedStack) -> addFuel(thisStack, otherSlot.insertStack(removedStack)));
+			} else if (otherStack.isOf(fuelItem)) { playInsertSound(thisStack, otherStack, player); }
+			return true;
+		} return false;
+	}
 
-    private Optional<ItemStack> removeFuel(ItemStack stack) {
+	private Optional<ItemStack> removeFuel(ItemStack stack) {
         if (stack.getDamage() == stack.getMaxDamage()-1) { return Optional.empty(); }
         else {
             int x = Math.min(stack.getMaxDamage()-1, 64);
@@ -174,11 +170,11 @@ public class GunItem extends Item implements ToolSkinnable, StyleUtil.StyleSwitc
         //effect
         if(effects.length > 0) { if(Screen.hasShiftDown()) {
             for (StatusEffectInstance statusEffectInstance : effects) {
-                StatusEffectCategory statusEffectCategory = statusEffectInstance.getEffectType().getCategory();
-                tooltip.add(Text.empty().append(statusEffectCategory == StatusEffectCategory.BENEFICIAL ? "☀ " :
-                                statusEffectCategory == StatusEffectCategory.NEUTRAL ? "☯ " : "☠ ").append(TextUtil.potionText(statusEffectInstance, false))
-                        .formatted(statusEffectCategory == StatusEffectCategory.BENEFICIAL ? Formatting.GREEN :
-                                statusEffectCategory == StatusEffectCategory.NEUTRAL ? Formatting.YELLOW : Formatting.RED)); }
+                StatusEffectType statusEffectCategory = statusEffectInstance.getEffectType().getType();
+                tooltip.add(Text.empty().append(statusEffectCategory == StatusEffectType.BENEFICIAL ? "☀ " :
+                                statusEffectCategory == StatusEffectType.NEUTRAL ? "☯ " : "☠ ").append(TextUtil.potionText(statusEffectInstance, false))
+                        .formatted(statusEffectCategory == StatusEffectType.BENEFICIAL ? Formatting.GREEN :
+                                statusEffectCategory == StatusEffectType.NEUTRAL ? Formatting.YELLOW : Formatting.RED)); }
         } else { tooltip.add(Text.empty().append(Text.literal("SHIFT").formatted(Formatting.YELLOW)).append(Text.literal(" to show status effects.")
                 .formatted(Formatting.DARK_GRAY))); }}
         super.appendTooltip(stack, world, tooltip, context);
