@@ -1,8 +1,8 @@
-// 1.20.2	2024-04-05T21:26:28.5169529	Trevor's Sentinels/Tags for minecraft:item
+// 1.20.2	2024-04-15T22:03:35.7446484	Trevor's Sentinels/Tags for minecraft:item
 c5d17b1044eff3087608c8155d279e49260d2499 data\trevorssentinels\tags\items\cerulii_logs.json
 5cf109676da27e937ed59db987e1a3b70fffb27b data\trevorssentinels\tags\items\viridian_logs.json
 4ca8bcf212df69650a42a5c16ad97e07fe06223f data\trevorssentinels\tags\items\pale_logs.json
-724a57e30620bcf22728c20697b79be09baa4c2d data\trevorssentinels\tags\items\charred_logs.json
 ec4a04cf2c353570b4542c915eff6a9362e34bca data\trevorssentinels\tags\items\midas_logs.json
+724a57e30620bcf22728c20697b79be09baa4c2d data\trevorssentinels\tags\items\charred_logs.json
 8a51f5d86c5d030dbbb2933cd3dc0404fbe9bace data\trevorssentinels\tags\items\crossbow_hold.json
 8ef509c4cea81d88b24546f939e215d9ec76303d data\trevorssentinels\tags\items\item_bar_color_override.json

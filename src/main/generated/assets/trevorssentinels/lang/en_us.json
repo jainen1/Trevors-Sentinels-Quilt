@@ -1,907 +1,3319 @@
 {
-  "advancements.trevorssentinels.ancient_metal.desc": "Obtain an ingot of Imperial Alloy",
-  "advancements.trevorssentinels.ancient_metal.title": "Ancient Metal",
-  "advancements.trevorssentinels.ancient_metal2.desc": "Obtain equipment made from Imperial Alloy",
-  "advancements.trevorssentinels.ancient_metal2.title": "Good Soldiers Follow Orders",
-  "advancements.trevorssentinels.bacon_and_eggs.desc": "Part of a complete breakfast!",
-  "advancements.trevorssentinels.bacon_and_eggs.title": "Bacon and Eggs",
-  "advancements.trevorssentinels.brownie.desc": "Consume a Brownie",
-  "advancements.trevorssentinels.brownie.title": "This Edible Ain't Shi-",
-  "advancements.trevorssentinels.cerberus.desc": "Defeat Cerberus, and release the seal on ancient forces",
-  "advancements.trevorssentinels.cerberus.title": "False Idol",
-  "advancements.trevorssentinels.chainsaw.desc": "Craft a Scrap Metal Chainsaw",
-  "advancements.trevorssentinels.chainsaw.title": "Chainsaws, Man",
-  "advancements.trevorssentinels.industrial.desc": "Obtain any industrial-tier item",
-  "advancements.trevorssentinels.industrial.title": "Industrial",
-  "advancements.trevorssentinels.rose_gold.desc": "Obtain equipment made from Rose Gold",
-  "advancements.trevorssentinels.rose_gold.title": "Every Rose...",
-  "advancements.trevorssentinels.spf.desc": "Obtain a Banana Boat",
-  "advancements.trevorssentinels.spf.title": "SPF 50+",
-  "advancements.trevorssentinels.thanatu.desc": "Acquire the tools of the demon lord",
-  "advancements.trevorssentinels.thanatu.title": "...Has its Thorn",
-  "advancements.trevorssentinels.trevorssentinels.desc": "Obtain a Scrap Metal Shard",
-  "advancements.trevorssentinels.trevorssentinels.title": "Trevor's Sentinels",
-  "advancements.trevorssentinels.uranium.desc": "Obtain equipment made from Nuclear Ingots",
-  "advancements.trevorssentinels.uranium.title": "Nuclear Age",
-  "advancements.trevorssentinels.zenithium.desc": "Acquire a cluster of Zenithium",
-  "advancements.trevorssentinels.zenithium.title": "Infinity Squared",
-  "advancements.trevorssentinels.zenithium2.desc": "\"Honey, where's my super suit?\"",
-  "advancements.trevorssentinels.zenithium2.title": "Infinity+1 Everything",
-  "block.trevorssentinels.battery": "Battery",
-  "block.trevorssentinels.big_red_button": "Big Red Button",
-  "block.trevorssentinels.big_red_plate": "Big Red Plate",
-  "block.trevorssentinels.black_agility_block": "Steel Magno-Repulsion Block",
-  "block.trevorssentinels.blue_agility_block": "Blue Agility Block",
-  "block.trevorssentinels.caution_hard_light": "Hard Light",
-  "block.trevorssentinels.caution_hard_light_barrier": "Hard Light Barrier",
-  "block.trevorssentinels.caution_holographic_hanging_sign": "Holographic Hanging Sign",
-  "block.trevorssentinels.caution_holographic_sign": "Holographic Sign",
-  "block.trevorssentinels.cerulii_button": "Cerulii Button",
-  "block.trevorssentinels.cerulii_door": "Cerulii Door",
-  "block.trevorssentinels.cerulii_fence": "Cerulii Fence",
-  "block.trevorssentinels.cerulii_fence_gate": "Cerulii Fence Gate",
-  "block.trevorssentinels.cerulii_hanging_sign": "Cerulii Hanging Sign",
-  "block.trevorssentinels.cerulii_leaves": "Cerulii Leaves",
-  "block.trevorssentinels.cerulii_log": "Cerulii Log",
-  "block.trevorssentinels.cerulii_planks": "Cerulii Planks",
-  "block.trevorssentinels.cerulii_pressure_plate": "Cerulii Pressure Plate",
-  "block.trevorssentinels.cerulii_sapling": "Cerulii Sapling",
-  "block.trevorssentinels.cerulii_sign": "Cerulii Sign",
-  "block.trevorssentinels.cerulii_slab": "Cerulii Slab",
-  "block.trevorssentinels.cerulii_stairs": "Cerulii Stairs",
-  "block.trevorssentinels.cerulii_trapdoor": "Cerulii Trapdoor",
-  "block.trevorssentinels.cerulii_wood": "Cerulii Wood",
-  "block.trevorssentinels.chamber_block": "Chamber Block",
-  "block.trevorssentinels.charred_button": "Charred Button",
-  "block.trevorssentinels.charred_door": "Charred Door",
-  "block.trevorssentinels.charred_fence": "Charred Fence",
-  "block.trevorssentinels.charred_fence_gate": "Charred Fence Gate",
-  "block.trevorssentinels.charred_hanging_sign": "Charred Hanging Sign",
-  "block.trevorssentinels.charred_log": "Charred Log",
-  "block.trevorssentinels.charred_planks": "Charred Planks",
-  "block.trevorssentinels.charred_pressure_plate": "Charred Pressure Plate",
-  "block.trevorssentinels.charred_sign": "Charred Sign",
-  "block.trevorssentinels.charred_slab": "Charred Slab",
-  "block.trevorssentinels.charred_stairs": "Charred Stairs",
-  "block.trevorssentinels.charred_trapdoor": "Charred Trapdoor",
-  "block.trevorssentinels.charred_wood": "Charred Wood",
-  "block.trevorssentinels.chiseled_deific_end_stone_bricks": "Chiseled Deific End Stone Bricks",
-  "block.trevorssentinels.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
-  "block.trevorssentinels.chiseled_impious_end_stone_bricks": "Chiseled Impious End Stone Bricks",
-  "block.trevorssentinels.chiseled_scrap_metal_block": "Chiseled Scrap Metal Block",
-  "block.trevorssentinels.chiseled_snowstone": "Chiseled Snowstone",
-  "block.trevorssentinels.chiseled_starsteel_block": "Chiseled Block of Starsteel",
-  "block.trevorssentinels.coarse_dirt_slab": "Coarse Dirt Slab",
-  "block.trevorssentinels.coarse_dirt_stairs": "Coarse Dirt Stairs",
-  "block.trevorssentinels.cracked_deific_end_stone_bricks": "Cracked Deific End Stone Bricks",
-  "block.trevorssentinels.cracked_end_stone_bricks": "Cracked End Stone Bricks",
-  "block.trevorssentinels.cracked_impious_end_stone_bricks": "Cracked Impious End Stone Bricks",
-  "block.trevorssentinels.cut_snowstone": "Cut Snowstone",
-  "block.trevorssentinels.cut_snowstone_slab": "Cut Snowstone Slab",
-  "block.trevorssentinels.dark_chamber_block": "Dark Chamber Block",
-  "block.trevorssentinels.deific_end_stone": "Deific End Stone",
-  "block.trevorssentinels.deific_end_stone_brick_column": "Deific End Stone Brick Column",
-  "block.trevorssentinels.deific_end_stone_bricks": "Deific End Stone Bricks",
-  "block.trevorssentinels.dirt_slab": "Dirt Slab",
-  "block.trevorssentinels.dirt_stairs": "Dirt Stairs",
-  "block.trevorssentinels.end_stone_brick_column": "End Stone Brick Column",
-  "block.trevorssentinels.fancy_computer": "Fancy Computer",
-  "block.trevorssentinels.feathercorn": "Feathercorn",
-  "block.trevorssentinels.flesh_block": "Flesh Block",
-  "block.trevorssentinels.flesh_veins": "Flesh Veins",
-  "block.trevorssentinels.fleshy_eye": "Fleshy Eye",
-  "block.trevorssentinels.fusebox": "Fusebox",
-  "block.trevorssentinels.hard_light": "Hard Light",
-  "block.trevorssentinels.hard_light_barrier": "Hard Light Barrier",
-  "block.trevorssentinels.holographic_hanging_sign": "Holographic Hanging Sign",
-  "block.trevorssentinels.holographic_sign": "Holographic Sign",
-  "block.trevorssentinels.imperial_alloy_block": "Block of Imperial Alloy",
-  "block.trevorssentinels.impious_end_stone": "Impious End Stone",
-  "block.trevorssentinels.impious_end_stone_brick_column": "Impious End Stone Brick Column",
-  "block.trevorssentinels.impious_end_stone_bricks": "Impious End Stone Bricks",
-  "block.trevorssentinels.light_chamber_block": "Light Chamber Block",
-  "block.trevorssentinels.midas_button": "Midas Button",
-  "block.trevorssentinels.midas_door": "Midas Door",
-  "block.trevorssentinels.midas_fence": "Midas Fence",
-  "block.trevorssentinels.midas_fence_gate": "Midas Fence Gate",
-  "block.trevorssentinels.midas_hanging_sign": "Midas Hanging Sign",
-  "block.trevorssentinels.midas_leaves": "Midas Leaves",
-  "block.trevorssentinels.midas_log": "Midas Log",
-  "block.trevorssentinels.midas_planks": "Midas Planks",
-  "block.trevorssentinels.midas_pressure_plate": "Midas Pressure Plate",
-  "block.trevorssentinels.midas_sapling": "Midas Sapling",
-  "block.trevorssentinels.midas_sign": "Midas Sign",
-  "block.trevorssentinels.midas_slab": "Midas Slab",
-  "block.trevorssentinels.midas_stairs": "Midas Stairs",
-  "block.trevorssentinels.midas_trapdoor": "Midas Trapdoor",
-  "block.trevorssentinels.midas_wood": "Midas Wood",
-  "block.trevorssentinels.modification_table": "Modification Table",
-  "block.trevorssentinels.moss_slab": "Moss Slab",
-  "block.trevorssentinels.moss_stairs": "Moss Stairs",
-  "block.trevorssentinels.nanotech_block": "Nanotech Storage Block",
-  "block.trevorssentinels.nuclear_block": "Nuclear Storage Block",
-  "block.trevorssentinels.nuclear_ore": "Nuclear Ore",
-  "block.trevorssentinels.orange_agility_block": "Orange Agility Block",
-  "block.trevorssentinels.pale_button": "Pale Button",
-  "block.trevorssentinels.pale_door": "Pale Door",
-  "block.trevorssentinels.pale_fence": "Pale Fence",
-  "block.trevorssentinels.pale_fence_gate": "Pale Fence Gate",
-  "block.trevorssentinels.pale_hanging_sign": "Pale Hanging Sign",
-  "block.trevorssentinels.pale_leaves": "Pale Leaves",
-  "block.trevorssentinels.pale_log": "Pale Log",
-  "block.trevorssentinels.pale_planks": "Pale Planks",
-  "block.trevorssentinels.pale_pressure_plate": "Pale Pressure Plate",
-  "block.trevorssentinels.pale_sapling": "Pale Sapling",
-  "block.trevorssentinels.pale_sign": "Pale Sign",
-  "block.trevorssentinels.pale_slab": "Pale Slab",
-  "block.trevorssentinels.pale_stairs": "Pale Stairs",
-  "block.trevorssentinels.pale_trapdoor": "Pale Trapdoor",
-  "block.trevorssentinels.pale_wood": "Pale Wood",
-  "block.trevorssentinels.potted_cerulii_sapling": "Potted Cerulii Sapling",
-  "block.trevorssentinels.potted_midas_sapling": "Potted Midas Sapling",
-  "block.trevorssentinels.potted_pale_sapling": "Potted Pale Sapling",
-  "block.trevorssentinels.potted_skullweed": "Potted null",
-  "block.trevorssentinels.potted_tranquil_rose": "Potted null",
-  "block.trevorssentinels.potted_viridian_sapling": "Potted Viridian Sapling",
-  "block.trevorssentinels.reconstruction_table": "Reconstruction Table",
-  "block.trevorssentinels.rice_block": "Rice Block",
-  "block.trevorssentinels.rice_plant": "Rice Plant",
-  "block.trevorssentinels.rose_gold_block": "Block of Rose Gold",
-  "block.trevorssentinels.scrap_metal_block": "Scrap Metal Block",
-  "block.trevorssentinels.scrap_metal_pillar": "Scrap Metal Pillar",
-  "block.trevorssentinels.sentinel_hard_light": "Hard Light",
-  "block.trevorssentinels.sentinel_hard_light_barrier": "Hard Light Barrier",
-  "block.trevorssentinels.sentinel_holographic_hanging_sign": "Holographic Hanging Sign",
-  "block.trevorssentinels.sentinel_holographic_sign": "Holographic Sign",
-  "block.trevorssentinels.skullweed": "Skullweed",
-  "block.trevorssentinels.smooth_snowstone": "Smooth Snowstone",
-  "block.trevorssentinels.smooth_snowstone_slab": "Smooth Snowstone Slab",
-  "block.trevorssentinels.smooth_snowstone_stairs": "Smooth Snowstone Stairs",
-  "block.trevorssentinels.smooth_snowstone_wall": "Smooth Snowstone Wall",
-  "block.trevorssentinels.snowstone": "Snowstone",
-  "block.trevorssentinels.snowstone_slab": "Snowstone Slab",
-  "block.trevorssentinels.snowstone_stairs": "Snowstone Stairs",
-  "block.trevorssentinels.snowstone_wall": "Snowstone Wall",
-  "block.trevorssentinels.stainless_steel_block": "Stainless Steel Block",
-  "block.trevorssentinels.starsteel_block": "Block of Starsteel",
-  "block.trevorssentinels.starsteel_fan": "Starsteel Fan",
-  "block.trevorssentinels.starsteel_hanging_sign": "Starsteel Hanging Sign",
-  "block.trevorssentinels.starsteel_ladder": "Starsteel Ladder",
-  "block.trevorssentinels.starsteel_lamp": "Starsteel Lamp",
-  "block.trevorssentinels.starsteel_sign": "Starsteel Sign",
-  "block.trevorssentinels.stripped_cerulii_log": "Stripped Cerulii Log",
-  "block.trevorssentinels.stripped_cerulii_wood": "Stripped Cerulii Wood",
-  "block.trevorssentinels.stripped_charred_log": "Stripped Charred Log",
-  "block.trevorssentinels.stripped_charred_wood": "Stripped Charred Wood",
-  "block.trevorssentinels.stripped_midas_log": "Stripped Midas Log",
-  "block.trevorssentinels.stripped_midas_wood": "Stripped Midas Wood",
-  "block.trevorssentinels.stripped_pale_log": "Stripped Pale Log",
-  "block.trevorssentinels.stripped_pale_wood": "Stripped Pale Wood",
-  "block.trevorssentinels.stripped_viridian_log": "Stripped Viridian Log",
-  "block.trevorssentinels.stripped_viridian_wood": "Stripped Viridian Wood",
-  "block.trevorssentinels.tranquil_rose": "Tranquil Rose",
-  "block.trevorssentinels.unholy_block": "Block of Unholy Alloy",
-  "block.trevorssentinels.vendor": "Vendor",
-  "block.trevorssentinels.viridian_button": "Viridian Button",
-  "block.trevorssentinels.viridian_door": "Viridian Door",
-  "block.trevorssentinels.viridian_fence": "Viridian Fence",
-  "block.trevorssentinels.viridian_fence_gate": "Viridian Fence Gate",
-  "block.trevorssentinels.viridian_hanging_sign": "Viridian Hanging Sign",
-  "block.trevorssentinels.viridian_leaves": "Viridian Leaves",
-  "block.trevorssentinels.viridian_log": "Viridian Log",
-  "block.trevorssentinels.viridian_planks": "Viridian Planks",
-  "block.trevorssentinels.viridian_pressure_plate": "Viridian Pressure Plate",
-  "block.trevorssentinels.viridian_sapling": "Viridian Sapling",
-  "block.trevorssentinels.viridian_sign": "Viridian Sign",
-  "block.trevorssentinels.viridian_slab": "Viridian Slab",
-  "block.trevorssentinels.viridian_stairs": "Viridian Stairs",
-  "block.trevorssentinels.viridian_trapdoor": "Viridian Trapdoor",
-  "block.trevorssentinels.viridian_wood": "Viridian Wood",
-  "block.trevorssentinels.wax_infused_copper_block": "Wax-Infused Block of Copper",
-  "color.block.trevorssentinels.big_red_button": "-52429",
-  "color.block.trevorssentinels.big_red_plate": "-52429",
-  "color.block.trevorssentinels.blue_agility_block": "-16737844",
-  "color.block.trevorssentinels.caution_hard_light": "-13261",
-  "color.block.trevorssentinels.caution_hard_light_barrier": "-13261",
-  "color.block.trevorssentinels.caution_holographic_hanging_sign": "-13261",
-  "color.block.trevorssentinels.caution_holographic_sign": "-13261",
-  "color.block.trevorssentinels.cerulii_button": "-15631411",
-  "color.block.trevorssentinels.cerulii_door": "-15631411",
-  "color.block.trevorssentinels.cerulii_fence": "-15631411",
-  "color.block.trevorssentinels.cerulii_fence_gate": "-15631411",
-  "color.block.trevorssentinels.cerulii_hanging_sign": "-15631411",
-  "color.block.trevorssentinels.cerulii_leaves": "-15631411",
-  "color.block.trevorssentinels.cerulii_log": "-15631411",
-  "color.block.trevorssentinels.cerulii_planks": "-15631411",
-  "color.block.trevorssentinels.cerulii_pressure_plate": "-15631411",
-  "color.block.trevorssentinels.cerulii_sapling": "-15631411",
-  "color.block.trevorssentinels.cerulii_sign": "-15631411",
-  "color.block.trevorssentinels.cerulii_slab": "-15631411",
-  "color.block.trevorssentinels.cerulii_stairs": "-15631411",
-  "color.block.trevorssentinels.cerulii_trapdoor": "-15631411",
-  "color.block.trevorssentinels.cerulii_wood": "-15631411",
-  "color.block.trevorssentinels.charred_button": "-5592406",
-  "color.block.trevorssentinels.charred_door": "-5592406",
-  "color.block.trevorssentinels.charred_fence": "-5592406",
-  "color.block.trevorssentinels.charred_fence_gate": "-5592406",
-  "color.block.trevorssentinels.charred_hanging_sign": "-5592406",
-  "color.block.trevorssentinels.charred_log": "-5592406",
-  "color.block.trevorssentinels.charred_planks": "-5592406",
-  "color.block.trevorssentinels.charred_pressure_plate": "-5592406",
-  "color.block.trevorssentinels.charred_sign": "-5592406",
-  "color.block.trevorssentinels.charred_slab": "-5592406",
-  "color.block.trevorssentinels.charred_stairs": "-5592406",
-  "color.block.trevorssentinels.charred_trapdoor": "-5592406",
-  "color.block.trevorssentinels.charred_wood": "-5592406",
-  "color.block.trevorssentinels.chiseled_deific_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.chiseled_impious_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.chiseled_scrap_metal_block": "-8816263",
-  "color.block.trevorssentinels.chiseled_snowstone": "-983555",
-  "color.block.trevorssentinels.chiseled_starsteel_block": "-3618605",
-  "color.block.trevorssentinels.cracked_deific_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.cracked_impious_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.cut_snowstone": "-983555",
-  "color.block.trevorssentinels.cut_snowstone_slab": "-983555",
-  "color.block.trevorssentinels.deific_end_stone": "-43521",
-  "color.block.trevorssentinels.deific_end_stone_brick_column": "-43521",
-  "color.block.trevorssentinels.deific_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.feathercorn": "-410333",
-  "color.block.trevorssentinels.flesh_block": "-4237483",
-  "color.block.trevorssentinels.flesh_veins": "-4237483",
-  "color.block.trevorssentinels.fleshy_eye": "-4237483",
-  "color.block.trevorssentinels.hard_light": "-13382452",
-  "color.block.trevorssentinels.hard_light_barrier": "-13382452",
-  "color.block.trevorssentinels.holographic_hanging_sign": "-13382452",
-  "color.block.trevorssentinels.holographic_sign": "-13382452",
-  "color.block.trevorssentinels.imperial_alloy_block": "-1382757",
-  "color.block.trevorssentinels.impious_end_stone": "-43521",
-  "color.block.trevorssentinels.impious_end_stone_brick_column": "-43521",
-  "color.block.trevorssentinels.impious_end_stone_bricks": "-43521",
-  "color.block.trevorssentinels.midas_button": "-4281561",
-  "color.block.trevorssentinels.midas_door": "-4281561",
-  "color.block.trevorssentinels.midas_fence": "-4281561",
-  "color.block.trevorssentinels.midas_fence_gate": "-4281561",
-  "color.block.trevorssentinels.midas_hanging_sign": "-4281561",
-  "color.block.trevorssentinels.midas_leaves": "-4281561",
-  "color.block.trevorssentinels.midas_log": "-4281561",
-  "color.block.trevorssentinels.midas_planks": "-4281561",
-  "color.block.trevorssentinels.midas_pressure_plate": "-4281561",
-  "color.block.trevorssentinels.midas_sapling": "-4281561",
-  "color.block.trevorssentinels.midas_sign": "-4281561",
-  "color.block.trevorssentinels.midas_slab": "-4281561",
-  "color.block.trevorssentinels.midas_stairs": "-4281561",
-  "color.block.trevorssentinels.midas_trapdoor": "-4281561",
-  "color.block.trevorssentinels.midas_wood": "-4281561",
-  "color.block.trevorssentinels.nanotech_block": "-2555886",
-  "color.block.trevorssentinels.nuclear_block": "-12060148",
-  "color.block.trevorssentinels.nuclear_ore": "-12060148",
-  "color.block.trevorssentinels.orange_agility_block": "-22016",
-  "color.block.trevorssentinels.pale_button": "-1383963",
-  "color.block.trevorssentinels.pale_door": "-1383963",
-  "color.block.trevorssentinels.pale_fence": "-1383963",
-  "color.block.trevorssentinels.pale_fence_gate": "-1383963",
-  "color.block.trevorssentinels.pale_hanging_sign": "-1383963",
-  "color.block.trevorssentinels.pale_leaves": "-1383963",
-  "color.block.trevorssentinels.pale_log": "-1383963",
-  "color.block.trevorssentinels.pale_planks": "-1383963",
-  "color.block.trevorssentinels.pale_pressure_plate": "-1383963",
-  "color.block.trevorssentinels.pale_sapling": "-1383963",
-  "color.block.trevorssentinels.pale_sign": "-1383963",
-  "color.block.trevorssentinels.pale_slab": "-1383963",
-  "color.block.trevorssentinels.pale_stairs": "-1383963",
-  "color.block.trevorssentinels.pale_trapdoor": "-1383963",
-  "color.block.trevorssentinels.pale_wood": "-1383963",
-  "color.block.trevorssentinels.potted_cerulii_sapling": "-15631411",
-  "color.block.trevorssentinels.potted_midas_sapling": "-4281561",
-  "color.block.trevorssentinels.potted_pale_sapling": "-1383963",
-  "color.block.trevorssentinels.potted_skullweed": "-8356947",
-  "color.block.trevorssentinels.potted_tranquil_rose": "-6731278",
-  "color.block.trevorssentinels.potted_viridian_sapling": "-9074386",
-  "color.block.trevorssentinels.reconstruction_table": "-13382452",
-  "color.block.trevorssentinels.rose_gold_block": "-535867",
-  "color.block.trevorssentinels.scrap_metal_block": "-8816263",
-  "color.block.trevorssentinels.scrap_metal_pillar": "-8816263",
-  "color.block.trevorssentinels.sentinel_hard_light": "-52429",
-  "color.block.trevorssentinels.sentinel_hard_light_barrier": "-52429",
-  "color.block.trevorssentinels.sentinel_holographic_hanging_sign": "-52429",
-  "color.block.trevorssentinels.sentinel_holographic_sign": "-52429",
-  "color.block.trevorssentinels.skullweed": "-8356947",
-  "color.block.trevorssentinels.smooth_snowstone": "-983555",
-  "color.block.trevorssentinels.smooth_snowstone_slab": "-983555",
-  "color.block.trevorssentinels.smooth_snowstone_stairs": "-983555",
-  "color.block.trevorssentinels.smooth_snowstone_wall": "-983555",
-  "color.block.trevorssentinels.snowstone": "-983555",
-  "color.block.trevorssentinels.snowstone_slab": "-983555",
-  "color.block.trevorssentinels.snowstone_stairs": "-983555",
-  "color.block.trevorssentinels.snowstone_wall": "-983555",
-  "color.block.trevorssentinels.stainless_steel_block": "-3618605",
-  "color.block.trevorssentinels.starsteel_block": "-3618605",
-  "color.block.trevorssentinels.starsteel_hanging_sign": "-3618605",
-  "color.block.trevorssentinels.starsteel_ladder": "-3618605",
-  "color.block.trevorssentinels.starsteel_sign": "-3618605",
-  "color.block.trevorssentinels.stripped_cerulii_log": "-15631411",
-  "color.block.trevorssentinels.stripped_cerulii_wood": "-15631411",
-  "color.block.trevorssentinels.stripped_charred_log": "-5592406",
-  "color.block.trevorssentinels.stripped_charred_wood": "-5592406",
-  "color.block.trevorssentinels.stripped_midas_log": "-4281561",
-  "color.block.trevorssentinels.stripped_midas_wood": "-4281561",
-  "color.block.trevorssentinels.stripped_pale_log": "-1383963",
-  "color.block.trevorssentinels.stripped_pale_wood": "-1383963",
-  "color.block.trevorssentinels.stripped_viridian_log": "-9074386",
-  "color.block.trevorssentinels.stripped_viridian_wood": "-9074386",
-  "color.block.trevorssentinels.tranquil_rose": "-6731278",
-  "color.block.trevorssentinels.unholy_block": "-43521",
-  "color.block.trevorssentinels.viridian_button": "-9074386",
-  "color.block.trevorssentinels.viridian_door": "-9074386",
-  "color.block.trevorssentinels.viridian_fence": "-9074386",
-  "color.block.trevorssentinels.viridian_fence_gate": "-9074386",
-  "color.block.trevorssentinels.viridian_hanging_sign": "-9074386",
-  "color.block.trevorssentinels.viridian_leaves": "-9074386",
-  "color.block.trevorssentinels.viridian_log": "-9074386",
-  "color.block.trevorssentinels.viridian_planks": "-9074386",
-  "color.block.trevorssentinels.viridian_pressure_plate": "-9074386",
-  "color.block.trevorssentinels.viridian_sapling": "-9074386",
-  "color.block.trevorssentinels.viridian_sign": "-9074386",
-  "color.block.trevorssentinels.viridian_slab": "-9074386",
-  "color.block.trevorssentinels.viridian_stairs": "-9074386",
-  "color.block.trevorssentinels.viridian_trapdoor": "-9074386",
-  "color.block.trevorssentinels.viridian_wood": "-9074386",
-  "color.item.trevorssentinels.ash": "-6731278",
-  "color.item.trevorssentinels.banana": "-410333",
-  "color.item.trevorssentinels.banana_bread": "-410333",
-  "color.item.trevorssentinels.beetroot_soup_can": "-3618605",
-  "color.item.trevorssentinels.blood_diamond": "-2555886",
-  "color.item.trevorssentinels.caution_hard_light_projector": "-13261",
-  "color.item.trevorssentinels.cerulii_boat": "-15631411",
-  "color.item.trevorssentinels.cerulii_chest_boat": "-15631411",
-  "color.item.trevorssentinels.charred_oak_boat": "-5592406",
-  "color.item.trevorssentinels.charred_oak_chest_boat": "-5592406",
-  "color.item.trevorssentinels.chorus_cobbler": "-4547654",
-  "color.item.trevorssentinels.cola_cyan": "-3618605",
-  "color.item.trevorssentinels.cola_green": "-3618605",
-  "color.item.trevorssentinels.cola_orange": "-3618605",
-  "color.item.trevorssentinels.cooked_sandfish": "-2836125",
-  "color.item.trevorssentinels.copper_gladius": "-1606570",
-  "color.item.trevorssentinels.cybernetic_stomach": "-8816263",
-  "color.item.trevorssentinels.demonic_core": "-43521",
-  "color.item.trevorssentinels.distance_tracker": "-8816263",
-  "color.item.trevorssentinels.dolphins_grace_item": "-3285779",
-  "color.item.trevorssentinels.druidic_boots": "-9074386",
-  "color.item.trevorssentinels.druidic_bow": "-9074386",
-  "color.item.trevorssentinels.druidic_chestplate": "-9074386",
-  "color.item.trevorssentinels.druidic_dagger": "-9074386",
-  "color.item.trevorssentinels.druidic_gem": "-9074386",
-  "color.item.trevorssentinels.druidic_helmet": "-9074386",
-  "color.item.trevorssentinels.druidic_leggings": "-9074386",
-  "color.item.trevorssentinels.druidic_sword": "-9074386",
-  "color.item.trevorssentinels.dryadic_boots": "-9074386",
-  "color.item.trevorssentinels.dryadic_chestplate": "-9074386",
-  "color.item.trevorssentinels.dryadic_dagger": "-9074386",
-  "color.item.trevorssentinels.dryadic_helmet": "-9074386",
-  "color.item.trevorssentinels.dryadic_leggings": "-9074386",
-  "color.item.trevorssentinels.dryadic_sword": "-9074386",
-  "color.item.trevorssentinels.dubious_bacon": "-4237483",
-  "color.item.trevorssentinels.dune_eel": "-2836125",
-  "color.item.trevorssentinels.empty_can": "-3618605",
-  "color.item.trevorssentinels.enchanted_leaf": "-9074386",
-  "color.item.trevorssentinels.eye_of_ruin": "-4237483",
-  "color.item.trevorssentinels.fire_resistance_item": "-752350",
-  "color.item.trevorssentinels.golden_apple_juice": "-410333",
-  "color.item.trevorssentinels.hard_light_projector": "-13382452",
-  "color.item.trevorssentinels.hero_of_the_village_item": "-12060148",
-  "color.item.trevorssentinels.imperial_alloy_ingot": "-1382757",
-  "color.item.trevorssentinels.imperial_battleaxe": "-1382757",
-  "color.item.trevorssentinels.imperial_boots": "-1382757",
-  "color.item.trevorssentinels.imperial_chestplate": "-1382757",
-  "color.item.trevorssentinels.imperial_gladius": "-1382757",
-  "color.item.trevorssentinels.imperial_helmet": "-1382757",
-  "color.item.trevorssentinels.imperial_leggings": "-1382757",
-  "color.item.trevorssentinels.imperial_pickaxe": "-1382757",
-  "color.item.trevorssentinels.imperial_shovel": "-1382757",
-  "color.item.trevorssentinels.imperial_sickle": "-1382757",
-  "color.item.trevorssentinels.imperial_sword": "-1382757",
-  "color.item.trevorssentinels.industrial_boots": "-3618605",
-  "color.item.trevorssentinels.industrial_crowbar": "-3618605",
-  "color.item.trevorssentinels.industrial_harness": "-3618605",
-  "color.item.trevorssentinels.industrial_helmet": "-3618605",
-  "color.item.trevorssentinels.industrial_pants": "-3618605",
-  "color.item.trevorssentinels.industrial_phaser": "-3618605",
-  "color.item.trevorssentinels.jump_boost_item": "-12060148",
-  "color.item.trevorssentinels.kings_blade": "-1",
-  "color.item.trevorssentinels.lilith_blade": "-2836125",
-  "color.item.trevorssentinels.master_sword": "-11141121",
-  "color.item.trevorssentinels.midas_boat": "-4281561",
-  "color.item.trevorssentinels.midas_chest_boat": "-4281561",
-  "color.item.trevorssentinels.midas_fruit": "-410333",
-  "color.item.trevorssentinels.milk_can": "-3618605",
-  "color.item.trevorssentinels.mushroom_stew_can": "-3618605",
-  "color.item.trevorssentinels.nanotech_axe": "-2555886",
-  "color.item.trevorssentinels.nanotech_boots": "-2555886",
-  "color.item.trevorssentinels.nanotech_capsule": "-2555886",
-  "color.item.trevorssentinels.nanotech_chestplate": "-2555886",
-  "color.item.trevorssentinels.nanotech_drill": "-2555886",
-  "color.item.trevorssentinels.nanotech_helmet": "-2555886",
-  "color.item.trevorssentinels.nanotech_hoe": "-2555886",
-  "color.item.trevorssentinels.nanotech_leggings": "-2555886",
-  "color.item.trevorssentinels.nanotech_phaser": "-2555886",
-  "color.item.trevorssentinels.nanotech_shovel": "-2555886",
-  "color.item.trevorssentinels.nanotech_sword": "-2555886",
-  "color.item.trevorssentinels.nanotech_vibroknife": "-2555886",
-  "color.item.trevorssentinels.nuclear_axe": "-12060148",
-  "color.item.trevorssentinels.nuclear_boots": "-12060148",
-  "color.item.trevorssentinels.nuclear_chestplate": "-12060148",
-  "color.item.trevorssentinels.nuclear_drill": "-12060148",
-  "color.item.trevorssentinels.nuclear_helmet": "-12060148",
-  "color.item.trevorssentinels.nuclear_hoe": "-12060148",
-  "color.item.trevorssentinels.nuclear_ingot": "-12060148",
-  "color.item.trevorssentinels.nuclear_leggings": "-12060148",
-  "color.item.trevorssentinels.nuclear_phaser": "-12060148",
-  "color.item.trevorssentinels.nuclear_rocket": "-12060148",
-  "color.item.trevorssentinels.nuclear_shovel": "-12060148",
-  "color.item.trevorssentinels.nuclear_sword": "-12060148",
-  "color.item.trevorssentinels.nuclear_vibroknife": "-12060148",
-  "color.item.trevorssentinels.one_pence": "-1606570",
-  "color.item.trevorssentinels.paladins_badge": "-410333",
-  "color.item.trevorssentinels.pale_boat": "-1383963",
-  "color.item.trevorssentinels.pale_chest_boat": "-1383963",
-  "color.item.trevorssentinels.pappyd_blade": "-752350",
-  "color.item.trevorssentinels.pappym_blade": "-11141291",
-  "color.item.trevorssentinels.pearfruit": "-2818276",
-  "color.item.trevorssentinels.pearfruit_juice": "-2818276",
-  "color.item.trevorssentinels.rabbit_stew_can": "-3618605",
-  "color.item.trevorssentinels.redstone_crystal": "-2555886",
-  "color.item.trevorssentinels.resistance_item": "-5592406",
-  "color.item.trevorssentinels.roomba_spawn_egg": "-8816263",
-  "color.item.trevorssentinels.rose_gold_battleaxe": "-535867",
-  "color.item.trevorssentinels.rose_gold_boots": "-535867",
-  "color.item.trevorssentinels.rose_gold_chestplate": "-535867",
-  "color.item.trevorssentinels.rose_gold_dagger": "-535867",
-  "color.item.trevorssentinels.rose_gold_helmet": "-535867",
-  "color.item.trevorssentinels.rose_gold_ingot": "-535867",
-  "color.item.trevorssentinels.rose_gold_leggings": "-535867",
-  "color.item.trevorssentinels.rose_gold_pickaxe": "-535867",
-  "color.item.trevorssentinels.rose_gold_shovel": "-535867",
-  "color.item.trevorssentinels.rose_gold_sickle": "-535867",
-  "color.item.trevorssentinels.rose_gold_sword": "-535867",
-  "color.item.trevorssentinels.salt": "-267291",
-  "color.item.trevorssentinels.sandfish": "-2836125",
-  "color.item.trevorssentinels.scara_shears": "-5635926",
-  "color.item.trevorssentinels.scrap_metal_boots": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_chainsaw": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_chestplate": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_drill": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_helmet": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_hoe": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_knife": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_leggings": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_phaser": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_shard": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_shovel": "-8816263",
-  "color.item.trevorssentinels.scrap_metal_sword": "-8816263",
-  "color.item.trevorssentinels.sentinel_hard_light_projector": "-52429",
-  "color.item.trevorssentinels.sentinel_spawn_egg": "-8816263",
-  "color.item.trevorssentinels.skylar_blade": "-410333",
-  "color.item.trevorssentinels.smoked_fish": "-4281561",
-  "color.item.trevorssentinels.starsteel_axe": "-3618605",
-  "color.item.trevorssentinels.starsteel_boots": "-3618605",
-  "color.item.trevorssentinels.starsteel_chestplate": "-3618605",
-  "color.item.trevorssentinels.starsteel_drill": "-3618605",
-  "color.item.trevorssentinels.starsteel_helmet": "-3618605",
-  "color.item.trevorssentinels.starsteel_hoe": "-3618605",
-  "color.item.trevorssentinels.starsteel_ingot": "-3618605",
-  "color.item.trevorssentinels.starsteel_knife": "-3618605",
-  "color.item.trevorssentinels.starsteel_leggings": "-3618605",
-  "color.item.trevorssentinels.starsteel_phaser": "-3618605",
-  "color.item.trevorssentinels.starsteel_shovel": "-3618605",
-  "color.item.trevorssentinels.starsteel_sword": "-3618605",
-  "color.item.trevorssentinels.strength_item": "-5592406",
-  "color.item.trevorssentinels.thanatu_blade": "-43521",
-  "color.item.trevorssentinels.thanatu_boots": "-43521",
-  "color.item.trevorssentinels.thanatu_chestplate": "-43521",
-  "color.item.trevorssentinels.thanatu_helmet": "-43521",
-  "color.item.trevorssentinels.thanatu_leggings": "-43521",
-  "color.item.trevorssentinels.tranquil_dust": "-6731278",
-  "color.item.trevorssentinels.unholy_axe": "-43521",
-  "color.item.trevorssentinels.unholy_boots": "-43521",
-  "color.item.trevorssentinels.unholy_chestplate": "-43521",
-  "color.item.trevorssentinels.unholy_dagger": "-43521",
-  "color.item.trevorssentinels.unholy_helmet": "-43521",
-  "color.item.trevorssentinels.unholy_hoe": "-43521",
-  "color.item.trevorssentinels.unholy_ingot": "-43521",
-  "color.item.trevorssentinels.unholy_leggings": "-43521",
-  "color.item.trevorssentinels.unholy_pickaxe": "-43521",
-  "color.item.trevorssentinels.unholy_shards": "-43521",
-  "color.item.trevorssentinels.unholy_shovel": "-43521",
-  "color.item.trevorssentinels.unholy_sword": "-43521",
-  "color.item.trevorssentinels.vendor_token": "-6115407",
-  "color.item.trevorssentinels.vile_spitter": "-4237483",
-  "color.item.trevorssentinels.viridian_boat": "-9074386",
-  "color.item.trevorssentinels.viridian_chest_boat": "-9074386",
-  "color.item.trevorssentinels.zenithium_axe": "-16733696",
-  "color.item.trevorssentinels.zenithium_boots": "-16733696",
-  "color.item.trevorssentinels.zenithium_chestplate": "-16733696",
-  "color.item.trevorssentinels.zenithium_cluster": "-16733696",
-  "color.item.trevorssentinels.zenithium_dagger": "-16733696",
-  "color.item.trevorssentinels.zenithium_helmet": "-16733696",
-  "color.item.trevorssentinels.zenithium_hoe": "-16733696",
-  "color.item.trevorssentinels.zenithium_leggings": "-16733696",
-  "color.item.trevorssentinels.zenithium_phaser": "-16733696",
-  "color.item.trevorssentinels.zenithium_pickaxe": "-16733696",
-  "color.item.trevorssentinels.zenithium_shovel": "-16733696",
-  "color.item.trevorssentinels.zenithium_sword": "-16733696",
-  "color.trevorssentinels.worldLevelTooLow.1": "",
-  "color.trevorssentinels.worldLevelTooLow.2": "-43521",
-  "color.trevorssentinels.worldLevelTooLow.3": "-11184641",
-  "death.attack.dagger_projectile": "%1$s was shot through the heart, and %2$s is to blame",
-  "death.attack.dagger_projectile.item": "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name",
-  "death.attack.infested": "%1$s didn't make it",
-  "death.attack.irradiated": "%1$s ate one too many bananas",
-  "death.attack.phaser_projectile": "%1$s phased away thanks to %2$s",
-  "death.attack.phaser_projectile.item": "%1$s phased away thanks to %2$s and their %3$s",
-  "death.attack.redstoned": "%1$s gave into the pain",
-  "death.attack.shard_projectile": "%2$s turned %1$s into a pincushion",
-  "death.attack.shard_projectile.item": "%2$s turned %1$s into a pincushion using %3$s",
-  "effect.trevorssentinels.cosmic_fire": "Cosmic Flame",
-  "effect.trevorssentinels.flight": "Flight",
-  "effect.trevorssentinels.infested": "☣ Infested ☣",
-  "effect.trevorssentinels.irradiated": "☢ Irradiated ☢",
-  "effect.trevorssentinels.redstoned": "Redstoned",
-  "effect.trevorssentinels.well_fed": "Well-Fed",
-  "entity.minecraft.villager.acolyte": "§cAcolyte",
-  "entity.minecraft.villager.demolitionist": "§cDemolitionist",
-  "entity.minecraft.villager.engineer": "§6Engineer",
-  "entity.minecraft.villager.witherseer": "§dWitherseer",
-  "entity.trevorssentinels.florbus": "Florbus",
-  "entity.trevorssentinels.grenade": "Delayed Explosive",
-  "entity.trevorssentinels.phaser_projectile": "Phaser Projectile",
-  "entity.trevorssentinels.sentinel": "Sentinel",
-  "entity.trevorssentinels.sentinum_roomba": "Sentinel Cleaning Droid",
-  "entity.trevorssentinels.shard_projectile": "item.trevorssentinels.scrap_metal_shard",
-  "gamerule.trevorssentinels:milkCuresPotionEffects": "Drinking milk cures potion effects",
-  "gamerule.trevorssentinels:useVelocityFallDamage": "Use velocity-based fall damage",
-  "gamerule.trevorssentinels:useVelocityFallDamage.description": "If enabled, fall damage will be calculated based on velocity.",
-  "item.minecraft.lingering_potion.effect.flight_potion": "Lingering Potion of Flight",
-  "item.minecraft.lingering_potion.effect.redstoned_potion": "Lingering Potion of Redstoned",
-  "item.minecraft.potion.effect.flight_potion": "Flight Potion",
-  "item.minecraft.potion.effect.redstoned_potion": "Redstoned Potion",
-  "item.minecraft.splash_potion.effect.flight_potion": "Splash Potion of Flight",
-  "item.minecraft.splash_potion.effect.redstoned_potion": "Splash Potion of Redstoned",
-  "item.minecraft.tipped_arrow.effect.flight_potion": "Arrow of Flight",
-  "item.minecraft.tipped_arrow.effect.redstoned_potion": "Arrow of Redstoned",
-  "item.trevorssentinels.apple_juice": "Apple Juice",
-  "item.trevorssentinels.arma_dei_axe": "Arma Dei Axe",
-  "item.trevorssentinels.arma_dei_boots": "Arma Dei Boots",
-  "item.trevorssentinels.arma_dei_chestplate": "Arma Dei Chestplate",
-  "item.trevorssentinels.arma_dei_dagger": "Arma Dei Dagger",
-  "item.trevorssentinels.arma_dei_helmet": "Arma Dei Helmet",
-  "item.trevorssentinels.arma_dei_hoe": "Arma Dei Hoe",
-  "item.trevorssentinels.arma_dei_leggings": "Arma Dei Leggings",
-  "item.trevorssentinels.arma_dei_pickaxe": "Arma Dei Pickaxe",
-  "item.trevorssentinels.arma_dei_shovel": "Arma Dei Shovel",
-  "item.trevorssentinels.arma_dei_sword": "Arma Dei Sword",
-  "item.trevorssentinels.ash": "Wither Ash",
-  "item.trevorssentinels.banana": "Banana",
-  "item.trevorssentinels.banana_bread": "Banana Bread",
-  "item.trevorssentinels.beetroot_soup_can": "Can of Beetroot Soup",
-  "item.trevorssentinels.blood_diamond": "Blood Diamond",
-  "item.trevorssentinels.brownie": "Brownie",
-  "item.trevorssentinels.burrito": "Burrito",
-  "item.trevorssentinels.caution_hard_light_projector": "Hard Light Projector",
-  "item.trevorssentinels.cerulii_boat": "Cerulii Boat",
-  "item.trevorssentinels.cerulii_chest_boat": "Cerulii Chest Boat",
-  "item.trevorssentinels.charred_oak_boat": "Charred Oak Boat",
-  "item.trevorssentinels.charred_oak_chest_boat": "Charred Oak Chest Boat",
-  "item.trevorssentinels.chorus_cobbler": "Chorus Cobbler",
-  "item.trevorssentinels.cola_cyan": "Can of AquaDei Lite",
-  "item.trevorssentinels.cola_green": "Can of Trola-Cola",
-  "item.trevorssentinels.cola_orange": "Can of A&L",
-  "item.trevorssentinels.conduit_power_item": "Eye of the Sea",
-  "item.trevorssentinels.cooked_sandfish": "Cooked Sandfish",
-  "item.trevorssentinels.copper_gladius": "Copper Gladius",
-  "item.trevorssentinels.cybernetic_stomach": "Cybernetic Stomach",
-  "item.trevorssentinels.demonic_core": "Demonic Core",
-  "item.trevorssentinels.distance_tracker": "Lifeform Tracker",
-  "item.trevorssentinels.dolphins_grace_item": "Foam Dolphin Plush",
-  "item.trevorssentinels.druidic_boots": "Druidic Boots",
-  "item.trevorssentinels.druidic_bow": "Druidic Bow",
-  "item.trevorssentinels.druidic_chestplate": "Druidic Chestplate",
-  "item.trevorssentinels.druidic_dagger": "Druidic Dagger",
-  "item.trevorssentinels.druidic_gem": "Druidic Gem",
-  "item.trevorssentinels.druidic_helmet": "Druidic Helmet",
-  "item.trevorssentinels.druidic_leggings": "Druidic Leggings",
-  "item.trevorssentinels.druidic_sword": "Druidic Sword",
-  "item.trevorssentinels.dryadic_boots": "Dryadic Boots",
-  "item.trevorssentinels.dryadic_chestplate": "Dryadic Chestplate",
-  "item.trevorssentinels.dryadic_dagger": "Dryadic Dagger",
-  "item.trevorssentinels.dryadic_helmet": "Dryadic Helmet",
-  "item.trevorssentinels.dryadic_leggings": "Dryadic Leggings",
-  "item.trevorssentinels.dryadic_sword": "Dryadic Sword",
-  "item.trevorssentinels.dubious_bacon": "Dubious Bacon",
-  "item.trevorssentinels.dune_eel": "Dune Eel",
-  "item.trevorssentinels.empty_can": "Empty Can",
-  "item.trevorssentinels.enchanted_leaf": "Enchanted Leaf",
-  "item.trevorssentinels.eye_of_ruin": "Eye Of Ruin",
-  "item.trevorssentinels.fire_resistance_item": "Flaming Badge",
-  "item.trevorssentinels.florbus_spawn_egg": "Florbus Spawn Sac",
-  "item.trevorssentinels.fried_egg": "Fried Egg",
-  "item.trevorssentinels.golden_apple_juice": "Golden Apple Juice",
-  "item.trevorssentinels.hard_light_projector": "Hard Light Projector",
-  "item.trevorssentinels.hero_of_the_village_item": "Hero's Emerald",
-  "item.trevorssentinels.imperial_alloy_ingot": "Imperial Alloy Ingot",
-  "item.trevorssentinels.imperial_battleaxe": "Imperial Battleaxe",
-  "item.trevorssentinels.imperial_boots": "Imperial Boots",
-  "item.trevorssentinels.imperial_chestplate": "Imperial Chestplate",
-  "item.trevorssentinels.imperial_gladius": "Imperial Gladius",
-  "item.trevorssentinels.imperial_helmet": "Imperial Helmet",
-  "item.trevorssentinels.imperial_leggings": "Imperial Leggings",
-  "item.trevorssentinels.imperial_pickaxe": "Imperial Pickaxe",
-  "item.trevorssentinels.imperial_shovel": "Imperial Shovel",
-  "item.trevorssentinels.imperial_sickle": "Imperial Sickle",
-  "item.trevorssentinels.imperial_sword": "Imperial Sword",
-  "item.trevorssentinels.industrial_boots": "Industrial Boots",
-  "item.trevorssentinels.industrial_crowbar": "Industrial Crowbar",
-  "item.trevorssentinels.industrial_harness": "Industrial Harness",
-  "item.trevorssentinels.industrial_helmet": "Industrial Helmet",
-  "item.trevorssentinels.industrial_pants": "Industrial Pants",
-  "item.trevorssentinels.industrial_phaser": "Industrial Phaser",
-  "item.trevorssentinels.invisibility_item": "Vampire's Mirror",
-  "item.trevorssentinels.jump_boost_item": "Icarus' Gust",
-  "item.trevorssentinels.kings_blade": "Stainless Resolve",
-  "item.trevorssentinels.legendary_token": "Legendary Token",
-  "item.trevorssentinels.lilith_blade": "Unwavering Judgement",
-  "item.trevorssentinels.master_sword": "The Master's Sword",
-  "item.trevorssentinels.midas_boat": "Midas Boat",
-  "item.trevorssentinels.midas_chest_boat": "Midas Chest Boat",
-  "item.trevorssentinels.midas_fruit": "Midas Fruit",
-  "item.trevorssentinels.milk_can": "Can of Evaporated Milk",
-  "item.trevorssentinels.mushroom_stew_can": "Can of Mushroom Stew",
-  "item.trevorssentinels.music_disc_assassination_upload": "Scrapped Cassette",
-  "item.trevorssentinels.music_disc_assassination_upload.desc": "Kristoffer Kaufmann - Assassination Upload",
-  "item.trevorssentinels.music_disc_lapse_in_judgement": "War-Torn Music Disc",
-  "item.trevorssentinels.music_disc_lapse_in_judgement.desc": "Kristoffer Kaufmann - Lapse in Judgement",
-  "item.trevorssentinels.music_disc_ode_to_tranquility": "Music Disc",
-  "item.trevorssentinels.music_disc_ode_to_tranquility.desc": "Kristoffer Kaufmann - Ode to Tranquility",
-  "item.trevorssentinels.music_disc_recital": "Aged Cassette",
-  "item.trevorssentinels.music_disc_recital.desc": "Trevor Skullcrafter - recital",
-  "item.trevorssentinels.muzzle_clamp": "Muzzle Clamp",
-  "item.trevorssentinels.nanotech_axe": "Nanotech Axe",
-  "item.trevorssentinels.nanotech_boots": "Nanotech Boots",
-  "item.trevorssentinels.nanotech_capsule": "Nanotech Capsule",
-  "item.trevorssentinels.nanotech_chestplate": "Nanotech Chestplate",
-  "item.trevorssentinels.nanotech_drill": "Nanotech Drill",
-  "item.trevorssentinels.nanotech_helmet": "Nanotech Helmet",
-  "item.trevorssentinels.nanotech_hoe": "Nanotech Hoe",
-  "item.trevorssentinels.nanotech_leggings": "Nanotech Leggings",
-  "item.trevorssentinels.nanotech_phaser": "Nanotech Phaser",
-  "item.trevorssentinels.nanotech_shovel": "Nanotech Shovel",
-  "item.trevorssentinels.nanotech_sword": "Nanotech Sword",
-  "item.trevorssentinels.nanotech_vibroknife": "Nanotech Vibroknife",
-  "item.trevorssentinels.night_vision_item": "Feline Eye",
-  "item.trevorssentinels.nuclear_axe": "Nuclear Axe",
-  "item.trevorssentinels.nuclear_boots": "Nuclear Boots",
-  "item.trevorssentinels.nuclear_chestplate": "Nuclear Chestplate",
-  "item.trevorssentinels.nuclear_drill": "Nuclear Drill",
-  "item.trevorssentinels.nuclear_helmet": "Nuclear Helmet",
-  "item.trevorssentinels.nuclear_hoe": "Nuclear Hoe",
-  "item.trevorssentinels.nuclear_ingot": "Nuclear Ingot",
-  "item.trevorssentinels.nuclear_leggings": "Nuclear Leggings",
-  "item.trevorssentinels.nuclear_phaser": "Nuclear Phaser",
-  "item.trevorssentinels.nuclear_rocket": "Nuclear Rocket",
-  "item.trevorssentinels.nuclear_shovel": "Nuclear Shovel",
-  "item.trevorssentinels.nuclear_sword": "Nuclear Sword",
-  "item.trevorssentinels.nuclear_vibroknife": "Nuclear Vibroknife",
-  "item.trevorssentinels.one_pence": "The One Pence",
-  "item.trevorssentinels.paint_pack": "Paint Pack",
-  "item.trevorssentinels.paladins_badge": "Paladins Badge",
-  "item.trevorssentinels.pale_boat": "Pale Boat",
-  "item.trevorssentinels.pale_chest_boat": "Pale Chest Boat",
-  "item.trevorssentinels.pappyd_blade": "Hell's Flaming Fury",
-  "item.trevorssentinels.pappym_blade": "Jade Seraphim",
-  "item.trevorssentinels.pearfruit": "Pearfruit",
-  "item.trevorssentinels.pearfruit_juice": "Pearfruit Juice",
-  "item.trevorssentinels.photonic_lens": "Photonic Lens",
-  "item.trevorssentinels.plasma_cell": "Plasma Cell",
-  "item.trevorssentinels.plasma_diffuser": "Plasma Diffuser",
-  "item.trevorssentinels.poison_capsule": "Poison Capsule",
-  "item.trevorssentinels.rabbit_stew_can": "Can of Rabbit Stew",
-  "item.trevorssentinels.redstone_crystal": "Crystallized Redstone",
-  "item.trevorssentinels.regeneration_capsule": "Regeneration Capsule",
-  "item.trevorssentinels.regeneration_item": "Ever-Beating Heart",
-  "item.trevorssentinels.resistance_item": "Shield Badge",
-  "item.trevorssentinels.rice_cake": "Rice Cake",
-  "item.trevorssentinels.rice_seeds": "Rice Seeds",
-  "item.trevorssentinels.roomba_spawn_egg": "Sentinel Cleaning Droid",
-  "item.trevorssentinels.rose_gold_battleaxe": "Rose Gold Battleaxe",
-  "item.trevorssentinels.rose_gold_boots": "Rose Gold Boots",
-  "item.trevorssentinels.rose_gold_chestplate": "Rose Gold Cuirass",
-  "item.trevorssentinels.rose_gold_dagger": "Rose Gold Dagger",
-  "item.trevorssentinels.rose_gold_helmet": "Rose Gold Helmet",
-  "item.trevorssentinels.rose_gold_ingot": "Rose Gold Ingot",
-  "item.trevorssentinels.rose_gold_leggings": "Rose Gold Leggings",
-  "item.trevorssentinels.rose_gold_pickaxe": "Rose Gold Pickaxe",
-  "item.trevorssentinels.rose_gold_shovel": "Rose Gold Shovel",
-  "item.trevorssentinels.rose_gold_sickle": "Rose Gold Sickle",
-  "item.trevorssentinels.rose_gold_sword": "Rose Gold Sword",
-  "item.trevorssentinels.salt": "Salt",
-  "item.trevorssentinels.sandfish": "Sandfish",
-  "item.trevorssentinels.scara_shears": "SCARA Shears",
-  "item.trevorssentinels.scrap_metal_boots": "Scrap Metal Boots",
-  "item.trevorssentinels.scrap_metal_chainsaw": "Scrap Metal Chainsaw",
-  "item.trevorssentinels.scrap_metal_chestplate": "Scrap Metal Chestplate",
-  "item.trevorssentinels.scrap_metal_drill": "Scrap Metal Drill",
-  "item.trevorssentinels.scrap_metal_helmet": "Scrap Metal Helmet",
-  "item.trevorssentinels.scrap_metal_hoe": "Scrap Metal Hoe",
-  "item.trevorssentinels.scrap_metal_knife": "Scrap Metal Knife",
-  "item.trevorssentinels.scrap_metal_leggings": "Scrap Metal Leggings",
-  "item.trevorssentinels.scrap_metal_phaser": "Scrap Metal Phaser",
-  "item.trevorssentinels.scrap_metal_shard": "Scrap Metal Shard",
-  "item.trevorssentinels.scrap_metal_shovel": "Scrap Metal Shovel",
-  "item.trevorssentinels.scrap_metal_sword": "Scrap Metal Sword",
-  "item.trevorssentinels.sentinel_hard_light_projector": "Hard Light Projector",
-  "item.trevorssentinels.sentinel_spawn_egg": "Sentinel Spawn Beacon",
-  "item.trevorssentinels.skylar_blade": "Equitous Retribution",
-  "item.trevorssentinels.smoke_capsule": "Smoke Capsule",
-  "item.trevorssentinels.smoked_fish": "Smoked Fish",
-  "item.trevorssentinels.starsteel_axe": "Starsteel Axe",
-  "item.trevorssentinels.starsteel_boots": "Starsteel Boots",
-  "item.trevorssentinels.starsteel_chestplate": "Starsteel Chestplate",
-  "item.trevorssentinels.starsteel_drill": "Starsteel Drill",
-  "item.trevorssentinels.starsteel_helmet": "Starsteel Helmet",
-  "item.trevorssentinels.starsteel_hoe": "Starsteel Hoe",
-  "item.trevorssentinels.starsteel_ingot": "Starsteel Ingot",
-  "item.trevorssentinels.starsteel_knife": "Starsteel Knife",
-  "item.trevorssentinels.starsteel_leggings": "Starsteel Leggings",
-  "item.trevorssentinels.starsteel_phaser": "Starsteel Phaser",
-  "item.trevorssentinels.starsteel_shovel": "Starsteel Shovel",
-  "item.trevorssentinels.starsteel_sword": "Starsteel Sword",
-  "item.trevorssentinels.strength_item": "Sword Badge",
-  "item.trevorssentinels.sushi_roll": "Sushi Roll",
-  "item.trevorssentinels.sweet_berry_juice": "Sweet Berry Juice",
-  "item.trevorssentinels.thanatu_blade": "Harmonious Rapture",
-  "item.trevorssentinels.thanatu_boots": "Macabre Sandals",
-  "item.trevorssentinels.thanatu_chestplate": "Macabre Shoulderpads",
-  "item.trevorssentinels.thanatu_helmet": "Macabre Skull",
-  "item.trevorssentinels.thanatu_leggings": "Macabre Loincloth",
-  "item.trevorssentinels.tortilla": "Tortilla",
-  "item.trevorssentinels.tranquil_dust": "Tranquil Pollen",
-  "item.trevorssentinels.unholy_axe": "Unholy Axe",
-  "item.trevorssentinels.unholy_boots": "Unholy Boots",
-  "item.trevorssentinels.unholy_chestplate": "Unholy Cuirass",
-  "item.trevorssentinels.unholy_dagger": "Unholy Dagger",
-  "item.trevorssentinels.unholy_helmet": "Unholy Helmet",
-  "item.trevorssentinels.unholy_hoe": "Unholy Hoe",
-  "item.trevorssentinels.unholy_ingot": "Unholy Ingot",
-  "item.trevorssentinels.unholy_leggings": "Unholy Leggings",
-  "item.trevorssentinels.unholy_pickaxe": "Unholy Pickaxe",
-  "item.trevorssentinels.unholy_shards": "Unholy Shards",
-  "item.trevorssentinels.unholy_shovel": "Unholy Shovel",
-  "item.trevorssentinels.unholy_sword": "Unholy Sword",
-  "item.trevorssentinels.vendor_token": "Vendor Token",
-  "item.trevorssentinels.vile_spitter": "Vile Spitter",
-  "item.trevorssentinels.viridian_boat": "Viridian Boat",
-  "item.trevorssentinels.viridian_chest_boat": "Viridian Chest Boat",
-  "item.trevorssentinels.water_breathing_item": "Abyssal Bubbles",
-  "item.trevorssentinels.weakness_item": "Shattered Sword",
-  "item.trevorssentinels.wither_capsule": "Wither Capsule",
-  "item.trevorssentinels.zenithium_axe": "Zenithium Axe",
-  "item.trevorssentinels.zenithium_boots": "Zenithium Boots",
-  "item.trevorssentinels.zenithium_chestplate": "Zenithium Chestplate",
-  "item.trevorssentinels.zenithium_cluster": "Zenithium Cluster",
-  "item.trevorssentinels.zenithium_dagger": "Zenithium Dagger",
-  "item.trevorssentinels.zenithium_helmet": "Zenithium Helmet",
-  "item.trevorssentinels.zenithium_hoe": "Zenithium Hoe",
-  "item.trevorssentinels.zenithium_leggings": "Zenithium Leggings",
-  "item.trevorssentinels.zenithium_phaser": "Zenithium Phaser",
-  "item.trevorssentinels.zenithium_pickaxe": "Zenithium Pickaxe",
-  "item.trevorssentinels.zenithium_shovel": "Zenithium Shovel",
-  "item.trevorssentinels.zenithium_sword": "Zenithium Sword",
-  "itemGroup.trevorssentinels.sentinels": "Trevor's Sentinels",
-  "itemGroup.trevorssentinels.sentinels.button.wiki": "Wiki",
-  "itemGroup.trevorssentinels.sentinels.tab.beta": "Beta",
-  "itemGroup.trevorssentinels.sentinels.tab.magic": "Magic",
-  "itemGroup.trevorssentinels.sentinels.tab.tech": "Tech",
-  "key.category.trevorssentinels.trevorssentinels": "Trevor's Sentinels",
-  "key.trevorssentinels.reload": "Reload",
-  "key.trevorssentinels.style_switch": "Style Switch",
-  "pillar.trevorssentinels.balance": "Balance",
-  "pillar.trevorssentinels.chaos": "Chaos",
-  "pillar.trevorssentinels.order": "Order",
-  "pillar.trevorssentinels.purity": "Purity",
-  "pillar.trevorssentinels.tranquility": "Tranquility",
-  "pillar.trevorssentinels.truth": "Truth",
-  "pillar.trevorssentinels.wisdom": "Wisdom",
-  "style.item.trevorssentinels.lilith_blade.1": "Holy Retribution",
-  "style.item.trevorssentinels.lilith_blade.2": "ENDLESS LIGHT",
-  "style.item.trevorssentinels.pappym_blade.1": "Trickster",
-  "style.item.trevorssentinels.pappym_blade.2": "Paladin",
-  "style.item.trevorssentinels.pappym_blade.3": "Predator",
-  "style.item.trevorssentinels.pappym_blade.4": "Guardian",
-  "style.item.trevorssentinels.phaser.1": "Reloading: Manual",
-  "style.item.trevorssentinels.phaser.2": "Reloading: Automatic",
-  "style.item.trevorssentinels.thanatu_blade.1": "Riftwalker",
-  "style.item.trevorssentinels.thanatu_blade.2": "Riftcaller",
-  "tooltip.block.trevorssentinels.big_red_plate": "1500 Megawatt Super Colliding Super Plate",
-  "tooltip.block.trevorssentinels.black_agility_block": "Watch your step.",
-  "tooltip.block.trevorssentinels.caution_hard_light_barrier": "Creative only!",
-  "tooltip.block.trevorssentinels.feathercorn": "Soft and warm.",
-  "tooltip.block.trevorssentinels.flesh_block": "It's strangely warm...",
-  "tooltip.block.trevorssentinels.flesh_veins": "They're spreading...",
-  "tooltip.block.trevorssentinels.fleshy_eye": "It's staring...",
-  "tooltip.block.trevorssentinels.hard_light_barrier": "Creative only!",
-  "tooltip.block.trevorssentinels.potted_skullweed": "It's so cold...",
-  "tooltip.block.trevorssentinels.potted_tranquil_rose": "Smells delightful.",
-  "tooltip.block.trevorssentinels.sentinel_hard_light_barrier": "Creative only!",
-  "tooltip.block.trevorssentinels.skullweed": "It's so cold...",
-  "tooltip.block.trevorssentinels.tranquil_rose": "Smells delightful.",
-  "tooltip.item.trevorssentinels.arma_dei_hoe": "Functions as a Hoe.",
-  "tooltip.item.trevorssentinels.ash": "Contains traces of dark magic.",
-  "tooltip.item.trevorssentinels.blood_diamond": "Chaos itself shines through.",
-  "tooltip.item.trevorssentinels.brownie": "Comes from outer space?",
-  "tooltip.item.trevorssentinels.chorus_cobbler": "Memah's favorite recipe",
-  "tooltip.item.trevorssentinels.copper_gladius": "An ornamental blade of goblin tradition.",
-  "tooltip.item.trevorssentinels.demonic_core": "Use while crouching to bind to a location!",
-  "tooltip.item.trevorssentinels.distance_tracker": "Use on a mob to track it.",
-  "tooltip.item.trevorssentinels.dolphins_grace_item": "Its silky skin makes one feel hydrodynamic.",
-  "tooltip.item.trevorssentinels.dubious_bacon": "Don't ask where it came from...",
-  "tooltip.item.trevorssentinels.dune_eel": "Isn't this a snake?",
-  "tooltip.item.trevorssentinels.eye_of_ruin": "What a troubling gaze...",
-  "tooltip.item.trevorssentinels.hero_of_the_village_item": "Gifted to heroes of legend.",
-  "tooltip.item.trevorssentinels.imperial_sickle": "Functions as a Hoe.",
-  "tooltip.item.trevorssentinels.industrial_crowbar": "Rise, and... shine.",
-  "tooltip.item.trevorssentinels.master_sword": "From a distant universe...",
-  "tooltip.item.trevorssentinels.midas_fruit": "22 karats",
-  "tooltip.item.trevorssentinels.music_disc_recital": "It's in remarkably good condition.",
-  "tooltip.item.trevorssentinels.nanotech_sword": "\"I've even forgotten my name...\"",
-  "tooltip.item.trevorssentinels.nuclear_sword": "Irradiates enemies.",
-  "tooltip.item.trevorssentinels.nuclear_vibroknife": "Irradiates enemies.",
-  "tooltip.item.trevorssentinels.one_pence": "Wealth, Fame, Power.",
-  "tooltip.item.trevorssentinels.paladins_badge": "The mark of a true warrior of light.",
-  "tooltip.item.trevorssentinels.pappym_blade": "Passed down through ancient tradition... and now it has found its way to you.",
-  "tooltip.item.trevorssentinels.pearfruit": "As good as gold.",
-  "tooltip.item.trevorssentinels.phaser.stats": "Phaser Stats:",
-  "tooltip.item.trevorssentinels.redstone_crystal": "Sparkles with potential.",
-  "tooltip.item.trevorssentinels.roomba_spawn_egg": "Once a human, now a living sanitizer.",
-  "tooltip.item.trevorssentinels.rose_gold_sickle": "Functions as a Hoe.",
-  "tooltip.item.trevorssentinels.salt": "Used for keeping meat fresh.",
-  "tooltip.item.trevorssentinels.sandfish": "This is not a fish...",
-  "tooltip.item.trevorssentinels.scara_shears": "A military-grade threat.",
-  "tooltip.item.trevorssentinels.scrap_metal_chainsaw": "Right click to launch shards at enemies!",
-  "tooltip.item.trevorssentinels.sentinel_spawn_egg": "A mindless drone for the hive.",
-  "tooltip.item.trevorssentinels.thanatu_helmet": "The skull of the demon king.",
-  "tooltip.item.trevorssentinels.tranquil_dust": "Useful in dark alchemy.",
-  "tooltip.item.trevorssentinels.unholy_hoe": "Functions as a Hoe.",
-  "tooltip.item.trevorssentinels.unholy_ingot": "Reflects only the light in darkness.",
-  "tooltip.item.trevorssentinels.vile_spitter": "It's alive!",
-  "tooltip.item.trevorssentinels.weakness_item": "A reminder of past failures.",
-  "tooltip.item.trevorssentinels.zenithium_cluster": "The concentrated essence of a galaxy.",
-  "tooltip.trevorssentinels.mode": "Mode: ",
-  "tooltip.trevorssentinels.set_bonus_active": "Set bonus active!",
-  "tooltip.trevorssentinels.set_bonus_inactive": "Set bonus inactive!",
-  "tooltip.trevorssentinels.style": "Style: ",
-  "tooltip.trevorssentinels.style_switch.1": " to switch style.",
-  "tooltip.trevorssentinels.style_switch.2": " to cycle modes.",
-  "tooltip.trevorssentinels:milkCuresPotionEffects": "Effects will not be cured!",
-  "trevorssentinels.database.desc": "Your guide to this world of magic and technology, this database will store all information that may be useful on your adventure.",
-  "trevorssentinels.database.name": "HoloCodex",
-  "trevorssentinels.hologui": "Sentinel HoloGUI",
-  "trevorssentinels.legacy": "Legacy Resources",
-  "trevorssentinels.sentinels": "Trevor's Sentinels",
-  "trevorssentinels.vanilla_extensions": "Vanilla Extensions",
-  "trevorssentinels.worldLevelTooLow.1": "",
-  "trevorssentinels.worldLevelTooLow.2": "Demonic power has too much of a hold over the world!",
-  "trevorssentinels.worldLevelTooLow.3": "The power is too strong!",
-  "trevorssentinels.worldLevelTooLow.other": "A mysterious force pushes back!",
-  "trevorssentinels:assassination_upload": "Scrapped Cassette plays",
-  "trevorssentinels:bio_reload": "Reloading",
-  "trevorssentinels:blaster_shoot": "Shot laser",
-  "trevorssentinels:database_flip": "Codex flipped",
-  "trevorssentinels:database_open": "Codex opened",
-  "trevorssentinels:flesh_ambient": "Flesh wriggles",
-  "trevorssentinels:lapse_in_judgement": "War-Torn Music Disc plays",
-  "trevorssentinels:notch_up": "Powering up",
-  "trevorssentinels:ode_to_tranquility": "Music Disc plays",
-  "trevorssentinels:pistol_reload": "Reloading",
-  "trevorssentinels:recital": "Aged Cassette plays",
-  "trevorssentinels:shotgun_reload": "Reloading",
-  "trevorssentinels:sniper_reload": "Reloading"
+  "advancements.trevorssentinels.ancient_metal.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain an ingot of Imperial Alloy"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal.title": [
+    {
+      "color": "#ffffff",
+      "text": "Ancient Metal"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal2.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain equipment made from Imperial Alloy"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal2.title": [
+    {
+      "color": "#ffffff",
+      "text": "Good Soldiers Follow Orders"
+    }
+  ],
+  "advancements.trevorssentinels.bacon_and_eggs.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Part of a complete breakfast!"
+    }
+  ],
+  "advancements.trevorssentinels.bacon_and_eggs.title": [
+    {
+      "color": "#ffffff",
+      "text": "Bacon and Eggs"
+    }
+  ],
+  "advancements.trevorssentinels.brownie.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Consume a Brownie"
+    }
+  ],
+  "advancements.trevorssentinels.brownie.title": [
+    {
+      "color": "#ffffff",
+      "text": "This Edible Ain't Shi-"
+    }
+  ],
+  "advancements.trevorssentinels.cerberus.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Defeat Cerberus, and release the seal on ancient forces"
+    }
+  ],
+  "advancements.trevorssentinels.cerberus.title": [
+    {
+      "color": "#ffffff",
+      "text": "False Idol"
+    }
+  ],
+  "advancements.trevorssentinels.chainsaw.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Craft a Scrap Metal Chainsaw"
+    }
+  ],
+  "advancements.trevorssentinels.chainsaw.title": [
+    {
+      "color": "#ffffff",
+      "text": "Chainsaws, Man"
+    }
+  ],
+  "advancements.trevorssentinels.industrial.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain any industrial-tier item"
+    }
+  ],
+  "advancements.trevorssentinels.industrial.title": [
+    {
+      "color": "#ffffff",
+      "text": "Industrial"
+    }
+  ],
+  "advancements.trevorssentinels.rose_gold.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain equipment made from Rose Gold"
+    }
+  ],
+  "advancements.trevorssentinels.rose_gold.title": [
+    {
+      "color": "#ffffff",
+      "text": "Every Rose..."
+    }
+  ],
+  "advancements.trevorssentinels.spf.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain a Banana Boat"
+    }
+  ],
+  "advancements.trevorssentinels.spf.title": [
+    {
+      "color": "#ffffff",
+      "text": "SPF 50+"
+    }
+  ],
+  "advancements.trevorssentinels.thanatu.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Acquire the tools of the demon lord"
+    }
+  ],
+  "advancements.trevorssentinels.thanatu.title": [
+    {
+      "color": "#ffffff",
+      "text": "...Has its Thorn"
+    }
+  ],
+  "advancements.trevorssentinels.trevorssentinels.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain a Scrap Metal Shard"
+    }
+  ],
+  "advancements.trevorssentinels.trevorssentinels.title": [
+    {
+      "color": "#ffffff",
+      "text": "Trevor's Sentinels"
+    }
+  ],
+  "advancements.trevorssentinels.uranium.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Obtain equipment made from Nuclear Ingots"
+    }
+  ],
+  "advancements.trevorssentinels.uranium.title": [
+    {
+      "color": "#ffffff",
+      "text": "Nuclear Age"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Acquire a cluster of Zenithium"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium.title": [
+    {
+      "color": "#ffffff",
+      "text": "Infinity Squared"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium2.desc": [
+    {
+      "color": "#ffffff",
+      "text": "\"Honey, where's my super suit?\""
+    }
+  ],
+  "advancements.trevorssentinels.zenithium2.title": [
+    {
+      "color": "#ffffff",
+      "text": "Infinity+1 Everything"
+    }
+  ],
+  "block.trevorssentinels.battery": [
+    {
+      "text": "Battery"
+    }
+  ],
+  "block.trevorssentinels.big_red_button": [
+    {
+      "color": "#ff3333",
+      "text": "Big Red Button"
+    }
+  ],
+  "block.trevorssentinels.big_red_plate": [
+    {
+      "color": "#ff3333",
+      "text": "Big Red Plate"
+    }
+  ],
+  "block.trevorssentinels.black_agility_block": [
+    {
+      "text": "Steel Magno-Repulsion Block"
+    }
+  ],
+  "block.trevorssentinels.blue_agility_block": [
+    {
+      "color": "#0099cc",
+      "text": "Blue Agility Block"
+    }
+  ],
+  "block.trevorssentinels.caution_hard_light": [
+    {
+      "text": "Hard Light"
+    }
+  ],
+  "block.trevorssentinels.caution_hard_light_barrier": [
+    {
+      "text": "Hard Light Barrier"
+    }
+  ],
+  "block.trevorssentinels.caution_holographic_hanging_sign": [
+    {
+      "text": "Holographic Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.caution_holographic_sign": [
+    {
+      "text": "Holographic Sign"
+    }
+  ],
+  "block.trevorssentinels.cerulii_button": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Button"
+    }
+  ],
+  "block.trevorssentinels.cerulii_door": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Door"
+    }
+  ],
+  "block.trevorssentinels.cerulii_fence": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Fence"
+    }
+  ],
+  "block.trevorssentinels.cerulii_fence_gate": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Fence Gate"
+    }
+  ],
+  "block.trevorssentinels.cerulii_hanging_sign": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.cerulii_leaves": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Leaves"
+    }
+  ],
+  "block.trevorssentinels.cerulii_log": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Log"
+    }
+  ],
+  "block.trevorssentinels.cerulii_planks": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Planks"
+    }
+  ],
+  "block.trevorssentinels.cerulii_pressure_plate": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Pressure Plate"
+    }
+  ],
+  "block.trevorssentinels.cerulii_sapling": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Sapling"
+    }
+  ],
+  "block.trevorssentinels.cerulii_sign": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Sign"
+    }
+  ],
+  "block.trevorssentinels.cerulii_slab": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Slab"
+    }
+  ],
+  "block.trevorssentinels.cerulii_stairs": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Stairs"
+    }
+  ],
+  "block.trevorssentinels.cerulii_trapdoor": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Trapdoor"
+    }
+  ],
+  "block.trevorssentinels.cerulii_wood": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Wood"
+    }
+  ],
+  "block.trevorssentinels.chamber_block": [
+    {
+      "text": "Chamber Block"
+    }
+  ],
+  "block.trevorssentinels.charred_button": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Button"
+    }
+  ],
+  "block.trevorssentinels.charred_door": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Door"
+    }
+  ],
+  "block.trevorssentinels.charred_fence": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Fence"
+    }
+  ],
+  "block.trevorssentinels.charred_fence_gate": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Fence Gate"
+    }
+  ],
+  "block.trevorssentinels.charred_hanging_sign": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.charred_log": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Log"
+    }
+  ],
+  "block.trevorssentinels.charred_planks": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Planks"
+    }
+  ],
+  "block.trevorssentinels.charred_pressure_plate": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Pressure Plate"
+    }
+  ],
+  "block.trevorssentinels.charred_sign": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Sign"
+    }
+  ],
+  "block.trevorssentinels.charred_slab": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Slab"
+    }
+  ],
+  "block.trevorssentinels.charred_stairs": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Stairs"
+    }
+  ],
+  "block.trevorssentinels.charred_trapdoor": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Trapdoor"
+    }
+  ],
+  "block.trevorssentinels.charred_wood": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Wood"
+    }
+  ],
+  "block.trevorssentinels.chiseled_deific_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Chiseled Deific End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.chiseled_end_stone_bricks": [
+    {
+      "text": "Chiseled End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.chiseled_impious_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Chiseled Impious End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.chiseled_scrap_metal_block": [
+    {
+      "color": "#797979",
+      "text": "Chiseled Scrap Metal Block"
+    }
+  ],
+  "block.trevorssentinels.chiseled_snowstone": [
+    {
+      "color": "#f0fdfd",
+      "text": "Chiseled Snowstone"
+    }
+  ],
+  "block.trevorssentinels.chiseled_starsteel_block": [
+    {
+      "text": "Chiseled Block of Starsteel"
+    }
+  ],
+  "block.trevorssentinels.coarse_dirt_slab": [
+    {
+      "text": "Coarse Dirt Slab"
+    }
+  ],
+  "block.trevorssentinels.coarse_dirt_stairs": [
+    {
+      "text": "Coarse Dirt Stairs"
+    }
+  ],
+  "block.trevorssentinels.cracked_deific_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Cracked Deific End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.cracked_end_stone_bricks": [
+    {
+      "text": "Cracked End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.cracked_impious_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Cracked Impious End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.cut_snowstone": [
+    {
+      "color": "#f0fdfd",
+      "text": "Cut Snowstone"
+    }
+  ],
+  "block.trevorssentinels.cut_snowstone_slab": [
+    {
+      "color": "#f0fdfd",
+      "text": "Cut Snowstone Slab"
+    }
+  ],
+  "block.trevorssentinels.dark_chamber_block": [
+    {
+      "text": "Dark Chamber Block"
+    }
+  ],
+  "block.trevorssentinels.deific_end_stone": [
+    {
+      "color": "#ff55ff",
+      "text": "Deific End Stone"
+    }
+  ],
+  "block.trevorssentinels.deific_end_stone_brick_column": [
+    {
+      "color": "#ff55ff",
+      "text": "Deific End Stone Brick Column"
+    }
+  ],
+  "block.trevorssentinels.deific_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Deific End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.dirt_slab": [
+    {
+      "text": "Dirt Slab"
+    }
+  ],
+  "block.trevorssentinels.dirt_stairs": [
+    {
+      "text": "Dirt Stairs"
+    }
+  ],
+  "block.trevorssentinels.end_stone_brick_column": [
+    {
+      "text": "End Stone Brick Column"
+    }
+  ],
+  "block.trevorssentinels.fancy_computer": [
+    {
+      "text": "Fancy Computer"
+    }
+  ],
+  "block.trevorssentinels.feathercorn": [
+    {
+      "color": "#f9bd23",
+      "text": "Feathercorn"
+    }
+  ],
+  "block.trevorssentinels.flesh_block": [
+    {
+      "color": "#bf5755",
+      "text": "Flesh Block"
+    }
+  ],
+  "block.trevorssentinels.flesh_veins": [
+    {
+      "color": "#bf5755",
+      "text": "Flesh Veins"
+    }
+  ],
+  "block.trevorssentinels.fleshy_eye": [
+    {
+      "color": "#bf5755",
+      "text": "Fleshy Eye"
+    }
+  ],
+  "block.trevorssentinels.fusebox": [
+    {
+      "text": "Fusebox"
+    }
+  ],
+  "block.trevorssentinels.hard_light": [
+    {
+      "text": "Hard Light"
+    }
+  ],
+  "block.trevorssentinels.hard_light_barrier": [
+    {
+      "text": "Hard Light Barrier"
+    }
+  ],
+  "block.trevorssentinels.holographic_hanging_sign": [
+    {
+      "text": "Holographic Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.holographic_sign": [
+    {
+      "text": "Holographic Sign"
+    }
+  ],
+  "block.trevorssentinels.imperial_alloy_block": [
+    {
+      "text": "Block of Imperial Alloy"
+    }
+  ],
+  "block.trevorssentinels.impious_end_stone": [
+    {
+      "color": "#ff55ff",
+      "text": "Impious End Stone"
+    }
+  ],
+  "block.trevorssentinels.impious_end_stone_brick_column": [
+    {
+      "color": "#ff55ff",
+      "text": "Impious End Stone Brick Column"
+    }
+  ],
+  "block.trevorssentinels.impious_end_stone_bricks": [
+    {
+      "color": "#ff55ff",
+      "text": "Impious End Stone Bricks"
+    }
+  ],
+  "block.trevorssentinels.light_chamber_block": [
+    {
+      "text": "Light Chamber Block"
+    }
+  ],
+  "block.trevorssentinels.midas_button": [
+    {
+      "color": "#beab27",
+      "text": "Midas Button"
+    }
+  ],
+  "block.trevorssentinels.midas_door": [
+    {
+      "color": "#beab27",
+      "text": "Midas Door"
+    }
+  ],
+  "block.trevorssentinels.midas_fence": [
+    {
+      "color": "#beab27",
+      "text": "Midas Fence"
+    }
+  ],
+  "block.trevorssentinels.midas_fence_gate": [
+    {
+      "color": "#beab27",
+      "text": "Midas Fence Gate"
+    }
+  ],
+  "block.trevorssentinels.midas_hanging_sign": [
+    {
+      "color": "#beab27",
+      "text": "Midas Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.midas_leaves": [
+    {
+      "color": "#beab27",
+      "text": "Midas Leaves"
+    }
+  ],
+  "block.trevorssentinels.midas_log": [
+    {
+      "color": "#beab27",
+      "text": "Midas Log"
+    }
+  ],
+  "block.trevorssentinels.midas_planks": [
+    {
+      "color": "#beab27",
+      "text": "Midas Planks"
+    }
+  ],
+  "block.trevorssentinels.midas_pressure_plate": [
+    {
+      "color": "#beab27",
+      "text": "Midas Pressure Plate"
+    }
+  ],
+  "block.trevorssentinels.midas_sapling": [
+    {
+      "color": "#beab27",
+      "text": "Midas Sapling"
+    }
+  ],
+  "block.trevorssentinels.midas_sign": [
+    {
+      "color": "#beab27",
+      "text": "Midas Sign"
+    }
+  ],
+  "block.trevorssentinels.midas_slab": [
+    {
+      "color": "#beab27",
+      "text": "Midas Slab"
+    }
+  ],
+  "block.trevorssentinels.midas_stairs": [
+    {
+      "color": "#beab27",
+      "text": "Midas Stairs"
+    }
+  ],
+  "block.trevorssentinels.midas_trapdoor": [
+    {
+      "color": "#beab27",
+      "text": "Midas Trapdoor"
+    }
+  ],
+  "block.trevorssentinels.midas_wood": [
+    {
+      "color": "#beab27",
+      "text": "Midas Wood"
+    }
+  ],
+  "block.trevorssentinels.modification_table": [
+    {
+      "text": "Modification Table"
+    }
+  ],
+  "block.trevorssentinels.moss_slab": [
+    {
+      "text": "Moss Slab"
+    }
+  ],
+  "block.trevorssentinels.moss_stairs": [
+    {
+      "text": "Moss Stairs"
+    }
+  ],
+  "block.trevorssentinels.nanotech_block": [
+    {
+      "text": "Nanotech Storage Block"
+    }
+  ],
+  "block.trevorssentinels.nuclear_block": [
+    {
+      "text": "Nuclear Storage Block"
+    }
+  ],
+  "block.trevorssentinels.nuclear_ore": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Ore"
+    }
+  ],
+  "block.trevorssentinels.orange_agility_block": [
+    {
+      "color": "#ffaa00",
+      "text": "Orange Agility Block"
+    }
+  ],
+  "block.trevorssentinels.pale_button": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Button"
+    }
+  ],
+  "block.trevorssentinels.pale_door": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Door"
+    }
+  ],
+  "block.trevorssentinels.pale_fence": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Fence"
+    }
+  ],
+  "block.trevorssentinels.pale_fence_gate": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Fence Gate"
+    }
+  ],
+  "block.trevorssentinels.pale_hanging_sign": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.pale_leaves": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Leaves"
+    }
+  ],
+  "block.trevorssentinels.pale_log": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Log"
+    }
+  ],
+  "block.trevorssentinels.pale_planks": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Planks"
+    }
+  ],
+  "block.trevorssentinels.pale_pressure_plate": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Pressure Plate"
+    }
+  ],
+  "block.trevorssentinels.pale_sapling": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Sapling"
+    }
+  ],
+  "block.trevorssentinels.pale_sign": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Sign"
+    }
+  ],
+  "block.trevorssentinels.pale_slab": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Slab"
+    }
+  ],
+  "block.trevorssentinels.pale_stairs": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Stairs"
+    }
+  ],
+  "block.trevorssentinels.pale_trapdoor": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Trapdoor"
+    }
+  ],
+  "block.trevorssentinels.pale_wood": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Wood"
+    }
+  ],
+  "block.trevorssentinels.potted_cerulii_sapling": [
+    {
+      "color": "#117bcd",
+      "text": "Potted Cerulii Sapling"
+    }
+  ],
+  "block.trevorssentinels.potted_midas_sapling": [
+    {
+      "color": "#beab27",
+      "text": "Potted Midas Sapling"
+    }
+  ],
+  "block.trevorssentinels.potted_pale_sapling": [
+    {
+      "color": "#eae1e5",
+      "text": "Potted Pale Sapling"
+    }
+  ],
+  "block.trevorssentinels.potted_skullweed": [
+    {
+      "text": "Potted null"
+    }
+  ],
+  "block.trevorssentinels.potted_tranquil_rose": [
+    {
+      "text": "Potted null"
+    }
+  ],
+  "block.trevorssentinels.potted_viridian_sapling": [
+    {
+      "color": "#75892e",
+      "text": "Potted Viridian Sapling"
+    }
+  ],
+  "block.trevorssentinels.reconstruction_table": [
+    {
+      "color": "#33cccc",
+      "text": "Reconstruction Table"
+    }
+  ],
+  "block.trevorssentinels.rice_block": [
+    {
+      "text": "Rice Block"
+    }
+  ],
+  "block.trevorssentinels.rice_plant": [
+    {
+      "text": "Rice Plant"
+    }
+  ],
+  "block.trevorssentinels.rose_gold_block": [
+    {
+      "text": "Block of Rose Gold"
+    }
+  ],
+  "block.trevorssentinels.scrap_metal_block": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Block"
+    }
+  ],
+  "block.trevorssentinels.scrap_metal_pillar": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Pillar"
+    }
+  ],
+  "block.trevorssentinels.sentinel_hard_light": [
+    {
+      "text": "Hard Light"
+    }
+  ],
+  "block.trevorssentinels.sentinel_hard_light_barrier": [
+    {
+      "text": "Hard Light Barrier"
+    }
+  ],
+  "block.trevorssentinels.sentinel_holographic_hanging_sign": [
+    {
+      "text": "Holographic Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.sentinel_holographic_sign": [
+    {
+      "text": "Holographic Sign"
+    }
+  ],
+  "block.trevorssentinels.skullweed": [
+    {}
+  ],
+  "block.trevorssentinels.smooth_snowstone": [
+    {
+      "color": "#f0fdfd",
+      "text": "Smooth Snowstone"
+    }
+  ],
+  "block.trevorssentinels.smooth_snowstone_slab": [
+    {
+      "color": "#f0fdfd",
+      "text": "Smooth Snowstone Slab"
+    }
+  ],
+  "block.trevorssentinels.smooth_snowstone_stairs": [
+    {
+      "color": "#f0fdfd",
+      "text": "Smooth Snowstone Stairs"
+    }
+  ],
+  "block.trevorssentinels.smooth_snowstone_wall": [
+    {
+      "color": "#f0fdfd",
+      "text": "Smooth Snowstone Wall"
+    }
+  ],
+  "block.trevorssentinels.snowstone": [
+    {
+      "color": "#f0fdfd",
+      "text": "Snowstone"
+    }
+  ],
+  "block.trevorssentinels.snowstone_slab": [
+    {
+      "color": "#f0fdfd",
+      "text": "Snowstone Slab"
+    }
+  ],
+  "block.trevorssentinels.snowstone_stairs": [
+    {
+      "color": "#f0fdfd",
+      "text": "Snowstone Stairs"
+    }
+  ],
+  "block.trevorssentinels.snowstone_wall": [
+    {
+      "color": "#f0fdfd",
+      "text": "Snowstone Wall"
+    }
+  ],
+  "block.trevorssentinels.stainless_steel_block": [
+    {
+      "color": "#c8c8d3",
+      "text": "Stainless Steel Block"
+    }
+  ],
+  "block.trevorssentinels.starsteel_block": [
+    {
+      "text": "Block of Starsteel"
+    }
+  ],
+  "block.trevorssentinels.starsteel_fan": [
+    {
+      "text": "Starsteel Fan"
+    }
+  ],
+  "block.trevorssentinels.starsteel_hanging_sign": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.starsteel_ladder": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Ladder"
+    }
+  ],
+  "block.trevorssentinels.starsteel_lamp": [
+    {
+      "text": "Starsteel Lamp"
+    }
+  ],
+  "block.trevorssentinels.starsteel_sign": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Sign"
+    }
+  ],
+  "block.trevorssentinels.stripped_cerulii_log": [
+    {
+      "color": "#117bcd",
+      "text": "Stripped Cerulii Log"
+    }
+  ],
+  "block.trevorssentinels.stripped_cerulii_wood": [
+    {
+      "color": "#117bcd",
+      "text": "Stripped Cerulii Wood"
+    }
+  ],
+  "block.trevorssentinels.stripped_charred_log": [
+    {
+      "color": "#aaaaaa",
+      "text": "Stripped Charred Log"
+    }
+  ],
+  "block.trevorssentinels.stripped_charred_wood": [
+    {
+      "color": "#aaaaaa",
+      "text": "Stripped Charred Wood"
+    }
+  ],
+  "block.trevorssentinels.stripped_midas_log": [
+    {
+      "color": "#beab27",
+      "text": "Stripped Midas Log"
+    }
+  ],
+  "block.trevorssentinels.stripped_midas_wood": [
+    {
+      "color": "#beab27",
+      "text": "Stripped Midas Wood"
+    }
+  ],
+  "block.trevorssentinels.stripped_pale_log": [
+    {
+      "color": "#eae1e5",
+      "text": "Stripped Pale Log"
+    }
+  ],
+  "block.trevorssentinels.stripped_pale_wood": [
+    {
+      "color": "#eae1e5",
+      "text": "Stripped Pale Wood"
+    }
+  ],
+  "block.trevorssentinels.stripped_viridian_log": [
+    {
+      "color": "#75892e",
+      "text": "Stripped Viridian Log"
+    }
+  ],
+  "block.trevorssentinels.stripped_viridian_wood": [
+    {
+      "color": "#75892e",
+      "text": "Stripped Viridian Wood"
+    }
+  ],
+  "block.trevorssentinels.tranquil_rose": [
+    {}
+  ],
+  "block.trevorssentinels.unholy_block": [
+    {
+      "text": "Block of Unholy Alloy"
+    }
+  ],
+  "block.trevorssentinels.vendor": [
+    {
+      "text": "Vendor"
+    }
+  ],
+  "block.trevorssentinels.viridian_button": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Button"
+    }
+  ],
+  "block.trevorssentinels.viridian_door": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Door"
+    }
+  ],
+  "block.trevorssentinels.viridian_fence": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Fence"
+    }
+  ],
+  "block.trevorssentinels.viridian_fence_gate": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Fence Gate"
+    }
+  ],
+  "block.trevorssentinels.viridian_hanging_sign": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Hanging Sign"
+    }
+  ],
+  "block.trevorssentinels.viridian_leaves": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Leaves"
+    }
+  ],
+  "block.trevorssentinels.viridian_log": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Log"
+    }
+  ],
+  "block.trevorssentinels.viridian_planks": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Planks"
+    }
+  ],
+  "block.trevorssentinels.viridian_pressure_plate": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Pressure Plate"
+    }
+  ],
+  "block.trevorssentinels.viridian_sapling": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Sapling"
+    }
+  ],
+  "block.trevorssentinels.viridian_sign": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Sign"
+    }
+  ],
+  "block.trevorssentinels.viridian_slab": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Slab"
+    }
+  ],
+  "block.trevorssentinels.viridian_stairs": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Stairs"
+    }
+  ],
+  "block.trevorssentinels.viridian_trapdoor": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Trapdoor"
+    }
+  ],
+  "block.trevorssentinels.viridian_wood": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Wood"
+    }
+  ],
+  "block.trevorssentinels.wax_infused_copper_block": [
+    {
+      "text": "Wax-Infused Block of Copper"
+    }
+  ],
+  "color.trevorssentinels.worldLevelTooLow.1": [
+    {
+      "color": "#ffffff",
+      "text": ""
+    }
+  ],
+  "color.trevorssentinels.worldLevelTooLow.2": [
+    {
+      "color": "#ffffff",
+      "text": "-43521"
+    }
+  ],
+  "color.trevorssentinels.worldLevelTooLow.3": [
+    {
+      "color": "#ffffff",
+      "text": "-11184641"
+    }
+  ],
+  "death.attack.dagger_projectile": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s was shot through the heart, and %2$s is to blame"
+    }
+  ],
+  "death.attack.dagger_projectile.item": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name"
+    }
+  ],
+  "death.attack.infested": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s didn't make it"
+    }
+  ],
+  "death.attack.irradiated": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s ate one too many bananas"
+    }
+  ],
+  "death.attack.phaser_projectile": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s phased away thanks to %2$s"
+    }
+  ],
+  "death.attack.phaser_projectile.item": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s phased away thanks to %2$s and their %3$s"
+    }
+  ],
+  "death.attack.redstoned": [
+    {
+      "color": "#ffffff",
+      "text": "%1$s gave into the pain"
+    }
+  ],
+  "death.attack.shard_projectile": [
+    {
+      "color": "#ffffff",
+      "text": "%2$s turned %1$s into a pincushion"
+    }
+  ],
+  "death.attack.shard_projectile.item": [
+    {
+      "color": "#ffffff",
+      "text": "%2$s turned %1$s into a pincushion using %3$s"
+    }
+  ],
+  "effect.trevorssentinels.cosmic_fire": [
+    {
+      "color": "#ffffff",
+      "text": "Cosmic Flame"
+    }
+  ],
+  "effect.trevorssentinels.flight": [
+    {
+      "color": "#ffffff",
+      "text": "Flight"
+    }
+  ],
+  "effect.trevorssentinels.infested": [
+    {
+      "color": "#ffffff",
+      "text": "☣ Infested ☣"
+    }
+  ],
+  "effect.trevorssentinels.irradiated": [
+    {
+      "color": "#ffffff",
+      "text": "☢ Irradiated ☢"
+    }
+  ],
+  "effect.trevorssentinels.redstoned": [
+    {
+      "color": "#ffffff",
+      "text": "Redstoned"
+    }
+  ],
+  "effect.trevorssentinels.well_fed": [
+    {
+      "color": "#ffffff",
+      "text": "Well-Fed"
+    }
+  ],
+  "entity.minecraft.villager.acolyte": [
+    {
+      "color": "#ffffff",
+      "text": "§cAcolyte"
+    }
+  ],
+  "entity.minecraft.villager.demolitionist": [
+    {
+      "color": "#ffffff",
+      "text": "§cDemolitionist"
+    }
+  ],
+  "entity.minecraft.villager.engineer": [
+    {
+      "color": "#ffffff",
+      "text": "§6Engineer"
+    }
+  ],
+  "entity.minecraft.villager.witherseer": [
+    {
+      "color": "#ffffff",
+      "text": "§dWitherseer"
+    }
+  ],
+  "entity.trevorssentinels.florbus": [
+    {
+      "color": "#ffffff",
+      "text": "Florbus"
+    }
+  ],
+  "entity.trevorssentinels.grenade": [
+    {
+      "color": "#ffffff",
+      "text": "Delayed Explosive"
+    }
+  ],
+  "entity.trevorssentinels.phaser_projectile": [
+    {
+      "color": "#ffffff",
+      "text": "Phaser Projectile"
+    }
+  ],
+  "entity.trevorssentinels.sentinel": [
+    {
+      "color": "#ffffff",
+      "text": "Sentinel"
+    }
+  ],
+  "entity.trevorssentinels.sentinum_roomba": [
+    {
+      "color": "#ffffff",
+      "text": "Sentinel Cleaning Droid"
+    }
+  ],
+  "entity.trevorssentinels.shard_projectile": [
+    {
+      "color": "#ffffff",
+      "text": "item.trevorssentinels.scrap_metal_shard"
+    }
+  ],
+  "gamerule.trevorssentinels:milkCuresPotionEffects": [
+    {
+      "color": "#ffffff",
+      "text": "Drinking milk cures potion effects"
+    }
+  ],
+  "gamerule.trevorssentinels:useVelocityFallDamage": [
+    {
+      "color": "#ffffff",
+      "text": "Use velocity-based fall damage"
+    }
+  ],
+  "gamerule.trevorssentinels:useVelocityFallDamage.description": [
+    {
+      "color": "#ffffff",
+      "text": "If enabled, fall damage will be calculated based on velocity."
+    }
+  ],
+  "item.minecraft.lingering_potion.effect.flight_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Lingering Potion of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.minecraft.lingering_potion.effect.redstoned_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Lingering Potion of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.minecraft.potion.effect.flight_potion": [
+    {
+      "color": "#ffffff",
+      "text": "[{\"text\":\"Flight\",\"color\":\"#ffffff\"}] Potion"
+    }
+  ],
+  "item.minecraft.potion.effect.redstoned_potion": [
+    {
+      "color": "#ffffff",
+      "text": "[{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}] Potion"
+    }
+  ],
+  "item.minecraft.splash_potion.effect.flight_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Splash Potion of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.minecraft.splash_potion.effect.redstoned_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Splash Potion of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.minecraft.tipped_arrow.effect.flight_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Arrow of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.minecraft.tipped_arrow.effect.redstoned_potion": [
+    {
+      "color": "#ffffff",
+      "text": "Arrow of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
+    }
+  ],
+  "item.trevorssentinels.apple_juice": [
+    {
+      "text": "Apple Juice"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_battleaxe": [
+    {
+      "text": "Arma Dei Battleaxe"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_boots": [
+    {
+      "text": "Arma Dei Boots"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_chestplate": [
+    {
+      "text": "Arma Dei Chestplate"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_dagger": [
+    {
+      "text": "Arma Dei Dagger"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_helmet": [
+    {
+      "text": "Arma Dei Helmet"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_leggings": [
+    {
+      "text": "Arma Dei Leggings"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_pickaxe": [
+    {
+      "text": "Arma Dei Pickaxe"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_shovel": [
+    {
+      "text": "Arma Dei Shovel"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_sickle": [
+    {
+      "text": "Arma Dei Sickle"
+    }
+  ],
+  "item.trevorssentinels.arma_dei_sword": [
+    {
+      "text": "Arma Dei Sword"
+    }
+  ],
+  "item.trevorssentinels.ash": [
+    {
+      "text": "Wither Ash"
+    }
+  ],
+  "item.trevorssentinels.banana": [
+    {
+      "color": "#f9bd23",
+      "text": "Banana"
+    }
+  ],
+  "item.trevorssentinels.banana_bread": [
+    {
+      "color": "#f9bd23",
+      "text": "Banana Bread"
+    }
+  ],
+  "item.trevorssentinels.beetroot_soup_can": [
+    {
+      "text": "Can of Beetroot Soup"
+    }
+  ],
+  "item.trevorssentinels.blood_diamond": [
+    {
+      "color": "#d90012",
+      "text": "Blood Diamond"
+    }
+  ],
+  "item.trevorssentinels.brownie": [
+    {
+      "text": "Brownie"
+    }
+  ],
+  "item.trevorssentinels.burrito": [
+    {
+      "text": "Burrito"
+    }
+  ],
+  "item.trevorssentinels.caution_hard_light_projector": [
+    {
+      "text": "Hard Light Projector"
+    }
+  ],
+  "item.trevorssentinels.cerulii_boat": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Boat"
+    }
+  ],
+  "item.trevorssentinels.cerulii_chest_boat": [
+    {
+      "color": "#117bcd",
+      "text": "Cerulii Chest Boat"
+    }
+  ],
+  "item.trevorssentinels.charred_boat": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Boat"
+    }
+  ],
+  "item.trevorssentinels.charred_chest_boat": [
+    {
+      "color": "#aaaaaa",
+      "text": "Charred Chest Boat"
+    }
+  ],
+  "item.trevorssentinels.chorus_cobbler": [
+    {
+      "color": "#ba9bba",
+      "text": "Chorus Cobbler"
+    }
+  ],
+  "item.trevorssentinels.cola_cyan": [
+    {
+      "text": "Can of AquaDei Lite"
+    }
+  ],
+  "item.trevorssentinels.cola_green": [
+    {
+      "text": "Can of Trola-Cola"
+    }
+  ],
+  "item.trevorssentinels.cola_orange": [
+    {
+      "text": "Can of A&L"
+    }
+  ],
+  "item.trevorssentinels.conduit_power_item": [
+    {
+      "text": "Eye of the Sea"
+    }
+  ],
+  "item.trevorssentinels.cooked_sandfish": [
+    {
+      "color": "#d4b963",
+      "text": "Cooked Sandfish"
+    }
+  ],
+  "item.trevorssentinels.copper_gladius": [
+    {
+      "color": "#e77c56",
+      "text": "Copper Gladius"
+    }
+  ],
+  "item.trevorssentinels.counterforce_diffuser": [
+    {
+      "text": "Counterforce Diffuser"
+    }
+  ],
+  "item.trevorssentinels.cybernetic_stomach": [
+    {
+      "color": "#797979",
+      "text": "Cybernetic Stomach"
+    }
+  ],
+  "item.trevorssentinels.demonic_core": [
+    {
+      "text": "Demonic Core"
+    }
+  ],
+  "item.trevorssentinels.distance_tracker": [
+    {
+      "text": "Lifeform Tracker"
+    }
+  ],
+  "item.trevorssentinels.dolphins_grace_item": [
+    {
+      "text": "Foam Dolphin Plush"
+    }
+  ],
+  "item.trevorssentinels.druidic_boots": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Boots"
+    }
+  ],
+  "item.trevorssentinels.druidic_bow": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Bow"
+    }
+  ],
+  "item.trevorssentinels.druidic_chestplate": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Chestplate"
+    }
+  ],
+  "item.trevorssentinels.druidic_dagger": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Dagger"
+    }
+  ],
+  "item.trevorssentinels.druidic_gem": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Gem"
+    }
+  ],
+  "item.trevorssentinels.druidic_helmet": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Helmet"
+    }
+  ],
+  "item.trevorssentinels.druidic_leggings": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Leggings"
+    }
+  ],
+  "item.trevorssentinels.druidic_sword": [
+    {
+      "color": "#75892e",
+      "text": "Druidic Sword"
+    }
+  ],
+  "item.trevorssentinels.dryadic_boots": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Boots"
+    }
+  ],
+  "item.trevorssentinels.dryadic_chestplate": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Chestplate"
+    }
+  ],
+  "item.trevorssentinels.dryadic_dagger": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Dagger"
+    }
+  ],
+  "item.trevorssentinels.dryadic_helmet": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Helmet"
+    }
+  ],
+  "item.trevorssentinels.dryadic_leggings": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Leggings"
+    }
+  ],
+  "item.trevorssentinels.dryadic_sword": [
+    {
+      "color": "#75892e",
+      "text": "Dryadic Sword"
+    }
+  ],
+  "item.trevorssentinels.dubious_bacon": [
+    {
+      "color": "#bf5755",
+      "text": "Dubious Bacon"
+    }
+  ],
+  "item.trevorssentinels.dune_eel": [
+    {
+      "color": "#d4b963",
+      "text": "Dune Eel"
+    }
+  ],
+  "item.trevorssentinels.empty_can": [
+    {
+      "color": "#c8c8d3",
+      "text": "Empty Can"
+    }
+  ],
+  "item.trevorssentinels.enchanted_leaf": [
+    {
+      "color": "#75892e",
+      "text": "Enchanted Leaf"
+    }
+  ],
+  "item.trevorssentinels.eye_of_ruin": [
+    {
+      "color": "#bf5755",
+      "text": "Eye Of Ruin"
+    }
+  ],
+  "item.trevorssentinels.fire_resistance_item": [
+    {
+      "text": "Flaming Badge"
+    }
+  ],
+  "item.trevorssentinels.florbus_spawn_egg": [
+    {
+      "text": "Florbus Spawn Sac"
+    }
+  ],
+  "item.trevorssentinels.fried_egg": [
+    {
+      "text": "Fried Egg"
+    }
+  ],
+  "item.trevorssentinels.golden_apple_juice": [
+    {
+      "color": "#f9bd23",
+      "text": "Golden Apple Juice"
+    }
+  ],
+  "item.trevorssentinels.hard_light_projector": [
+    {
+      "text": "Hard Light Projector"
+    }
+  ],
+  "item.trevorssentinels.hero_of_the_village_item": [
+    {
+      "text": "Hero's Emerald"
+    }
+  ],
+  "item.trevorssentinels.imperial_alloy_ingot": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Alloy Ingot"
+    }
+  ],
+  "item.trevorssentinels.imperial_battleaxe": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Battleaxe"
+    }
+  ],
+  "item.trevorssentinels.imperial_boots": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Boots"
+    }
+  ],
+  "item.trevorssentinels.imperial_chestplate": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Chestplate"
+    }
+  ],
+  "item.trevorssentinels.imperial_gladius": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Gladius"
+    }
+  ],
+  "item.trevorssentinels.imperial_helmet": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Helmet"
+    }
+  ],
+  "item.trevorssentinels.imperial_leggings": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Leggings"
+    }
+  ],
+  "item.trevorssentinels.imperial_pickaxe": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Pickaxe"
+    }
+  ],
+  "item.trevorssentinels.imperial_shovel": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Shovel"
+    }
+  ],
+  "item.trevorssentinels.imperial_sickle": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Sickle"
+    }
+  ],
+  "item.trevorssentinels.imperial_sword": [
+    {
+      "color": "#eae69b",
+      "text": "Imperial Sword"
+    }
+  ],
+  "item.trevorssentinels.industrial_boots": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Boots"
+    }
+  ],
+  "item.trevorssentinels.industrial_crowbar": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Crowbar"
+    }
+  ],
+  "item.trevorssentinels.industrial_harness": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Harness"
+    }
+  ],
+  "item.trevorssentinels.industrial_helmet": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Helmet"
+    }
+  ],
+  "item.trevorssentinels.industrial_pants": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Pants"
+    }
+  ],
+  "item.trevorssentinels.industrial_phaser": [
+    {
+      "color": "#c8c8d3",
+      "text": "Industrial Phaser"
+    }
+  ],
+  "item.trevorssentinels.invisibility_item": [
+    {
+      "text": "Vampire's Mirror"
+    }
+  ],
+  "item.trevorssentinels.jump_boost_item": [
+    {
+      "text": "Icarus' Gust"
+    }
+  ],
+  "item.trevorssentinels.kings_blade": [
+    {
+      "text": "Stainless Resolve"
+    }
+  ],
+  "item.trevorssentinels.legendary_token": [
+    {
+      "text": "Legendary Token"
+    }
+  ],
+  "item.trevorssentinels.lilith_blade": [
+    {
+      "text": "Unwavering Judgement"
+    }
+  ],
+  "item.trevorssentinels.master_sword": [
+    {
+      "text": "The Master's Sword"
+    }
+  ],
+  "item.trevorssentinels.midas_boat": [
+    {
+      "color": "#beab27",
+      "text": "Midas Boat"
+    }
+  ],
+  "item.trevorssentinels.midas_chest_boat": [
+    {
+      "color": "#beab27",
+      "text": "Midas Chest Boat"
+    }
+  ],
+  "item.trevorssentinels.midas_fruit": [
+    {
+      "color": "#f9bd23",
+      "text": "Midas Fruit"
+    }
+  ],
+  "item.trevorssentinels.milk_can": [
+    {
+      "text": "Can of Evaporated Milk"
+    }
+  ],
+  "item.trevorssentinels.mushroom_stew_can": [
+    {
+      "text": "Can of Mushroom Stew"
+    }
+  ],
+  "item.trevorssentinels.music_disc_assassination_upload": [
+    {
+      "text": "Scrapped Cassette"
+    }
+  ],
+  "item.trevorssentinels.music_disc_assassination_upload.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Kristoffer Kaufmann - Assassination Upload"
+    }
+  ],
+  "item.trevorssentinels.music_disc_lapse_in_judgement": [
+    {
+      "text": "War-Torn Music Disc"
+    }
+  ],
+  "item.trevorssentinels.music_disc_lapse_in_judgement.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Kristoffer Kaufmann - Lapse in Judgement"
+    }
+  ],
+  "item.trevorssentinels.music_disc_ode_to_tranquility": [
+    {
+      "text": "Music Disc"
+    }
+  ],
+  "item.trevorssentinels.music_disc_ode_to_tranquility.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Kristoffer Kaufmann - Ode to Tranquility"
+    }
+  ],
+  "item.trevorssentinels.music_disc_recital": [
+    {
+      "text": "Aged Cassette"
+    }
+  ],
+  "item.trevorssentinels.music_disc_recital.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Trevor Skullcrafter - recital"
+    }
+  ],
+  "item.trevorssentinels.nanotech_axe": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Axe"
+    }
+  ],
+  "item.trevorssentinels.nanotech_boots": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Boots"
+    }
+  ],
+  "item.trevorssentinels.nanotech_capsule": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Capsule"
+    }
+  ],
+  "item.trevorssentinels.nanotech_chestplate": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Chestplate"
+    }
+  ],
+  "item.trevorssentinels.nanotech_drill": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Drill"
+    }
+  ],
+  "item.trevorssentinels.nanotech_helmet": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Helmet"
+    }
+  ],
+  "item.trevorssentinels.nanotech_hoe": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Hoe"
+    }
+  ],
+  "item.trevorssentinels.nanotech_leggings": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Leggings"
+    }
+  ],
+  "item.trevorssentinels.nanotech_phaser": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Phaser"
+    }
+  ],
+  "item.trevorssentinels.nanotech_shovel": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Shovel"
+    }
+  ],
+  "item.trevorssentinels.nanotech_sword": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Sword"
+    }
+  ],
+  "item.trevorssentinels.nanotech_vibroknife": [
+    {
+      "color": "#d90012",
+      "text": "Nanotech Vibroknife"
+    }
+  ],
+  "item.trevorssentinels.night_vision_item": [
+    {
+      "text": "Feline Eye"
+    }
+  ],
+  "item.trevorssentinels.nuclear_axe": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Axe"
+    }
+  ],
+  "item.trevorssentinels.nuclear_boots": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Boots"
+    }
+  ],
+  "item.trevorssentinels.nuclear_chestplate": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Chestplate"
+    }
+  ],
+  "item.trevorssentinels.nuclear_drill": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Drill"
+    }
+  ],
+  "item.trevorssentinels.nuclear_helmet": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Helmet"
+    }
+  ],
+  "item.trevorssentinels.nuclear_hoe": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Hoe"
+    }
+  ],
+  "item.trevorssentinels.nuclear_ingot": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Ingot"
+    }
+  ],
+  "item.trevorssentinels.nuclear_leggings": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Leggings"
+    }
+  ],
+  "item.trevorssentinels.nuclear_phaser": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Phaser"
+    }
+  ],
+  "item.trevorssentinels.nuclear_rocket": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Rocket"
+    }
+  ],
+  "item.trevorssentinels.nuclear_shovel": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Shovel"
+    }
+  ],
+  "item.trevorssentinels.nuclear_sword": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Sword"
+    }
+  ],
+  "item.trevorssentinels.nuclear_vibroknife": [
+    {
+      "color": "#47fa0c",
+      "text": "Nuclear Vibroknife"
+    }
+  ],
+  "item.trevorssentinels.one_pence": [
+    {
+      "text": "The One Pence"
+    }
+  ],
+  "item.trevorssentinels.paint_pack": [
+    {
+      "text": "Paint Pack"
+    }
+  ],
+  "item.trevorssentinels.paladins_badge": [
+    {
+      "color": "#f9bd23",
+      "text": "Paladins Badge"
+    }
+  ],
+  "item.trevorssentinels.pale_boat": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Boat"
+    }
+  ],
+  "item.trevorssentinels.pale_chest_boat": [
+    {
+      "color": "#eae1e5",
+      "text": "Pale Chest Boat"
+    }
+  ],
+  "item.trevorssentinels.pappyd_blade": [
+    {
+      "text": "Hell's Flaming Fury"
+    }
+  ],
+  "item.trevorssentinels.pappym_blade": [
+    {
+      "text": "Jade Seraphim"
+    }
+  ],
+  "item.trevorssentinels.pearfruit": [
+    {
+      "color": "#d4ff1c",
+      "text": "Pearfruit"
+    }
+  ],
+  "item.trevorssentinels.pearfruit_juice": [
+    {
+      "color": "#d4ff1c",
+      "text": "Pearfruit Juice"
+    }
+  ],
+  "item.trevorssentinels.phase_assimilator": [
+    {
+      "text": "Phase Assimilator"
+    }
+  ],
+  "item.trevorssentinels.photonic_lens": [
+    {
+      "text": "Photonic Lens"
+    }
+  ],
+  "item.trevorssentinels.plasma_cell": [
+    {
+      "color": "#c8c8d3",
+      "text": "Plasma Cell"
+    }
+  ],
+  "item.trevorssentinels.poison_capsule": [
+    {
+      "text": "Poison Capsule"
+    }
+  ],
+  "item.trevorssentinels.rabbit_stew_can": [
+    {
+      "text": "Can of Rabbit Stew"
+    }
+  ],
+  "item.trevorssentinels.redstone_crystal": [
+    {
+      "text": "Crystallized Redstone"
+    }
+  ],
+  "item.trevorssentinels.regeneration_capsule": [
+    {
+      "text": "Regeneration Capsule"
+    }
+  ],
+  "item.trevorssentinels.regeneration_item": [
+    {
+      "text": "Ever-Beating Heart"
+    }
+  ],
+  "item.trevorssentinels.resistance_item": [
+    {
+      "text": "Shield Badge"
+    }
+  ],
+  "item.trevorssentinels.rice_cake": [
+    {
+      "text": "Rice Cake"
+    }
+  ],
+  "item.trevorssentinels.rice_seeds": [
+    {
+      "text": "Rice Seeds"
+    }
+  ],
+  "item.trevorssentinels.roomba_spawn_egg": [
+    {
+      "text": "Sentinel Cleaning Droid"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_battleaxe": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Battleaxe"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_boots": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Boots"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_chestplate": [
+    {
+      "text": "Rose Gold Cuirass"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_dagger": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Dagger"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_helmet": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Helmet"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_ingot": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Ingot"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_leggings": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Leggings"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_pickaxe": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Pickaxe"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_shovel": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Shovel"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_sickle": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Sickle"
+    }
+  ],
+  "item.trevorssentinels.rose_gold_sword": [
+    {
+      "color": "#f7d2c5",
+      "text": "Rose Gold Sword"
+    }
+  ],
+  "item.trevorssentinels.salt": [
+    {
+      "color": "#fbebe5",
+      "text": "Salt"
+    }
+  ],
+  "item.trevorssentinels.sandfish": [
+    {
+      "color": "#d4b963",
+      "text": "Sandfish"
+    }
+  ],
+  "item.trevorssentinels.scara_shears": [
+    {
+      "text": "SCARA Shears"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_boots": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Boots"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_chainsaw": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Chainsaw"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_chestplate": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Chestplate"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_drill": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Drill"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_helmet": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Helmet"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_hoe": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Hoe"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_knife": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Knife"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_leggings": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Leggings"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_phaser": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Phaser"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_shard": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Shard"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_shovel": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Shovel"
+    }
+  ],
+  "item.trevorssentinels.scrap_metal_sword": [
+    {
+      "color": "#797979",
+      "text": "Scrap Metal Sword"
+    }
+  ],
+  "item.trevorssentinels.sentinel_hard_light_projector": [
+    {
+      "text": "Hard Light Projector"
+    }
+  ],
+  "item.trevorssentinels.sentinel_spawn_egg": [
+    {
+      "text": "Sentinel Spawn Beacon"
+    }
+  ],
+  "item.trevorssentinels.skylar_blade": [
+    {
+      "text": "Equitous Retribution"
+    }
+  ],
+  "item.trevorssentinels.smoke_capsule": [
+    {
+      "text": "Smoke Capsule"
+    }
+  ],
+  "item.trevorssentinels.smoked_fish": [
+    {
+      "color": "#beab27",
+      "text": "Smoked Fish"
+    }
+  ],
+  "item.trevorssentinels.starsteel_axe": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Axe"
+    }
+  ],
+  "item.trevorssentinels.starsteel_boots": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Boots"
+    }
+  ],
+  "item.trevorssentinels.starsteel_chestplate": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Chestplate"
+    }
+  ],
+  "item.trevorssentinels.starsteel_drill": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Drill"
+    }
+  ],
+  "item.trevorssentinels.starsteel_helmet": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Helmet"
+    }
+  ],
+  "item.trevorssentinels.starsteel_hoe": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Hoe"
+    }
+  ],
+  "item.trevorssentinels.starsteel_ingot": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Ingot"
+    }
+  ],
+  "item.trevorssentinels.starsteel_knife": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Knife"
+    }
+  ],
+  "item.trevorssentinels.starsteel_leggings": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Leggings"
+    }
+  ],
+  "item.trevorssentinels.starsteel_phaser": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Phaser"
+    }
+  ],
+  "item.trevorssentinels.starsteel_shovel": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Shovel"
+    }
+  ],
+  "item.trevorssentinels.starsteel_sword": [
+    {
+      "color": "#c8c8d3",
+      "text": "Starsteel Sword"
+    }
+  ],
+  "item.trevorssentinels.strength_item": [
+    {
+      "text": "Sword Badge"
+    }
+  ],
+  "item.trevorssentinels.sushi_roll": [
+    {
+      "text": "Sushi Roll"
+    }
+  ],
+  "item.trevorssentinels.sweet_berry_juice": [
+    {
+      "text": "Sweet Berry Juice"
+    }
+  ],
+  "item.trevorssentinels.thanatu_blade": [
+    {
+      "text": "Harmonious Rapture"
+    }
+  ],
+  "item.trevorssentinels.thanatu_boots": [
+    {
+      "text": "Macabre Sandals"
+    }
+  ],
+  "item.trevorssentinels.thanatu_chestplate": [
+    {
+      "text": "Macabre Shoulderpads"
+    }
+  ],
+  "item.trevorssentinels.thanatu_helmet": [
+    {
+      "text": "Macabre Skull"
+    }
+  ],
+  "item.trevorssentinels.thanatu_leggings": [
+    {
+      "text": "Macabre Loincloth"
+    }
+  ],
+  "item.trevorssentinels.tortilla": [
+    {
+      "text": "Tortilla"
+    }
+  ],
+  "item.trevorssentinels.tranquil_dust": [
+    {
+      "text": "Tranquil Pollen"
+    }
+  ],
+  "item.trevorssentinels.unholy_battleaxe": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Battleaxe"
+    }
+  ],
+  "item.trevorssentinels.unholy_boots": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Boots"
+    }
+  ],
+  "item.trevorssentinels.unholy_chestplate": [
+    {
+      "text": "Unholy Cuirass"
+    }
+  ],
+  "item.trevorssentinels.unholy_dagger": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Dagger"
+    }
+  ],
+  "item.trevorssentinels.unholy_helmet": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Helmet"
+    }
+  ],
+  "item.trevorssentinels.unholy_ingot": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Ingot"
+    }
+  ],
+  "item.trevorssentinels.unholy_leggings": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Leggings"
+    }
+  ],
+  "item.trevorssentinels.unholy_pickaxe": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Pickaxe"
+    }
+  ],
+  "item.trevorssentinels.unholy_shards": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Shards"
+    }
+  ],
+  "item.trevorssentinels.unholy_shovel": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Shovel"
+    }
+  ],
+  "item.trevorssentinels.unholy_sickle": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Sickle"
+    }
+  ],
+  "item.trevorssentinels.unholy_sword": [
+    {
+      "color": "#ff55ff",
+      "text": "Unholy Sword"
+    }
+  ],
+  "item.trevorssentinels.vendor_token": [
+    {
+      "color": "#a2afb1",
+      "text": "Vendor Token"
+    }
+  ],
+  "item.trevorssentinels.vile_spitter": [
+    {
+      "color": "#bf5755",
+      "text": "Vile Spitter"
+    }
+  ],
+  "item.trevorssentinels.viridian_boat": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Boat"
+    }
+  ],
+  "item.trevorssentinels.viridian_chest_boat": [
+    {
+      "color": "#75892e",
+      "text": "Viridian Chest Boat"
+    }
+  ],
+  "item.trevorssentinels.water_breathing_item": [
+    {
+      "text": "Abyssal Bubbles"
+    }
+  ],
+  "item.trevorssentinels.weakness_item": [
+    {
+      "text": "Shattered Sword"
+    }
+  ],
+  "item.trevorssentinels.wither_capsule": [
+    {
+      "text": "Wither Capsule"
+    }
+  ],
+  "item.trevorssentinels.zenithium_axe": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Axe"
+    }
+  ],
+  "item.trevorssentinels.zenithium_boots": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Boots"
+    }
+  ],
+  "item.trevorssentinels.zenithium_chestplate": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Chestplate"
+    }
+  ],
+  "item.trevorssentinels.zenithium_cluster": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Cluster"
+    }
+  ],
+  "item.trevorssentinels.zenithium_dagger": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Dagger"
+    }
+  ],
+  "item.trevorssentinels.zenithium_helmet": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Helmet"
+    }
+  ],
+  "item.trevorssentinels.zenithium_hoe": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Hoe"
+    }
+  ],
+  "item.trevorssentinels.zenithium_leggings": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Leggings"
+    }
+  ],
+  "item.trevorssentinels.zenithium_phaser": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Phaser"
+    }
+  ],
+  "item.trevorssentinels.zenithium_pickaxe": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Pickaxe"
+    }
+  ],
+  "item.trevorssentinels.zenithium_shovel": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Shovel"
+    }
+  ],
+  "item.trevorssentinels.zenithium_sword": [
+    {
+      "color": "#00aa00",
+      "text": "Zenithium Sword"
+    }
+  ],
+  "itemGroup.trevorssentinels.sentinels": [
+    {
+      "color": "#ffffff",
+      "text": "Trevor's Sentinels"
+    }
+  ],
+  "itemGroup.trevorssentinels.sentinels.button.wiki": [
+    {
+      "color": "#ffffff",
+      "text": "Wiki"
+    }
+  ],
+  "itemGroup.trevorssentinels.sentinels.tab.beta": [
+    {
+      "color": "#ffffff",
+      "text": "Beta"
+    }
+  ],
+  "itemGroup.trevorssentinels.sentinels.tab.magic": [
+    {
+      "color": "#ffffff",
+      "text": "Magic"
+    }
+  ],
+  "itemGroup.trevorssentinels.sentinels.tab.tech": [
+    {
+      "color": "#ffffff",
+      "text": "Tech"
+    }
+  ],
+  "key.category.trevorssentinels.trevorssentinels": [
+    {
+      "color": "#ffffff",
+      "text": "Trevor's Sentinels"
+    }
+  ],
+  "key.trevorssentinels.reload": [
+    {
+      "color": "#ffffff",
+      "text": "Reload"
+    }
+  ],
+  "key.trevorssentinels.style_switch": [
+    {
+      "color": "#ffffff",
+      "text": "Style Switch"
+    }
+  ],
+  "pillar.trevorssentinels.balance": [
+    {
+      "color": "#ffffff",
+      "text": "Balance"
+    }
+  ],
+  "pillar.trevorssentinels.chaos": [
+    {
+      "color": "#ffffff",
+      "text": "Chaos"
+    }
+  ],
+  "pillar.trevorssentinels.order": [
+    {
+      "color": "#ffffff",
+      "text": "Order"
+    }
+  ],
+  "pillar.trevorssentinels.purity": [
+    {
+      "color": "#ffffff",
+      "text": "Purity"
+    }
+  ],
+  "pillar.trevorssentinels.tranquility": [
+    {
+      "color": "#ffffff",
+      "text": "Tranquility"
+    }
+  ],
+  "pillar.trevorssentinels.truth": [
+    {
+      "color": "#ffffff",
+      "text": "Truth"
+    }
+  ],
+  "pillar.trevorssentinels.wisdom": [
+    {
+      "color": "#ffffff",
+      "text": "Wisdom"
+    }
+  ],
+  "style.item.trevorssentinels.lilith_blade.1": [
+    {
+      "color": "#ffffff",
+      "text": "Holy Retribution"
+    }
+  ],
+  "style.item.trevorssentinels.lilith_blade.2": [
+    {
+      "color": "#ffffff",
+      "text": "ENDLESS LIGHT"
+    }
+  ],
+  "style.item.trevorssentinels.pappym_blade.1": [
+    {
+      "color": "#ffffff",
+      "text": "Trickster"
+    }
+  ],
+  "style.item.trevorssentinels.pappym_blade.2": [
+    {
+      "color": "#ffffff",
+      "text": "Paladin"
+    }
+  ],
+  "style.item.trevorssentinels.pappym_blade.3": [
+    {
+      "color": "#ffffff",
+      "text": "Predator"
+    }
+  ],
+  "style.item.trevorssentinels.pappym_blade.4": [
+    {
+      "color": "#ffffff",
+      "text": "Guardian"
+    }
+  ],
+  "style.item.trevorssentinels.phaser.1": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading: Manual"
+    }
+  ],
+  "style.item.trevorssentinels.phaser.2": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading: Automatic"
+    }
+  ],
+  "style.item.trevorssentinels.thanatu_blade.1": [
+    {
+      "color": "#ffffff",
+      "text": "Riftwalker"
+    }
+  ],
+  "style.item.trevorssentinels.thanatu_blade.2": [
+    {
+      "color": "#ffffff",
+      "text": "Riftcaller"
+    }
+  ],
+  "tooltip.block.trevorssentinels.big_red_plate": [
+    {
+      "color": "#ffffff",
+      "text": "1500 Megawatt Super Colliding Super Plate"
+    }
+  ],
+  "tooltip.block.trevorssentinels.black_agility_block": [
+    {
+      "color": "#ffffff",
+      "text": "Watch your step."
+    }
+  ],
+  "tooltip.block.trevorssentinels.caution_hard_light_barrier": [
+    {
+      "color": "#ffffff",
+      "text": "Creative only!"
+    }
+  ],
+  "tooltip.block.trevorssentinels.feathercorn": [
+    {
+      "color": "#ffffff",
+      "text": "Soft and warm."
+    }
+  ],
+  "tooltip.block.trevorssentinels.flesh_block": [
+    {
+      "color": "#ffffff",
+      "text": "It's strangely warm..."
+    }
+  ],
+  "tooltip.block.trevorssentinels.flesh_veins": [
+    {
+      "color": "#ffffff",
+      "text": "They're spreading..."
+    }
+  ],
+  "tooltip.block.trevorssentinels.fleshy_eye": [
+    {
+      "color": "#ffffff",
+      "text": "It's staring..."
+    }
+  ],
+  "tooltip.block.trevorssentinels.hard_light_barrier": [
+    {
+      "color": "#ffffff",
+      "text": "Creative only!"
+    }
+  ],
+  "tooltip.block.trevorssentinels.potted_skullweed": [
+    {
+      "color": "#ffffff",
+      "text": "It's so cold..."
+    }
+  ],
+  "tooltip.block.trevorssentinels.potted_tranquil_rose": [
+    {
+      "color": "#ffffff",
+      "text": "Smells delightful."
+    }
+  ],
+  "tooltip.block.trevorssentinels.sentinel_hard_light_barrier": [
+    {
+      "color": "#ffffff",
+      "text": "Creative only!"
+    }
+  ],
+  "tooltip.block.trevorssentinels.skullweed": [
+    {
+      "color": "#ffffff",
+      "text": "It's so cold..."
+    }
+  ],
+  "tooltip.block.trevorssentinels.tranquil_rose": [
+    {
+      "color": "#ffffff",
+      "text": "Smells delightful."
+    }
+  ],
+  "tooltip.item.trevorssentinels.arma_dei_sickle": [
+    {
+      "color": "#ffffff",
+      "text": "Functions as a Hoe."
+    }
+  ],
+  "tooltip.item.trevorssentinels.ash": [
+    {
+      "color": "#ffffff",
+      "text": "Contains traces of dark magic."
+    }
+  ],
+  "tooltip.item.trevorssentinels.blood_diamond": [
+    {
+      "color": "#ffffff",
+      "text": "Chaos itself shines through."
+    }
+  ],
+  "tooltip.item.trevorssentinels.brownie": [
+    {
+      "color": "#ffffff",
+      "text": "Comes from outer space?"
+    }
+  ],
+  "tooltip.item.trevorssentinels.chorus_cobbler": [
+    {
+      "color": "#ffffff",
+      "text": "Memah's favorite recipe"
+    }
+  ],
+  "tooltip.item.trevorssentinels.copper_gladius": [
+    {
+      "color": "#ffffff",
+      "text": "An ornamental blade of goblin tradition."
+    }
+  ],
+  "tooltip.item.trevorssentinels.demonic_core": [
+    {
+      "color": "#ffffff",
+      "text": "Use while crouching to bind to a location!"
+    }
+  ],
+  "tooltip.item.trevorssentinels.distance_tracker": [
+    {
+      "color": "#ffffff",
+      "text": "Use on a mob to track it."
+    }
+  ],
+  "tooltip.item.trevorssentinels.dolphins_grace_item": [
+    {
+      "color": "#ffffff",
+      "text": "Its silky skin makes one feel hydrodynamic."
+    }
+  ],
+  "tooltip.item.trevorssentinels.dubious_bacon": [
+    {
+      "color": "#ffffff",
+      "text": "Don't ask where it came from..."
+    }
+  ],
+  "tooltip.item.trevorssentinels.dune_eel": [
+    {
+      "color": "#ffffff",
+      "text": "Isn't this a snake?"
+    }
+  ],
+  "tooltip.item.trevorssentinels.eye_of_ruin": [
+    {
+      "color": "#ffffff",
+      "text": "What a troubling gaze..."
+    }
+  ],
+  "tooltip.item.trevorssentinels.hero_of_the_village_item": [
+    {
+      "color": "#ffffff",
+      "text": "Gifted to heroes of legend."
+    }
+  ],
+  "tooltip.item.trevorssentinels.imperial_sickle": [
+    {
+      "color": "#ffffff",
+      "text": "Functions as a Hoe."
+    }
+  ],
+  "tooltip.item.trevorssentinels.industrial_crowbar": [
+    {
+      "color": "#ffffff",
+      "text": "Rise, and... shine."
+    }
+  ],
+  "tooltip.item.trevorssentinels.master_sword": [
+    {
+      "color": "#ffffff",
+      "text": "From a distant universe..."
+    }
+  ],
+  "tooltip.item.trevorssentinels.midas_fruit": [
+    {
+      "color": "#ffffff",
+      "text": "22 karats"
+    }
+  ],
+  "tooltip.item.trevorssentinels.music_disc_recital": [
+    {
+      "color": "#ffffff",
+      "text": "It's in remarkably good condition."
+    }
+  ],
+  "tooltip.item.trevorssentinels.nanotech_sword": [
+    {
+      "color": "#ffffff",
+      "text": "\"I've even forgotten my name...\""
+    }
+  ],
+  "tooltip.item.trevorssentinels.nuclear_sword": [
+    {
+      "color": "#ffffff",
+      "text": "Irradiates enemies."
+    }
+  ],
+  "tooltip.item.trevorssentinels.nuclear_vibroknife": [
+    {
+      "color": "#ffffff",
+      "text": "Irradiates enemies."
+    }
+  ],
+  "tooltip.item.trevorssentinels.one_pence": [
+    {
+      "color": "#ffffff",
+      "text": "Wealth, Fame, Power."
+    }
+  ],
+  "tooltip.item.trevorssentinels.paladins_badge": [
+    {
+      "color": "#ffffff",
+      "text": "The mark of a true warrior of light."
+    }
+  ],
+  "tooltip.item.trevorssentinels.pappym_blade": [
+    {
+      "color": "#ffffff",
+      "text": "Passed down through ancient tradition... and now it has found its way to you."
+    }
+  ],
+  "tooltip.item.trevorssentinels.pearfruit": [
+    {
+      "color": "#ffffff",
+      "text": "As good as gold."
+    }
+  ],
+  "tooltip.item.trevorssentinels.phaser.stats": [
+    {
+      "color": "#ffffff",
+      "text": "Phaser Stats:"
+    }
+  ],
+  "tooltip.item.trevorssentinels.redstone_crystal": [
+    {
+      "color": "#ffffff",
+      "text": "Sparkles with potential."
+    }
+  ],
+  "tooltip.item.trevorssentinels.roomba_spawn_egg": [
+    {
+      "color": "#ffffff",
+      "text": "Once a human, now a living sanitizer."
+    }
+  ],
+  "tooltip.item.trevorssentinels.rose_gold_sickle": [
+    {
+      "color": "#ffffff",
+      "text": "Functions as a Hoe."
+    }
+  ],
+  "tooltip.item.trevorssentinels.salt": [
+    {
+      "color": "#ffffff",
+      "text": "Used for keeping meat fresh."
+    }
+  ],
+  "tooltip.item.trevorssentinels.sandfish": [
+    {
+      "color": "#ffffff",
+      "text": "This is not a fish..."
+    }
+  ],
+  "tooltip.item.trevorssentinels.scara_shears": [
+    {
+      "color": "#ffffff",
+      "text": "A military-grade threat."
+    }
+  ],
+  "tooltip.item.trevorssentinels.scrap_metal_chainsaw": [
+    {
+      "color": "#ffffff",
+      "text": "Right click to launch shards at enemies!"
+    }
+  ],
+  "tooltip.item.trevorssentinels.sentinel_spawn_egg": [
+    {
+      "color": "#ffffff",
+      "text": "A mindless drone for the hive."
+    }
+  ],
+  "tooltip.item.trevorssentinels.thanatu_helmet": [
+    {
+      "color": "#ffffff",
+      "text": "The skull of the demon king."
+    }
+  ],
+  "tooltip.item.trevorssentinels.tranquil_dust": [
+    {
+      "color": "#ffffff",
+      "text": "Useful in dark alchemy."
+    }
+  ],
+  "tooltip.item.trevorssentinels.unholy_ingot": [
+    {
+      "color": "#ffffff",
+      "text": "Reflects only the light in darkness."
+    }
+  ],
+  "tooltip.item.trevorssentinels.unholy_sickle": [
+    {
+      "color": "#ffffff",
+      "text": "Functions as a Hoe."
+    }
+  ],
+  "tooltip.item.trevorssentinels.vile_spitter": [
+    {
+      "color": "#ffffff",
+      "text": "It's alive!"
+    }
+  ],
+  "tooltip.item.trevorssentinels.weakness_item": [
+    {
+      "color": "#ffffff",
+      "text": "A reminder of past failures."
+    }
+  ],
+  "tooltip.item.trevorssentinels.zenithium_cluster": [
+    {
+      "color": "#ffffff",
+      "text": "The concentrated essence of a galaxy."
+    }
+  ],
+  "tooltip.trevorssentinels.mode": [
+    {
+      "color": "#ffffff",
+      "text": "Mode: "
+    }
+  ],
+  "tooltip.trevorssentinels.set_bonus_active": [
+    {
+      "color": "#ffffff",
+      "text": "Set bonus active!"
+    }
+  ],
+  "tooltip.trevorssentinels.set_bonus_inactive": [
+    {
+      "color": "#ffffff",
+      "text": "Set bonus inactive!"
+    }
+  ],
+  "tooltip.trevorssentinels.style": [
+    {
+      "color": "#ffffff",
+      "text": "Style: "
+    }
+  ],
+  "tooltip.trevorssentinels.style_switch.1": [
+    {
+      "color": "#ffffff",
+      "text": " to switch style."
+    }
+  ],
+  "tooltip.trevorssentinels.style_switch.2": [
+    {
+      "color": "#ffffff",
+      "text": " to cycle modes."
+    }
+  ],
+  "tooltip.trevorssentinels:milkCuresPotionEffects": [
+    {
+      "color": "#ffffff",
+      "text": "Effects will not be cured!"
+    }
+  ],
+  "trevorssentinels.database.desc": [
+    {
+      "color": "#ffffff",
+      "text": "Your guide to this world of magic and technology, this database will store all information that may be useful on your adventure."
+    }
+  ],
+  "trevorssentinels.database.name": [
+    {
+      "color": "#ffffff",
+      "text": "HoloCodex"
+    }
+  ],
+  "trevorssentinels.hologui": [
+    {
+      "color": "#ffffff",
+      "text": "Sentinel HoloGUI"
+    }
+  ],
+  "trevorssentinels.legacy": [
+    {
+      "color": "#ffffff",
+      "text": "Legacy Resources"
+    }
+  ],
+  "trevorssentinels.sentinels": [
+    {
+      "color": "#33cccc",
+      "text": "Trevor's Sentinels"
+    }
+  ],
+  "trevorssentinels.vanilla_extensions": [
+    {
+      "color": "#ffffff",
+      "text": "Vanilla Extensions"
+    }
+  ],
+  "trevorssentinels.worldLevelTooLow.1": [
+    {
+      "color": "#ffffff",
+      "text": ""
+    }
+  ],
+  "trevorssentinels.worldLevelTooLow.2": [
+    {
+      "color": "#ffffff",
+      "text": "Demonic power has too much of a hold over the world!"
+    }
+  ],
+  "trevorssentinels.worldLevelTooLow.3": [
+    {
+      "color": "#ffffff",
+      "text": "The power is too strong!"
+    }
+  ],
+  "trevorssentinels.worldLevelTooLow.other": [
+    {
+      "color": "#ffffff",
+      "text": "A mysterious force pushes back!"
+    }
+  ],
+  "trevorssentinels:assassination_upload": [
+    {
+      "color": "#ffffff",
+      "text": "item.trevorssentinels.music_disc_assassination_upload plays"
+    }
+  ],
+  "trevorssentinels:bio_reload": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading"
+    }
+  ],
+  "trevorssentinels:blaster_shoot": [
+    {
+      "color": "#ffffff",
+      "text": "Shot laser"
+    }
+  ],
+  "trevorssentinels:database_flip": [
+    {
+      "color": "#ffffff",
+      "text": "Codex flipped"
+    }
+  ],
+  "trevorssentinels:database_open": [
+    {
+      "color": "#ffffff",
+      "text": "Codex opened"
+    }
+  ],
+  "trevorssentinels:flesh_ambient": [
+    {
+      "color": "#ffffff",
+      "text": "Flesh wriggles"
+    }
+  ],
+  "trevorssentinels:lapse_in_judgement": [
+    {
+      "color": "#ffffff",
+      "text": "item.trevorssentinels.music_disc_lapse_in_judgement plays"
+    }
+  ],
+  "trevorssentinels:notch_up": [
+    {
+      "color": "#ffffff",
+      "text": "Powering up"
+    }
+  ],
+  "trevorssentinels:ode_to_tranquility": [
+    {
+      "color": "#ffffff",
+      "text": "item.trevorssentinels.music_disc_ode_to_tranquility plays"
+    }
+  ],
+  "trevorssentinels:pistol_reload": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading"
+    }
+  ],
+  "trevorssentinels:recital": [
+    {
+      "color": "#ffffff",
+      "text": "item.trevorssentinels.music_disc_recital plays"
+    }
+  ],
+  "trevorssentinels:shotgun_reload": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading"
+    }
+  ],
+  "trevorssentinels:sniper_reload": [
+    {
+      "color": "#ffffff",
+      "text": "Reloading"
+    }
+  ]
 }

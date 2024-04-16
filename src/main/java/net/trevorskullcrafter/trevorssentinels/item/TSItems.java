@@ -37,10 +37,10 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item INDUSTRIAL_BOOTS = new ArmorItem(ModArmorMaterials.STARSTEEL, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_CROWBAR = new SwordItem(ModToolMaterials.STARSTEEL, 3, -2.4f, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_KNIFE = new DaggerItem(ModToolMaterials.STARSTEEL, 3, 1.5f, 0.5f, new QuiltItemSettings());
-		public static final Item TRIMETAL_PICKAXE = new PickaxeItem(ModToolMaterials.STARSTEEL, 1, 0f, new QuiltItemSettings());
-		public static final Item TRIMETAL_AXE = new AxeItem(ModToolMaterials.STARSTEEL, 3, -2.8f, new QuiltItemSettings());
-		public static final Item TRIMETAL_SHOVEL = new ShovelItem(ModToolMaterials.STARSTEEL, 1.5f, -3f, new QuiltItemSettings());
-		public static final Item TRIMETAL_HOE = new HoeItem(ModToolMaterials.STARSTEEL, 0, -3f, new QuiltItemSettings());
+		public static final Item INDUSTRIAL_DRILL = new PickaxeItem(ModToolMaterials.STARSTEEL, 1, 0f, new QuiltItemSettings());
+		public static final Item INDUSTRIAL_AXE = new AxeItem(ModToolMaterials.STARSTEEL, 3, -2.8f, new QuiltItemSettings());
+		public static final Item INDUSTRIAL_SHOVEL = new ShovelItem(ModToolMaterials.STARSTEEL, 1.5f, -3f, new QuiltItemSettings());
+		public static final Item INDUSTRIAL_HOE = new HoeItem(ModToolMaterials.STARSTEEL, 0, -3f, new QuiltItemSettings());
 
 		public static final Item STARSTEEL_SIGN = new SignItem(new QuiltItemSettings().maxCount(16), ModBlocks.STARSTEEL_SIGN, ModBlocks.STARSTEEL_WALL_SIGN);
 		public static final Item STARSTEEL_HANGING_SIGN = new HangingSignItem(ModBlocks.STARSTEEL_HANGING_SIGN, ModBlocks.STARSTEEL_WALL_HANGING_SIGN, new QuiltItemSettings().maxCount(16));

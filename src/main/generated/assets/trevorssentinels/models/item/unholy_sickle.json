@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "trevorssentinels:item/unholy_axe"
+    "layer0": "trevorssentinels:item/unholy_sickle"
   }
 }

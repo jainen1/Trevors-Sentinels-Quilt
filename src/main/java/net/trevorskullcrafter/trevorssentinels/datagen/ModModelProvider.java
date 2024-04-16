@@ -89,8 +89,8 @@ public class ModModelProvider extends FabricModelProvider {
 			TSItems.Magic.ROSE_GOLD_BATTLEAXE, TSItems.Magic.ROSE_GOLD_SHOVEL, TSItems.Magic.ROSE_GOLD_SICKLE);
 
         registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, TSItems.Tech.INDUSTRIAL_HELMET, TSItems.Tech.INDUSTRIAL_HARNESS, TSItems.Tech.INDUSTRIAL_PANTS, TSItems.Tech.INDUSTRIAL_BOOTS);
-        registerItems(itemModelGenerator, Models.HANDHELD, TSItems.Tech.INDUSTRIAL_CROWBAR, TSItems.Tech.INDUSTRIAL_KNIFE, TSItems.Tech.TRIMETAL_PICKAXE,
-			TSItems.Tech.TRIMETAL_AXE, TSItems.Tech.TRIMETAL_SHOVEL, TSItems.Tech.TRIMETAL_HOE);
+        registerItems(itemModelGenerator, Models.HANDHELD, TSItems.Tech.INDUSTRIAL_CROWBAR, TSItems.Tech.INDUSTRIAL_KNIFE, TSItems.Tech.INDUSTRIAL_DRILL,
+			TSItems.Tech.INDUSTRIAL_AXE, TSItems.Tech.INDUSTRIAL_SHOVEL, TSItems.Tech.INDUSTRIAL_HOE);
 
         registerItems(itemModelGenerator, Models.SINGLE_LAYER_ITEM, TSItems.Magic.IMPERIAL_HELMET, TSItems.Magic.IMPERIAL_CHESTPLATE, TSItems.Magic.IMPERIAL_LEGGINGS, TSItems.Magic.IMPERIAL_BOOTS);
         registerItems(itemModelGenerator, Models.HANDHELD, TSItems.Magic.IMPERIAL_SWORD, TSItems.Magic.IMPERIAL_GLADIUS, TSItems.Magic.IMPERIAL_PICKAXE, TSItems.Magic.IMPERIAL_BATTLEAXE,
