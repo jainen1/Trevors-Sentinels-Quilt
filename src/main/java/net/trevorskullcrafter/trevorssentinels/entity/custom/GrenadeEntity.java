@@ -19,8 +19,8 @@ import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 
 public class GrenadeEntity extends ThrownItemEntity {
     public GrenadeEntity(EntityType<? extends GrenadeEntity> entityType, World world) { super(entityType, world); }
-    public GrenadeEntity(World world, LivingEntity owner) { super(ModEntities.GRENADE, owner, world); }
-    public GrenadeEntity(World world, double x, double y, double z) { super(ModEntities.GRENADE, x, y, z, world); }
+    public GrenadeEntity(World world, LivingEntity owner) { super(ModEntities.DELAYED_EXPLOSIVE, owner, world); }
+    public GrenadeEntity(World world, double x, double y, double z) { super(ModEntities.DELAYED_EXPLOSIVE, x, y, z, world); }
 
     @Override protected Item getDefaultItem() { return TSItems.Tech.SCRAP_METAL_SHARD; }
 

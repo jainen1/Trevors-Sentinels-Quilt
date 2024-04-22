@@ -61,8 +61,8 @@ public class ModItems {
 
     public static final Item SENTINEL_SPAWN_EGG = registerItem("sentinel_spawn_egg",
             new SpawnEggItem(ModEntities.SENTINEL, 0xffffff, 0xD31400, new QuiltItemSettings()));
-    public static final Item ROOMBA_SPAWN_EGG = registerItem("roomba_spawn_egg",
-            new SpawnEggItem(ModEntities.ROOMBA, 0xffffff, 0xffffff, new QuiltItemSettings()));
+    public static final Item JANITOR_DROID_SPAWN_EGG = registerItem("roomba_spawn_egg",
+            new SpawnEggItem(ModEntities.JANITOR_DROID, 0xffffff, 0xffffff, new QuiltItemSettings()));
     public static final Item FLORBUS_SPAWN_EGG = registerItem("florbus_spawn_egg",
             new SpawnEggItem(ModEntities.FLORBUS, 0xd9c996, 0xb6a269, new QuiltItemSettings()));
 

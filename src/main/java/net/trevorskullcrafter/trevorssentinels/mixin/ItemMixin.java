@@ -4,14 +4,19 @@ import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.StackReference;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.screen.slot.Slot;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
+import net.minecraft.util.ClickType;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.datagen.ItemTagGenerator;
+import net.trevorskullcrafter.trevorssentinels.item.custom.FuelableItem;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
@@ -45,6 +50,22 @@ public abstract class ItemMixin {
             } else { tooltip.add(Text.literal(text).formatted(formattings)); }
         }
     }
+
+	@Inject(at = @At("HEAD"), method = "onClicked", cancellable = true)
+	public void onClicked(ItemStack thisStack, ItemStack otherStack, Slot thisSlot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference, CallbackInfoReturnable<Boolean> cir) {
+		if (thisStack.getItem() instanceof FuelableItem fuelableItem && clickType == ClickType.RIGHT) {
+			fuelableItem.onClicked(thisStack, otherStack, player, cursorStackReference);
+			cir.setReturnValue(true);
+		}
+	}
+
+	@Inject(at = @At("HEAD"), method = "onClickedOnOther", cancellable = true)
+	public void onClickedOnOther(ItemStack thisStack, Slot otherSlot, ClickType clickType, PlayerEntity player, CallbackInfoReturnable<Boolean> cir) {
+		if (thisStack.getItem() instanceof FuelableItem fuelableItem && clickType == ClickType.RIGHT) {
+			fuelableItem.onClickedOnOther(thisStack, otherSlot, player);
+			cir.setReturnValue(true);
+		}
+	}
 
     @Inject(at = @At("HEAD"), method = "getItemBarColor", cancellable = true)
     public void getItemBarColor(ItemStack stack, CallbackInfoReturnable<Integer> cir) {

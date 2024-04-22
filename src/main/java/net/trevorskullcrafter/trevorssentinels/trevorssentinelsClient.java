@@ -32,17 +32,17 @@ public class trevorssentinelsClient implements ClientModInitializer {
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0xCFF8FF, ModItems.VENDOR_TOKEN);
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.DARK_PURPLE.getRGB(), ModItems.LEGENDARY_TOKEN);
 
-		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_AQUA_T1, TextUtil.SENTINEL_AQUA_T3),
+		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_AQUA1, TextUtil.SENTINEL_AQUA3),
 			ModBlocks.HARD_LIGHT, ModBlocks.HARD_LIGHT_BARRIER);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_AQUA_T1, TextUtil.SENTINEL_AQUA_T1),
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_AQUA1, TextUtil.SENTINEL_AQUA3),
 			ModBlocks.HARD_LIGHT_BARRIER);
-		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_GOLD_T1, TextUtil.SENTINEL_GOLD_T3),
+		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_GOLD1, TextUtil.SENTINEL_GOLD3),
 			ModBlocks.CAUTION_HARD_LIGHT, ModBlocks.CAUTION_HARD_LIGHT_BARRIER);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_GOLD_T1, TextUtil.SENTINEL_GOLD_T3),
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_GOLD1, TextUtil.SENTINEL_GOLD3),
 			ModBlocks.CAUTION_HARD_LIGHT_BARRIER);
-		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_CRIMSON_T1, TextUtil.SENTINEL_CRIMSON_T3),
+		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_CRIMSON1, TextUtil.SENTINEL_CRIMSON3),
 			ModBlocks.SENTINEL_HARD_LIGHT, ModBlocks.SENTINEL_HARD_LIGHT_BARRIER);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_CRIMSON_T1, TextUtil.SENTINEL_CRIMSON_T3),
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_CRIMSON1, TextUtil.SENTINEL_CRIMSON3),
 			ModBlocks.SENTINEL_HARD_LIGHT_BARRIER);
 
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) ->
@@ -64,18 +64,18 @@ public class trevorssentinelsClient implements ClientModInitializer {
 		KeyInputHandler.register();
 		ModMessages.registerS2CPackets();
 
-		EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.PLASMA_PROJECTILE, LaserEntityModel::getTexturedModelData);
+		EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.PLASMA_PROJECTILE, PhaserProjectileModel::getTexturedModelData);
 		EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.SENTINEL, SentinelEntityModel::getTexturedModelData);
 		EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.ROOMBA, RoombaEntityModel::getTexturedModelData);
 		EntityModelLayerRegistry.registerModelLayer(ModEntityModelLayers.FLORBUS, FlorbusEntityModel::getTexturedModelData);
 
 		ModRegistries.registerModelPredicates();
 		EntityRendererRegistry.register(ModEntities.SENTINEL, SentinelEntityRenderer::new);
-		EntityRendererRegistry.register(ModEntities.ROOMBA, RoombaRenderer::new);
+		EntityRendererRegistry.register(ModEntities.JANITOR_DROID, RoombaRenderer::new);
 		EntityRendererRegistry.register(ModEntities.FLORBUS, FlorbusEntityRenderer::new);
 		EntityRendererRegistry.register(ModEntities.SHARD_PROJECTILE, FlyingItemEntityRenderer::new);
 		EntityRendererRegistry.register(ModEntities.DAGGER_PROJECTILE, DaggerEntityRenderer::new);
-		EntityRendererRegistry.register(ModEntities.GRENADE, FlyingItemEntityRenderer::new);
+		EntityRendererRegistry.register(ModEntities.DELAYED_EXPLOSIVE, FlyingItemEntityRenderer::new);
 		EntityRendererRegistry.register(ModEntities.PHASER_PROJECTILE, PhaserProjectileRenderer::new);
 
 		ParticleFactoryRegistry.getInstance().register(ModRegistries.FLESH_PUS, ModSuspendParticle.FleshPusFactory::new);

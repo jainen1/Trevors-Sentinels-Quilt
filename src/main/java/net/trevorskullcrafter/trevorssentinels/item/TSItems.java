@@ -1,11 +1,15 @@
 package net.trevorskullcrafter.trevorssentinels.item;
 
+import com.google.common.collect.ImmutableBiMap;
 import io.wispforest.owo.registration.annotations.RegistryNamespace;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.item.*;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Rarity;
 import net.trevorskullcrafter.trevorssentinels.block.ModBlocks;
 import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
@@ -132,7 +136,7 @@ public class TSItems implements ItemRegistryContainer {
 	public static final Item LASER_REVOLVER = registerItem("laser_revolver", new GunItem(new QuiltItemSettings().maxDamage(7), Gunclasses.SHOTGUN,
 		1, 3f, 15.0f, 5.0f, 0.075f, 3, 90, 48, 12, 3, Color.decode("11184810")));*/
 
-		public static final Item DISTANCE_TRACKER = new DistanceTrackerItem(new QuiltItemSettings().maxCount(1));
+		public static final Item LIFEFORM_TRACER = new DistanceTrackerItem(new QuiltItemSettings().maxCount(1));
 
 		public static final Item PLASMA_CELL = new Item(new QuiltItemSettings());
 		public static final Item PAINT_PACK = new PaintPackItem(new QuiltItemSettings());
@@ -168,10 +172,10 @@ public class TSItems implements ItemRegistryContainer {
 			1, 2f, 4.0f, 2.0f, 0.035f, 11, 60, 48, 8, 3, TextUtil.FLESH_PUS,
 			new StatusEffectInstance(ModEffects.INFESTED, 20));
 
-		public static final Item HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.HARD_LIGHT, new QuiltItemSettings().maxDamage(129));
-		public static final Item CAUTION_HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.CAUTION_HARD_LIGHT, new QuiltItemSettings().maxDamage(129));
-		public static final Item SENTINEL_HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.SENTINEL_HARD_LIGHT, new QuiltItemSettings().maxDamage(129));
-		public static final Item NUCLEAR_ROCKET = new NuclearRocketItem(new QuiltItemSettings().maxDamage(93));
+		public static final Item HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.HARD_LIGHT, TextUtil.SENTINEL_AQUA1, 128, new QuiltItemSettings().maxCount(1));
+		public static final Item CAUTION_HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.CAUTION_HARD_LIGHT, TextUtil.SENTINEL_GOLD1, 128, new QuiltItemSettings().maxCount(1));
+		public static final Item SENTINEL_HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.SENTINEL_HARD_LIGHT, TextUtil.SENTINEL_CRIMSON1, 128, new QuiltItemSettings().maxCount(1));
+		public static final Item NUCLEAR_ROCKET = new NuclearRocketItem(new QuiltItemSettings().maxCount(1), 128);
 
 		public static final Item EMPTY_CAN = new Item(new QuiltItemSettings());
 		public static final Item BEETROOT_SOUP_CAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.6f).build()));
@@ -266,6 +270,17 @@ public class TSItems implements ItemRegistryContainer {
 			new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 1));
 
 		public static final Item DEMONIC_CORE = new PortkeyItem(new QuiltItemSettings().maxDamage(3));
+		public static final Item PALE_BERRIES = new BlockConverterItem(new QuiltItemSettings(), SoundEvents.ITEM_HONEYCOMB_WAX_ON, 1.0f, 1.0f,
+			new ImmutableBiMap.Builder<Block, Block>()
+			.put(Blocks.END_STONE, ModBlocks.IMPIOUS_END_STONE)
+			.put(Blocks.END_STONE_BRICKS, ModBlocks.IMPIOUS_END_STONE_BRICKS)
+			.put(Blocks.END_STONE_BRICK_SLAB, Blocks.STONE_BRICK_SLAB)
+			.put(Blocks.END_STONE_BRICK_STAIRS, Blocks.STONE_BRICK_STAIRS)
+			.put(Blocks.END_STONE_BRICK_WALL, Blocks.STONE_BRICK_WALL)
+			.put(ModBlocks.CRACKED_END_STONE_BRICKS, ModBlocks.CRACKED_IMPIOUS_END_STONE_BRICKS)
+			.put(ModBlocks.CHISELED_END_STONE_BRICKS, ModBlocks.CHISELED_IMPIOUS_END_STONE_BRICKS)
+			.put(ModBlocks.END_STONE_BRICK_COLUMN, ModBlocks.IMPIOUS_END_STONE_BRICK_COLUMN)
+			.build());
 
 		public static final Item RESISTANCE_ITEM = new InfiniteEffectItem(new QuiltItemSettings().maxCount(1),
 			new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false));

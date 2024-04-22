@@ -8,7 +8,7 @@
 			"name": "Trevor's Sentinels",
 			"description": "A world of magic and machines",
 			"contributors": {
-				"trevorskullcrafter": "Owner",
+				"trevorskullcrafter": "Owner, Artist",
 				"CirceSays": "Artist"
 			},
 			"contact": {
@@ -30,5 +30,6 @@
 			{ "id": "minecraft", "versions": ">=1.20" }
 		]
 	},
-	"mixin": "trevorssentinels.mixins.json"
+	"mixin": "trevorssentinels.mixins.json",
+	"access_widener": "trevorssentinels.accesswidener"
 }

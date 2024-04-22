@@ -76,7 +76,7 @@ public class trevorssentinelsMain implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.SENTINEL, SentinelEntity.setAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.ROOMBA, RoombaEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.JANITOR_DROID, RoombaEntity.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.FLORBUS, FlorbusEntity.setAttributes());
 
 		SENTINELS.addCustomTab(Icon.of(TSItems.Magic.IMPERIAL_GLADIUS),"magic", (context, entries) -> {
@@ -85,31 +85,45 @@ public class trevorssentinelsMain implements ModInitializer {
 			entries.addItem(TSItems.Magic.ROSE_GOLD_LEGGINGS);
 			entries.addItem(TSItems.Magic.ROSE_GOLD_BOOTS);
 		}, false);
-		SENTINELS.addCustomTab(Icon.of(TSItems.Tech.HARD_LIGHT_PROJECTOR),"tech", (context, entries) -> {
-			entries.addItem(TSItems.Tech.HARD_LIGHT_PROJECTOR);
-			entries.addItem(TSItems.Tech.CAUTION_HARD_LIGHT_PROJECTOR);
-			entries.addItem(TSItems.Tech.SENTINEL_HARD_LIGHT_PROJECTOR);
+		SENTINELS.addCustomTab(Icon.of(TSItems.Tech.SENTINEL_HARD_LIGHT_PROJECTOR),"tech", (context, entries) -> {
+			entries.addStack(TSItems.Tech.HARD_LIGHT_PROJECTOR.getDefaultStack());
+			entries.addStack(TSItems.Tech.CAUTION_HARD_LIGHT_PROJECTOR.getDefaultStack());
+			entries.addStack(TSItems.Tech.SENTINEL_HARD_LIGHT_PROJECTOR.getDefaultStack());
 			entries.addItem(TSItems.Tech.PLASMA_CELL);
 			entries.addItem(TSItems.Tech.PAINT_PACK);
 			entries.addItem(TSItems.Tech.PHOTONIC_LENS);
 			entries.addItem(TSItems.Tech.SCRAP_METAL_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.SCRAP_METAL_PHASER, TextUtil.coloredText("Comet Phase Rifle", TextUtil.MOSS), 0, TextUtil.SENTINEL_CRIMSON_T2,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.SCRAP_METAL_PHASER, "custom.phaser.comet", 0, TextUtil.SENTINEL_CRIMSON2,
 				new ItemStack(TSItems.Tech.COUNTERFORCE_DIFFUSER)));
 			entries.addItem(TSItems.Tech.INDUSTRIAL_PHASER);
 			entries.addItem(TSItems.Tech.STARSTEEL_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.STARSTEEL_PHASER, TextUtil.coloredText("Lunar Phase Rifle", TextUtil.MOSS), 0, TextUtil.NUCLEAR,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.STARSTEEL_PHASER, "custom.phaser.lunar", 0, TextUtil.SENTINEL_AQUA1,
 				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER)));
 			entries.addItem(TSItems.Tech.NUCLEAR_PHASER);
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NUCLEAR_PHASER, "custom.phaser.pandemic", 0, TextUtil.NUCLEAR3,
+				new ItemStack(TSItems.Tech.POISON_CAPSULE), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER),
+				new ItemStack(TSItems.Tech.WITHER_CAPSULE), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM)));
 			entries.addItem(TSItems.Tech.NANOTECH_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NANOTECH_PHASER, TextUtil.coloredText("Serenity Phase Rifle", TextUtil.MOSS), 0, TextUtil.SENTINEL_AQUA_T1,
-				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.COUNTERFORCE_DIFFUSER)));
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NANOTECH_PHASER, "custom.phaser.serenity", 0, TextUtil.SENTINEL_GOLD1,
+				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM),
+				new ItemStack(TSItems.Tech.COUNTERFORCE_DIFFUSER), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM)));
+			entries.addItem(TSItems.Tech.ZENITHIUM_HELMET);
+			entries.addItem(TSItems.Tech.ZENITHIUM_CHESTPLATE);
+			entries.addItem(TSItems.Tech.ZENITHIUM_LEGGINGS);
+			entries.addItem(TSItems.Tech.ZENITHIUM_BOOTS);
+			entries.addItem(TSItems.Tech.ZENITHIUM_SWORD);
+			entries.addItem(TSItems.Tech.ZENITHIUM_DAGGER);
 			entries.addItem(TSItems.Tech.ZENITHIUM_PHASER);
+			entries.addItem(TSItems.Tech.ZENITHIUM_PICKAXE);
+			entries.addItem(TSItems.Tech.ZENITHIUM_AXE);
+			entries.addItem(TSItems.Tech.ZENITHIUM_SHOVEL);
+			entries.addItem(TSItems.Tech.ZENITHIUM_HOE);
 		}, false);
 		SENTINELS.addCustomTab(Icon.of(TSItems.Tech.ZENITHIUM_CLUSTER),"beta", (context, entries) -> {
 			entries.addItem(TSItems.Magic.RESISTANCE_ITEM);
 			entries.addItem(TSItems.Magic.FIRE_RESISTANCE_ITEM);
 		}, false);
-		SENTINELS.addButton(ItemGroupButton.link(SENTINELS, Icon.of(TSItems.Tech.MUSIC_DISC_ODE_TO_TRANQUILITY), "wiki", "about:blank"));
+		SENTINELS.addButton(ItemGroupButton.link(SENTINELS, Icon.of(TSItems.Tech.MUSIC_DISC_LAPSE_IN_JUDGEMENT), "wiki", "https://github.com/jainen1/Trevors-Sentinels-Quilt"));
 		SENTINELS.initialize();
 	}
 }

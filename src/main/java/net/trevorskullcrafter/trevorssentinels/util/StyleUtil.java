@@ -15,11 +15,11 @@ import net.minecraft.world.World;
 import net.trevorskullcrafter.trevorssentinels.event.KeyInputHandler;
 
 import static net.trevorskullcrafter.trevorssentinels.util.TextUtil.GOLD;
-import static net.trevorskullcrafter.trevorssentinels.util.TextUtil.SENTINEL_AQUA_T1;
+import static net.trevorskullcrafter.trevorssentinels.util.TextUtil.SENTINEL_AQUA1;
 
 public class StyleUtil {
     public static final Text style = TextUtil.coloredText("tooltip.trevorssentinels.style", GOLD);
-    public static final Text mode = TextUtil.coloredText("tooltip.trevorssentinels.mode", SENTINEL_AQUA_T1);
+    public static final Text mode = TextUtil.coloredText("tooltip.trevorssentinels.mode", SENTINEL_AQUA1);
 
     @Environment(EnvType.CLIENT) public static Text switchText(World world, int mode){
         if (world instanceof ClientWorld) return Text.literal(Text.keyBind(KeyInputHandler.styleSwitch.getTranslationKey()).getString().toUpperCase())

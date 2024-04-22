@@ -40,6 +40,7 @@ project.configurations.configureEach {
 sourceSets { main { resources { srcDirs += [ 'src/main/generated' ] }}}
 
 loom {
+	accessWidenerPath = file("src/main/resources/trevorssentinels.accesswidener")
 	mods {
 		"trevorssentinels" {
 			// Tell Loom about each source set used by your mod here. This ensures that your mod's classes are properly transformed by Loader.

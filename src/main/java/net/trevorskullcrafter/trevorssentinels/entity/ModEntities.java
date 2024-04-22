@@ -15,7 +15,7 @@ public class ModEntities {
 		Registries.ENTITY_TYPE, new Identifier(trevorssentinelsMain.MOD_ID, "sentinel"),
 		QuiltEntityTypeBuilder.create(SpawnGroup.MONSTER, SentinelEntity::new)
 			.setDimensions(EntityDimensions.fixed(0.7f, 0.6f)).build());
-    public static final EntityType<RoombaEntity> ROOMBA = Registry.register(
+    public static final EntityType<RoombaEntity> JANITOR_DROID = Registry.register(
 		Registries.ENTITY_TYPE, new Identifier(trevorssentinelsMain.MOD_ID, "sentinum_roomba"),
 		QuiltEntityTypeBuilder.create(SpawnGroup.CREATURE, RoombaEntity::new)
 			.setDimensions(EntityDimensions.fixed(0.75f, 0.2f)).build());
@@ -37,7 +37,7 @@ public class ModEntities {
 		QuiltEntityTypeBuilder.<PhaserProjectileEntity>create(SpawnGroup.MISC, PhaserProjectileEntity::new)
 			.setDimensions(EntityDimensions.fixed(0.25F, 0.25F)).makeFireImmune().maxBlockTrackingRange(32).trackingTickInterval(10).build());
 
-	public static final EntityType<GrenadeEntity> GRENADE = Registry.register(
+	public static final EntityType<GrenadeEntity> DELAYED_EXPLOSIVE = Registry.register(
 		Registries.ENTITY_TYPE, new Identifier(trevorssentinelsMain.MOD_ID, "grenade"),
 		QuiltEntityTypeBuilder.<GrenadeEntity>create(SpawnGroup.MISC, GrenadeEntity::new)
 			.setDimensions(EntityDimensions.fixed(0.25F, 0.25F)).maxBlockTrackingRange(32).trackingTickInterval(10).build());

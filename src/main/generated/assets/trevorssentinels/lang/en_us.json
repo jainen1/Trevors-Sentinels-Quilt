@@ -1,172 +1,4 @@
 {
-  "advancements.trevorssentinels.ancient_metal.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain an ingot of Imperial Alloy"
-    }
-  ],
-  "advancements.trevorssentinels.ancient_metal.title": [
-    {
-      "color": "#ffffff",
-      "text": "Ancient Metal"
-    }
-  ],
-  "advancements.trevorssentinels.ancient_metal2.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain equipment made from Imperial Alloy"
-    }
-  ],
-  "advancements.trevorssentinels.ancient_metal2.title": [
-    {
-      "color": "#ffffff",
-      "text": "Good Soldiers Follow Orders"
-    }
-  ],
-  "advancements.trevorssentinels.bacon_and_eggs.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Part of a complete breakfast!"
-    }
-  ],
-  "advancements.trevorssentinels.bacon_and_eggs.title": [
-    {
-      "color": "#ffffff",
-      "text": "Bacon and Eggs"
-    }
-  ],
-  "advancements.trevorssentinels.brownie.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Consume a Brownie"
-    }
-  ],
-  "advancements.trevorssentinels.brownie.title": [
-    {
-      "color": "#ffffff",
-      "text": "This Edible Ain't Shi-"
-    }
-  ],
-  "advancements.trevorssentinels.cerberus.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Defeat Cerberus, and release the seal on ancient forces"
-    }
-  ],
-  "advancements.trevorssentinels.cerberus.title": [
-    {
-      "color": "#ffffff",
-      "text": "False Idol"
-    }
-  ],
-  "advancements.trevorssentinels.chainsaw.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Craft a Scrap Metal Chainsaw"
-    }
-  ],
-  "advancements.trevorssentinels.chainsaw.title": [
-    {
-      "color": "#ffffff",
-      "text": "Chainsaws, Man"
-    }
-  ],
-  "advancements.trevorssentinels.industrial.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain any industrial-tier item"
-    }
-  ],
-  "advancements.trevorssentinels.industrial.title": [
-    {
-      "color": "#ffffff",
-      "text": "Industrial"
-    }
-  ],
-  "advancements.trevorssentinels.rose_gold.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain equipment made from Rose Gold"
-    }
-  ],
-  "advancements.trevorssentinels.rose_gold.title": [
-    {
-      "color": "#ffffff",
-      "text": "Every Rose..."
-    }
-  ],
-  "advancements.trevorssentinels.spf.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain a Banana Boat"
-    }
-  ],
-  "advancements.trevorssentinels.spf.title": [
-    {
-      "color": "#ffffff",
-      "text": "SPF 50+"
-    }
-  ],
-  "advancements.trevorssentinels.thanatu.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Acquire the tools of the demon lord"
-    }
-  ],
-  "advancements.trevorssentinels.thanatu.title": [
-    {
-      "color": "#ffffff",
-      "text": "...Has its Thorn"
-    }
-  ],
-  "advancements.trevorssentinels.trevorssentinels.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain a Scrap Metal Shard"
-    }
-  ],
-  "advancements.trevorssentinels.trevorssentinels.title": [
-    {
-      "color": "#ffffff",
-      "text": "Trevor's Sentinels"
-    }
-  ],
-  "advancements.trevorssentinels.uranium.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Obtain equipment made from Nuclear Ingots"
-    }
-  ],
-  "advancements.trevorssentinels.uranium.title": [
-    {
-      "color": "#ffffff",
-      "text": "Nuclear Age"
-    }
-  ],
-  "advancements.trevorssentinels.zenithium.desc": [
-    {
-      "color": "#ffffff",
-      "text": "Acquire a cluster of Zenithium"
-    }
-  ],
-  "advancements.trevorssentinels.zenithium.title": [
-    {
-      "color": "#ffffff",
-      "text": "Infinity Squared"
-    }
-  ],
-  "advancements.trevorssentinels.zenithium2.desc": [
-    {
-      "color": "#ffffff",
-      "text": "\"Honey, where's my super suit?\""
-    }
-  ],
-  "advancements.trevorssentinels.zenithium2.title": [
-    {
-      "color": "#ffffff",
-      "text": "Infinity+1 Everything"
-    }
-  ],
   "block.trevorssentinels.battery": [
     {
       "text": "Battery"
@@ -175,13 +7,113 @@
   "block.trevorssentinels.big_red_button": [
     {
       "color": "#ff3333",
-      "text": "Big Red Button"
+      "text": "B"
+    },
+    {
+      "color": "#f72f2f",
+      "text": "i"
+    },
+    {
+      "color": "#f02b2b",
+      "text": "g"
+    },
+    {
+      "color": "#e92828",
+      "text": " "
+    },
+    {
+      "color": "#e12424",
+      "text": "R"
+    },
+    {
+      "color": "#da2020",
+      "text": "e"
+    },
+    {
+      "color": "#d31d1d",
+      "text": "d"
+    },
+    {
+      "color": "#cc1919",
+      "text": " "
+    },
+    {
+      "color": "#c41515",
+      "text": "B"
+    },
+    {
+      "color": "#bd1212",
+      "text": "u"
+    },
+    {
+      "color": "#b60e0e",
+      "text": "t"
+    },
+    {
+      "color": "#ae0a0a",
+      "text": "t"
+    },
+    {
+      "color": "#a70707",
+      "text": "o"
+    },
+    {
+      "color": "#a00303",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.big_red_plate": [
     {
       "color": "#ff3333",
-      "text": "Big Red Plate"
+      "text": "B"
+    },
+    {
+      "color": "#f72f2f",
+      "text": "i"
+    },
+    {
+      "color": "#ef2b2b",
+      "text": "g"
+    },
+    {
+      "color": "#e72727",
+      "text": " "
+    },
+    {
+      "color": "#df2323",
+      "text": "R"
+    },
+    {
+      "color": "#d71f1f",
+      "text": "e"
+    },
+    {
+      "color": "#cf1b1b",
+      "text": "d"
+    },
+    {
+      "color": "#c81717",
+      "text": " "
+    },
+    {
+      "color": "#c01313",
+      "text": "P"
+    },
+    {
+      "color": "#b80f0f",
+      "text": "l"
+    },
+    {
+      "color": "#b00b0b",
+      "text": "a"
+    },
+    {
+      "color": "#a80707",
+      "text": "t"
+    },
+    {
+      "color": "#a00303",
+      "text": "e"
     }
   ],
   "block.trevorssentinels.black_agility_block": [
@@ -197,22 +129,282 @@
   ],
   "block.trevorssentinels.caution_hard_light": [
     {
-      "text": "Hard Light"
+      "color": "#ffcc33",
+      "text": "H"
+    },
+    {
+      "color": "#ffc128",
+      "text": "a"
+    },
+    {
+      "color": "#ffb71e",
+      "text": "r"
+    },
+    {
+      "color": "#ffad14",
+      "text": "d"
+    },
+    {
+      "color": "#ffa30a",
+      "text": " "
+    },
+    {
+      "color": "#ff9900",
+      "text": "L"
+    },
+    {
+      "color": "#f89000",
+      "text": "i"
+    },
+    {
+      "color": "#f18700",
+      "text": "g"
+    },
+    {
+      "color": "#ea7f00",
+      "text": "h"
+    },
+    {
+      "color": "#e37600",
+      "text": "t"
     }
   ],
   "block.trevorssentinels.caution_hard_light_barrier": [
     {
-      "text": "Hard Light Barrier"
+      "color": "#ffcc33",
+      "text": "H"
+    },
+    {
+      "color": "#ffc62d",
+      "text": "a"
+    },
+    {
+      "color": "#ffc027",
+      "text": "r"
+    },
+    {
+      "color": "#feba21",
+      "text": "d"
+    },
+    {
+      "color": "#ffb51c",
+      "text": " "
+    },
+    {
+      "color": "#ffaf16",
+      "text": "L"
+    },
+    {
+      "color": "#ffaa10",
+      "text": "i"
+    },
+    {
+      "color": "#ffa40b",
+      "text": "g"
+    },
+    {
+      "color": "#ff9e05",
+      "text": "h"
+    },
+    {
+      "color": "#ff9900",
+      "text": "t"
+    },
+    {
+      "color": "#fb9400",
+      "text": " "
+    },
+    {
+      "color": "#f78f00",
+      "text": "B"
+    },
+    {
+      "color": "#f38a00",
+      "text": "a"
+    },
+    {
+      "color": "#ef8500",
+      "text": "r"
+    },
+    {
+      "color": "#eb8100",
+      "text": "r"
+    },
+    {
+      "color": "#e77c00",
+      "text": "i"
+    },
+    {
+      "color": "#e37700",
+      "text": "e"
+    },
+    {
+      "color": "#df7200",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.caution_holographic_hanging_sign": [
     {
-      "text": "Holographic Hanging Sign"
+      "color": "#ffcc33",
+      "text": "H"
+    },
+    {
+      "color": "#ffc72e",
+      "text": "o"
+    },
+    {
+      "color": "#ffc32a",
+      "text": "l"
+    },
+    {
+      "color": "#ffbf26",
+      "text": "o"
+    },
+    {
+      "color": "#feba21",
+      "text": "g"
+    },
+    {
+      "color": "#ffb61d",
+      "text": "r"
+    },
+    {
+      "color": "#ffb219",
+      "text": "a"
+    },
+    {
+      "color": "#ffae15",
+      "text": "p"
+    },
+    {
+      "color": "#ffaa10",
+      "text": "h"
+    },
+    {
+      "color": "#ffa50c",
+      "text": "i"
+    },
+    {
+      "color": "#ffa108",
+      "text": "c"
+    },
+    {
+      "color": "#ff9d04",
+      "text": " "
+    },
+    {
+      "color": "#ff9900",
+      "text": "H"
+    },
+    {
+      "color": "#fc9500",
+      "text": "a"
+    },
+    {
+      "color": "#f99100",
+      "text": "n"
+    },
+    {
+      "color": "#f68e00",
+      "text": "g"
+    },
+    {
+      "color": "#f38a00",
+      "text": "i"
+    },
+    {
+      "color": "#f08700",
+      "text": "n"
+    },
+    {
+      "color": "#ed8300",
+      "text": "g"
+    },
+    {
+      "color": "#ea7f00",
+      "text": " "
+    },
+    {
+      "color": "#e77c00",
+      "text": "S"
+    },
+    {
+      "color": "#e47800",
+      "text": "i"
+    },
+    {
+      "color": "#e17500",
+      "text": "g"
+    },
+    {
+      "color": "#de7100",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.caution_holographic_sign": [
     {
-      "text": "Holographic Sign"
+      "color": "#ffcc33",
+      "text": "H"
+    },
+    {
+      "color": "#ffc52c",
+      "text": "o"
+    },
+    {
+      "color": "#ffbf26",
+      "text": "l"
+    },
+    {
+      "color": "#ffb81f",
+      "text": "o"
+    },
+    {
+      "color": "#ffb219",
+      "text": "g"
+    },
+    {
+      "color": "#ffac13",
+      "text": "r"
+    },
+    {
+      "color": "#ffa50c",
+      "text": "a"
+    },
+    {
+      "color": "#ff9f06",
+      "text": "p"
+    },
+    {
+      "color": "#ff9900",
+      "text": "h"
+    },
+    {
+      "color": "#fa9300",
+      "text": "i"
+    },
+    {
+      "color": "#f68e00",
+      "text": "c"
+    },
+    {
+      "color": "#f18800",
+      "text": " "
+    },
+    {
+      "color": "#ed8300",
+      "text": "S"
+    },
+    {
+      "color": "#e97e00",
+      "text": "i"
+    },
+    {
+      "color": "#e47800",
+      "text": "g"
+    },
+    {
+      "color": "#e07300",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.cerulii_button": [
@@ -408,18 +600,291 @@
   "block.trevorssentinels.chiseled_scrap_metal_block": [
     {
       "color": "#797979",
-      "text": "Chiseled Scrap Metal Block"
+      "text": "C"
+    },
+    {
+      "color": "#787878",
+      "text": "h"
+    },
+    {
+      "color": "#787777",
+      "text": "i"
+    },
+    {
+      "color": "#787776",
+      "text": "s"
+    },
+    {
+      "color": "#787675",
+      "text": "e"
+    },
+    {
+      "color": "#777574",
+      "text": "l"
+    },
+    {
+      "color": "#777573",
+      "text": "e"
+    },
+    {
+      "color": "#777472",
+      "text": "d"
+    },
+    {
+      "color": "#777471",
+      "text": " "
+    },
+    {
+      "color": "#767371",
+      "text": "S"
+    },
+    {
+      "color": "#767270",
+      "text": "c"
+    },
+    {
+      "color": "#76726f",
+      "text": "r"
+    },
+    {
+      "color": "#76716e",
+      "text": "a"
+    },
+    {
+      "color": "#76716d",
+      "text": "p"
+    },
+    {
+      "color": "#75706c",
+      "text": " "
+    },
+    {
+      "color": "#756f6b",
+      "text": "M"
+    },
+    {
+      "color": "#756f6a",
+      "text": "e"
+    },
+    {
+      "color": "#756e69",
+      "text": "t"
+    },
+    {
+      "color": "#746d69",
+      "text": "a"
+    },
+    {
+      "color": "#746d68",
+      "text": "l"
+    },
+    {
+      "color": "#746c67",
+      "text": " "
+    },
+    {
+      "color": "#746c66",
+      "text": "B"
+    },
+    {
+      "color": "#736b65",
+      "text": "l"
+    },
+    {
+      "color": "#736a64",
+      "text": "o"
+    },
+    {
+      "color": "#736a63",
+      "text": "c"
+    },
+    {
+      "color": "#736962",
+      "text": "k"
     }
   ],
   "block.trevorssentinels.chiseled_snowstone": [
     {
       "color": "#f0fdfd",
-      "text": "Chiseled Snowstone"
+      "text": "C"
+    },
+    {
+      "color": "#ebf8f8",
+      "text": "h"
+    },
+    {
+      "color": "#e8f4f4",
+      "text": "i"
+    },
+    {
+      "color": "#e4f0f0",
+      "text": "s"
+    },
+    {
+      "color": "#e0ecec",
+      "text": "e"
+    },
+    {
+      "color": "#dce7e7",
+      "text": "l"
+    },
+    {
+      "color": "#d7e3e3",
+      "text": "e"
+    },
+    {
+      "color": "#d4dfdf",
+      "text": "d"
+    },
+    {
+      "color": "#d0dbdb",
+      "text": " "
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "S"
+    },
+    {
+      "color": "#c8d2d2",
+      "text": "n"
+    },
+    {
+      "color": "#c4cece",
+      "text": "o"
+    },
+    {
+      "color": "#c0caca",
+      "text": "w"
+    },
+    {
+      "color": "#bcc6c6",
+      "text": "s"
+    },
+    {
+      "color": "#b8c1c1",
+      "text": "t"
+    },
+    {
+      "color": "#b4bdbd",
+      "text": "o"
+    },
+    {
+      "color": "#b0b9b9",
+      "text": "n"
+    },
+    {
+      "color": "#acb5b5",
+      "text": "e"
     }
   ],
   "block.trevorssentinels.chiseled_starsteel_block": [
     {
-      "text": "Chiseled Block of Starsteel"
+      "color": "#c8c8d3",
+      "text": "C"
+    },
+    {
+      "color": "#c5c5cf",
+      "text": "h"
+    },
+    {
+      "color": "#c2c2cc",
+      "text": "i"
+    },
+    {
+      "color": "#bfbfc9",
+      "text": "s"
+    },
+    {
+      "color": "#bcbcc5",
+      "text": "e"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "l"
+    },
+    {
+      "color": "#b6b6bf",
+      "text": "e"
+    },
+    {
+      "color": "#b3b3bb",
+      "text": "d"
+    },
+    {
+      "color": "#b0b0b8",
+      "text": " "
+    },
+    {
+      "color": "#adadb5",
+      "text": "B"
+    },
+    {
+      "color": "#aaaab1",
+      "text": "l"
+    },
+    {
+      "color": "#a7a7ae",
+      "text": "o"
+    },
+    {
+      "color": "#a4a4ab",
+      "text": "c"
+    },
+    {
+      "color": "#a1a1a7",
+      "text": "k"
+    },
+    {
+      "color": "#9f9fa4",
+      "text": " "
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "o"
+    },
+    {
+      "color": "#99999d",
+      "text": "f"
+    },
+    {
+      "color": "#96969a",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "S"
+    },
+    {
+      "color": "#909093",
+      "text": "t"
+    },
+    {
+      "color": "#8d8d90",
+      "text": "a"
+    },
+    {
+      "color": "#8a8a8d",
+      "text": "r"
+    },
+    {
+      "color": "#878789",
+      "text": "s"
+    },
+    {
+      "color": "#848486",
+      "text": "t"
+    },
+    {
+      "color": "#818183",
+      "text": "e"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "e"
+    },
+    {
+      "color": "#7b7b7c",
+      "text": "l"
     }
   ],
   "block.trevorssentinels.coarse_dirt_slab": [
@@ -452,13 +917,129 @@
   "block.trevorssentinels.cut_snowstone": [
     {
       "color": "#f0fdfd",
-      "text": "Cut Snowstone"
+      "text": "C"
+    },
+    {
+      "color": "#eaf7f7",
+      "text": "u"
+    },
+    {
+      "color": "#e4f1f1",
+      "text": "t"
+    },
+    {
+      "color": "#dfebeb",
+      "text": " "
+    },
+    {
+      "color": "#d9e5e5",
+      "text": "S"
+    },
+    {
+      "color": "#d4dfdf",
+      "text": "n"
+    },
+    {
+      "color": "#ced9d9",
+      "text": "o"
+    },
+    {
+      "color": "#c9d4d4",
+      "text": "w"
+    },
+    {
+      "color": "#c3cece",
+      "text": "s"
+    },
+    {
+      "color": "#bec8c8",
+      "text": "t"
+    },
+    {
+      "color": "#b8c2c2",
+      "text": "o"
+    },
+    {
+      "color": "#b3bcbc",
+      "text": "n"
+    },
+    {
+      "color": "#adb6b6",
+      "text": "e"
     }
   ],
   "block.trevorssentinels.cut_snowstone_slab": [
     {
       "color": "#f0fdfd",
-      "text": "Cut Snowstone Slab"
+      "text": "C"
+    },
+    {
+      "color": "#ebf8f8",
+      "text": "u"
+    },
+    {
+      "color": "#e8f4f4",
+      "text": "t"
+    },
+    {
+      "color": "#e4f0f0",
+      "text": " "
+    },
+    {
+      "color": "#e0ecec",
+      "text": "S"
+    },
+    {
+      "color": "#dce7e7",
+      "text": "n"
+    },
+    {
+      "color": "#d7e3e3",
+      "text": "o"
+    },
+    {
+      "color": "#d4dfdf",
+      "text": "w"
+    },
+    {
+      "color": "#d0dbdb",
+      "text": "s"
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "t"
+    },
+    {
+      "color": "#c8d2d2",
+      "text": "o"
+    },
+    {
+      "color": "#c4cece",
+      "text": "n"
+    },
+    {
+      "color": "#c0caca",
+      "text": "e"
+    },
+    {
+      "color": "#bcc6c6",
+      "text": " "
+    },
+    {
+      "color": "#b8c1c1",
+      "text": "S"
+    },
+    {
+      "color": "#b4bdbd",
+      "text": "l"
+    },
+    {
+      "color": "#b0b9b9",
+      "text": "a"
+    },
+    {
+      "color": "#acb5b5",
+      "text": "b"
     }
   ],
   "block.trevorssentinels.dark_chamber_block": [
@@ -535,27 +1116,376 @@
   ],
   "block.trevorssentinels.hard_light": [
     {
-      "text": "Hard Light"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#28c1cc",
+      "text": "a"
+    },
+    {
+      "color": "#1eb7cc",
+      "text": "r"
+    },
+    {
+      "color": "#14adcc",
+      "text": "d"
+    },
+    {
+      "color": "#0aa3cc",
+      "text": " "
+    },
+    {
+      "color": "#0099cc",
+      "text": "L"
+    },
+    {
+      "color": "#008ec1",
+      "text": "i"
+    },
+    {
+      "color": "#0084b7",
+      "text": "g"
+    },
+    {
+      "color": "#007aad",
+      "text": "h"
+    },
+    {
+      "color": "#0070a3",
+      "text": "t"
     }
   ],
   "block.trevorssentinels.hard_light_barrier": [
     {
-      "text": "Hard Light Barrier"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#2dc6cc",
+      "text": "a"
+    },
+    {
+      "color": "#27c0cc",
+      "text": "r"
+    },
+    {
+      "color": "#21bacb",
+      "text": "d"
+    },
+    {
+      "color": "#1cb5cc",
+      "text": " "
+    },
+    {
+      "color": "#16afcc",
+      "text": "L"
+    },
+    {
+      "color": "#10aacc",
+      "text": "i"
+    },
+    {
+      "color": "#0ba4cc",
+      "text": "g"
+    },
+    {
+      "color": "#059ecc",
+      "text": "h"
+    },
+    {
+      "color": "#0099cc",
+      "text": "t"
+    },
+    {
+      "color": "#0093c6",
+      "text": " "
+    },
+    {
+      "color": "#008dc0",
+      "text": "B"
+    },
+    {
+      "color": "#0088ba",
+      "text": "a"
+    },
+    {
+      "color": "#0082b5",
+      "text": "r"
+    },
+    {
+      "color": "#007caf",
+      "text": "r"
+    },
+    {
+      "color": "#0077aa",
+      "text": "i"
+    },
+    {
+      "color": "#0071a4",
+      "text": "e"
+    },
+    {
+      "color": "#006b9e",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.holographic_hanging_sign": [
     {
-      "text": "Holographic Hanging Sign"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#2ec7cc",
+      "text": "o"
+    },
+    {
+      "color": "#2ac3cc",
+      "text": "l"
+    },
+    {
+      "color": "#26bfcc",
+      "text": "o"
+    },
+    {
+      "color": "#21bacb",
+      "text": "g"
+    },
+    {
+      "color": "#1db6cc",
+      "text": "r"
+    },
+    {
+      "color": "#19b2cc",
+      "text": "a"
+    },
+    {
+      "color": "#15aecc",
+      "text": "p"
+    },
+    {
+      "color": "#10aacc",
+      "text": "h"
+    },
+    {
+      "color": "#0ca5cc",
+      "text": "i"
+    },
+    {
+      "color": "#08a1cc",
+      "text": "c"
+    },
+    {
+      "color": "#049dcc",
+      "text": " "
+    },
+    {
+      "color": "#0099cc",
+      "text": "H"
+    },
+    {
+      "color": "#0094c7",
+      "text": "a"
+    },
+    {
+      "color": "#0090c3",
+      "text": "n"
+    },
+    {
+      "color": "#008cbf",
+      "text": "g"
+    },
+    {
+      "color": "#0088ba",
+      "text": "i"
+    },
+    {
+      "color": "#0083b6",
+      "text": "n"
+    },
+    {
+      "color": "#007fb2",
+      "text": "g"
+    },
+    {
+      "color": "#007bae",
+      "text": " "
+    },
+    {
+      "color": "#0077aa",
+      "text": "S"
+    },
+    {
+      "color": "#0072a5",
+      "text": "i"
+    },
+    {
+      "color": "#006ea1",
+      "text": "g"
+    },
+    {
+      "color": "#006a9d",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.holographic_sign": [
     {
-      "text": "Holographic Sign"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#2cc5cc",
+      "text": "o"
+    },
+    {
+      "color": "#26bfcc",
+      "text": "l"
+    },
+    {
+      "color": "#1fb8cc",
+      "text": "o"
+    },
+    {
+      "color": "#19b2cc",
+      "text": "g"
+    },
+    {
+      "color": "#13accc",
+      "text": "r"
+    },
+    {
+      "color": "#0ca5cc",
+      "text": "a"
+    },
+    {
+      "color": "#069fcc",
+      "text": "p"
+    },
+    {
+      "color": "#0099cc",
+      "text": "h"
+    },
+    {
+      "color": "#0092c5",
+      "text": "i"
+    },
+    {
+      "color": "#008cbf",
+      "text": "c"
+    },
+    {
+      "color": "#0085b8",
+      "text": " "
+    },
+    {
+      "color": "#007fb2",
+      "text": "S"
+    },
+    {
+      "color": "#0079ac",
+      "text": "i"
+    },
+    {
+      "color": "#0072a5",
+      "text": "g"
+    },
+    {
+      "color": "#006c9f",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.imperial_alloy_block": [
     {
-      "text": "Block of Imperial Alloy"
+      "color": "#eae69b",
+      "text": "B"
+    },
+    {
+      "color": "#e7e297",
+      "text": "l"
+    },
+    {
+      "color": "#e5df94",
+      "text": "o"
+    },
+    {
+      "color": "#e3db90",
+      "text": "c"
+    },
+    {
+      "color": "#e0d88d",
+      "text": "k"
+    },
+    {
+      "color": "#ded589",
+      "text": " "
+    },
+    {
+      "color": "#dcd186",
+      "text": "o"
+    },
+    {
+      "color": "#d9ce82",
+      "text": "f"
+    },
+    {
+      "color": "#d7cb7f",
+      "text": " "
+    },
+    {
+      "color": "#d5c77b",
+      "text": "I"
+    },
+    {
+      "color": "#d2c478",
+      "text": "m"
+    },
+    {
+      "color": "#d0c174",
+      "text": "p"
+    },
+    {
+      "color": "#cebd71",
+      "text": "e"
+    },
+    {
+      "color": "#ccba6d",
+      "text": "r"
+    },
+    {
+      "color": "#c9b76a",
+      "text": "i"
+    },
+    {
+      "color": "#c7b366",
+      "text": "a"
+    },
+    {
+      "color": "#c5b063",
+      "text": "l"
+    },
+    {
+      "color": "#c2ad5f",
+      "text": " "
+    },
+    {
+      "color": "#c0a95c",
+      "text": "A"
+    },
+    {
+      "color": "#bea658",
+      "text": "l"
+    },
+    {
+      "color": "#bba355",
+      "text": "l"
+    },
+    {
+      "color": "#b99f51",
+      "text": "o"
+    },
+    {
+      "color": "#b79c4e",
+      "text": "y"
     }
   ],
   "block.trevorssentinels.impious_end_stone": [
@@ -688,23 +1618,221 @@
   ],
   "block.trevorssentinels.nanotech_block": [
     {
-      "text": "Nanotech Storage Block"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#bfe08a",
+      "text": "a"
+    },
+    {
+      "color": "#c2ca7e",
+      "text": "n"
+    },
+    {
+      "color": "#c4b372",
+      "text": "o"
+    },
+    {
+      "color": "#c79d66",
+      "text": "t"
+    },
+    {
+      "color": "#c98659",
+      "text": "e"
+    },
+    {
+      "color": "#cc704e",
+      "text": "c"
+    },
+    {
+      "color": "#ce5942",
+      "text": "h"
+    },
+    {
+      "color": "#d14336",
+      "text": " "
+    },
+    {
+      "color": "#d32c2a",
+      "text": "S"
+    },
+    {
+      "color": "#d6161d",
+      "text": "t"
+    },
+    {
+      "color": "#d90012",
+      "text": "o"
+    },
+    {
+      "color": "#cb1214",
+      "text": "r"
+    },
+    {
+      "color": "#bd2517",
+      "text": "a"
+    },
+    {
+      "color": "#b0371a",
+      "text": "g"
+    },
+    {
+      "color": "#a24a1d",
+      "text": "e"
+    },
+    {
+      "color": "#955c20",
+      "text": " "
+    },
+    {
+      "color": "#876f23",
+      "text": "B"
+    },
+    {
+      "color": "#7a8126",
+      "text": "l"
+    },
+    {
+      "color": "#6c9429",
+      "text": "o"
+    },
+    {
+      "color": "#5fa62c",
+      "text": "c"
+    },
+    {
+      "color": "#51b92f",
+      "text": "k"
     }
   ],
   "block.trevorssentinels.nuclear_block": [
     {
-      "text": "Nuclear Storage Block"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b5f48f",
+      "text": "u"
+    },
+    {
+      "color": "#aef288",
+      "text": "c"
+    },
+    {
+      "color": "#a7f081",
+      "text": "l"
+    },
+    {
+      "color": "#a0ed7b",
+      "text": "e"
+    },
+    {
+      "color": "#99eb74",
+      "text": "a"
+    },
+    {
+      "color": "#92e96d",
+      "text": "r"
+    },
+    {
+      "color": "#8be667",
+      "text": " "
+    },
+    {
+      "color": "#84e460",
+      "text": "S"
+    },
+    {
+      "color": "#7de259",
+      "text": "t"
+    },
+    {
+      "color": "#76e053",
+      "text": "o"
+    },
+    {
+      "color": "#71dd4f",
+      "text": "r"
+    },
+    {
+      "color": "#6cdc4c",
+      "text": "a"
+    },
+    {
+      "color": "#67da49",
+      "text": "g"
+    },
+    {
+      "color": "#62d845",
+      "text": "e"
+    },
+    {
+      "color": "#5dd642",
+      "text": " "
+    },
+    {
+      "color": "#58d43f",
+      "text": "B"
+    },
+    {
+      "color": "#53d23b",
+      "text": "l"
+    },
+    {
+      "color": "#4ed038",
+      "text": "o"
+    },
+    {
+      "color": "#49ce35",
+      "text": "c"
     }
   ],
   "block.trevorssentinels.nuclear_ore": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Ore"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#aef288",
+      "text": "u"
+    },
+    {
+      "color": "#a0ed7b",
+      "text": "c"
+    },
+    {
+      "color": "#92e96d",
+      "text": "l"
+    },
+    {
+      "color": "#84e460",
+      "text": "e"
+    },
+    {
+      "color": "#76e053",
+      "text": "a"
+    },
+    {
+      "color": "#6cdc4c",
+      "text": "r"
+    },
+    {
+      "color": "#62d845",
+      "text": " "
+    },
+    {
+      "color": "#58d43f",
+      "text": "O"
+    },
+    {
+      "color": "#4ed038",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.orange_agility_block": [
     {
-      "color": "#ffaa00",
+      "color": "#ff9900",
       "text": "Orange Agility Block"
     }
   ],
@@ -818,12 +1946,14 @@
   ],
   "block.trevorssentinels.potted_skullweed": [
     {
-      "text": "Potted null"
+      "color": "#807bad",
+      "text": "Potted Skullweed"
     }
   ],
   "block.trevorssentinels.potted_tranquil_rose": [
     {
-      "text": "Potted null"
+      "color": "#9949f2",
+      "text": "Potted Tranquil Rose"
     }
   ],
   "block.trevorssentinels.potted_viridian_sapling": [
@@ -850,101 +1980,1150 @@
   ],
   "block.trevorssentinels.rose_gold_block": [
     {
+      "color": "#f7d2c5",
       "text": "Block of Rose Gold"
     }
   ],
   "block.trevorssentinels.scrap_metal_block": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Block"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "B"
+    },
+    {
+      "color": "#746c67",
+      "text": "l"
+    },
+    {
+      "color": "#746b66",
+      "text": "o"
+    },
+    {
+      "color": "#736a64",
+      "text": "c"
+    },
+    {
+      "color": "#736963",
+      "text": "k"
     }
   ],
   "block.trevorssentinels.scrap_metal_pillar": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Pillar"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#777371",
+      "text": "M"
+    },
+    {
+      "color": "#767270",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#76716d",
+      "text": "a"
+    },
+    {
+      "color": "#75706c",
+      "text": "l"
+    },
+    {
+      "color": "#756f6a",
+      "text": " "
+    },
+    {
+      "color": "#756e69",
+      "text": "P"
+    },
+    {
+      "color": "#746d68",
+      "text": "i"
+    },
+    {
+      "color": "#746c67",
+      "text": "l"
+    },
+    {
+      "color": "#746b65",
+      "text": "l"
+    },
+    {
+      "color": "#736a64",
+      "text": "a"
+    },
+    {
+      "color": "#736963",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.sentinel_hard_light": [
     {
-      "text": "Hard Light"
+      "color": "#ff3333",
+      "text": "H"
+    },
+    {
+      "color": "#f42828",
+      "text": "a"
+    },
+    {
+      "color": "#ea1e1e",
+      "text": "r"
+    },
+    {
+      "color": "#e01414",
+      "text": "d"
+    },
+    {
+      "color": "#d60a0a",
+      "text": " "
+    },
+    {
+      "color": "#cc0000",
+      "text": "L"
+    },
+    {
+      "color": "#c10000",
+      "text": "i"
+    },
+    {
+      "color": "#b70000",
+      "text": "g"
+    },
+    {
+      "color": "#ad0000",
+      "text": "h"
+    },
+    {
+      "color": "#a30000",
+      "text": "t"
     }
   ],
   "block.trevorssentinels.sentinel_hard_light_barrier": [
     {
-      "text": "Hard Light Barrier"
+      "color": "#ff3333",
+      "text": "H"
+    },
+    {
+      "color": "#f92d2d",
+      "text": "a"
+    },
+    {
+      "color": "#f32727",
+      "text": "r"
+    },
+    {
+      "color": "#ed2121",
+      "text": "d"
+    },
+    {
+      "color": "#e81c1c",
+      "text": " "
+    },
+    {
+      "color": "#e21616",
+      "text": "L"
+    },
+    {
+      "color": "#dd1010",
+      "text": "i"
+    },
+    {
+      "color": "#d70b0b",
+      "text": "g"
+    },
+    {
+      "color": "#d10505",
+      "text": "h"
+    },
+    {
+      "color": "#cc0000",
+      "text": "t"
+    },
+    {
+      "color": "#c60000",
+      "text": " "
+    },
+    {
+      "color": "#c00000",
+      "text": "B"
+    },
+    {
+      "color": "#ba0000",
+      "text": "a"
+    },
+    {
+      "color": "#b50000",
+      "text": "r"
+    },
+    {
+      "color": "#af0000",
+      "text": "r"
+    },
+    {
+      "color": "#aa0000",
+      "text": "i"
+    },
+    {
+      "color": "#a40000",
+      "text": "e"
+    },
+    {
+      "color": "#9e0000",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.sentinel_holographic_hanging_sign": [
     {
-      "text": "Holographic Hanging Sign"
+      "color": "#ff3333",
+      "text": "H"
+    },
+    {
+      "color": "#fa2e2e",
+      "text": "o"
+    },
+    {
+      "color": "#f62a2a",
+      "text": "l"
+    },
+    {
+      "color": "#f22626",
+      "text": "o"
+    },
+    {
+      "color": "#ed2121",
+      "text": "g"
+    },
+    {
+      "color": "#e91d1d",
+      "text": "r"
+    },
+    {
+      "color": "#e51919",
+      "text": "a"
+    },
+    {
+      "color": "#e11515",
+      "text": "p"
+    },
+    {
+      "color": "#dd1010",
+      "text": "h"
+    },
+    {
+      "color": "#d80c0c",
+      "text": "i"
+    },
+    {
+      "color": "#d40808",
+      "text": "c"
+    },
+    {
+      "color": "#d00404",
+      "text": " "
+    },
+    {
+      "color": "#cc0000",
+      "text": "H"
+    },
+    {
+      "color": "#c70000",
+      "text": "a"
+    },
+    {
+      "color": "#c30000",
+      "text": "n"
+    },
+    {
+      "color": "#bf0000",
+      "text": "g"
+    },
+    {
+      "color": "#ba0000",
+      "text": "i"
+    },
+    {
+      "color": "#b60000",
+      "text": "n"
+    },
+    {
+      "color": "#b20000",
+      "text": "g"
+    },
+    {
+      "color": "#ae0000",
+      "text": " "
+    },
+    {
+      "color": "#aa0000",
+      "text": "S"
+    },
+    {
+      "color": "#a50000",
+      "text": "i"
+    },
+    {
+      "color": "#a10000",
+      "text": "g"
+    },
+    {
+      "color": "#9d0000",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.sentinel_holographic_sign": [
     {
-      "text": "Holographic Sign"
+      "color": "#ff3333",
+      "text": "H"
+    },
+    {
+      "color": "#f82c2c",
+      "text": "o"
+    },
+    {
+      "color": "#f22626",
+      "text": "l"
+    },
+    {
+      "color": "#eb1f1f",
+      "text": "o"
+    },
+    {
+      "color": "#e51919",
+      "text": "g"
+    },
+    {
+      "color": "#df1313",
+      "text": "r"
+    },
+    {
+      "color": "#d80c0c",
+      "text": "a"
+    },
+    {
+      "color": "#d20606",
+      "text": "p"
+    },
+    {
+      "color": "#cc0000",
+      "text": "h"
+    },
+    {
+      "color": "#c50000",
+      "text": "i"
+    },
+    {
+      "color": "#bf0000",
+      "text": "c"
+    },
+    {
+      "color": "#b80000",
+      "text": " "
+    },
+    {
+      "color": "#b20000",
+      "text": "S"
+    },
+    {
+      "color": "#ac0000",
+      "text": "i"
+    },
+    {
+      "color": "#a50000",
+      "text": "g"
+    },
+    {
+      "color": "#9f0000",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.skullweed": [
-    {}
+    {
+      "color": "#807bad",
+      "text": "Skullweed"
+    }
   ],
   "block.trevorssentinels.smooth_snowstone": [
     {
       "color": "#f0fdfd",
-      "text": "Smooth Snowstone"
+      "text": "S"
+    },
+    {
+      "color": "#ebf8f8",
+      "text": "m"
+    },
+    {
+      "color": "#e7f3f3",
+      "text": "o"
+    },
+    {
+      "color": "#e2eeee",
+      "text": "o"
+    },
+    {
+      "color": "#deeaea",
+      "text": "t"
+    },
+    {
+      "color": "#d9e5e5",
+      "text": "h"
+    },
+    {
+      "color": "#d5e0e0",
+      "text": " "
+    },
+    {
+      "color": "#d0dbdb",
+      "text": "S"
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "n"
+    },
+    {
+      "color": "#c7d2d2",
+      "text": "o"
+    },
+    {
+      "color": "#c3cdcd",
+      "text": "w"
+    },
+    {
+      "color": "#bec8c8",
+      "text": "s"
+    },
+    {
+      "color": "#bac4c4",
+      "text": "t"
+    },
+    {
+      "color": "#b5bfbf",
+      "text": "o"
+    },
+    {
+      "color": "#b1baba",
+      "text": "n"
+    },
+    {
+      "color": "#acb5b5",
+      "text": "e"
     }
   ],
   "block.trevorssentinels.smooth_snowstone_slab": [
     {
       "color": "#f0fdfd",
-      "text": "Smooth Snowstone Slab"
+      "text": "S"
+    },
+    {
+      "color": "#ecf9f9",
+      "text": "m"
+    },
+    {
+      "color": "#e9f5f5",
+      "text": "o"
+    },
+    {
+      "color": "#e5f2f2",
+      "text": "o"
+    },
+    {
+      "color": "#e2eeee",
+      "text": "t"
+    },
+    {
+      "color": "#deeaea",
+      "text": "h"
+    },
+    {
+      "color": "#dbe7e7",
+      "text": " "
+    },
+    {
+      "color": "#d7e3e3",
+      "text": "S"
+    },
+    {
+      "color": "#d4e0e0",
+      "text": "n"
+    },
+    {
+      "color": "#d1dcdc",
+      "text": "o"
+    },
+    {
+      "color": "#cdd8d8",
+      "text": "w"
+    },
+    {
+      "color": "#cad5d5",
+      "text": "s"
+    },
+    {
+      "color": "#c6d1d1",
+      "text": "t"
+    },
+    {
+      "color": "#c3cdcd",
+      "text": "o"
+    },
+    {
+      "color": "#c0caca",
+      "text": "n"
+    },
+    {
+      "color": "#bcc6c6",
+      "text": "e"
+    },
+    {
+      "color": "#b9c3c3",
+      "text": " "
+    },
+    {
+      "color": "#b5bfbf",
+      "text": "S"
+    },
+    {
+      "color": "#b2bbbb",
+      "text": "l"
+    },
+    {
+      "color": "#aeb8b8",
+      "text": "a"
+    },
+    {
+      "color": "#abb4b4",
+      "text": "b"
     }
   ],
   "block.trevorssentinels.smooth_snowstone_stairs": [
     {
       "color": "#f0fdfd",
-      "text": "Smooth Snowstone Stairs"
+      "text": "S"
+    },
+    {
+      "color": "#ecf9f9",
+      "text": "m"
+    },
+    {
+      "color": "#e9f6f6",
+      "text": "o"
+    },
+    {
+      "color": "#e6f3f3",
+      "text": "o"
+    },
+    {
+      "color": "#e3efef",
+      "text": "t"
+    },
+    {
+      "color": "#e0ecec",
+      "text": "h"
+    },
+    {
+      "color": "#dde9e9",
+      "text": " "
+    },
+    {
+      "color": "#dae5e5",
+      "text": "S"
+    },
+    {
+      "color": "#d6e2e2",
+      "text": "n"
+    },
+    {
+      "color": "#d3dfdf",
+      "text": "o"
+    },
+    {
+      "color": "#d0dbdb",
+      "text": "w"
+    },
+    {
+      "color": "#cdd8d8",
+      "text": "s"
+    },
+    {
+      "color": "#cad5d5",
+      "text": "t"
+    },
+    {
+      "color": "#c7d2d2",
+      "text": "o"
+    },
+    {
+      "color": "#c4cece",
+      "text": "n"
+    },
+    {
+      "color": "#c1cbcb",
+      "text": "e"
+    },
+    {
+      "color": "#bdc8c8",
+      "text": " "
+    },
+    {
+      "color": "#bac4c4",
+      "text": "S"
+    },
+    {
+      "color": "#b7c1c1",
+      "text": "t"
+    },
+    {
+      "color": "#b4bebe",
+      "text": "a"
+    },
+    {
+      "color": "#b1baba",
+      "text": "i"
+    },
+    {
+      "color": "#aeb7b7",
+      "text": "r"
+    },
+    {
+      "color": "#abb4b4",
+      "text": "s"
     }
   ],
   "block.trevorssentinels.smooth_snowstone_wall": [
     {
       "color": "#f0fdfd",
-      "text": "Smooth Snowstone Wall"
+      "text": "S"
+    },
+    {
+      "color": "#ecf9f9",
+      "text": "m"
+    },
+    {
+      "color": "#e9f5f5",
+      "text": "o"
+    },
+    {
+      "color": "#e5f2f2",
+      "text": "o"
+    },
+    {
+      "color": "#e2eeee",
+      "text": "t"
+    },
+    {
+      "color": "#deeaea",
+      "text": "h"
+    },
+    {
+      "color": "#dbe7e7",
+      "text": " "
+    },
+    {
+      "color": "#d7e3e3",
+      "text": "S"
+    },
+    {
+      "color": "#d4e0e0",
+      "text": "n"
+    },
+    {
+      "color": "#d1dcdc",
+      "text": "o"
+    },
+    {
+      "color": "#cdd8d8",
+      "text": "w"
+    },
+    {
+      "color": "#cad5d5",
+      "text": "s"
+    },
+    {
+      "color": "#c6d1d1",
+      "text": "t"
+    },
+    {
+      "color": "#c3cdcd",
+      "text": "o"
+    },
+    {
+      "color": "#c0caca",
+      "text": "n"
+    },
+    {
+      "color": "#bcc6c6",
+      "text": "e"
+    },
+    {
+      "color": "#b9c3c3",
+      "text": " "
+    },
+    {
+      "color": "#b5bfbf",
+      "text": "W"
+    },
+    {
+      "color": "#b2bbbb",
+      "text": "a"
+    },
+    {
+      "color": "#aeb8b8",
+      "text": "l"
+    },
+    {
+      "color": "#abb4b4",
+      "text": "l"
     }
   ],
   "block.trevorssentinels.snowstone": [
     {
       "color": "#f0fdfd",
-      "text": "Snowstone"
+      "text": "S"
+    },
+    {
+      "color": "#e8f4f4",
+      "text": "n"
+    },
+    {
+      "color": "#e0ecec",
+      "text": "o"
+    },
+    {
+      "color": "#d7e3e3",
+      "text": "w"
+    },
+    {
+      "color": "#d0dbdb",
+      "text": "s"
+    },
+    {
+      "color": "#c8d2d2",
+      "text": "t"
+    },
+    {
+      "color": "#c0caca",
+      "text": "o"
+    },
+    {
+      "color": "#b8c1c1",
+      "text": "n"
+    },
+    {
+      "color": "#b0b9b9",
+      "text": "e"
     }
   ],
   "block.trevorssentinels.snowstone_slab": [
     {
       "color": "#f0fdfd",
-      "text": "Snowstone Slab"
+      "text": "S"
+    },
+    {
+      "color": "#eaf7f7",
+      "text": "n"
+    },
+    {
+      "color": "#e5f2f2",
+      "text": "o"
+    },
+    {
+      "color": "#e0ecec",
+      "text": "w"
+    },
+    {
+      "color": "#dbe7e7",
+      "text": "s"
+    },
+    {
+      "color": "#d6e1e1",
+      "text": "t"
+    },
+    {
+      "color": "#d1dcdc",
+      "text": "o"
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "n"
+    },
+    {
+      "color": "#c6d1d1",
+      "text": "e"
+    },
+    {
+      "color": "#c1cccc",
+      "text": " "
+    },
+    {
+      "color": "#bcc6c6",
+      "text": "S"
+    },
+    {
+      "color": "#b7c1c1",
+      "text": "l"
+    },
+    {
+      "color": "#b2bbbb",
+      "text": "a"
+    },
+    {
+      "color": "#adb6b6",
+      "text": "b"
     }
   ],
   "block.trevorssentinels.snowstone_stairs": [
     {
       "color": "#f0fdfd",
-      "text": "Snowstone Stairs"
+      "text": "S"
+    },
+    {
+      "color": "#ebf8f8",
+      "text": "n"
+    },
+    {
+      "color": "#e7f3f3",
+      "text": "o"
+    },
+    {
+      "color": "#e2eeee",
+      "text": "w"
+    },
+    {
+      "color": "#deeaea",
+      "text": "s"
+    },
+    {
+      "color": "#d9e5e5",
+      "text": "t"
+    },
+    {
+      "color": "#d5e0e0",
+      "text": "o"
+    },
+    {
+      "color": "#d0dbdb",
+      "text": "n"
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "e"
+    },
+    {
+      "color": "#c7d2d2",
+      "text": " "
+    },
+    {
+      "color": "#c3cdcd",
+      "text": "S"
+    },
+    {
+      "color": "#bec8c8",
+      "text": "t"
+    },
+    {
+      "color": "#bac4c4",
+      "text": "a"
+    },
+    {
+      "color": "#b5bfbf",
+      "text": "i"
+    },
+    {
+      "color": "#b1baba",
+      "text": "r"
+    },
+    {
+      "color": "#acb5b5",
+      "text": "s"
     }
   ],
   "block.trevorssentinels.snowstone_wall": [
     {
       "color": "#f0fdfd",
-      "text": "Snowstone Wall"
+      "text": "S"
+    },
+    {
+      "color": "#eaf7f7",
+      "text": "n"
+    },
+    {
+      "color": "#e5f2f2",
+      "text": "o"
+    },
+    {
+      "color": "#e0ecec",
+      "text": "w"
+    },
+    {
+      "color": "#dbe7e7",
+      "text": "s"
+    },
+    {
+      "color": "#d6e1e1",
+      "text": "t"
+    },
+    {
+      "color": "#d1dcdc",
+      "text": "o"
+    },
+    {
+      "color": "#ccd7d7",
+      "text": "n"
+    },
+    {
+      "color": "#c6d1d1",
+      "text": "e"
+    },
+    {
+      "color": "#c1cccc",
+      "text": " "
+    },
+    {
+      "color": "#bcc6c6",
+      "text": "W"
+    },
+    {
+      "color": "#b7c1c1",
+      "text": "a"
+    },
+    {
+      "color": "#b2bbbb",
+      "text": "l"
+    },
+    {
+      "color": "#adb6b6",
+      "text": "l"
     }
   ],
   "block.trevorssentinels.stainless_steel_block": [
     {
       "color": "#c8c8d3",
-      "text": "Stainless Steel Block"
+      "text": "S"
+    },
+    {
+      "color": "#c4c4ce",
+      "text": "t"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "a"
+    },
+    {
+      "color": "#bcbcc6",
+      "text": "i"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "n"
+    },
+    {
+      "color": "#b5b5bd",
+      "text": "l"
+    },
+    {
+      "color": "#b1b1b9",
+      "text": "e"
+    },
+    {
+      "color": "#adadb5",
+      "text": "s"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "s"
+    },
+    {
+      "color": "#a6a6ac",
+      "text": " "
+    },
+    {
+      "color": "#a2a2a8",
+      "text": "S"
+    },
+    {
+      "color": "#9e9ea3",
+      "text": "t"
+    },
+    {
+      "color": "#9a9a9f",
+      "text": "e"
+    },
+    {
+      "color": "#97979b",
+      "text": "e"
+    },
+    {
+      "color": "#939397",
+      "text": "l"
+    },
+    {
+      "color": "#8f8f92",
+      "text": " "
+    },
+    {
+      "color": "#8b8b8e",
+      "text": "B"
+    },
+    {
+      "color": "#88888a",
+      "text": "l"
+    },
+    {
+      "color": "#848485",
+      "text": "o"
+    },
+    {
+      "color": "#808081",
+      "text": "c"
+    },
+    {
+      "color": "#7c7c7d",
+      "text": "k"
     }
   ],
   "block.trevorssentinels.starsteel_block": [
     {
-      "text": "Block of Starsteel"
+      "color": "#c8c8d3",
+      "text": "B"
+    },
+    {
+      "color": "#c3c3ce",
+      "text": "l"
+    },
+    {
+      "color": "#bfbfc9",
+      "text": "o"
+    },
+    {
+      "color": "#babac4",
+      "text": "c"
+    },
+    {
+      "color": "#b6b6bf",
+      "text": "k"
+    },
+    {
+      "color": "#b2b2ba",
+      "text": " "
+    },
+    {
+      "color": "#adadb5",
+      "text": "o"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "f"
+    },
+    {
+      "color": "#a4a4ab",
+      "text": " "
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "S"
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "t"
+    },
+    {
+      "color": "#97979c",
+      "text": "a"
+    },
+    {
+      "color": "#939397",
+      "text": "r"
+    },
+    {
+      "color": "#8e8e92",
+      "text": "s"
+    },
+    {
+      "color": "#8a8a8d",
+      "text": "t"
+    },
+    {
+      "color": "#868688",
+      "text": "e"
+    },
+    {
+      "color": "#818183",
+      "text": "e"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "l"
     }
   ],
   "block.trevorssentinels.starsteel_fan": [
@@ -955,13 +3134,157 @@
   "block.trevorssentinels.starsteel_hanging_sign": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Hanging Sign"
+      "text": "S"
+    },
+    {
+      "color": "#c4c4ce",
+      "text": "t"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "a"
+    },
+    {
+      "color": "#bdbdc6",
+      "text": "r"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "s"
+    },
+    {
+      "color": "#b6b6be",
+      "text": "t"
+    },
+    {
+      "color": "#b2b2ba",
+      "text": "e"
+    },
+    {
+      "color": "#aeaeb6",
+      "text": "e"
+    },
+    {
+      "color": "#ababb2",
+      "text": "l"
+    },
+    {
+      "color": "#a7a7ae",
+      "text": " "
+    },
+    {
+      "color": "#a4a4aa",
+      "text": "H"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "a"
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "n"
+    },
+    {
+      "color": "#99999d",
+      "text": "g"
+    },
+    {
+      "color": "#959599",
+      "text": "i"
+    },
+    {
+      "color": "#929295",
+      "text": "n"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "g"
+    },
+    {
+      "color": "#8a8a8d",
+      "text": " "
+    },
+    {
+      "color": "#878789",
+      "text": "S"
+    },
+    {
+      "color": "#838385",
+      "text": "i"
+    },
+    {
+      "color": "#808081",
+      "text": "g"
+    },
+    {
+      "color": "#7c7c7d",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.starsteel_ladder": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Ladder"
+      "text": "S"
+    },
+    {
+      "color": "#c3c3cd",
+      "text": "t"
+    },
+    {
+      "color": "#bebec7",
+      "text": "a"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "r"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "s"
+    },
+    {
+      "color": "#afafb6",
+      "text": "t"
+    },
+    {
+      "color": "#aaaab1",
+      "text": "e"
+    },
+    {
+      "color": "#a5a5ab",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "l"
+    },
+    {
+      "color": "#9b9ba0",
+      "text": " "
+    },
+    {
+      "color": "#96969a",
+      "text": "L"
+    },
+    {
+      "color": "#919195",
+      "text": "a"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "d"
+    },
+    {
+      "color": "#878789",
+      "text": "d"
+    },
+    {
+      "color": "#828284",
+      "text": "e"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "r"
     }
   ],
   "block.trevorssentinels.starsteel_lamp": [
@@ -972,7 +3295,59 @@
   "block.trevorssentinels.starsteel_sign": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Sign"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cc",
+      "text": "t"
+    },
+    {
+      "color": "#bcbcc6",
+      "text": "a"
+    },
+    {
+      "color": "#b7b7bf",
+      "text": "r"
+    },
+    {
+      "color": "#b1b1b9",
+      "text": "s"
+    },
+    {
+      "color": "#ababb2",
+      "text": "t"
+    },
+    {
+      "color": "#a6a6ac",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "e"
+    },
+    {
+      "color": "#9a9a9f",
+      "text": "l"
+    },
+    {
+      "color": "#959599",
+      "text": " "
+    },
+    {
+      "color": "#8f8f92",
+      "text": "S"
+    },
+    {
+      "color": "#89898c",
+      "text": "i"
+    },
+    {
+      "color": "#848485",
+      "text": "g"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "n"
     }
   ],
   "block.trevorssentinels.stripped_cerulii_log": [
@@ -1036,10 +3411,14 @@
     }
   ],
   "block.trevorssentinels.tranquil_rose": [
-    {}
+    {
+      "color": "#9949f2",
+      "text": "Tranquil Rose"
+    }
   ],
   "block.trevorssentinels.unholy_block": [
     {
+      "color": "#ff55ff",
       "text": "Block of Unholy Alloy"
     }
   ],
@@ -1143,238 +3522,322 @@
       "text": "Wax-Infused Block of Copper"
     }
   ],
-  "color.trevorssentinels.worldLevelTooLow.1": [
-    {
-      "color": "#ffffff",
-      "text": ""
-    }
-  ],
-  "color.trevorssentinels.worldLevelTooLow.2": [
-    {
-      "color": "#ffffff",
-      "text": "-43521"
-    }
-  ],
-  "color.trevorssentinels.worldLevelTooLow.3": [
-    {
-      "color": "#ffffff",
-      "text": "-11184641"
-    }
-  ],
   "death.attack.dagger_projectile": [
     {
-      "color": "#ffffff",
-      "text": "%1$s was shot through the heart, and %2$s is to blame"
+      "index": 0
+    },
+    {
+      "text": " was shot through the heart, and "
+    },
+    {
+      "index": 1
+    },
+    {
+      "text": " is to blame"
     }
   ],
   "death.attack.dagger_projectile.item": [
     {
-      "color": "#ffffff",
-      "text": "%1$s was shot through the heart, and %2$s is to blame. They give %3$s a bad name"
+      "index": 0
+    },
+    {
+      "text": " was shot through the heart, and "
+    },
+    {
+      "index": 1
+    },
+    {
+      "text": " is to blame. They give "
+    },
+    {
+      "index": 2
+    },
+    {
+      "text": " a bad name"
     }
   ],
   "death.attack.infested": [
     {
-      "color": "#ffffff",
-      "text": "%1$s didn't make it"
+      "index": 0
+    },
+    {
+      "text": " didn't make it"
     }
   ],
   "death.attack.irradiated": [
     {
-      "color": "#ffffff",
-      "text": "%1$s ate one too many bananas"
+      "index": 0
+    },
+    {
+      "text": " ate one too many bananas"
     }
   ],
   "death.attack.phaser_projectile": [
     {
-      "color": "#ffffff",
-      "text": "%1$s phased away thanks to %2$s"
+      "index": 0
+    },
+    {
+      "text": " phased away thanks to "
+    },
+    {
+      "index": 1
     }
   ],
   "death.attack.phaser_projectile.item": [
     {
-      "color": "#ffffff",
-      "text": "%1$s phased away thanks to %2$s and their %3$s"
+      "index": 0
+    },
+    {
+      "text": " phased away thanks to "
+    },
+    {
+      "index": 1
+    },
+    {
+      "text": " and their "
+    },
+    {
+      "index": 2
     }
   ],
   "death.attack.redstoned": [
     {
-      "color": "#ffffff",
-      "text": "%1$s gave into the pain"
+      "index": 0
+    },
+    {
+      "text": " gave into the pain"
     }
   ],
   "death.attack.shard_projectile": [
     {
-      "color": "#ffffff",
-      "text": "%2$s turned %1$s into a pincushion"
+      "index": 1
+    },
+    {
+      "text": " turned "
+    },
+    {
+      "index": 0
+    },
+    {
+      "text": " into a pincushion"
     }
   ],
   "death.attack.shard_projectile.item": [
     {
-      "color": "#ffffff",
-      "text": "%2$s turned %1$s into a pincushion using %3$s"
+      "index": 1
+    },
+    {
+      "text": " turned "
+    },
+    {
+      "index": 0
+    },
+    {
+      "text": " into a pincushion using "
+    },
+    {
+      "index": 2
     }
   ],
   "effect.trevorssentinels.cosmic_fire": [
     {
-      "color": "#ffffff",
-      "text": "Cosmic Flame"
+      "text": "Cosmic Fire"
     }
   ],
   "effect.trevorssentinels.flight": [
     {
-      "color": "#ffffff",
       "text": "Flight"
     }
   ],
   "effect.trevorssentinels.infested": [
     {
-      "color": "#ffffff",
-      "text": "☣ Infested ☣"
+      "text": "Infested"
     }
   ],
   "effect.trevorssentinels.irradiated": [
     {
-      "color": "#ffffff",
-      "text": "☢ Irradiated ☢"
+      "text": "Irradiated"
     }
   ],
   "effect.trevorssentinels.redstoned": [
     {
-      "color": "#ffffff",
       "text": "Redstoned"
     }
   ],
   "effect.trevorssentinels.well_fed": [
     {
-      "color": "#ffffff",
-      "text": "Well-Fed"
+      "text": "Well Fed"
     }
   ],
   "entity.minecraft.villager.acolyte": [
     {
-      "color": "#ffffff",
-      "text": "§cAcolyte"
+      "color": "#ff55ff",
+      "text": "Acolyte"
     }
   ],
   "entity.minecraft.villager.demolitionist": [
     {
-      "color": "#ffffff",
-      "text": "§cDemolitionist"
+      "color": "#ff5555",
+      "text": "Demolitionist"
     }
   ],
   "entity.minecraft.villager.engineer": [
     {
-      "color": "#ffffff",
-      "text": "§6Engineer"
+      "color": "#55ffff",
+      "text": "Engineer"
     }
   ],
   "entity.minecraft.villager.witherseer": [
     {
-      "color": "#ffffff",
-      "text": "§dWitherseer"
+      "color": "#aa00aa",
+      "text": "Witherseer"
     }
   ],
   "entity.trevorssentinels.florbus": [
     {
-      "color": "#ffffff",
       "text": "Florbus"
     }
   ],
   "entity.trevorssentinels.grenade": [
     {
-      "color": "#ffffff",
-      "text": "Delayed Explosive"
+      "text": "Grenade"
     }
   ],
   "entity.trevorssentinels.phaser_projectile": [
     {
-      "color": "#ffffff",
       "text": "Phaser Projectile"
     }
   ],
   "entity.trevorssentinels.sentinel": [
     {
-      "color": "#ffffff",
       "text": "Sentinel"
     }
   ],
   "entity.trevorssentinels.sentinum_roomba": [
     {
-      "color": "#ffffff",
-      "text": "Sentinel Cleaning Droid"
+      "text": "Sentinum Roomba"
     }
   ],
   "entity.trevorssentinels.shard_projectile": [
     {
-      "color": "#ffffff",
       "text": "item.trevorssentinels.scrap_metal_shard"
     }
   ],
   "gamerule.trevorssentinels:milkCuresPotionEffects": [
     {
-      "color": "#ffffff",
       "text": "Drinking milk cures potion effects"
     }
   ],
   "gamerule.trevorssentinels:useVelocityFallDamage": [
     {
-      "color": "#ffffff",
       "text": "Use velocity-based fall damage"
     }
   ],
   "gamerule.trevorssentinels:useVelocityFallDamage.description": [
     {
-      "color": "#ffffff",
       "text": "If enabled, fall damage will be calculated based on velocity."
     }
   ],
-  "item.minecraft.lingering_potion.effect.flight_potion": [
+  "item.trevorssentinels.advanced_breech_mechanism": [
     {
-      "color": "#ffffff",
-      "text": "Lingering Potion of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
-    }
-  ],
-  "item.minecraft.lingering_potion.effect.redstoned_potion": [
+      "color": "#c8c8d3",
+      "text": "A"
+    },
     {
-      "color": "#ffffff",
-      "text": "Lingering Potion of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
-    }
-  ],
-  "item.minecraft.potion.effect.flight_potion": [
+      "color": "#c4c4cf",
+      "text": "d"
+    },
     {
-      "color": "#ffffff",
-      "text": "[{\"text\":\"Flight\",\"color\":\"#ffffff\"}] Potion"
-    }
-  ],
-  "item.minecraft.potion.effect.redstoned_potion": [
+      "color": "#c1c1cb",
+      "text": "v"
+    },
     {
-      "color": "#ffffff",
-      "text": "[{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}] Potion"
-    }
-  ],
-  "item.minecraft.splash_potion.effect.flight_potion": [
+      "color": "#bebec8",
+      "text": "a"
+    },
     {
-      "color": "#ffffff",
-      "text": "Splash Potion of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
-    }
-  ],
-  "item.minecraft.splash_potion.effect.redstoned_potion": [
+      "color": "#bbbbc4",
+      "text": "n"
+    },
     {
-      "color": "#ffffff",
-      "text": "Splash Potion of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
-    }
-  ],
-  "item.minecraft.tipped_arrow.effect.flight_potion": [
+      "color": "#b8b8c1",
+      "text": "c"
+    },
     {
-      "color": "#ffffff",
-      "text": "Arrow of [{\"text\":\"Flight\",\"color\":\"#ffffff\"}]"
-    }
-  ],
-  "item.minecraft.tipped_arrow.effect.redstoned_potion": [
+      "color": "#b5b5bd",
+      "text": "e"
+    },
     {
-      "color": "#ffffff",
-      "text": "Arrow of [{\"text\":\"Redstoned\",\"color\":\"#ffffff\"}]"
+      "color": "#b1b1b9",
+      "text": "d"
+    },
+    {
+      "color": "#aeaeb6",
+      "text": " "
+    },
+    {
+      "color": "#ababb2",
+      "text": "B"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "r"
+    },
+    {
+      "color": "#a5a5ab",
+      "text": "e"
+    },
+    {
+      "color": "#a2a2a7",
+      "text": "e"
+    },
+    {
+      "color": "#9e9ea4",
+      "text": "c"
+    },
+    {
+      "color": "#9b9ba0",
+      "text": "h"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#959599",
+      "text": "M"
+    },
+    {
+      "color": "#929295",
+      "text": "e"
+    },
+    {
+      "color": "#8f8f92",
+      "text": "c"
+    },
+    {
+      "color": "#8b8b8e",
+      "text": "h"
+    },
+    {
+      "color": "#88888b",
+      "text": "a"
+    },
+    {
+      "color": "#858587",
+      "text": "n"
+    },
+    {
+      "color": "#828283",
+      "text": "i"
+    },
+    {
+      "color": "#7f7f80",
+      "text": "s"
+    },
+    {
+      "color": "#7c7c7c",
+      "text": "m"
     }
   ],
   "item.trevorssentinels.apple_juice": [
@@ -1384,57 +3847,686 @@
   ],
   "item.trevorssentinels.arma_dei_battleaxe": [
     {
-      "text": "Arma Dei Battleaxe"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "B"
+    },
+    {
+      "color": "#00fe55",
+      "text": "a"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "t"
+    },
+    {
+      "color": "#00ffff",
+      "text": "t"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "l"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.arma_dei_boots": [
     {
-      "text": "Arma Dei Boots"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#ff6400",
+      "text": "r"
+    },
+    {
+      "color": "#ffc800",
+      "text": "m"
+    },
+    {
+      "color": "#ffe300",
+      "text": "a"
+    },
+    {
+      "color": "#ffff00",
+      "text": " "
+    },
+    {
+      "color": "#7fff00",
+      "text": "D"
+    },
+    {
+      "color": "#00ff00",
+      "text": "e"
+    },
+    {
+      "color": "#00ff7f",
+      "text": "i"
+    },
+    {
+      "color": "#00ffff",
+      "text": " "
+    },
+    {
+      "color": "#7f7fff",
+      "text": "B"
     }
   ],
   "item.trevorssentinels.arma_dei_chestplate": [
     {
-      "text": "Arma Dei Chestplate"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "C"
+    },
+    {
+      "color": "#00fe55",
+      "text": "h"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "e"
+    },
+    {
+      "color": "#00ffff",
+      "text": "s"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "t"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "p"
     }
   ],
   "item.trevorssentinels.arma_dei_dagger": [
     {
-      "text": "Arma Dei Dagger"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "D"
+    },
+    {
+      "color": "#00fe55",
+      "text": "a"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "g"
+    },
+    {
+      "color": "#00ffff",
+      "text": "g"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "e"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.arma_dei_helmet": [
     {
-      "text": "Arma Dei Helmet"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "H"
+    },
+    {
+      "color": "#00fe55",
+      "text": "e"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "l"
+    },
+    {
+      "color": "#00ffff",
+      "text": "m"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "e"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.arma_dei_leggings": [
     {
-      "text": "Arma Dei Leggings"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "L"
+    },
+    {
+      "color": "#00fe55",
+      "text": "e"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "g"
+    },
+    {
+      "color": "#00ffff",
+      "text": "g"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "i"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "n"
     }
   ],
   "item.trevorssentinels.arma_dei_pickaxe": [
     {
-      "text": "Arma Dei Pickaxe"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "P"
+    },
+    {
+      "color": "#00fe55",
+      "text": "i"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "c"
+    },
+    {
+      "color": "#00ffff",
+      "text": "k"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "a"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "x"
     }
   ],
   "item.trevorssentinels.arma_dei_shovel": [
     {
-      "text": "Arma Dei Shovel"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "S"
+    },
+    {
+      "color": "#00fe55",
+      "text": "h"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "o"
+    },
+    {
+      "color": "#00ffff",
+      "text": "v"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "e"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.arma_dei_sickle": [
     {
-      "text": "Arma Dei Sickle"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#fe4200",
+      "text": "r"
+    },
+    {
+      "color": "#ff8500",
+      "text": "m"
+    },
+    {
+      "color": "#ffc800",
+      "text": "a"
+    },
+    {
+      "color": "#feda00",
+      "text": " "
+    },
+    {
+      "color": "#ffec00",
+      "text": "D"
+    },
+    {
+      "color": "#ffff00",
+      "text": "e"
+    },
+    {
+      "color": "#a9fe00",
+      "text": "i"
+    },
+    {
+      "color": "#54ff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "S"
+    },
+    {
+      "color": "#00fe55",
+      "text": "i"
+    },
+    {
+      "color": "#00ffaa",
+      "text": "c"
+    },
+    {
+      "color": "#00ffff",
+      "text": "k"
+    },
+    {
+      "color": "#55a9fe",
+      "text": "l"
+    },
+    {
+      "color": "#aa54ff",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.arma_dei_sword": [
     {
-      "text": "Arma Dei Sword"
+      "color": "#ff0000",
+      "text": "A"
+    },
+    {
+      "color": "#ff6400",
+      "text": "r"
+    },
+    {
+      "color": "#ffc800",
+      "text": "m"
+    },
+    {
+      "color": "#ffe300",
+      "text": "a"
+    },
+    {
+      "color": "#ffff00",
+      "text": " "
+    },
+    {
+      "color": "#7fff00",
+      "text": "D"
+    },
+    {
+      "color": "#00ff00",
+      "text": "e"
+    },
+    {
+      "color": "#00ff7f",
+      "text": "i"
+    },
+    {
+      "color": "#00ffff",
+      "text": " "
+    },
+    {
+      "color": "#7f7fff",
+      "text": "S"
     }
   ],
   "item.trevorssentinels.ash": [
     {
+      "color": "#9949f2",
       "text": "Wither Ash"
+    }
+  ],
+  "item.trevorssentinels.auxiliary_plasma_chamber": [
+    {
+      "color": "#c8c8d3",
+      "text": "A"
+    },
+    {
+      "color": "#c4c4cf",
+      "text": "u"
+    },
+    {
+      "color": "#c1c1cb",
+      "text": "x"
+    },
+    {
+      "color": "#bebec7",
+      "text": "i"
+    },
+    {
+      "color": "#babac4",
+      "text": "l"
+    },
+    {
+      "color": "#b7b7c0",
+      "text": "i"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "a"
+    },
+    {
+      "color": "#b0b0b8",
+      "text": "r"
+    },
+    {
+      "color": "#adadb5",
+      "text": "y"
+    },
+    {
+      "color": "#aaaab1",
+      "text": " "
+    },
+    {
+      "color": "#a7a7ad",
+      "text": "P"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "l"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "a"
+    },
+    {
+      "color": "#9d9da2",
+      "text": "s"
+    },
+    {
+      "color": "#99999e",
+      "text": "m"
+    },
+    {
+      "color": "#96969a",
+      "text": "a"
+    },
+    {
+      "color": "#939397",
+      "text": " "
+    },
+    {
+      "color": "#909093",
+      "text": "C"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "h"
+    },
+    {
+      "color": "#89898b",
+      "text": "a"
+    },
+    {
+      "color": "#868688",
+      "text": "m"
+    },
+    {
+      "color": "#828284",
+      "text": "b"
+    },
+    {
+      "color": "#7f7f80",
+      "text": "e"
+    },
+    {
+      "color": "#7c7c7c",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.banana": [
@@ -1451,6 +4543,7 @@
   ],
   "item.trevorssentinels.beetroot_soup_can": [
     {
+      "color": "#c8c8d3",
       "text": "Can of Beetroot Soup"
     }
   ],
@@ -1472,7 +4565,84 @@
   ],
   "item.trevorssentinels.caution_hard_light_projector": [
     {
-      "text": "Hard Light Projector"
+      "color": "#ffcc33",
+      "text": "H"
+    },
+    {
+      "color": "#ffc62d",
+      "text": "a"
+    },
+    {
+      "color": "#ffc128",
+      "text": "r"
+    },
+    {
+      "color": "#ffbc23",
+      "text": "d"
+    },
+    {
+      "color": "#ffb71e",
+      "text": " "
+    },
+    {
+      "color": "#ffb219",
+      "text": "L"
+    },
+    {
+      "color": "#ffad14",
+      "text": "i"
+    },
+    {
+      "color": "#ffa80f",
+      "text": "g"
+    },
+    {
+      "color": "#ffa30a",
+      "text": "h"
+    },
+    {
+      "color": "#ff9e05",
+      "text": "t"
+    },
+    {
+      "color": "#ff9900",
+      "text": " "
+    },
+    {
+      "color": "#fb9400",
+      "text": "P"
+    },
+    {
+      "color": "#f89000",
+      "text": "r"
+    },
+    {
+      "color": "#f48c00",
+      "text": "o"
+    },
+    {
+      "color": "#f18700",
+      "text": "j"
+    },
+    {
+      "color": "#ed8300",
+      "text": "e"
+    },
+    {
+      "color": "#ea7f00",
+      "text": "c"
+    },
+    {
+      "color": "#e67a00",
+      "text": "t"
+    },
+    {
+      "color": "#e37600",
+      "text": "o"
+    },
+    {
+      "color": "#df7200",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.cerulii_boat": [
@@ -1507,16 +4677,19 @@
   ],
   "item.trevorssentinels.cola_cyan": [
     {
+      "color": "#c8c8d3",
       "text": "Can of AquaDei Lite"
     }
   ],
   "item.trevorssentinels.cola_green": [
     {
+      "color": "#c8c8d3",
       "text": "Can of Trola-Cola"
     }
   ],
   "item.trevorssentinels.cola_orange": [
     {
+      "color": "#c8c8d3",
       "text": "Can of A&L"
     }
   ],
@@ -1539,7 +4712,88 @@
   ],
   "item.trevorssentinels.counterforce_diffuser": [
     {
-      "text": "Counterforce Diffuser"
+      "color": "#c8c8d3",
+      "text": "C"
+    },
+    {
+      "color": "#c4c4ce",
+      "text": "o"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "u"
+    },
+    {
+      "color": "#bcbcc6",
+      "text": "n"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "t"
+    },
+    {
+      "color": "#b5b5bd",
+      "text": "e"
+    },
+    {
+      "color": "#b1b1b9",
+      "text": "r"
+    },
+    {
+      "color": "#adadb5",
+      "text": "f"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "o"
+    },
+    {
+      "color": "#a6a6ac",
+      "text": "r"
+    },
+    {
+      "color": "#a2a2a8",
+      "text": "c"
+    },
+    {
+      "color": "#9e9ea3",
+      "text": "e"
+    },
+    {
+      "color": "#9a9a9f",
+      "text": " "
+    },
+    {
+      "color": "#97979b",
+      "text": "D"
+    },
+    {
+      "color": "#939397",
+      "text": "i"
+    },
+    {
+      "color": "#8f8f92",
+      "text": "f"
+    },
+    {
+      "color": "#8b8b8e",
+      "text": "f"
+    },
+    {
+      "color": "#88888a",
+      "text": "u"
+    },
+    {
+      "color": "#848485",
+      "text": "s"
+    },
+    {
+      "color": "#808081",
+      "text": "e"
+    },
+    {
+      "color": "#7c7c7d",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.cybernetic_stomach": [
@@ -1550,16 +4804,13 @@
   ],
   "item.trevorssentinels.demonic_core": [
     {
+      "color": "#ff55ff",
       "text": "Demonic Core"
-    }
-  ],
-  "item.trevorssentinels.distance_tracker": [
-    {
-      "text": "Lifeform Tracker"
     }
   ],
   "item.trevorssentinels.dolphins_grace_item": [
     {
+      "color": "#cddced",
       "text": "Foam Dolphin Plush"
     }
   ],
@@ -1679,6 +4930,7 @@
   ],
   "item.trevorssentinels.fire_resistance_item": [
     {
+      "color": "#f48522",
       "text": "Flaming Badge"
     }
   ],
@@ -1700,78 +4952,880 @@
   ],
   "item.trevorssentinels.hard_light_projector": [
     {
-      "text": "Hard Light Projector"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#2dc6cb",
+      "text": "a"
+    },
+    {
+      "color": "#28c1cc",
+      "text": "r"
+    },
+    {
+      "color": "#23bccc",
+      "text": "d"
+    },
+    {
+      "color": "#1eb7cc",
+      "text": " "
+    },
+    {
+      "color": "#19b2cc",
+      "text": "L"
+    },
+    {
+      "color": "#14adcc",
+      "text": "i"
+    },
+    {
+      "color": "#0fa8cc",
+      "text": "g"
+    },
+    {
+      "color": "#0aa3cc",
+      "text": "h"
+    },
+    {
+      "color": "#059ecc",
+      "text": "t"
+    },
+    {
+      "color": "#0099cc",
+      "text": " "
+    },
+    {
+      "color": "#0093c6",
+      "text": "P"
+    },
+    {
+      "color": "#008ec1",
+      "text": "r"
+    },
+    {
+      "color": "#0089bc",
+      "text": "o"
+    },
+    {
+      "color": "#0084b7",
+      "text": "j"
+    },
+    {
+      "color": "#007fb2",
+      "text": "e"
+    },
+    {
+      "color": "#007aad",
+      "text": "c"
+    },
+    {
+      "color": "#0075a8",
+      "text": "t"
+    },
+    {
+      "color": "#0070a3",
+      "text": "o"
+    },
+    {
+      "color": "#006b9e",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.hero_of_the_village_item": [
     {
-      "text": "Hero's Emerald"
+      "color": "#bdf796",
+      "text": "H"
+    },
+    {
+      "color": "#b2f38c",
+      "text": "e"
+    },
+    {
+      "color": "#a8f082",
+      "text": "r"
+    },
+    {
+      "color": "#9eed79",
+      "text": "o"
+    },
+    {
+      "color": "#94e96f",
+      "text": "'"
+    },
+    {
+      "color": "#8ae666",
+      "text": "s"
+    },
+    {
+      "color": "#80e35c",
+      "text": " "
+    },
+    {
+      "color": "#76e053",
+      "text": "E"
+    },
+    {
+      "color": "#6edd4e",
+      "text": "m"
+    },
+    {
+      "color": "#67da49",
+      "text": "e"
+    },
+    {
+      "color": "#60d744",
+      "text": "r"
+    },
+    {
+      "color": "#59d440",
+      "text": "a"
+    },
+    {
+      "color": "#52d13b",
+      "text": "l"
+    },
+    {
+      "color": "#4bce36",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.imperial_alloy_ingot": [
     {
       "color": "#eae69b",
-      "text": "Imperial Alloy Ingot"
+      "text": "I"
+    },
+    {
+      "color": "#e7e297",
+      "text": "m"
+    },
+    {
+      "color": "#e4de93",
+      "text": "p"
+    },
+    {
+      "color": "#e2da8f",
+      "text": "e"
+    },
+    {
+      "color": "#dfd68b",
+      "text": "r"
+    },
+    {
+      "color": "#dcd287",
+      "text": "i"
+    },
+    {
+      "color": "#dace83",
+      "text": "a"
+    },
+    {
+      "color": "#d7cb7f",
+      "text": "l"
+    },
+    {
+      "color": "#d4c77b",
+      "text": " "
+    },
+    {
+      "color": "#d2c377",
+      "text": "A"
+    },
+    {
+      "color": "#cfbf73",
+      "text": "l"
+    },
+    {
+      "color": "#ccbb6f",
+      "text": "l"
+    },
+    {
+      "color": "#cab76b",
+      "text": "o"
+    },
+    {
+      "color": "#c7b367",
+      "text": "y"
+    },
+    {
+      "color": "#c4b063",
+      "text": " "
+    },
+    {
+      "color": "#c2ac5f",
+      "text": "I"
+    },
+    {
+      "color": "#bfa85b",
+      "text": "n"
+    },
+    {
+      "color": "#bca457",
+      "text": "g"
+    },
+    {
+      "color": "#baa053",
+      "text": "o"
+    },
+    {
+      "color": "#b79c4f",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.imperial_battleaxe": [
     {
       "color": "#eae69b",
-      "text": "Imperial Battleaxe"
+      "text": "I"
+    },
+    {
+      "color": "#e7e196",
+      "text": "m"
+    },
+    {
+      "color": "#e4dd92",
+      "text": "p"
+    },
+    {
+      "color": "#e1d98d",
+      "text": "e"
+    },
+    {
+      "color": "#ded489",
+      "text": "r"
+    },
+    {
+      "color": "#dbd084",
+      "text": "i"
+    },
+    {
+      "color": "#d8cc80",
+      "text": "a"
+    },
+    {
+      "color": "#d5c87b",
+      "text": "l"
+    },
+    {
+      "color": "#d2c377",
+      "text": " "
+    },
+    {
+      "color": "#cfbf73",
+      "text": "B"
+    },
+    {
+      "color": "#ccbb6e",
+      "text": "a"
+    },
+    {
+      "color": "#c9b66a",
+      "text": "t"
+    },
+    {
+      "color": "#c6b265",
+      "text": "t"
+    },
+    {
+      "color": "#c3ae61",
+      "text": "l"
+    },
+    {
+      "color": "#c0aa5c",
+      "text": "e"
+    },
+    {
+      "color": "#bda558",
+      "text": "a"
+    },
+    {
+      "color": "#baa153",
+      "text": "x"
+    },
+    {
+      "color": "#b79d4f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.imperial_boots": [
     {
       "color": "#eae69b",
-      "text": "Imperial Boots"
+      "text": "I"
+    },
+    {
+      "color": "#e6e095",
+      "text": "m"
+    },
+    {
+      "color": "#e2db8f",
+      "text": "p"
+    },
+    {
+      "color": "#ded589",
+      "text": "e"
+    },
+    {
+      "color": "#dad084",
+      "text": "r"
+    },
+    {
+      "color": "#d7ca7e",
+      "text": "i"
+    },
+    {
+      "color": "#d3c478",
+      "text": "a"
+    },
+    {
+      "color": "#cfbf73",
+      "text": "l"
+    },
+    {
+      "color": "#cbba6d",
+      "text": " "
+    },
+    {
+      "color": "#c7b467",
+      "text": "B"
+    },
+    {
+      "color": "#c4af61",
+      "text": "o"
+    },
+    {
+      "color": "#c0a95c",
+      "text": "o"
+    },
+    {
+      "color": "#bca456",
+      "text": "t"
+    },
+    {
+      "color": "#b89e50",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.imperial_chestplate": [
     {
       "color": "#eae69b",
-      "text": "Imperial Chestplate"
+      "text": "I"
+    },
+    {
+      "color": "#e7e196",
+      "text": "m"
+    },
+    {
+      "color": "#e4dd92",
+      "text": "p"
+    },
+    {
+      "color": "#e1d98e",
+      "text": "e"
+    },
+    {
+      "color": "#ded58a",
+      "text": "r"
+    },
+    {
+      "color": "#dcd185",
+      "text": "i"
+    },
+    {
+      "color": "#d9cd81",
+      "text": "a"
+    },
+    {
+      "color": "#d6c97d",
+      "text": "l"
+    },
+    {
+      "color": "#d3c579",
+      "text": " "
+    },
+    {
+      "color": "#d0c175",
+      "text": "C"
+    },
+    {
+      "color": "#cebd70",
+      "text": "h"
+    },
+    {
+      "color": "#cbb96c",
+      "text": "e"
+    },
+    {
+      "color": "#c8b568",
+      "text": "s"
+    },
+    {
+      "color": "#c5b164",
+      "text": "t"
+    },
+    {
+      "color": "#c2ad60",
+      "text": "p"
+    },
+    {
+      "color": "#c0a95b",
+      "text": "l"
+    },
+    {
+      "color": "#bda557",
+      "text": "a"
+    },
+    {
+      "color": "#baa153",
+      "text": "t"
+    },
+    {
+      "color": "#b79d4f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.imperial_gladius": [
     {
       "color": "#eae69b",
-      "text": "Imperial Gladius"
+      "text": "I"
+    },
+    {
+      "color": "#e6e196",
+      "text": "m"
+    },
+    {
+      "color": "#e3dc91",
+      "text": "p"
+    },
+    {
+      "color": "#e0d78c",
+      "text": "e"
+    },
+    {
+      "color": "#dcd287",
+      "text": "r"
+    },
+    {
+      "color": "#d9cd82",
+      "text": "i"
+    },
+    {
+      "color": "#d6c97d",
+      "text": "a"
+    },
+    {
+      "color": "#d2c478",
+      "text": "l"
+    },
+    {
+      "color": "#cfbf73",
+      "text": " "
+    },
+    {
+      "color": "#ccba6e",
+      "text": "G"
+    },
+    {
+      "color": "#c8b569",
+      "text": "l"
+    },
+    {
+      "color": "#c5b164",
+      "text": "a"
+    },
+    {
+      "color": "#c2ac5f",
+      "text": "d"
+    },
+    {
+      "color": "#bea75a",
+      "text": "i"
+    },
+    {
+      "color": "#bba255",
+      "text": "u"
+    },
+    {
+      "color": "#b89d50",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.imperial_helmet": [
     {
       "color": "#eae69b",
-      "text": "Imperial Helmet"
+      "text": "I"
+    },
+    {
+      "color": "#e6e095",
+      "text": "m"
+    },
+    {
+      "color": "#e2db90",
+      "text": "p"
+    },
+    {
+      "color": "#dfd68b",
+      "text": "e"
+    },
+    {
+      "color": "#dbd185",
+      "text": "r"
+    },
+    {
+      "color": "#d8cc80",
+      "text": "i"
+    },
+    {
+      "color": "#d4c77b",
+      "text": "a"
+    },
+    {
+      "color": "#d1c275",
+      "text": "l"
+    },
+    {
+      "color": "#cdbc70",
+      "text": " "
+    },
+    {
+      "color": "#cab76b",
+      "text": "H"
+    },
+    {
+      "color": "#c6b265",
+      "text": "e"
+    },
+    {
+      "color": "#c3ad60",
+      "text": "l"
+    },
+    {
+      "color": "#bfa85b",
+      "text": "m"
+    },
+    {
+      "color": "#bca355",
+      "text": "e"
+    },
+    {
+      "color": "#b89e50",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.imperial_leggings": [
     {
       "color": "#eae69b",
-      "text": "Imperial Leggings"
+      "text": "I"
+    },
+    {
+      "color": "#e6e196",
+      "text": "m"
+    },
+    {
+      "color": "#e3dc91",
+      "text": "p"
+    },
+    {
+      "color": "#e0d88c",
+      "text": "e"
+    },
+    {
+      "color": "#ddd388",
+      "text": "r"
+    },
+    {
+      "color": "#dacf83",
+      "text": "i"
+    },
+    {
+      "color": "#d7ca7e",
+      "text": "a"
+    },
+    {
+      "color": "#d4c67a",
+      "text": "l"
+    },
+    {
+      "color": "#d1c175",
+      "text": " "
+    },
+    {
+      "color": "#cdbd70",
+      "text": "L"
+    },
+    {
+      "color": "#cab86b",
+      "text": "e"
+    },
+    {
+      "color": "#c7b467",
+      "text": "g"
+    },
+    {
+      "color": "#c4af62",
+      "text": "g"
+    },
+    {
+      "color": "#c1ab5d",
+      "text": "i"
+    },
+    {
+      "color": "#bea659",
+      "text": "n"
+    },
+    {
+      "color": "#bba254",
+      "text": "g"
+    },
+    {
+      "color": "#b89d4f",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.imperial_pickaxe": [
     {
       "color": "#eae69b",
-      "text": "Imperial Pickaxe"
+      "text": "I"
+    },
+    {
+      "color": "#e6e196",
+      "text": "m"
+    },
+    {
+      "color": "#e3dc91",
+      "text": "p"
+    },
+    {
+      "color": "#e0d78c",
+      "text": "e"
+    },
+    {
+      "color": "#dcd287",
+      "text": "r"
+    },
+    {
+      "color": "#d9cd82",
+      "text": "i"
+    },
+    {
+      "color": "#d6c97d",
+      "text": "a"
+    },
+    {
+      "color": "#d2c478",
+      "text": "l"
+    },
+    {
+      "color": "#cfbf73",
+      "text": " "
+    },
+    {
+      "color": "#ccba6e",
+      "text": "P"
+    },
+    {
+      "color": "#c8b569",
+      "text": "i"
+    },
+    {
+      "color": "#c5b164",
+      "text": "c"
+    },
+    {
+      "color": "#c2ac5f",
+      "text": "k"
+    },
+    {
+      "color": "#bea75a",
+      "text": "a"
+    },
+    {
+      "color": "#bba255",
+      "text": "x"
+    },
+    {
+      "color": "#b89d50",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.imperial_shovel": [
     {
       "color": "#eae69b",
-      "text": "Imperial Shovel"
+      "text": "I"
+    },
+    {
+      "color": "#e6e095",
+      "text": "m"
+    },
+    {
+      "color": "#e2db90",
+      "text": "p"
+    },
+    {
+      "color": "#dfd68b",
+      "text": "e"
+    },
+    {
+      "color": "#dbd185",
+      "text": "r"
+    },
+    {
+      "color": "#d8cc80",
+      "text": "i"
+    },
+    {
+      "color": "#d4c77b",
+      "text": "a"
+    },
+    {
+      "color": "#d1c275",
+      "text": "l"
+    },
+    {
+      "color": "#cdbc70",
+      "text": " "
+    },
+    {
+      "color": "#cab76b",
+      "text": "S"
+    },
+    {
+      "color": "#c6b265",
+      "text": "h"
+    },
+    {
+      "color": "#c3ad60",
+      "text": "o"
+    },
+    {
+      "color": "#bfa85b",
+      "text": "v"
+    },
+    {
+      "color": "#bca355",
+      "text": "e"
+    },
+    {
+      "color": "#b89e50",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.imperial_sickle": [
     {
       "color": "#eae69b",
-      "text": "Imperial Sickle"
+      "text": "I"
+    },
+    {
+      "color": "#e6e095",
+      "text": "m"
+    },
+    {
+      "color": "#e2db90",
+      "text": "p"
+    },
+    {
+      "color": "#dfd68b",
+      "text": "e"
+    },
+    {
+      "color": "#dbd185",
+      "text": "r"
+    },
+    {
+      "color": "#d8cc80",
+      "text": "i"
+    },
+    {
+      "color": "#d4c77b",
+      "text": "a"
+    },
+    {
+      "color": "#d1c275",
+      "text": "l"
+    },
+    {
+      "color": "#cdbc70",
+      "text": " "
+    },
+    {
+      "color": "#cab76b",
+      "text": "S"
+    },
+    {
+      "color": "#c6b265",
+      "text": "i"
+    },
+    {
+      "color": "#c3ad60",
+      "text": "c"
+    },
+    {
+      "color": "#bfa85b",
+      "text": "k"
+    },
+    {
+      "color": "#bca355",
+      "text": "l"
+    },
+    {
+      "color": "#b89e50",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.imperial_sword": [
     {
       "color": "#eae69b",
-      "text": "Imperial Sword"
+      "text": "I"
+    },
+    {
+      "color": "#e6e095",
+      "text": "m"
+    },
+    {
+      "color": "#e2db8f",
+      "text": "p"
+    },
+    {
+      "color": "#ded589",
+      "text": "e"
+    },
+    {
+      "color": "#dad084",
+      "text": "r"
+    },
+    {
+      "color": "#d7ca7e",
+      "text": "i"
+    },
+    {
+      "color": "#d3c478",
+      "text": "a"
+    },
+    {
+      "color": "#cfbf73",
+      "text": "l"
+    },
+    {
+      "color": "#cbba6d",
+      "text": " "
+    },
+    {
+      "color": "#c7b467",
+      "text": "S"
+    },
+    {
+      "color": "#c4af61",
+      "text": "w"
+    },
+    {
+      "color": "#c0a95c",
+      "text": "o"
+    },
+    {
+      "color": "#bca456",
+      "text": "r"
+    },
+    {
+      "color": "#b89e50",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.industrial_boots": [
@@ -1817,11 +5871,57 @@
   ],
   "item.trevorssentinels.jump_boost_item": [
     {
-      "text": "Icarus' Gust"
+      "color": "#bdf796",
+      "text": "I"
+    },
+    {
+      "color": "#b1f38a",
+      "text": "c"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "a"
+    },
+    {
+      "color": "#99eb74",
+      "text": "r"
+    },
+    {
+      "color": "#8de769",
+      "text": "u"
+    },
+    {
+      "color": "#81e35e",
+      "text": "s"
+    },
+    {
+      "color": "#76e053",
+      "text": "'"
+    },
+    {
+      "color": "#6ddc4d",
+      "text": " "
+    },
+    {
+      "color": "#65d948",
+      "text": "G"
+    },
+    {
+      "color": "#5dd642",
+      "text": "u"
+    },
+    {
+      "color": "#54d23d",
+      "text": "s"
+    },
+    {
+      "color": "#4ccf37",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.kings_blade": [
     {
+      "color": "#ffffff",
       "text": "Stainless Resolve"
     }
   ],
@@ -1830,13 +5930,77 @@
       "text": "Legendary Token"
     }
   ],
+  "item.trevorssentinels.lifeform_tracer": [
+    {
+      "color": "#797979",
+      "text": "L"
+    },
+    {
+      "color": "#787777",
+      "text": "i"
+    },
+    {
+      "color": "#787675",
+      "text": "f"
+    },
+    {
+      "color": "#777574",
+      "text": "e"
+    },
+    {
+      "color": "#777472",
+      "text": "f"
+    },
+    {
+      "color": "#777371",
+      "text": "o"
+    },
+    {
+      "color": "#76726f",
+      "text": "r"
+    },
+    {
+      "color": "#76716e",
+      "text": "m"
+    },
+    {
+      "color": "#75706c",
+      "text": " "
+    },
+    {
+      "color": "#756f6b",
+      "text": "T"
+    },
+    {
+      "color": "#756e69",
+      "text": "r"
+    },
+    {
+      "color": "#746d68",
+      "text": "a"
+    },
+    {
+      "color": "#746c66",
+      "text": "c"
+    },
+    {
+      "color": "#736b65",
+      "text": "e"
+    },
+    {
+      "color": "#736a63",
+      "text": "r"
+    }
+  ],
   "item.trevorssentinels.lilith_blade": [
     {
+      "color": "#d4b963",
       "text": "Unwavering Judgement"
     }
   ],
   "item.trevorssentinels.master_sword": [
     {
+      "color": "#55ffff",
       "text": "The Master's Sword"
     }
   ],
@@ -1860,22 +6024,88 @@
   ],
   "item.trevorssentinels.milk_can": [
     {
+      "color": "#c8c8d3",
       "text": "Can of Evaporated Milk"
     }
   ],
   "item.trevorssentinels.mushroom_stew_can": [
     {
+      "color": "#c8c8d3",
       "text": "Can of Mushroom Stew"
     }
   ],
   "item.trevorssentinels.music_disc_assassination_upload": [
     {
-      "text": "Scrapped Cassette"
+      "color": "#797979",
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": "p"
+    },
+    {
+      "color": "#767370",
+      "text": "e"
+    },
+    {
+      "color": "#76726f",
+      "text": "d"
+    },
+    {
+      "color": "#76716e",
+      "text": " "
+    },
+    {
+      "color": "#75706c",
+      "text": "C"
+    },
+    {
+      "color": "#756f6b",
+      "text": "a"
+    },
+    {
+      "color": "#756e6a",
+      "text": "s"
+    },
+    {
+      "color": "#746d68",
+      "text": "s"
+    },
+    {
+      "color": "#746c67",
+      "text": "e"
+    },
+    {
+      "color": "#746b66",
+      "text": "t"
+    },
+    {
+      "color": "#736a64",
+      "text": "t"
+    },
+    {
+      "color": "#736963",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.music_disc_assassination_upload.desc": [
     {
-      "color": "#ffffff",
       "text": "Kristoffer Kaufmann - Assassination Upload"
     }
   ],
@@ -1886,7 +6116,6 @@
   ],
   "item.trevorssentinels.music_disc_lapse_in_judgement.desc": [
     {
-      "color": "#ffffff",
       "text": "Kristoffer Kaufmann - Lapse in Judgement"
     }
   ],
@@ -1897,7 +6126,6 @@
   ],
   "item.trevorssentinels.music_disc_ode_to_tranquility.desc": [
     {
-      "color": "#ffffff",
       "text": "Kristoffer Kaufmann - Ode to Tranquility"
     }
   ],
@@ -1908,80 +6136,735 @@
   ],
   "item.trevorssentinels.music_disc_recital.desc": [
     {
-      "color": "#ffffff",
       "text": "Trevor Skullcrafter - recital"
     }
   ],
   "item.trevorssentinels.nanotech_axe": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1cd80",
+      "text": "a"
+    },
+    {
+      "color": "#c6a469",
+      "text": "n"
+    },
+    {
+      "color": "#cb7b54",
+      "text": "o"
+    },
+    {
+      "color": "#cf523d",
+      "text": "t"
+    },
+    {
+      "color": "#d42928",
+      "text": "e"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Axe"
+      "text": "c"
+    },
+    {
+      "color": "#c02217",
+      "text": "h"
+    },
+    {
+      "color": "#a7441c",
+      "text": " "
+    },
+    {
+      "color": "#8e6622",
+      "text": "A"
+    },
+    {
+      "color": "#758827",
+      "text": "x"
+    },
+    {
+      "color": "#5caa2c",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_boots": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Boots"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "B"
+    },
+    {
+      "color": "#99571f",
+      "text": "o"
+    },
+    {
+      "color": "#837424",
+      "text": "o"
+    },
+    {
+      "color": "#6e9128",
+      "text": "t"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.nanotech_capsule": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c0d885",
+      "text": "a"
+    },
+    {
+      "color": "#c4b975",
+      "text": "n"
+    },
+    {
+      "color": "#c79a64",
+      "text": "o"
+    },
+    {
+      "color": "#cb7b54",
+      "text": "t"
+    },
+    {
+      "color": "#ce5c43",
+      "text": "e"
+    },
+    {
+      "color": "#d23d33",
+      "text": "c"
+    },
+    {
+      "color": "#d51e22",
+      "text": "h"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Capsule"
+      "text": " "
+    },
+    {
+      "color": "#c61916",
+      "text": "C"
+    },
+    {
+      "color": "#b3331a",
+      "text": "a"
+    },
+    {
+      "color": "#a14c1e",
+      "text": "p"
+    },
+    {
+      "color": "#8e6622",
+      "text": "s"
+    },
+    {
+      "color": "#7b7f26",
+      "text": "u"
+    },
+    {
+      "color": "#69992a",
+      "text": "l"
+    },
+    {
+      "color": "#56b22e",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_chestplate": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c0db87",
+      "text": "a"
+    },
+    {
+      "color": "#c3c078",
+      "text": "n"
+    },
+    {
+      "color": "#c6a469",
+      "text": "o"
+    },
+    {
+      "color": "#c9895b",
+      "text": "t"
+    },
+    {
+      "color": "#cc6d4c",
+      "text": "e"
+    },
+    {
+      "color": "#cf523d",
+      "text": "c"
+    },
+    {
+      "color": "#d2362f",
+      "text": "h"
+    },
+    {
+      "color": "#d51b20",
+      "text": " "
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Chestplate"
+      "text": "C"
+    },
+    {
+      "color": "#c81615",
+      "text": "h"
+    },
+    {
+      "color": "#b72d19",
+      "text": "e"
+    },
+    {
+      "color": "#a7441c",
+      "text": "s"
+    },
+    {
+      "color": "#965a20",
+      "text": "t"
+    },
+    {
+      "color": "#867123",
+      "text": "p"
+    },
+    {
+      "color": "#758827",
+      "text": "l"
+    },
+    {
+      "color": "#659e2a",
+      "text": "a"
+    },
+    {
+      "color": "#54b52e",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.nanotech_drill": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Drill"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "D"
+    },
+    {
+      "color": "#99571f",
+      "text": "r"
+    },
+    {
+      "color": "#837424",
+      "text": "i"
+    },
+    {
+      "color": "#6e9128",
+      "text": "l"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.nanotech_helmet": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Helmet"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "H"
+    },
+    {
+      "color": "#99571f",
+      "text": "e"
+    },
+    {
+      "color": "#837424",
+      "text": "l"
+    },
+    {
+      "color": "#6e9128",
+      "text": "m"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_hoe": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1cd80",
+      "text": "a"
+    },
+    {
+      "color": "#c6a469",
+      "text": "n"
+    },
+    {
+      "color": "#cb7b54",
+      "text": "o"
+    },
+    {
+      "color": "#cf523d",
+      "text": "t"
+    },
+    {
+      "color": "#d42928",
+      "text": "e"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Hoe"
+      "text": "c"
+    },
+    {
+      "color": "#c02217",
+      "text": "h"
+    },
+    {
+      "color": "#a7441c",
+      "text": " "
+    },
+    {
+      "color": "#8e6622",
+      "text": "H"
+    },
+    {
+      "color": "#758827",
+      "text": "o"
+    },
+    {
+      "color": "#5caa2c",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_leggings": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c0d885",
+      "text": "a"
+    },
+    {
+      "color": "#c4b975",
+      "text": "n"
+    },
+    {
+      "color": "#c79a64",
+      "text": "o"
+    },
+    {
+      "color": "#cb7b54",
+      "text": "t"
+    },
+    {
+      "color": "#ce5c43",
+      "text": "e"
+    },
+    {
+      "color": "#d23d33",
+      "text": "c"
+    },
+    {
+      "color": "#d51e22",
+      "text": "h"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Leggings"
+      "text": " "
+    },
+    {
+      "color": "#c61916",
+      "text": "L"
+    },
+    {
+      "color": "#b3331a",
+      "text": "e"
+    },
+    {
+      "color": "#a14c1e",
+      "text": "g"
+    },
+    {
+      "color": "#8e6622",
+      "text": "g"
+    },
+    {
+      "color": "#7b7f26",
+      "text": "i"
+    },
+    {
+      "color": "#69992a",
+      "text": "n"
+    },
+    {
+      "color": "#56b22e",
+      "text": "g"
     }
   ],
   "item.trevorssentinels.nanotech_phaser": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Phaser"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "P"
+    },
+    {
+      "color": "#99571f",
+      "text": "h"
+    },
+    {
+      "color": "#837424",
+      "text": "a"
+    },
+    {
+      "color": "#6e9128",
+      "text": "s"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_shovel": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Shovel"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "S"
+    },
+    {
+      "color": "#99571f",
+      "text": "h"
+    },
+    {
+      "color": "#837424",
+      "text": "o"
+    },
+    {
+      "color": "#6e9128",
+      "text": "v"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nanotech_sword": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c1d383",
+      "text": "a"
+    },
+    {
+      "color": "#c5b070",
+      "text": "n"
+    },
+    {
+      "color": "#c98d5d",
+      "text": "o"
+    },
+    {
+      "color": "#cd694a",
+      "text": "t"
+    },
+    {
+      "color": "#d14637",
+      "text": "e"
+    },
+    {
+      "color": "#d52324",
+      "text": "c"
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Sword"
+      "text": "h"
+    },
+    {
+      "color": "#c31d16",
+      "text": " "
+    },
+    {
+      "color": "#ae3a1b",
+      "text": "S"
+    },
+    {
+      "color": "#99571f",
+      "text": "w"
+    },
+    {
+      "color": "#837424",
+      "text": "o"
+    },
+    {
+      "color": "#6e9128",
+      "text": "r"
+    },
+    {
+      "color": "#59ae2d",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.nanotech_vibroknife": [
     {
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#c0db87",
+      "text": "a"
+    },
+    {
+      "color": "#c3c078",
+      "text": "n"
+    },
+    {
+      "color": "#c6a469",
+      "text": "o"
+    },
+    {
+      "color": "#c9895b",
+      "text": "t"
+    },
+    {
+      "color": "#cc6d4c",
+      "text": "e"
+    },
+    {
+      "color": "#cf523d",
+      "text": "c"
+    },
+    {
+      "color": "#d2362f",
+      "text": "h"
+    },
+    {
+      "color": "#d51b20",
+      "text": " "
+    },
+    {
       "color": "#d90012",
-      "text": "Nanotech Vibroknife"
+      "text": "V"
+    },
+    {
+      "color": "#c81615",
+      "text": "i"
+    },
+    {
+      "color": "#b72d19",
+      "text": "b"
+    },
+    {
+      "color": "#a7441c",
+      "text": "r"
+    },
+    {
+      "color": "#965a20",
+      "text": "o"
+    },
+    {
+      "color": "#867123",
+      "text": "k"
+    },
+    {
+      "color": "#758827",
+      "text": "n"
+    },
+    {
+      "color": "#659e2a",
+      "text": "i"
+    },
+    {
+      "color": "#54b52e",
+      "text": "f"
     }
   ],
   "item.trevorssentinels.night_vision_item": [
@@ -1991,90 +6874,780 @@
   ],
   "item.trevorssentinels.nuclear_axe": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Axe"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#aef288",
+      "text": "u"
+    },
+    {
+      "color": "#a0ed7b",
+      "text": "c"
+    },
+    {
+      "color": "#92e96d",
+      "text": "l"
+    },
+    {
+      "color": "#84e460",
+      "text": "e"
+    },
+    {
+      "color": "#76e053",
+      "text": "a"
+    },
+    {
+      "color": "#6cdc4c",
+      "text": "r"
+    },
+    {
+      "color": "#62d845",
+      "text": " "
+    },
+    {
+      "color": "#58d43f",
+      "text": "A"
+    },
+    {
+      "color": "#4ed038",
+      "text": "x"
     }
   ],
   "item.trevorssentinels.nuclear_boots": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Boots"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b1f38a",
+      "text": "u"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "c"
+    },
+    {
+      "color": "#99eb74",
+      "text": "l"
+    },
+    {
+      "color": "#8de769",
+      "text": "e"
+    },
+    {
+      "color": "#81e35e",
+      "text": "a"
+    },
+    {
+      "color": "#76e053",
+      "text": "r"
+    },
+    {
+      "color": "#6ddc4d",
+      "text": " "
+    },
+    {
+      "color": "#65d948",
+      "text": "B"
+    },
+    {
+      "color": "#5dd642",
+      "text": "o"
+    },
+    {
+      "color": "#54d23d",
+      "text": "o"
+    },
+    {
+      "color": "#4ccf37",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.nuclear_chestplate": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Chestplate"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b5f48e",
+      "text": "u"
+    },
+    {
+      "color": "#adf187",
+      "text": "c"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "l"
+    },
+    {
+      "color": "#9dec78",
+      "text": "e"
+    },
+    {
+      "color": "#95ea70",
+      "text": "a"
+    },
+    {
+      "color": "#8de769",
+      "text": "r"
+    },
+    {
+      "color": "#85e561",
+      "text": " "
+    },
+    {
+      "color": "#7de25a",
+      "text": "C"
+    },
+    {
+      "color": "#76e053",
+      "text": "h"
+    },
+    {
+      "color": "#70dd4f",
+      "text": "e"
+    },
+    {
+      "color": "#6adb4b",
+      "text": "s"
+    },
+    {
+      "color": "#65d948",
+      "text": "t"
+    },
+    {
+      "color": "#5fd744",
+      "text": "p"
+    },
+    {
+      "color": "#5ad440",
+      "text": "l"
+    },
+    {
+      "color": "#54d23d",
+      "text": "a"
+    },
+    {
+      "color": "#4fd039",
+      "text": "t"
+    },
+    {
+      "color": "#49ce35",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.nuclear_drill": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Drill"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b1f38a",
+      "text": "u"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "c"
+    },
+    {
+      "color": "#99eb74",
+      "text": "l"
+    },
+    {
+      "color": "#8de769",
+      "text": "e"
+    },
+    {
+      "color": "#81e35e",
+      "text": "a"
+    },
+    {
+      "color": "#76e053",
+      "text": "r"
+    },
+    {
+      "color": "#6ddc4d",
+      "text": " "
+    },
+    {
+      "color": "#65d948",
+      "text": "D"
+    },
+    {
+      "color": "#5dd642",
+      "text": "r"
+    },
+    {
+      "color": "#54d23d",
+      "text": "i"
+    },
+    {
+      "color": "#4ccf37",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.nuclear_helmet": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Helmet"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b2f38c",
+      "text": "u"
+    },
+    {
+      "color": "#a8f082",
+      "text": "c"
+    },
+    {
+      "color": "#9eed79",
+      "text": "l"
+    },
+    {
+      "color": "#94e96f",
+      "text": "e"
+    },
+    {
+      "color": "#8ae666",
+      "text": "a"
+    },
+    {
+      "color": "#80e35c",
+      "text": "r"
+    },
+    {
+      "color": "#76e053",
+      "text": " "
+    },
+    {
+      "color": "#6edd4e",
+      "text": "H"
+    },
+    {
+      "color": "#67da49",
+      "text": "e"
+    },
+    {
+      "color": "#60d744",
+      "text": "l"
+    },
+    {
+      "color": "#59d440",
+      "text": "m"
+    },
+    {
+      "color": "#52d13b",
+      "text": "e"
+    },
+    {
+      "color": "#4bce36",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.nuclear_hoe": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Hoe"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#aef288",
+      "text": "u"
+    },
+    {
+      "color": "#a0ed7b",
+      "text": "c"
+    },
+    {
+      "color": "#92e96d",
+      "text": "l"
+    },
+    {
+      "color": "#84e460",
+      "text": "e"
+    },
+    {
+      "color": "#76e053",
+      "text": "a"
+    },
+    {
+      "color": "#6cdc4c",
+      "text": "r"
+    },
+    {
+      "color": "#62d845",
+      "text": " "
+    },
+    {
+      "color": "#58d43f",
+      "text": "H"
+    },
+    {
+      "color": "#4ed038",
+      "text": "o"
     }
   ],
   "item.trevorssentinels.nuclear_ingot": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Ingot"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b1f38a",
+      "text": "u"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "c"
+    },
+    {
+      "color": "#99eb74",
+      "text": "l"
+    },
+    {
+      "color": "#8de769",
+      "text": "e"
+    },
+    {
+      "color": "#81e35e",
+      "text": "a"
+    },
+    {
+      "color": "#76e053",
+      "text": "r"
+    },
+    {
+      "color": "#6ddc4d",
+      "text": " "
+    },
+    {
+      "color": "#65d948",
+      "text": "I"
+    },
+    {
+      "color": "#5dd642",
+      "text": "n"
+    },
+    {
+      "color": "#54d23d",
+      "text": "g"
+    },
+    {
+      "color": "#4ccf37",
+      "text": "o"
     }
   ],
   "item.trevorssentinels.nuclear_leggings": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Leggings"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b4f48d",
+      "text": "u"
+    },
+    {
+      "color": "#abf185",
+      "text": "c"
+    },
+    {
+      "color": "#a2ee7c",
+      "text": "l"
+    },
+    {
+      "color": "#99eb74",
+      "text": "e"
+    },
+    {
+      "color": "#90e86c",
+      "text": "a"
+    },
+    {
+      "color": "#87e563",
+      "text": "r"
+    },
+    {
+      "color": "#7ee25b",
+      "text": " "
+    },
+    {
+      "color": "#76e053",
+      "text": "L"
+    },
+    {
+      "color": "#6fdd4e",
+      "text": "e"
+    },
+    {
+      "color": "#69db4a",
+      "text": "g"
+    },
+    {
+      "color": "#63d846",
+      "text": "g"
+    },
+    {
+      "color": "#5dd642",
+      "text": "i"
+    },
+    {
+      "color": "#56d33e",
+      "text": "n"
+    },
+    {
+      "color": "#50d13a",
+      "text": "g"
+    },
+    {
+      "color": "#4ace36",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.nuclear_phaser": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Phaser"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b2f38c",
+      "text": "u"
+    },
+    {
+      "color": "#a8f082",
+      "text": "c"
+    },
+    {
+      "color": "#9eed79",
+      "text": "l"
+    },
+    {
+      "color": "#94e96f",
+      "text": "e"
+    },
+    {
+      "color": "#8ae666",
+      "text": "a"
+    },
+    {
+      "color": "#80e35c",
+      "text": "r"
+    },
+    {
+      "color": "#76e053",
+      "text": " "
+    },
+    {
+      "color": "#6edd4e",
+      "text": "P"
+    },
+    {
+      "color": "#67da49",
+      "text": "h"
+    },
+    {
+      "color": "#60d744",
+      "text": "a"
+    },
+    {
+      "color": "#59d440",
+      "text": "s"
+    },
+    {
+      "color": "#52d13b",
+      "text": "e"
+    },
+    {
+      "color": "#4bce36",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.nuclear_rocket": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Rocket"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b2f38c",
+      "text": "u"
+    },
+    {
+      "color": "#a8f082",
+      "text": "c"
+    },
+    {
+      "color": "#9eed79",
+      "text": "l"
+    },
+    {
+      "color": "#94e96f",
+      "text": "e"
+    },
+    {
+      "color": "#8ae666",
+      "text": "a"
+    },
+    {
+      "color": "#80e35c",
+      "text": "r"
+    },
+    {
+      "color": "#76e053",
+      "text": " "
+    },
+    {
+      "color": "#6edd4e",
+      "text": "R"
+    },
+    {
+      "color": "#67da49",
+      "text": "o"
+    },
+    {
+      "color": "#60d744",
+      "text": "c"
+    },
+    {
+      "color": "#59d440",
+      "text": "k"
+    },
+    {
+      "color": "#52d13b",
+      "text": "e"
+    },
+    {
+      "color": "#4bce36",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.nuclear_shovel": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Shovel"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b2f38c",
+      "text": "u"
+    },
+    {
+      "color": "#a8f082",
+      "text": "c"
+    },
+    {
+      "color": "#9eed79",
+      "text": "l"
+    },
+    {
+      "color": "#94e96f",
+      "text": "e"
+    },
+    {
+      "color": "#8ae666",
+      "text": "a"
+    },
+    {
+      "color": "#80e35c",
+      "text": "r"
+    },
+    {
+      "color": "#76e053",
+      "text": " "
+    },
+    {
+      "color": "#6edd4e",
+      "text": "S"
+    },
+    {
+      "color": "#67da49",
+      "text": "h"
+    },
+    {
+      "color": "#60d744",
+      "text": "o"
+    },
+    {
+      "color": "#59d440",
+      "text": "v"
+    },
+    {
+      "color": "#52d13b",
+      "text": "e"
+    },
+    {
+      "color": "#4bce36",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.nuclear_sword": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Sword"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b1f38a",
+      "text": "u"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "c"
+    },
+    {
+      "color": "#99eb74",
+      "text": "l"
+    },
+    {
+      "color": "#8de769",
+      "text": "e"
+    },
+    {
+      "color": "#81e35e",
+      "text": "a"
+    },
+    {
+      "color": "#76e053",
+      "text": "r"
+    },
+    {
+      "color": "#6ddc4d",
+      "text": " "
+    },
+    {
+      "color": "#65d948",
+      "text": "S"
+    },
+    {
+      "color": "#5dd642",
+      "text": "w"
+    },
+    {
+      "color": "#54d23d",
+      "text": "o"
+    },
+    {
+      "color": "#4ccf37",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.nuclear_vibroknife": [
     {
-      "color": "#47fa0c",
-      "text": "Nuclear Vibroknife"
+      "color": "#bdf796",
+      "text": "N"
+    },
+    {
+      "color": "#b5f48e",
+      "text": "u"
+    },
+    {
+      "color": "#adf187",
+      "text": "c"
+    },
+    {
+      "color": "#a5ef7f",
+      "text": "l"
+    },
+    {
+      "color": "#9dec78",
+      "text": "e"
+    },
+    {
+      "color": "#95ea70",
+      "text": "a"
+    },
+    {
+      "color": "#8de769",
+      "text": "r"
+    },
+    {
+      "color": "#85e561",
+      "text": " "
+    },
+    {
+      "color": "#7de25a",
+      "text": "V"
+    },
+    {
+      "color": "#76e053",
+      "text": "i"
+    },
+    {
+      "color": "#70dd4f",
+      "text": "b"
+    },
+    {
+      "color": "#6adb4b",
+      "text": "r"
+    },
+    {
+      "color": "#65d948",
+      "text": "o"
+    },
+    {
+      "color": "#5fd744",
+      "text": "k"
+    },
+    {
+      "color": "#5ad440",
+      "text": "n"
+    },
+    {
+      "color": "#54d23d",
+      "text": "i"
+    },
+    {
+      "color": "#4fd039",
+      "text": "f"
+    },
+    {
+      "color": "#49ce35",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.one_pence": [
     {
+      "color": "#e77c56",
       "text": "The One Pence"
     }
   ],
   "item.trevorssentinels.paint_pack": [
     {
-      "text": "Paint Pack"
+      "color": "#ff0000",
+      "text": "P"
+    },
+    {
+      "color": "#ff6400",
+      "text": "a"
+    },
+    {
+      "color": "#ffc800",
+      "text": "i"
+    },
+    {
+      "color": "#ffe300",
+      "text": "n"
+    },
+    {
+      "color": "#ffff00",
+      "text": "t"
+    },
+    {
+      "color": "#7fff00",
+      "text": " "
+    },
+    {
+      "color": "#00ff00",
+      "text": "P"
+    },
+    {
+      "color": "#00ff7f",
+      "text": "a"
+    },
+    {
+      "color": "#00ffff",
+      "text": "c"
+    },
+    {
+      "color": "#7f7fff",
+      "text": "k"
     }
   ],
   "item.trevorssentinels.paladins_badge": [
@@ -2097,11 +7670,13 @@
   ],
   "item.trevorssentinels.pappyd_blade": [
     {
+      "color": "#f48522",
       "text": "Hell's Flaming Fury"
     }
   ],
   "item.trevorssentinels.pappym_blade": [
     {
+      "color": "#55ff55",
       "text": "Jade Seraphim"
     }
   ],
@@ -2119,38 +7694,324 @@
   ],
   "item.trevorssentinels.phase_assimilator": [
     {
-      "text": "Phase Assimilator"
+      "color": "#c8c8d3",
+      "text": "P"
+    },
+    {
+      "color": "#c3c3cd",
+      "text": "h"
+    },
+    {
+      "color": "#bebec8",
+      "text": "a"
+    },
+    {
+      "color": "#babac3",
+      "text": "s"
+    },
+    {
+      "color": "#b5b5bd",
+      "text": "e"
+    },
+    {
+      "color": "#b0b0b8",
+      "text": " "
+    },
+    {
+      "color": "#acacb3",
+      "text": "A"
+    },
+    {
+      "color": "#a7a7ad",
+      "text": "s"
+    },
+    {
+      "color": "#a2a2a8",
+      "text": "s"
+    },
+    {
+      "color": "#9e9ea3",
+      "text": "i"
+    },
+    {
+      "color": "#99999e",
+      "text": "m"
+    },
+    {
+      "color": "#949498",
+      "text": "i"
+    },
+    {
+      "color": "#909093",
+      "text": "l"
+    },
+    {
+      "color": "#8b8b8e",
+      "text": "a"
+    },
+    {
+      "color": "#868688",
+      "text": "t"
+    },
+    {
+      "color": "#828283",
+      "text": "o"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.photonic_lens": [
     {
-      "text": "Photonic Lens"
+      "color": "#c8c8d3",
+      "text": "P"
+    },
+    {
+      "color": "#c1c1cc",
+      "text": "h"
+    },
+    {
+      "color": "#bbbbc5",
+      "text": "o"
+    },
+    {
+      "color": "#b5b5be",
+      "text": "t"
+    },
+    {
+      "color": "#afafb7",
+      "text": "o"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "n"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "i"
+    },
+    {
+      "color": "#9d9da2",
+      "text": "c"
+    },
+    {
+      "color": "#97979b",
+      "text": " "
+    },
+    {
+      "color": "#919194",
+      "text": "L"
+    },
+    {
+      "color": "#8b8b8d",
+      "text": "e"
+    },
+    {
+      "color": "#858586",
+      "text": "n"
+    },
+    {
+      "color": "#7f7f7f",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.plasma_cell": [
     {
       "color": "#c8c8d3",
-      "text": "Plasma Cell"
+      "text": "P"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "l"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "a"
+    },
+    {
+      "color": "#b2b2ba",
+      "text": "s"
+    },
+    {
+      "color": "#ababb2",
+      "text": "m"
+    },
+    {
+      "color": "#a4a4aa",
+      "text": "a"
+    },
+    {
+      "color": "#9c9ca1",
+      "text": " "
+    },
+    {
+      "color": "#959599",
+      "text": "C"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "e"
+    },
+    {
+      "color": "#878789",
+      "text": "l"
+    },
+    {
+      "color": "#808081",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.poison_capsule": [
     {
-      "text": "Poison Capsule"
+      "color": "#c8c8d3",
+      "text": "P"
+    },
+    {
+      "color": "#c2c2cc",
+      "text": "o"
+    },
+    {
+      "color": "#bcbcc6",
+      "text": "i"
+    },
+    {
+      "color": "#b7b7bf",
+      "text": "s"
+    },
+    {
+      "color": "#b1b1b9",
+      "text": "o"
+    },
+    {
+      "color": "#ababb2",
+      "text": "n"
+    },
+    {
+      "color": "#a6a6ac",
+      "text": " "
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "C"
+    },
+    {
+      "color": "#9a9a9f",
+      "text": "a"
+    },
+    {
+      "color": "#959599",
+      "text": "p"
+    },
+    {
+      "color": "#8f8f92",
+      "text": "s"
+    },
+    {
+      "color": "#89898c",
+      "text": "u"
+    },
+    {
+      "color": "#848485",
+      "text": "l"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.rabbit_stew_can": [
     {
+      "color": "#c8c8d3",
       "text": "Can of Rabbit Stew"
     }
   ],
   "item.trevorssentinels.redstone_crystal": [
     {
+      "color": "#d90012",
       "text": "Crystallized Redstone"
     }
   ],
   "item.trevorssentinels.regeneration_capsule": [
     {
-      "text": "Regeneration Capsule"
+      "color": "#c8c8d3",
+      "text": "R"
+    },
+    {
+      "color": "#c4c4ce",
+      "text": "e"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "g"
+    },
+    {
+      "color": "#bcbcc5",
+      "text": "e"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "n"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "e"
+    },
+    {
+      "color": "#b0b0b8",
+      "text": "r"
+    },
+    {
+      "color": "#acacb3",
+      "text": "a"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "t"
+    },
+    {
+      "color": "#a4a4aa",
+      "text": "i"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "o"
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "n"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#949498",
+      "text": "C"
+    },
+    {
+      "color": "#909094",
+      "text": "a"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "p"
+    },
+    {
+      "color": "#88888b",
+      "text": "s"
+    },
+    {
+      "color": "#848486",
+      "text": "u"
+    },
+    {
+      "color": "#808082",
+      "text": "l"
+    },
+    {
+      "color": "#7c7c7d",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.regeneration_item": [
@@ -2160,6 +8021,7 @@
   ],
   "item.trevorssentinels.resistance_item": [
     {
+      "color": "#aaaaaa",
       "text": "Shield Badge"
     }
   ],
@@ -2175,7 +8037,8 @@
   ],
   "item.trevorssentinels.roomba_spawn_egg": [
     {
-      "text": "Sentinel Cleaning Droid"
+      "color": "#797979",
+      "text": "Janitor Droid"
     }
   ],
   "item.trevorssentinels.rose_gold_battleaxe": [
@@ -2192,6 +8055,7 @@
   ],
   "item.trevorssentinels.rose_gold_chestplate": [
     {
+      "color": "#f7d2c5",
       "text": "Rose Gold Cuirass"
     }
   ],
@@ -2257,99 +8121,1044 @@
   ],
   "item.trevorssentinels.scara_shears": [
     {
+      "color": "#aa00aa",
       "text": "SCARA Shears"
     }
   ],
   "item.trevorssentinels.scrap_metal_boots": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Boots"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "B"
+    },
+    {
+      "color": "#746c67",
+      "text": "o"
+    },
+    {
+      "color": "#746b66",
+      "text": "o"
+    },
+    {
+      "color": "#736a64",
+      "text": "t"
+    },
+    {
+      "color": "#736963",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.scrap_metal_chainsaw": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Chainsaw"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777574",
+      "text": "p"
+    },
+    {
+      "color": "#777573",
+      "text": " "
+    },
+    {
+      "color": "#777472",
+      "text": "M"
+    },
+    {
+      "color": "#767370",
+      "text": "e"
+    },
+    {
+      "color": "#76726f",
+      "text": "t"
+    },
+    {
+      "color": "#76716e",
+      "text": "a"
+    },
+    {
+      "color": "#76716d",
+      "text": "l"
+    },
+    {
+      "color": "#75706c",
+      "text": " "
+    },
+    {
+      "color": "#756f6b",
+      "text": "C"
+    },
+    {
+      "color": "#756e6a",
+      "text": "h"
+    },
+    {
+      "color": "#746d68",
+      "text": "a"
+    },
+    {
+      "color": "#746d67",
+      "text": "i"
+    },
+    {
+      "color": "#746c66",
+      "text": "n"
+    },
+    {
+      "color": "#736b65",
+      "text": "s"
+    },
+    {
+      "color": "#736a64",
+      "text": "a"
+    },
+    {
+      "color": "#736963",
+      "text": "w"
     }
   ],
   "item.trevorssentinels.scrap_metal_chestplate": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Chestplate"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777674",
+      "text": "p"
+    },
+    {
+      "color": "#777573",
+      "text": " "
+    },
+    {
+      "color": "#777472",
+      "text": "M"
+    },
+    {
+      "color": "#777371",
+      "text": "e"
+    },
+    {
+      "color": "#767370",
+      "text": "t"
+    },
+    {
+      "color": "#76726f",
+      "text": "a"
+    },
+    {
+      "color": "#76716e",
+      "text": "l"
+    },
+    {
+      "color": "#76716d",
+      "text": " "
+    },
+    {
+      "color": "#75706c",
+      "text": "C"
+    },
+    {
+      "color": "#756f6b",
+      "text": "h"
+    },
+    {
+      "color": "#756e6a",
+      "text": "e"
+    },
+    {
+      "color": "#746e69",
+      "text": "s"
+    },
+    {
+      "color": "#746d68",
+      "text": "t"
+    },
+    {
+      "color": "#746c67",
+      "text": "p"
+    },
+    {
+      "color": "#746b66",
+      "text": "l"
+    },
+    {
+      "color": "#736b65",
+      "text": "a"
+    },
+    {
+      "color": "#736a64",
+      "text": "t"
+    },
+    {
+      "color": "#736963",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.scrap_metal_drill": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Drill"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "D"
+    },
+    {
+      "color": "#746c67",
+      "text": "r"
+    },
+    {
+      "color": "#746b66",
+      "text": "i"
+    },
+    {
+      "color": "#736a64",
+      "text": "l"
+    },
+    {
+      "color": "#736963",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.scrap_metal_helmet": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Helmet"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#777371",
+      "text": "M"
+    },
+    {
+      "color": "#767270",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#76716d",
+      "text": "a"
+    },
+    {
+      "color": "#75706c",
+      "text": "l"
+    },
+    {
+      "color": "#756f6a",
+      "text": " "
+    },
+    {
+      "color": "#756e69",
+      "text": "H"
+    },
+    {
+      "color": "#746d68",
+      "text": "e"
+    },
+    {
+      "color": "#746c67",
+      "text": "l"
+    },
+    {
+      "color": "#746b65",
+      "text": "m"
+    },
+    {
+      "color": "#736a64",
+      "text": "e"
+    },
+    {
+      "color": "#736963",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.scrap_metal_hoe": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Hoe"
+      "text": "S"
+    },
+    {
+      "color": "#787777",
+      "text": "c"
+    },
+    {
+      "color": "#787675",
+      "text": "r"
+    },
+    {
+      "color": "#777574",
+      "text": "a"
+    },
+    {
+      "color": "#777472",
+      "text": "p"
+    },
+    {
+      "color": "#777371",
+      "text": " "
+    },
+    {
+      "color": "#76726f",
+      "text": "M"
+    },
+    {
+      "color": "#76716e",
+      "text": "e"
+    },
+    {
+      "color": "#75706c",
+      "text": "t"
+    },
+    {
+      "color": "#756f6b",
+      "text": "a"
+    },
+    {
+      "color": "#756e69",
+      "text": "l"
+    },
+    {
+      "color": "#746d68",
+      "text": " "
+    },
+    {
+      "color": "#746c66",
+      "text": "H"
+    },
+    {
+      "color": "#736b65",
+      "text": "o"
+    },
+    {
+      "color": "#736a63",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.scrap_metal_knife": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Knife"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "K"
+    },
+    {
+      "color": "#746c67",
+      "text": "n"
+    },
+    {
+      "color": "#746b66",
+      "text": "i"
+    },
+    {
+      "color": "#736a64",
+      "text": "f"
+    },
+    {
+      "color": "#736963",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.scrap_metal_leggings": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Leggings"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777574",
+      "text": "p"
+    },
+    {
+      "color": "#777573",
+      "text": " "
+    },
+    {
+      "color": "#777472",
+      "text": "M"
+    },
+    {
+      "color": "#767370",
+      "text": "e"
+    },
+    {
+      "color": "#76726f",
+      "text": "t"
+    },
+    {
+      "color": "#76716e",
+      "text": "a"
+    },
+    {
+      "color": "#76716d",
+      "text": "l"
+    },
+    {
+      "color": "#75706c",
+      "text": " "
+    },
+    {
+      "color": "#756f6b",
+      "text": "L"
+    },
+    {
+      "color": "#756e6a",
+      "text": "e"
+    },
+    {
+      "color": "#746d68",
+      "text": "g"
+    },
+    {
+      "color": "#746d67",
+      "text": "g"
+    },
+    {
+      "color": "#746c66",
+      "text": "i"
+    },
+    {
+      "color": "#736b65",
+      "text": "n"
+    },
+    {
+      "color": "#736a64",
+      "text": "g"
+    },
+    {
+      "color": "#736963",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.scrap_metal_phaser": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Phaser"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#777371",
+      "text": "M"
+    },
+    {
+      "color": "#767270",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#76716d",
+      "text": "a"
+    },
+    {
+      "color": "#75706c",
+      "text": "l"
+    },
+    {
+      "color": "#756f6a",
+      "text": " "
+    },
+    {
+      "color": "#756e69",
+      "text": "P"
+    },
+    {
+      "color": "#746d68",
+      "text": "h"
+    },
+    {
+      "color": "#746c67",
+      "text": "a"
+    },
+    {
+      "color": "#746b65",
+      "text": "s"
+    },
+    {
+      "color": "#736a64",
+      "text": "e"
+    },
+    {
+      "color": "#736963",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.scrap_metal_shard": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Shard"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "S"
+    },
+    {
+      "color": "#746c67",
+      "text": "h"
+    },
+    {
+      "color": "#746b66",
+      "text": "a"
+    },
+    {
+      "color": "#736a64",
+      "text": "r"
+    },
+    {
+      "color": "#736963",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.scrap_metal_shovel": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Shovel"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#787675",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#777371",
+      "text": "M"
+    },
+    {
+      "color": "#767270",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#76716d",
+      "text": "a"
+    },
+    {
+      "color": "#75706c",
+      "text": "l"
+    },
+    {
+      "color": "#756f6a",
+      "text": " "
+    },
+    {
+      "color": "#756e69",
+      "text": "S"
+    },
+    {
+      "color": "#746d68",
+      "text": "h"
+    },
+    {
+      "color": "#746c67",
+      "text": "o"
+    },
+    {
+      "color": "#746b65",
+      "text": "v"
+    },
+    {
+      "color": "#736a64",
+      "text": "e"
+    },
+    {
+      "color": "#736963",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.scrap_metal_sword": [
     {
       "color": "#797979",
-      "text": "Scrap Metal Sword"
+      "text": "S"
+    },
+    {
+      "color": "#787877",
+      "text": "c"
+    },
+    {
+      "color": "#787776",
+      "text": "r"
+    },
+    {
+      "color": "#777674",
+      "text": "a"
+    },
+    {
+      "color": "#777573",
+      "text": "p"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#767370",
+      "text": "M"
+    },
+    {
+      "color": "#76726f",
+      "text": "e"
+    },
+    {
+      "color": "#76716e",
+      "text": "t"
+    },
+    {
+      "color": "#75706c",
+      "text": "a"
+    },
+    {
+      "color": "#756f6b",
+      "text": "l"
+    },
+    {
+      "color": "#756e6a",
+      "text": " "
+    },
+    {
+      "color": "#746d68",
+      "text": "S"
+    },
+    {
+      "color": "#746c67",
+      "text": "w"
+    },
+    {
+      "color": "#746b66",
+      "text": "o"
+    },
+    {
+      "color": "#736a64",
+      "text": "r"
+    },
+    {
+      "color": "#736963",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.sentinel_hard_light_projector": [
     {
-      "text": "Hard Light Projector"
+      "color": "#ff3333",
+      "text": "H"
+    },
+    {
+      "color": "#f92d2d",
+      "text": "a"
+    },
+    {
+      "color": "#f42828",
+      "text": "r"
+    },
+    {
+      "color": "#ef2323",
+      "text": "d"
+    },
+    {
+      "color": "#ea1e1e",
+      "text": " "
+    },
+    {
+      "color": "#e51919",
+      "text": "L"
+    },
+    {
+      "color": "#e01414",
+      "text": "i"
+    },
+    {
+      "color": "#db0f0f",
+      "text": "g"
+    },
+    {
+      "color": "#d60a0a",
+      "text": "h"
+    },
+    {
+      "color": "#d10505",
+      "text": "t"
+    },
+    {
+      "color": "#cc0000",
+      "text": " "
+    },
+    {
+      "color": "#c60000",
+      "text": "P"
+    },
+    {
+      "color": "#c10000",
+      "text": "r"
+    },
+    {
+      "color": "#bc0000",
+      "text": "o"
+    },
+    {
+      "color": "#b70000",
+      "text": "j"
+    },
+    {
+      "color": "#b20000",
+      "text": "e"
+    },
+    {
+      "color": "#ad0000",
+      "text": "c"
+    },
+    {
+      "color": "#a80000",
+      "text": "t"
+    },
+    {
+      "color": "#a30000",
+      "text": "o"
+    },
+    {
+      "color": "#9e0000",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.sentinel_spawn_egg": [
     {
+      "color": "#797979",
       "text": "Sentinel Spawn Beacon"
     }
   ],
   "item.trevorssentinels.skylar_blade": [
     {
+      "color": "#f9bd23",
       "text": "Equitous Retribution"
     }
   ],
   "item.trevorssentinels.smoke_capsule": [
     {
-      "text": "Smoke Capsule"
+      "color": "#c8c8d3",
+      "text": "S"
+    },
+    {
+      "color": "#c1c1cc",
+      "text": "m"
+    },
+    {
+      "color": "#bbbbc5",
+      "text": "o"
+    },
+    {
+      "color": "#b5b5be",
+      "text": "k"
+    },
+    {
+      "color": "#afafb7",
+      "text": "e"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": " "
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "C"
+    },
+    {
+      "color": "#9d9da2",
+      "text": "a"
+    },
+    {
+      "color": "#97979b",
+      "text": "p"
+    },
+    {
+      "color": "#919194",
+      "text": "s"
+    },
+    {
+      "color": "#8b8b8d",
+      "text": "u"
+    },
+    {
+      "color": "#858586",
+      "text": "l"
+    },
+    {
+      "color": "#7f7f7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.smoked_fish": [
@@ -2361,77 +9170,778 @@
   "item.trevorssentinels.starsteel_axe": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Axe"
+      "text": "S"
+    },
+    {
+      "color": "#c1c1cc",
+      "text": "t"
+    },
+    {
+      "color": "#bbbbc5",
+      "text": "a"
+    },
+    {
+      "color": "#b5b5be",
+      "text": "r"
+    },
+    {
+      "color": "#afafb7",
+      "text": "s"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "t"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da2",
+      "text": "e"
+    },
+    {
+      "color": "#97979b",
+      "text": "l"
+    },
+    {
+      "color": "#919194",
+      "text": " "
+    },
+    {
+      "color": "#8b8b8d",
+      "text": "A"
+    },
+    {
+      "color": "#858586",
+      "text": "x"
+    },
+    {
+      "color": "#7f7f7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.starsteel_boots": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Boots"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cd",
+      "text": "t"
+    },
+    {
+      "color": "#bdbdc7",
+      "text": "a"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "r"
+    },
+    {
+      "color": "#b2b2bb",
+      "text": "s"
+    },
+    {
+      "color": "#adadb5",
+      "text": "t"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "e"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da3",
+      "text": "l"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "B"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "o"
+    },
+    {
+      "color": "#88888b",
+      "text": "o"
+    },
+    {
+      "color": "#838385",
+      "text": "t"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.starsteel_chestplate": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Chestplate"
+      "text": "S"
+    },
+    {
+      "color": "#c4c4ce",
+      "text": "t"
+    },
+    {
+      "color": "#c0c0ca",
+      "text": "a"
+    },
+    {
+      "color": "#bcbcc5",
+      "text": "r"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "s"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "t"
+    },
+    {
+      "color": "#b0b0b8",
+      "text": "e"
+    },
+    {
+      "color": "#acacb3",
+      "text": "e"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "l"
+    },
+    {
+      "color": "#a4a4aa",
+      "text": " "
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "C"
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "h"
+    },
+    {
+      "color": "#98989d",
+      "text": "e"
+    },
+    {
+      "color": "#949498",
+      "text": "s"
+    },
+    {
+      "color": "#909094",
+      "text": "t"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "p"
+    },
+    {
+      "color": "#88888b",
+      "text": "l"
+    },
+    {
+      "color": "#848486",
+      "text": "a"
+    },
+    {
+      "color": "#808082",
+      "text": "t"
+    },
+    {
+      "color": "#7c7c7d",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.starsteel_drill": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Drill"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cd",
+      "text": "t"
+    },
+    {
+      "color": "#bdbdc7",
+      "text": "a"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "r"
+    },
+    {
+      "color": "#b2b2bb",
+      "text": "s"
+    },
+    {
+      "color": "#adadb5",
+      "text": "t"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "e"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da3",
+      "text": "l"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "D"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "r"
+    },
+    {
+      "color": "#88888b",
+      "text": "i"
+    },
+    {
+      "color": "#838385",
+      "text": "l"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.starsteel_helmet": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Helmet"
+      "text": "S"
+    },
+    {
+      "color": "#c3c3cd",
+      "text": "t"
+    },
+    {
+      "color": "#bebec7",
+      "text": "a"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "r"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "s"
+    },
+    {
+      "color": "#afafb6",
+      "text": "t"
+    },
+    {
+      "color": "#aaaab1",
+      "text": "e"
+    },
+    {
+      "color": "#a5a5ab",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "l"
+    },
+    {
+      "color": "#9b9ba0",
+      "text": " "
+    },
+    {
+      "color": "#96969a",
+      "text": "H"
+    },
+    {
+      "color": "#919195",
+      "text": "e"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "l"
+    },
+    {
+      "color": "#878789",
+      "text": "m"
+    },
+    {
+      "color": "#828284",
+      "text": "e"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.starsteel_hoe": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Hoe"
+      "text": "S"
+    },
+    {
+      "color": "#c1c1cc",
+      "text": "t"
+    },
+    {
+      "color": "#bbbbc5",
+      "text": "a"
+    },
+    {
+      "color": "#b5b5be",
+      "text": "r"
+    },
+    {
+      "color": "#afafb7",
+      "text": "s"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "t"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da2",
+      "text": "e"
+    },
+    {
+      "color": "#97979b",
+      "text": "l"
+    },
+    {
+      "color": "#919194",
+      "text": " "
+    },
+    {
+      "color": "#8b8b8d",
+      "text": "H"
+    },
+    {
+      "color": "#858586",
+      "text": "o"
+    },
+    {
+      "color": "#7f7f7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.starsteel_ingot": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Ingot"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cd",
+      "text": "t"
+    },
+    {
+      "color": "#bdbdc7",
+      "text": "a"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "r"
+    },
+    {
+      "color": "#b2b2bb",
+      "text": "s"
+    },
+    {
+      "color": "#adadb5",
+      "text": "t"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "e"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da3",
+      "text": "l"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "I"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "n"
+    },
+    {
+      "color": "#88888b",
+      "text": "g"
+    },
+    {
+      "color": "#838385",
+      "text": "o"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.starsteel_knife": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Knife"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cd",
+      "text": "t"
+    },
+    {
+      "color": "#bdbdc7",
+      "text": "a"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "r"
+    },
+    {
+      "color": "#b2b2bb",
+      "text": "s"
+    },
+    {
+      "color": "#adadb5",
+      "text": "t"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "e"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da3",
+      "text": "l"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "K"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "n"
+    },
+    {
+      "color": "#88888b",
+      "text": "i"
+    },
+    {
+      "color": "#838385",
+      "text": "f"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.starsteel_leggings": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Leggings"
+      "text": "S"
+    },
+    {
+      "color": "#c3c3ce",
+      "text": "t"
+    },
+    {
+      "color": "#bfbfc9",
+      "text": "a"
+    },
+    {
+      "color": "#babac4",
+      "text": "r"
+    },
+    {
+      "color": "#b6b6bf",
+      "text": "s"
+    },
+    {
+      "color": "#b2b2ba",
+      "text": "t"
+    },
+    {
+      "color": "#adadb5",
+      "text": "e"
+    },
+    {
+      "color": "#a9a9b0",
+      "text": "e"
+    },
+    {
+      "color": "#a4a4ab",
+      "text": "l"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": " "
+    },
+    {
+      "color": "#9c9ca1",
+      "text": "L"
+    },
+    {
+      "color": "#97979c",
+      "text": "e"
+    },
+    {
+      "color": "#939397",
+      "text": "g"
+    },
+    {
+      "color": "#8e8e92",
+      "text": "g"
+    },
+    {
+      "color": "#8a8a8d",
+      "text": "i"
+    },
+    {
+      "color": "#868688",
+      "text": "n"
+    },
+    {
+      "color": "#818183",
+      "text": "g"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.starsteel_phaser": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Phaser"
+      "text": "S"
+    },
+    {
+      "color": "#c3c3cd",
+      "text": "t"
+    },
+    {
+      "color": "#bebec7",
+      "text": "a"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "r"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "s"
+    },
+    {
+      "color": "#afafb6",
+      "text": "t"
+    },
+    {
+      "color": "#aaaab1",
+      "text": "e"
+    },
+    {
+      "color": "#a5a5ab",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "l"
+    },
+    {
+      "color": "#9b9ba0",
+      "text": " "
+    },
+    {
+      "color": "#96969a",
+      "text": "P"
+    },
+    {
+      "color": "#919195",
+      "text": "h"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "a"
+    },
+    {
+      "color": "#878789",
+      "text": "s"
+    },
+    {
+      "color": "#828284",
+      "text": "e"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.starsteel_shovel": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Shovel"
+      "text": "S"
+    },
+    {
+      "color": "#c3c3cd",
+      "text": "t"
+    },
+    {
+      "color": "#bebec7",
+      "text": "a"
+    },
+    {
+      "color": "#b9b9c2",
+      "text": "r"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "s"
+    },
+    {
+      "color": "#afafb6",
+      "text": "t"
+    },
+    {
+      "color": "#aaaab1",
+      "text": "e"
+    },
+    {
+      "color": "#a5a5ab",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "l"
+    },
+    {
+      "color": "#9b9ba0",
+      "text": " "
+    },
+    {
+      "color": "#96969a",
+      "text": "S"
+    },
+    {
+      "color": "#919195",
+      "text": "h"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "o"
+    },
+    {
+      "color": "#878789",
+      "text": "v"
+    },
+    {
+      "color": "#828284",
+      "text": "e"
+    },
+    {
+      "color": "#7d7d7e",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.starsteel_sword": [
     {
       "color": "#c8c8d3",
-      "text": "Starsteel Sword"
+      "text": "S"
+    },
+    {
+      "color": "#c2c2cd",
+      "text": "t"
+    },
+    {
+      "color": "#bdbdc7",
+      "text": "a"
+    },
+    {
+      "color": "#b8b8c1",
+      "text": "r"
+    },
+    {
+      "color": "#b2b2bb",
+      "text": "s"
+    },
+    {
+      "color": "#adadb5",
+      "text": "t"
+    },
+    {
+      "color": "#a8a8af",
+      "text": "e"
+    },
+    {
+      "color": "#a3a3a9",
+      "text": "e"
+    },
+    {
+      "color": "#9d9da3",
+      "text": "l"
+    },
+    {
+      "color": "#98989d",
+      "text": " "
+    },
+    {
+      "color": "#939397",
+      "text": "S"
+    },
+    {
+      "color": "#8e8e91",
+      "text": "w"
+    },
+    {
+      "color": "#88888b",
+      "text": "o"
+    },
+    {
+      "color": "#838385",
+      "text": "r"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "d"
     }
   ],
   "item.trevorssentinels.strength_item": [
     {
+      "color": "#aaaaaa",
       "text": "Sword Badge"
     }
   ],
@@ -2447,26 +9957,31 @@
   ],
   "item.trevorssentinels.thanatu_blade": [
     {
+      "color": "#ff55ff",
       "text": "Harmonious Rapture"
     }
   ],
   "item.trevorssentinels.thanatu_boots": [
     {
+      "color": "#ff55ff",
       "text": "Macabre Sandals"
     }
   ],
   "item.trevorssentinels.thanatu_chestplate": [
     {
+      "color": "#ff55ff",
       "text": "Macabre Shoulderpads"
     }
   ],
   "item.trevorssentinels.thanatu_helmet": [
     {
+      "color": "#ff55ff",
       "text": "Macabre Skull"
     }
   ],
   "item.trevorssentinels.thanatu_leggings": [
     {
+      "color": "#ff55ff",
       "text": "Macabre Loincloth"
     }
   ],
@@ -2477,6 +9992,7 @@
   ],
   "item.trevorssentinels.tranquil_dust": [
     {
+      "color": "#9949f2",
       "text": "Tranquil Pollen"
     }
   ],
@@ -2494,6 +10010,7 @@
   ],
   "item.trevorssentinels.unholy_chestplate": [
     {
+      "color": "#ff55ff",
       "text": "Unholy Cuirass"
     }
   ],
@@ -2587,144 +10104,989 @@
   ],
   "item.trevorssentinels.wither_capsule": [
     {
-      "text": "Wither Capsule"
+      "color": "#c8c8d3",
+      "text": "W"
+    },
+    {
+      "color": "#c2c2cc",
+      "text": "i"
+    },
+    {
+      "color": "#bcbcc6",
+      "text": "t"
+    },
+    {
+      "color": "#b7b7bf",
+      "text": "h"
+    },
+    {
+      "color": "#b1b1b9",
+      "text": "e"
+    },
+    {
+      "color": "#ababb2",
+      "text": "r"
+    },
+    {
+      "color": "#a6a6ac",
+      "text": " "
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "C"
+    },
+    {
+      "color": "#9a9a9f",
+      "text": "a"
+    },
+    {
+      "color": "#959599",
+      "text": "p"
+    },
+    {
+      "color": "#8f8f92",
+      "text": "s"
+    },
+    {
+      "color": "#89898c",
+      "text": "u"
+    },
+    {
+      "color": "#848485",
+      "text": "l"
+    },
+    {
+      "color": "#7e7e7f",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.zenithium_axe": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Axe"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b25d",
+      "text": "e"
+    },
+    {
+      "color": "#27b472",
+      "text": "n"
+    },
+    {
+      "color": "#28b688",
+      "text": "i"
+    },
+    {
+      "color": "#29b79d",
+      "text": "t"
+    },
+    {
+      "color": "#2ab9b2",
+      "text": "h"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "i"
+    },
+    {
+      "color": "#3ba2c4",
+      "text": "u"
+    },
+    {
+      "color": "#4b89c0",
+      "text": "m"
+    },
+    {
+      "color": "#5c70bc",
+      "text": " "
+    },
+    {
+      "color": "#6c57b8",
+      "text": "A"
+    },
+    {
+      "color": "#7c3eb4",
+      "text": "x"
     }
   ],
   "item.trevorssentinels.zenithium_boots": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Boots"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b25a",
+      "text": "e"
+    },
+    {
+      "color": "#27b36c",
+      "text": "n"
+    },
+    {
+      "color": "#28b57e",
+      "text": "i"
+    },
+    {
+      "color": "#28b691",
+      "text": "t"
+    },
+    {
+      "color": "#29b8a3",
+      "text": "h"
+    },
+    {
+      "color": "#2ab9b5",
+      "text": "i"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "u"
+    },
+    {
+      "color": "#39a5c4",
+      "text": "m"
+    },
+    {
+      "color": "#4790c1",
+      "text": " "
+    },
+    {
+      "color": "#557bbe",
+      "text": "B"
+    },
+    {
+      "color": "#6365ba",
+      "text": "o"
+    },
+    {
+      "color": "#7150b7",
+      "text": "o"
+    },
+    {
+      "color": "#7f3bb4",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.zenithium_chestplate": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Chestplate"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b254",
+      "text": "e"
+    },
+    {
+      "color": "#27b361",
+      "text": "n"
+    },
+    {
+      "color": "#27b46e",
+      "text": "i"
+    },
+    {
+      "color": "#28b57b",
+      "text": "t"
+    },
+    {
+      "color": "#28b688",
+      "text": "h"
+    },
+    {
+      "color": "#29b794",
+      "text": "i"
+    },
+    {
+      "color": "#29b8a1",
+      "text": "u"
+    },
+    {
+      "color": "#2ab9ae",
+      "text": "m"
+    },
+    {
+      "color": "#2ababb",
+      "text": " "
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "C"
+    },
+    {
+      "color": "#34acc5",
+      "text": "h"
+    },
+    {
+      "color": "#3e9dc3",
+      "text": "e"
+    },
+    {
+      "color": "#488ec1",
+      "text": "s"
+    },
+    {
+      "color": "#527fbe",
+      "text": "t"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "p"
+    },
+    {
+      "color": "#6561ba",
+      "text": "l"
+    },
+    {
+      "color": "#6f52b7",
+      "text": "a"
+    },
+    {
+      "color": "#7943b5",
+      "text": "t"
+    },
+    {
+      "color": "#8334b3",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.zenithium_cluster": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Cluster"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "C"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "l"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "u"
+    },
+    {
+      "color": "#685db9",
+      "text": "s"
+    },
+    {
+      "color": "#744bb6",
+      "text": "t"
+    },
+    {
+      "color": "#8038b3",
+      "text": "e"
     }
   ],
   "item.trevorssentinels.zenithium_dagger": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Dagger"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "D"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "a"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "g"
+    },
+    {
+      "color": "#685db9",
+      "text": "g"
+    },
+    {
+      "color": "#744bb6",
+      "text": "e"
+    },
+    {
+      "color": "#8038b3",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.zenithium_helmet": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Helmet"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "H"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "e"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "l"
+    },
+    {
+      "color": "#685db9",
+      "text": "m"
+    },
+    {
+      "color": "#744bb6",
+      "text": "e"
+    },
+    {
+      "color": "#8038b3",
+      "text": "t"
     }
   ],
   "item.trevorssentinels.zenithium_hoe": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Hoe"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b25d",
+      "text": "e"
+    },
+    {
+      "color": "#27b472",
+      "text": "n"
+    },
+    {
+      "color": "#28b688",
+      "text": "i"
+    },
+    {
+      "color": "#29b79d",
+      "text": "t"
+    },
+    {
+      "color": "#2ab9b2",
+      "text": "h"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "i"
+    },
+    {
+      "color": "#3ba2c4",
+      "text": "u"
+    },
+    {
+      "color": "#4b89c0",
+      "text": "m"
+    },
+    {
+      "color": "#5c70bc",
+      "text": " "
+    },
+    {
+      "color": "#6c57b8",
+      "text": "H"
+    },
+    {
+      "color": "#7c3eb4",
+      "text": "o"
     }
   ],
   "item.trevorssentinels.zenithium_leggings": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Leggings"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b256",
+      "text": "e"
+    },
+    {
+      "color": "#27b364",
+      "text": "n"
+    },
+    {
+      "color": "#27b472",
+      "text": "i"
+    },
+    {
+      "color": "#28b580",
+      "text": "t"
+    },
+    {
+      "color": "#28b68f",
+      "text": "h"
+    },
+    {
+      "color": "#29b79d",
+      "text": "i"
+    },
+    {
+      "color": "#29b8ab",
+      "text": "u"
+    },
+    {
+      "color": "#2ab9b9",
+      "text": "m"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": " "
+    },
+    {
+      "color": "#35aac5",
+      "text": "L"
+    },
+    {
+      "color": "#4099c2",
+      "text": "e"
+    },
+    {
+      "color": "#4b89c0",
+      "text": "g"
+    },
+    {
+      "color": "#5678bd",
+      "text": "g"
+    },
+    {
+      "color": "#6168bb",
+      "text": "i"
+    },
+    {
+      "color": "#6c57b8",
+      "text": "n"
+    },
+    {
+      "color": "#7747b6",
+      "text": "g"
+    },
+    {
+      "color": "#8236b3",
+      "text": "s"
     }
   ],
   "item.trevorssentinels.zenithium_phaser": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Phaser"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "P"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "h"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "a"
+    },
+    {
+      "color": "#685db9",
+      "text": "s"
+    },
+    {
+      "color": "#744bb6",
+      "text": "e"
+    },
+    {
+      "color": "#8038b3",
+      "text": "r"
     }
   ],
   "item.trevorssentinels.zenithium_pickaxe": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Pickaxe"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "P"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "i"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "c"
+    },
+    {
+      "color": "#685db9",
+      "text": "k"
+    },
+    {
+      "color": "#744bb6",
+      "text": "a"
+    },
+    {
+      "color": "#8038b3",
+      "text": "x"
     }
   ],
   "item.trevorssentinels.zenithium_shovel": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Shovel"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b258",
+      "text": "e"
+    },
+    {
+      "color": "#27b368",
+      "text": "n"
+    },
+    {
+      "color": "#27b478",
+      "text": "i"
+    },
+    {
+      "color": "#28b688",
+      "text": "t"
+    },
+    {
+      "color": "#29b798",
+      "text": "h"
+    },
+    {
+      "color": "#29b8a8",
+      "text": "i"
+    },
+    {
+      "color": "#2ab9b8",
+      "text": "u"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "m"
+    },
+    {
+      "color": "#37a8c5",
+      "text": " "
+    },
+    {
+      "color": "#4395c2",
+      "text": "S"
+    },
+    {
+      "color": "#4f83bf",
+      "text": "h"
+    },
+    {
+      "color": "#5c70bc",
+      "text": "o"
+    },
+    {
+      "color": "#685db9",
+      "text": "v"
+    },
+    {
+      "color": "#744bb6",
+      "text": "e"
+    },
+    {
+      "color": "#8038b3",
+      "text": "l"
     }
   ],
   "item.trevorssentinels.zenithium_sword": [
     {
-      "color": "#00aa00",
-      "text": "Zenithium Sword"
+      "color": "#26b148",
+      "text": "Z"
+    },
+    {
+      "color": "#26b25a",
+      "text": "e"
+    },
+    {
+      "color": "#27b36c",
+      "text": "n"
+    },
+    {
+      "color": "#28b57e",
+      "text": "i"
+    },
+    {
+      "color": "#28b691",
+      "text": "t"
+    },
+    {
+      "color": "#29b8a3",
+      "text": "h"
+    },
+    {
+      "color": "#2ab9b5",
+      "text": "i"
+    },
+    {
+      "color": "#2bbbc8",
+      "text": "u"
+    },
+    {
+      "color": "#39a5c4",
+      "text": "m"
+    },
+    {
+      "color": "#4790c1",
+      "text": " "
+    },
+    {
+      "color": "#557bbe",
+      "text": "S"
+    },
+    {
+      "color": "#6365ba",
+      "text": "w"
+    },
+    {
+      "color": "#7150b7",
+      "text": "o"
+    },
+    {
+      "color": "#7f3bb4",
+      "text": "r"
     }
   ],
   "itemGroup.trevorssentinels.sentinels": [
     {
-      "color": "#ffffff",
-      "text": "Trevor's Sentinels"
+      "color": "#006699",
+      "text": "T",
+      "underlined": true
+    },
+    {
+      "color": "#0076aa",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#0088bb",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#0099cc",
+      "text": "v",
+      "underlined": true
+    },
+    {
+      "color": "#11aacb",
+      "text": "o",
+      "underlined": true
+    },
+    {
+      "color": "#22bbcc",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#33cccc",
+      "text": "'",
+      "underlined": true
+    },
+    {
+      "color": "#77ba87",
+      "text": "s",
+      "underlined": true
+    },
+    {
+      "color": "#bbaa43",
+      "text": " ",
+      "underlined": true
+    },
+    {
+      "color": "#ff9900",
+      "text": "S",
+      "underlined": true
+    },
+    {
+      "color": "#fe7611",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ff5522",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#ff3333",
+      "text": "t",
+      "underlined": true
+    },
+    {
+      "color": "#ed2121",
+      "text": "i",
+      "underlined": true
+    },
+    {
+      "color": "#dd1010",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#cc0000",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ba0000",
+      "text": "l",
+      "underlined": true
+    },
+    {
+      "color": "#aa0000",
+      "text": "s",
+      "underlined": true
     }
   ],
   "itemGroup.trevorssentinels.sentinels.button.wiki": [
     {
-      "color": "#ffffff",
+      "color": "#75892e",
       "text": "Wiki"
     }
   ],
   "itemGroup.trevorssentinels.sentinels.tab.beta": [
     {
-      "color": "#ffffff",
+      "color": "#117bcd",
+      "obfuscated": true,
       "text": "Beta"
     }
   ],
   "itemGroup.trevorssentinels.sentinels.tab.magic": [
     {
-      "color": "#ffffff",
+      "color": "#f9bd23",
       "text": "Magic"
     }
   ],
   "itemGroup.trevorssentinels.sentinels.tab.tech": [
     {
-      "color": "#ffffff",
-      "text": "Tech"
+      "color": "#c8c8d3",
+      "text": "T"
+    },
+    {
+      "color": "#b4b4bc",
+      "text": "e"
+    },
+    {
+      "color": "#a0a0a6",
+      "text": "c"
+    },
+    {
+      "color": "#8c8c8f",
+      "text": "h"
     }
   ],
   "key.category.trevorssentinels.trevorssentinels": [
     {
-      "color": "#ffffff",
       "text": "Trevor's Sentinels"
     }
   ],
   "key.trevorssentinels.reload": [
     {
-      "color": "#ffffff",
       "text": "Reload"
     }
   ],
   "key.trevorssentinels.style_switch": [
     {
-      "color": "#ffffff",
       "text": "Style Switch"
     }
   ],
   "pillar.trevorssentinels.balance": [
     {
-      "color": "#ffffff",
+      "color": "#00ff00",
       "text": "Balance"
     }
   ],
   "pillar.trevorssentinels.chaos": [
     {
-      "color": "#ffffff",
+      "color": "#ff0000",
       "text": "Chaos"
     }
   ],
   "pillar.trevorssentinels.order": [
     {
-      "color": "#ffffff",
+      "color": "#ffff00",
       "text": "Order"
     }
   ],
@@ -2736,584 +11098,590 @@
   ],
   "pillar.trevorssentinels.tranquility": [
     {
-      "color": "#ffffff",
+      "color": "#ff00ff",
       "text": "Tranquility"
     }
   ],
   "pillar.trevorssentinels.truth": [
     {
-      "color": "#ffffff",
+      "color": "#ffc800",
       "text": "Truth"
     }
   ],
   "pillar.trevorssentinels.wisdom": [
     {
-      "color": "#ffffff",
+      "color": "#00ffff",
       "text": "Wisdom"
     }
   ],
   "style.item.trevorssentinels.lilith_blade.1": [
     {
-      "color": "#ffffff",
-      "text": "Holy Retribution"
+      "text": "1"
     }
   ],
   "style.item.trevorssentinels.lilith_blade.2": [
     {
-      "color": "#ffffff",
-      "text": "ENDLESS LIGHT"
+      "text": "2"
     }
   ],
   "style.item.trevorssentinels.pappym_blade.1": [
     {
-      "color": "#ffffff",
-      "text": "Trickster"
+      "text": "1"
     }
   ],
   "style.item.trevorssentinels.pappym_blade.2": [
     {
-      "color": "#ffffff",
-      "text": "Paladin"
+      "text": "2"
     }
   ],
   "style.item.trevorssentinels.pappym_blade.3": [
     {
-      "color": "#ffffff",
-      "text": "Predator"
+      "text": "3"
     }
   ],
   "style.item.trevorssentinels.pappym_blade.4": [
     {
-      "color": "#ffffff",
-      "text": "Guardian"
+      "text": "4"
     }
   ],
   "style.item.trevorssentinels.phaser.1": [
     {
-      "color": "#ffffff",
-      "text": "Reloading: Manual"
+      "text": "1"
     }
   ],
   "style.item.trevorssentinels.phaser.2": [
     {
-      "color": "#ffffff",
-      "text": "Reloading: Automatic"
+      "text": "2"
     }
   ],
   "style.item.trevorssentinels.thanatu_blade.1": [
     {
-      "color": "#ffffff",
-      "text": "Riftwalker"
+      "text": "1"
     }
   ],
   "style.item.trevorssentinels.thanatu_blade.2": [
     {
-      "color": "#ffffff",
-      "text": "Riftcaller"
+      "text": "2"
     }
   ],
   "tooltip.block.trevorssentinels.big_red_plate": [
     {
-      "color": "#ffffff",
       "text": "1500 Megawatt Super Colliding Super Plate"
     }
   ],
   "tooltip.block.trevorssentinels.black_agility_block": [
     {
-      "color": "#ffffff",
       "text": "Watch your step."
     }
   ],
   "tooltip.block.trevorssentinels.caution_hard_light_barrier": [
     {
-      "color": "#ffffff",
       "text": "Creative only!"
     }
   ],
   "tooltip.block.trevorssentinels.feathercorn": [
     {
-      "color": "#ffffff",
       "text": "Soft and warm."
     }
   ],
   "tooltip.block.trevorssentinels.flesh_block": [
     {
-      "color": "#ffffff",
       "text": "It's strangely warm..."
     }
   ],
   "tooltip.block.trevorssentinels.flesh_veins": [
     {
-      "color": "#ffffff",
       "text": "They're spreading..."
     }
   ],
   "tooltip.block.trevorssentinels.fleshy_eye": [
     {
-      "color": "#ffffff",
       "text": "It's staring..."
     }
   ],
   "tooltip.block.trevorssentinels.hard_light_barrier": [
     {
-      "color": "#ffffff",
       "text": "Creative only!"
     }
   ],
   "tooltip.block.trevorssentinels.potted_skullweed": [
     {
-      "color": "#ffffff",
       "text": "It's so cold..."
     }
   ],
   "tooltip.block.trevorssentinels.potted_tranquil_rose": [
     {
-      "color": "#ffffff",
       "text": "Smells delightful."
     }
   ],
   "tooltip.block.trevorssentinels.sentinel_hard_light_barrier": [
     {
-      "color": "#ffffff",
       "text": "Creative only!"
     }
   ],
   "tooltip.block.trevorssentinels.skullweed": [
     {
-      "color": "#ffffff",
       "text": "It's so cold..."
     }
   ],
   "tooltip.block.trevorssentinels.tranquil_rose": [
     {
-      "color": "#ffffff",
       "text": "Smells delightful."
     }
   ],
   "tooltip.item.trevorssentinels.arma_dei_sickle": [
     {
-      "color": "#ffffff",
       "text": "Functions as a Hoe."
     }
   ],
   "tooltip.item.trevorssentinels.ash": [
     {
-      "color": "#ffffff",
       "text": "Contains traces of dark magic."
     }
   ],
   "tooltip.item.trevorssentinels.blood_diamond": [
     {
-      "color": "#ffffff",
       "text": "Chaos itself shines through."
     }
   ],
   "tooltip.item.trevorssentinels.brownie": [
     {
-      "color": "#ffffff",
       "text": "Comes from outer space?"
+    }
+  ],
+  "tooltip.item.trevorssentinels.caution_hard_light_projector": [
+    {
+      "text": "Deploys temporary blocks."
     }
   ],
   "tooltip.item.trevorssentinels.chorus_cobbler": [
     {
-      "color": "#ffffff",
       "text": "Memah's favorite recipe"
     }
   ],
   "tooltip.item.trevorssentinels.copper_gladius": [
     {
-      "color": "#ffffff",
       "text": "An ornamental blade of goblin tradition."
     }
   ],
   "tooltip.item.trevorssentinels.demonic_core": [
     {
-      "color": "#ffffff",
       "text": "Use while crouching to bind to a location!"
-    }
-  ],
-  "tooltip.item.trevorssentinels.distance_tracker": [
-    {
-      "color": "#ffffff",
-      "text": "Use on a mob to track it."
     }
   ],
   "tooltip.item.trevorssentinels.dolphins_grace_item": [
     {
-      "color": "#ffffff",
       "text": "Its silky skin makes one feel hydrodynamic."
     }
   ],
   "tooltip.item.trevorssentinels.dubious_bacon": [
     {
-      "color": "#ffffff",
       "text": "Don't ask where it came from..."
     }
   ],
   "tooltip.item.trevorssentinels.dune_eel": [
     {
-      "color": "#ffffff",
       "text": "Isn't this a snake?"
     }
   ],
   "tooltip.item.trevorssentinels.eye_of_ruin": [
     {
-      "color": "#ffffff",
       "text": "What a troubling gaze..."
+    }
+  ],
+  "tooltip.item.trevorssentinels.hard_light_projector": [
+    {
+      "text": "Deploys temporary blocks."
     }
   ],
   "tooltip.item.trevorssentinels.hero_of_the_village_item": [
     {
-      "color": "#ffffff",
       "text": "Gifted to heroes of legend."
     }
   ],
   "tooltip.item.trevorssentinels.imperial_sickle": [
     {
-      "color": "#ffffff",
       "text": "Functions as a Hoe."
     }
   ],
   "tooltip.item.trevorssentinels.industrial_crowbar": [
     {
-      "color": "#ffffff",
       "text": "Rise, and... shine."
+    }
+  ],
+  "tooltip.item.trevorssentinels.lifeform_tracer": [
+    {
+      "text": "Use on a mob to track it."
     }
   ],
   "tooltip.item.trevorssentinels.master_sword": [
     {
-      "color": "#ffffff",
       "text": "From a distant universe..."
     }
   ],
   "tooltip.item.trevorssentinels.midas_fruit": [
     {
-      "color": "#ffffff",
       "text": "22 karats"
     }
   ],
   "tooltip.item.trevorssentinels.music_disc_recital": [
     {
-      "color": "#ffffff",
       "text": "It's in remarkably good condition."
     }
   ],
   "tooltip.item.trevorssentinels.nanotech_sword": [
     {
-      "color": "#ffffff",
       "text": "\"I've even forgotten my name...\""
     }
   ],
   "tooltip.item.trevorssentinels.nuclear_sword": [
     {
-      "color": "#ffffff",
       "text": "Irradiates enemies."
     }
   ],
   "tooltip.item.trevorssentinels.nuclear_vibroknife": [
     {
-      "color": "#ffffff",
       "text": "Irradiates enemies."
     }
   ],
   "tooltip.item.trevorssentinels.one_pence": [
     {
-      "color": "#ffffff",
       "text": "Wealth, Fame, Power."
     }
   ],
   "tooltip.item.trevorssentinels.paladins_badge": [
     {
-      "color": "#ffffff",
       "text": "The mark of a true warrior of light."
     }
   ],
   "tooltip.item.trevorssentinels.pappym_blade": [
     {
-      "color": "#ffffff",
       "text": "Passed down through ancient tradition... and now it has found its way to you."
     }
   ],
   "tooltip.item.trevorssentinels.pearfruit": [
     {
-      "color": "#ffffff",
       "text": "As good as gold."
     }
   ],
   "tooltip.item.trevorssentinels.phaser.stats": [
     {
-      "color": "#ffffff",
       "text": "Phaser Stats:"
     }
   ],
   "tooltip.item.trevorssentinels.redstone_crystal": [
     {
-      "color": "#ffffff",
       "text": "Sparkles with potential."
     }
   ],
   "tooltip.item.trevorssentinels.roomba_spawn_egg": [
     {
-      "color": "#ffffff",
-      "text": "Once a human, now a living sanitizer."
+      "text": "What a waste of a soul."
     }
   ],
   "tooltip.item.trevorssentinels.rose_gold_sickle": [
     {
-      "color": "#ffffff",
       "text": "Functions as a Hoe."
     }
   ],
   "tooltip.item.trevorssentinels.salt": [
     {
-      "color": "#ffffff",
       "text": "Used for keeping meat fresh."
     }
   ],
   "tooltip.item.trevorssentinels.sandfish": [
     {
-      "color": "#ffffff",
       "text": "This is not a fish..."
     }
   ],
   "tooltip.item.trevorssentinels.scara_shears": [
     {
-      "color": "#ffffff",
       "text": "A military-grade threat."
     }
   ],
   "tooltip.item.trevorssentinels.scrap_metal_chainsaw": [
     {
-      "color": "#ffffff",
       "text": "Right click to launch shards at enemies!"
+    }
+  ],
+  "tooltip.item.trevorssentinels.sentinel_hard_light_projector": [
+    {
+      "text": "Deploys temporary blocks."
     }
   ],
   "tooltip.item.trevorssentinels.sentinel_spawn_egg": [
     {
-      "color": "#ffffff",
       "text": "A mindless drone for the hive."
     }
   ],
   "tooltip.item.trevorssentinels.thanatu_helmet": [
     {
-      "color": "#ffffff",
       "text": "The skull of the demon king."
     }
   ],
   "tooltip.item.trevorssentinels.tranquil_dust": [
     {
-      "color": "#ffffff",
       "text": "Useful in dark alchemy."
     }
   ],
   "tooltip.item.trevorssentinels.unholy_ingot": [
     {
-      "color": "#ffffff",
       "text": "Reflects only the light in darkness."
     }
   ],
   "tooltip.item.trevorssentinels.unholy_sickle": [
     {
-      "color": "#ffffff",
       "text": "Functions as a Hoe."
     }
   ],
   "tooltip.item.trevorssentinels.vile_spitter": [
     {
-      "color": "#ffffff",
       "text": "It's alive!"
     }
   ],
   "tooltip.item.trevorssentinels.weakness_item": [
     {
-      "color": "#ffffff",
       "text": "A reminder of past failures."
     }
   ],
   "tooltip.item.trevorssentinels.zenithium_cluster": [
     {
-      "color": "#ffffff",
       "text": "The concentrated essence of a galaxy."
     }
   ],
   "tooltip.trevorssentinels.mode": [
     {
-      "color": "#ffffff",
       "text": "Mode: "
     }
   ],
   "tooltip.trevorssentinels.set_bonus_active": [
     {
-      "color": "#ffffff",
       "text": "Set bonus active!"
     }
   ],
   "tooltip.trevorssentinels.set_bonus_inactive": [
     {
-      "color": "#ffffff",
       "text": "Set bonus inactive!"
     }
   ],
   "tooltip.trevorssentinels.style": [
     {
-      "color": "#ffffff",
       "text": "Style: "
     }
   ],
   "tooltip.trevorssentinels.style_switch.1": [
     {
-      "color": "#ffffff",
-      "text": " to switch style."
+      "text": "1"
     }
   ],
   "tooltip.trevorssentinels.style_switch.2": [
     {
-      "color": "#ffffff",
-      "text": " to cycle modes."
+      "text": "2"
     }
   ],
   "tooltip.trevorssentinels:milkCuresPotionEffects": [
     {
-      "color": "#ffffff",
       "text": "Effects will not be cured!"
     }
   ],
   "trevorssentinels.database.desc": [
     {
-      "color": "#ffffff",
       "text": "Your guide to this world of magic and technology, this database will store all information that may be useful on your adventure."
     }
   ],
   "trevorssentinels.database.name": [
     {
-      "color": "#ffffff",
-      "text": "HoloCodex"
+      "color": "#33cccc",
+      "text": "H"
+    },
+    {
+      "color": "#26bfcc",
+      "text": "o"
+    },
+    {
+      "color": "#19b2cc",
+      "text": "l"
+    },
+    {
+      "color": "#0ca5cc",
+      "text": "o"
+    },
+    {
+      "color": "#0099cc",
+      "text": "C"
+    },
+    {
+      "color": "#008cbf",
+      "text": "o"
+    },
+    {
+      "color": "#007fb2",
+      "text": "d"
+    },
+    {
+      "color": "#0072a5",
+      "text": "e"
     }
   ],
   "trevorssentinels.hologui": [
     {
-      "color": "#ffffff",
-      "text": "Sentinel HoloGUI"
+      "color": "#33cccc",
+      "text": "S"
+    },
+    {
+      "color": "#2cc5cc",
+      "text": "e"
+    },
+    {
+      "color": "#26bfcc",
+      "text": "n"
+    },
+    {
+      "color": "#1fb8cc",
+      "text": "t"
+    },
+    {
+      "color": "#19b2cc",
+      "text": "i"
+    },
+    {
+      "color": "#13accc",
+      "text": "n"
+    },
+    {
+      "color": "#0ca5cc",
+      "text": "e"
+    },
+    {
+      "color": "#069fcc",
+      "text": "l"
+    },
+    {
+      "color": "#0099cc",
+      "text": " "
+    },
+    {
+      "color": "#0092c5",
+      "text": "H"
+    },
+    {
+      "color": "#008cbf",
+      "text": "o"
+    },
+    {
+      "color": "#0085b8",
+      "text": "l"
+    },
+    {
+      "color": "#007fb2",
+      "text": "o"
+    },
+    {
+      "color": "#0079ac",
+      "text": "G"
+    },
+    {
+      "color": "#0072a5",
+      "text": "U"
+    },
+    {
+      "color": "#006c9f",
+      "text": "I"
     }
   ],
   "trevorssentinels.legacy": [
     {
-      "color": "#ffffff",
       "text": "Legacy Resources"
-    }
-  ],
-  "trevorssentinels.sentinels": [
-    {
-      "color": "#33cccc",
-      "text": "Trevor's Sentinels"
     }
   ],
   "trevorssentinels.vanilla_extensions": [
     {
-      "color": "#ffffff",
       "text": "Vanilla Extensions"
     }
   ],
   "trevorssentinels.worldLevelTooLow.1": [
     {
-      "color": "#ffffff",
-      "text": ""
+      "text": "1"
     }
   ],
   "trevorssentinels.worldLevelTooLow.2": [
     {
-      "color": "#ffffff",
-      "text": "Demonic power has too much of a hold over the world!"
+      "text": "2"
     }
   ],
   "trevorssentinels.worldLevelTooLow.3": [
     {
-      "color": "#ffffff",
-      "text": "The power is too strong!"
+      "text": "3"
     }
   ],
   "trevorssentinels.worldLevelTooLow.other": [
     {
-      "color": "#ffffff",
-      "text": "A mysterious force pushes back!"
+      "text": "A strange force pushes back!"
     }
   ],
   "trevorssentinels:assassination_upload": [
     {
-      "color": "#ffffff",
-      "text": "item.trevorssentinels.music_disc_assassination_upload plays"
+      "text": "null plays"
     }
   ],
   "trevorssentinels:bio_reload": [
     {
-      "color": "#ffffff",
-      "text": "Reloading"
+      "text": "Trevorssentinels:bio Reload"
     }
   ],
   "trevorssentinels:blaster_shoot": [
     {
-      "color": "#ffffff",
-      "text": "Shot laser"
+      "text": "Shot projectile"
     }
   ],
   "trevorssentinels:database_flip": [
     {
-      "color": "#ffffff",
       "text": "Codex flipped"
     }
   ],
   "trevorssentinels:database_open": [
     {
-      "color": "#ffffff",
       "text": "Codex opened"
     }
   ],
   "trevorssentinels:flesh_ambient": [
     {
-      "color": "#ffffff",
       "text": "Flesh wriggles"
     }
   ],
   "trevorssentinels:lapse_in_judgement": [
     {
-      "color": "#ffffff",
-      "text": "item.trevorssentinels.music_disc_lapse_in_judgement plays"
+      "text": "null plays"
     }
   ],
   "trevorssentinels:notch_up": [
     {
-      "color": "#ffffff",
       "text": "Powering up"
     }
   ],
   "trevorssentinels:ode_to_tranquility": [
     {
-      "color": "#ffffff",
-      "text": "item.trevorssentinels.music_disc_ode_to_tranquility plays"
+      "text": "null plays"
     }
   ],
   "trevorssentinels:pistol_reload": [
     {
-      "color": "#ffffff",
-      "text": "Reloading"
+      "text": "Trevorssentinels:pistol Reload"
     }
   ],
   "trevorssentinels:recital": [
     {
-      "color": "#ffffff",
-      "text": "item.trevorssentinels.music_disc_recital plays"
+      "text": "null plays"
     }
   ],
   "trevorssentinels:shotgun_reload": [
     {
-      "color": "#ffffff",
-      "text": "Reloading"
+      "text": "Trevorssentinels:shotgun Reload"
     }
   ],
   "trevorssentinels:sniper_reload": [
     {
-      "color": "#ffffff",
-      "text": "Reloading"
+      "text": "Trevorssentinels:sniper Reload"
     }
   ]
 }

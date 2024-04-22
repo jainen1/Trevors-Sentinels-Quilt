@@ -132,7 +132,7 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
 	@Override public void attack(LivingEntity target, float pullProgress) {
 		if(getAmmo() > 0){
 			PhaserProjectileEntity projectile = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, getWorld(), this, 12, 1f,
-				TextUtil.SENTINEL_CRIMSON_T1.getRGB());
+				TextUtil.SENTINEL_CRIMSON1.getRGB());
 			double d = target.getX() - this.getX();
 			double e = target.getBodyY(0.3333333333333333) - projectile.getY();
 			double f = target.getZ() - this.getZ();

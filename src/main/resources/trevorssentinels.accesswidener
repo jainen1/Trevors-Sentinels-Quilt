@@ -1,0 +1,4 @@
+accessWidener v2 named
+# comment
+
+accessible method net/minecraft/item/BlockItem placeFromTag (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;Lnet/minecraft/item/ItemStack;Lnet/minecraft/block/BlockState;)Lnet/minecraft/block/BlockState;

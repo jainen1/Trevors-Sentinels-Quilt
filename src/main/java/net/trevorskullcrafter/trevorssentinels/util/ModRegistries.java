@@ -59,7 +59,7 @@ public class ModRegistries {
         ModelPredicateProviderRegistry.register(TSItems.Beta.PAPPYM_BLADE, new Identifier(MOD_ID, "bad"), (stack, world, entity, seed) -> {
             if (StyleUtil.getStyle(stack) == 1 || StyleUtil.getStyle(stack) == 3) return 0.2f; return 0f;}
 		);
-        ModelPredicateProviderRegistry.register(TSItems.Tech.DISTANCE_TRACKER, new Identifier(MOD_ID, "model"), (stack, world, entity, seed) -> {
+        ModelPredicateProviderRegistry.register(TSItems.Tech.LIFEFORM_TRACER, new Identifier(MOD_ID, "model"), (stack, world, entity, seed) -> {
             if(stack.getSubNbt("trevorssentinels:model") == null) return 0.0f;
             else{
                 switch (Objects.requireNonNull(stack.getSubNbt("trevorssentinels:model")).getInt("trevorssentinels:modelNum")){
