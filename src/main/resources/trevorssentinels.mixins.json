@@ -5,7 +5,10 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ArmorItemMixin",
-    "ItemMixin"
+    "FoodComponentMixin",
+    "ItemMixin",
+    "LivingEntityMixin",
+    "MilkBucketMixin"
   ],
   "client": [
     "StatusEffectMixin"

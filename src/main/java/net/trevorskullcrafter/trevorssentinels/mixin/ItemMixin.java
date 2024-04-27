@@ -33,7 +33,7 @@ public abstract class ItemMixin {
     @Shadow public abstract String getTranslationKey(ItemStack stack);
     @Shadow @Nullable public abstract FoodComponent getFoodComponent();
 
-    @Inject(at = @At("HEAD"), method = "appendTooltip")
+	@Inject(at = @At("HEAD"), method = "appendTooltip")
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context, CallbackInfo ci) {
         FoodComponent foodComponent = getFoodComponent();
         if(foodComponent != null && foodComponent.getStatusEffects() != null){ for(Pair<StatusEffectInstance, Float> effect : getFoodComponent().getStatusEffects()){

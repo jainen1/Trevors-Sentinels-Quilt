@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:energy_cell_from_torbernite"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

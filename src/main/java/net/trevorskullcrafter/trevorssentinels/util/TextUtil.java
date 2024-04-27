@@ -119,7 +119,7 @@ public class TextUtil {
         if (effect.getAmplifier() > 0) { mutableText =
 			Text.translatable("potion.withAmplifier", mutableText, Text.translatable("potion.potency." + effect.getAmplifier())); }
         if (effect.getDuration() > 20) { mutableText =
-			Text.translatable("potion.withDuration", mutableText, StatusEffectUtil.durationToString(effect, 1.0f)); }
+			Text.translatable("potion.withDuration", mutableText, StatusEffectUtil.durationToString(effect, 0.05f, 1.0f)); }
         return TextUtil.coloredText(mutableText, categorize? null : Color.decode(String.valueOf(effect.getEffectType().getColor())));
     }
 

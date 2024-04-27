@@ -125,7 +125,7 @@ public class PhaserProjectileEntity extends ThrownEntity {
 	public void setLifetime(Integer age) { this.getDataTracker().set(LIFETIME, age); }
 	public Integer getLifetime() { return this.getDataTracker().get(LIFETIME); }
 
-    @Override protected void writeCustomDataToNbt(NbtCompound nbt) {
+	@Override protected void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
         nbt.putInt("Color", getColor());
         nbt.putInt("Age", getAge());

@@ -18,7 +18,7 @@ import static net.trevorskullcrafter.trevorssentinels.util.TextUtil.*;
 public class EnglishLangGenerator extends OwoLanguageProvider {
     public EnglishLangGenerator(FabricDataOutput dataOutput) { super(dataOutput, "en_us"); }
 
-	@Override public void generateRichTranslations(OwoTranslationBuilder translationBuilder) { //tu fui, ego eris
+	@Override public void generateRichTranslations(OwoTranslationBuilder translationBuilder) { //tu fui, ego eris - I will be /you/ will be me
 		//Magic Equipment
 		translationBuilder.addWithParent(new TranslationInfo().textColor(VIRIDIAN),
 			new TranslationInfo(TSItems.Magic.DRYADIC_HELMET),
@@ -374,6 +374,7 @@ public class EnglishLangGenerator extends OwoLanguageProvider {
 			new TranslationInfo(ModEffects.REDSTONED, false),
 			new TranslationInfo(ModEffects.FLIGHT, false),
 			new TranslationInfo(ModEffects.WELL_FED, false),
+			new TranslationInfo(ModEffects.FORTIFIED, false),
 			new TranslationInfo(ModEffects.COSMIC_FIRE, false),
 			new TranslationInfo(ModEffects.INFESTED, false),
 			new TranslationInfo(ModEffects.IRRADIATED, false));
@@ -422,13 +423,14 @@ public class EnglishLangGenerator extends OwoLanguageProvider {
 			new TranslationInfo(ModItems.COOKED_SANDFISH),
 			new TranslationInfo(ModItems.DUNE_EEL).tooltip("Isn't this a snake?"));
 
-		translationBuilder.addWithParent(new TranslationInfo().textColor(FLESH_PINK),
+		translationBuilder.addWithParent(new TranslationInfo().textColor(FLESH_PUS),
 			new TranslationInfo(ModBlocks.FLESH_BLOCK).tooltip("It's strangely warm..."),
 			new TranslationInfo(ModBlocks.FLESH_VEINS).tooltip("They're spreading..."),
 			new TranslationInfo(ModBlocks.FLESHY_EYE).tooltip("It's staring..."),
 			new TranslationInfo(TSItems.Magic.EYE_OF_RUIN).tooltip("What a troubling gaze..."),
 			new TranslationInfo(TSItems.Magic.DUBIOUS_BACON).tooltip("Don't ask where it came from..."),
-			new TranslationInfo(TSItems.Tech.VILE_SPITTER).tooltip("It's alive!").textColor(FLESH_PINK));
+			new TranslationInfo(TSItems.Tech.VILE_SPITTER).tooltip("It's alive!"),
+			new TranslationInfo(TSItems.Tech.MEAT_PELLET).tooltip("Only a vile creature would crave this..."));
 
 		translationBuilder.add(new TranslationInfo(ModItems.REDSTONE_CRYSTAL).text("Crystallized Redstone").tooltip("Sparkles with potential.")
 			.textColor(BLOOD_RED));
@@ -612,33 +614,20 @@ public class EnglishLangGenerator extends OwoLanguageProvider {
 			.text("If enabled, fall damage will be calculated based on velocity."));
         translationBuilder.add(new TranslationInfo("gamerule.trevorssentinels:milkCuresPotionEffects").text("Drinking milk cures potion effects"));
         translationBuilder.add(new TranslationInfo("tooltip.trevorssentinels:milkCuresPotionEffects").text("Effects will not be cured!"));
-        //translationBuilder.add("gamerule.trevorssentinels:milkCuresPotionEffects.description", "If enabled, fall damage will be calculated based on velocity.");
+        translationBuilder.add(new TranslationInfo("gamerule.trevorssentinels:milkCuresPotionEffects.description")
+			.text("If enabled, fall damage will be calculated based on velocity."));
 
-		/*translationBuilder.add("itemGroup." + MOD_ID + ".sentinels", jsonArrayOf(
-			new JsonTextObject().text("T").color("#006699").underlined(true).build(),
-			new JsonTextObject().text("r").color("#0079AC").underlined(true).build(),
-			new JsonTextObject().text("e").color("#008CBF").underlined(true).build(),
-			new JsonTextObject().text("v").color("#069FCC").underlined(true).build(),
-			new JsonTextObject().text("o").color("#1AB3CC").underlined(true).build(),
-			new JsonTextObject().text("r").color("#2DC6CC").underlined(true).build(),
-			new JsonTextObject().text("'").color("#66CCA6").underlined(true).build(),
-			new JsonTextObject().text("s ").color("#B3CC6C").underlined(true).build(),
-			new JsonTextObject().text("S").color("#FFCC33").underlined(true).build(),
-			new JsonTextObject().text("e").color("#FF9333").underlined(true).build(),
-			new JsonTextObject().text("n").color("#FF5933").underlined(true).build(),
-			new JsonTextObject().text("t").color("#F92D2D").underlined(true).build(),
-			new JsonTextObject().text("i").color("#E51919").underlined(true).build(),
-			new JsonTextObject().text("n").color("#D20606").underlined(true).build(),
-			new JsonTextObject().text("e").color("#BF0000").underlined(true).build(),
-			new JsonTextObject().text("l").color("#AC0000").underlined(true).build(),
-			new JsonTextObject().text("s").color("#990000").underlined(true).build()));*/
 		translationBuilder.add(new TranslationInfo("itemGroup." + MOD_ID + ".sentinels").text("Trevor's Sentinels").underlined()
 			.textColor(SENTINEL_AQUA3, SENTINEL_AQUA2, SENTINEL_AQUA1, SENTINEL_GOLD2, SENTINEL_CRIMSON1, SENTINEL_CRIMSON2, SENTINEL_CRIMSON3));
-
 		translationBuilder.add(new TranslationInfo("itemGroup." + MOD_ID + ".sentinels.tab.magic").text("Magic").textColor(SHINY_GOLD));
 		translationBuilder.add(new TranslationInfo("itemGroup." + MOD_ID + ".sentinels.tab.tech").text("Tech").textColor(STARSTEEL));
 		translationBuilder.add(new TranslationInfo("itemGroup." + MOD_ID + ".sentinels.tab.beta").text("Beta").textColor(CERULII).obfuscated(true));
 		translationBuilder.add(new TranslationInfo("itemGroup." + MOD_ID + ".sentinels.button.wiki").text("Wiki").textColor(VIRIDIAN));
+
+		translationBuilder.add(new TranslationInfo("item." + MOD_ID + ".custom_phaser.comet").text("Comet Phase Pistol").textColor(SCRAP_METAL));
+		translationBuilder.add(new TranslationInfo("item." + MOD_ID + ".custom_phaser.lunar").text("Lunar Phase Rifle").textColor(SENTINEL_GOLD));
+		translationBuilder.add(new TranslationInfo("item." + MOD_ID + ".custom_phaser.pandemic").text("Pandemic Phase Annihilator").textColor(NUCLEAR));
+		translationBuilder.add(new TranslationInfo("item." + MOD_ID + ".custom_phaser.serenity").text("Serenity Phase Rifle").textColor(SENTINEL_AQUA));
 
 		translationBuilder.add(new TranslationInfo("tooltip.item.trevorssentinels.phaser.stats").text("Phaser Stats:"));
 

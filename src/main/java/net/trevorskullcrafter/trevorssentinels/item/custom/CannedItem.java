@@ -12,7 +12,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 
 public class CannedItem extends Item {
@@ -22,13 +21,12 @@ public class CannedItem extends Item {
         PlayerEntity playerEntity = user instanceof PlayerEntity ? (PlayerEntity)user : null;
         if (playerEntity instanceof ServerPlayerEntity) Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity)playerEntity, stack);
         if (playerEntity != null){ playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
-            if (!playerEntity.isCreative()) {
+            if (!playerEntity.getAbilities().creativeMode) {
                 playerEntity.giveItemStack(new ItemStack(TSItems.Tech.EMPTY_CAN));
             }
         }
-        user.emitGameEvent(GameEvent.DRINK);
-        return super.finishUsing(stack, world, user);
-    }
+		return super.finishUsing(stack, world, user);
+	}
 
     @Override public UseAction getUseAction(ItemStack stack) { return UseAction.DRINK; }
 

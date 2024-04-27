@@ -1,12 +1,9 @@
 package net.trevorskullcrafter.trevorssentinels.entity.client;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.*;
 import net.minecraft.client.util.math.MatrixStack;
 
-@Environment(EnvType.CLIENT)
 public class PhaserProjectileModel extends Model {
     private final ModelPart exterior;
     private final ModelPart interior;

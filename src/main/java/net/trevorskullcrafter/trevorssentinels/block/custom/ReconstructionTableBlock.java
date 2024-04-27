@@ -1,5 +1,6 @@
 package net.trevorskullcrafter.trevorssentinels.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -15,7 +16,9 @@ public class ReconstructionTableBlock extends FacingBlock implements BlockEntity
 
     public ReconstructionTableBlock(Settings settings){ super(settings); }
 
-    @Nullable @Override
+	@Override protected MapCodec<? extends FacingBlock> getCodec() { return null; }
+
+	@Nullable @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) { return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite()); }
 
     @Override protected void appendProperties(StateManager.Builder<Block, BlockState> builder) { builder.add(FACING); }

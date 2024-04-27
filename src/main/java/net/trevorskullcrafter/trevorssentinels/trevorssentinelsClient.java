@@ -24,8 +24,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
 
-import java.awt.*;
-
 public class trevorssentinelsClient implements ClientModInitializer {
 
 	@Override public void onInitializeClient(ModContainer mod) {
@@ -46,7 +44,7 @@ public class trevorssentinelsClient implements ClientModInitializer {
 			ModBlocks.SENTINEL_HARD_LIGHT_BARRIER);
 
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) ->
-			TextUtil.tintByIndex(tintIndex, TextUtil.WHITE, Color.decode(String.valueOf(((PhotonicLensItem) stack.getItem()).getColor(stack)))), TSItems.Tech.PHOTONIC_LENS);
+			TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(), ((PhotonicLensItem) stack.getItem()).getColor(stack)), TSItems.Tech.PHOTONIC_LENS);
 
 
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.PALE_LEAVES, ModBlocks.PALE_SAPLING, ModBlocks.POTTED_PALE_SAPLING, ModBlocks.PALE_DOOR, ModBlocks.PALE_TRAPDOOR);

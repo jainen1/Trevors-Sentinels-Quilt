@@ -63,7 +63,7 @@ public class OwoLanguageProvider extends FabricLanguageProvider {
 			translationEntriesJson.add(entry.getKey(), entry.getValue());
 		}
 
-		return DataProvider.method_10320(writer, translationEntriesJson, dataOutput
+		return DataProvider.writeToPath(writer, translationEntriesJson, dataOutput
 			.createPathResolver(DataPackOutput.Type.RESOURCE_PACK, "lang")
 			.resolveJsonFile(new Identifier(dataOutput.getModId(), this.languageCode)));
 	}
@@ -138,7 +138,7 @@ public class OwoLanguageProvider extends FabricLanguageProvider {
 		default void addMusicDisc(TranslationInfo entry, JsonArray desc, SoundEvent sound){
 			add(entry);
 			add(entry.key+".desc", desc);
-			add(new TranslationInfo(sound).text(entry.text +" plays"));
+			add(new TranslationInfo(sound).text(entry.rawText + " plays"));
 		}
 
 		default void add(StatType<?> statType, JsonArray value) {

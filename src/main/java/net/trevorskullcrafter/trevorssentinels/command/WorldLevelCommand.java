@@ -15,8 +15,8 @@ import net.trevorskullcrafter.trevorssentinels.util.ServerState;
 public class WorldLevelCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, CommandBuildContext access, CommandManager.RegistrationEnvironment env) {
         dispatcher.register((CommandManager.literal("trevorssentinels:worldlevel"))
-                .then(CommandManager.literal("get").requires((source) -> source.hasPermissionLevel(0)).executes(WorldLevelCommand::get))
-                .requires((source) -> source.hasPermissionLevel(4))
+                .then(CommandManager.literal("get").requires((source) -> source.hasPermission(0)).executes(WorldLevelCommand::get))
+                .requires((source) -> source.hasPermission(4))
                 .then(CommandManager.literal("set")
                         .then(CommandManager.argument("level", IntegerArgumentType.integer(1))
                                 .then(CommandManager.argument("broadcast", BoolArgumentType.bool())

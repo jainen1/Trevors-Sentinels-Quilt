@@ -1,5 +1,6 @@
 package net.trevorskullcrafter.trevorssentinels.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -14,7 +15,9 @@ public class DirectionalBlock extends HorizontalFacingBlock {
 
     public DirectionalBlock(Settings settings){ super(settings); }
 
-    @Nullable @Override public BlockState getPlacementState(ItemPlacementContext ctx) { return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite()); }
+	@Override protected MapCodec<? extends HorizontalFacingBlock> getCodec() { return null; }
+
+	@Nullable @Override public BlockState getPlacementState(ItemPlacementContext ctx) { return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite()); }
 
     @Override protected void appendProperties(StateManager.Builder<Block, BlockState> builder) { builder.add(FACING); }
 }

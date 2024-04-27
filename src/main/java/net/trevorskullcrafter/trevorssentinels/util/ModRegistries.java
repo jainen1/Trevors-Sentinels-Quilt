@@ -33,23 +33,23 @@ import java.util.Objects;
 import static net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain.*;
 
 public class ModRegistries {
-    public static final Identifier yggdrasil = new Identifier(MOD_ID, "yggdrasil");
+    public static final Identifier pale = new Identifier(MOD_ID, "pale");
     public static final Identifier charred = new Identifier(MOD_ID, "charred");
     public static final Identifier midas = new Identifier(MOD_ID, "midas");
-    public static final Identifier viridescent = new Identifier(MOD_ID, "viridescent");
+    public static final Identifier viridian = new Identifier(MOD_ID, "viridian");
     public static final Identifier cerulii = new Identifier(MOD_ID, "cerulii");
 
-    public static final BlockSetType YGGDRASIL_SET = BlockSetTypeBuilder.copyOf(BlockSetType.CRIMSON).build(yggdrasil);
-    public static final BlockSetType CHARRED_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(charred);
-    public static final BlockSetType MIDAS_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(midas);
-    public static final BlockSetType VIRIDESCENT_SET = BlockSetTypeBuilder.copyOf(BlockSetType.CHERRY).build(viridescent);
-    public static final BlockSetType CERULII_SET = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(cerulii);
+    public static final BlockSetType PALE_WOOD = BlockSetTypeBuilder.copyOf(BlockSetType.CRIMSON).build(pale);
+    public static final BlockSetType CHARRED_WOOD = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(charred);
+    public static final BlockSetType MIDAS_WOOD = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(midas);
+    public static final BlockSetType VIRIDIAN_WOOD = BlockSetTypeBuilder.copyOf(BlockSetType.CHERRY).build(viridian);
+    public static final BlockSetType CERULII_WOOD = BlockSetTypeBuilder.copyOf(BlockSetType.OAK).build(cerulii);
 
-    public static final SignType YGGDRASIL_WOOD = WoodTypeBuilder.copyOf(SignType.CRIMSON).build(yggdrasil, YGGDRASIL_SET);
-    public static final SignType CHARRED_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(charred, CHARRED_SET);
-    public static final SignType MIDAS_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(midas, MIDAS_SET);
-    public static final SignType VIRIDESCENT_WOOD = WoodTypeBuilder.copyOf(SignType.CHERRY).build(viridescent, VIRIDESCENT_SET);
-    public static final SignType CERULII_WOOD = WoodTypeBuilder.copyOf(SignType.OAK).build(cerulii, CERULII_SET);
+    public static final SignType PALE_SIGN_TYPE = WoodTypeBuilder.copyOf(SignType.CRIMSON).build(pale, PALE_WOOD);
+    public static final SignType CHARRED_SIGN_TYPE = WoodTypeBuilder.copyOf(SignType.OAK).build(charred, CHARRED_WOOD);
+    public static final SignType MIDAS_SIGN_TYPE = WoodTypeBuilder.copyOf(SignType.OAK).build(midas, MIDAS_WOOD);
+    public static final SignType VIRIDIAN_SIGN_TYPE = WoodTypeBuilder.copyOf(SignType.CHERRY).build(viridian, VIRIDIAN_WOOD);
+    public static final SignType CERULII_SIGN_TYPE = WoodTypeBuilder.copyOf(SignType.OAK).build(cerulii, CERULII_WOOD);
 
     public static final DefaultParticleType FLESH_PUS = FabricParticleTypes.simple();
     public static final DefaultParticleType MUZZLE_FLASH = FabricParticleTypes.simple();
@@ -138,7 +138,7 @@ public class ModRegistries {
     }
 
     public static void registerWorldLevelState(){
-        ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, entity, killedEntity) -> {
+		ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register((world, entity, killedEntity) -> {
             ServerState serverState = ServerState.getServerState(Objects.requireNonNull(entity.getServer(), "Server is null"));
             int originalLevel = serverState.worldLevel;
 
@@ -166,7 +166,7 @@ public class ModRegistries {
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             server.getCommandManager();
-            handler.player.sendMessage(Text.literal("Welcome back, " + handler.player.getEntityName()+"!").formatted(Formatting.GREEN), false);
+            handler.player.sendMessage(Text.literal("Welcome back, " + handler.player.getName()+"!").formatted(Formatting.GREEN), false);
             //handler.player.sendMessage(Text.translatable(new Identifier(MOD_ID, "join.");
         });
     }

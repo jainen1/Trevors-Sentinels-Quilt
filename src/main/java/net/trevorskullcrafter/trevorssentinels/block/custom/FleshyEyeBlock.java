@@ -1,5 +1,6 @@
 package net.trevorskullcrafter.trevorssentinels.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FacingBlock;
@@ -24,7 +25,9 @@ public class FleshyEyeBlock extends FacingBlock {
     public static final BooleanProperty CLICKED = BooleanProperty.of("clicked");
     public FleshyEyeBlock(Settings settings) { super(settings); this.setDefaultState(this.stateManager.getDefaultState().with(CLICKED, true)); }
 
-    @Override public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+	@Override protected MapCodec<? extends FacingBlock> getCodec() { return null; }
+
+	@Override public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(world instanceof ServerWorld serverWorld && hand == Hand.MAIN_HAND){
             boolean currentState = state.get(CLICKED); serverWorld.setBlockState(pos, state.with(CLICKED, !currentState), Block.NOTIFY_ALL);
             serverWorld.updateNeighborsAlways(pos, this);

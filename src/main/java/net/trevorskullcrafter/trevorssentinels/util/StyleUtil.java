@@ -1,7 +1,5 @@
 package net.trevorskullcrafter.trevorssentinels.util;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -21,7 +19,7 @@ public class StyleUtil {
     public static final Text style = TextUtil.coloredText("tooltip.trevorssentinels.style", GOLD);
     public static final Text mode = TextUtil.coloredText("tooltip.trevorssentinels.mode", SENTINEL_AQUA1);
 
-    @Environment(EnvType.CLIENT) public static Text switchText(World world, int mode){
+	public static Text switchText(World world, int mode){
         if (world instanceof ClientWorld) return Text.literal(Text.keyBind(KeyInputHandler.styleSwitch.getTranslationKey()).getString().toUpperCase())
                 .formatted(Formatting.YELLOW).append(Text.translatable("tooltip.trevorssentinels.style_switch."+ mode).formatted(Formatting.DARK_GRAY));
         return Text.literal("ERROR LOADING KEYBIND").formatted(Formatting.RED);

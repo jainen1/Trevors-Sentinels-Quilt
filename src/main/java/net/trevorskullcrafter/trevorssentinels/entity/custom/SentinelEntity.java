@@ -68,14 +68,12 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
 		} else { --this.idleAnimationTimeout; }
 	}
 
-	@Override
-	protected void updateLimbs(float limbDistance) {
+	@Override protected void updateLimbs(float limbDistance) {
 		float f = this.getPose() == EntityPose.STANDING ? Math.min(limbDistance * 6.0f, 1.0f) : 0.0f;
 		this.limbData.updateLimbs(f, 0.2f);
 	}
 
-	@Override
-	public void tick() {
+	@Override public void tick() {
 		super.tick();
 		if(this.getWorld() instanceof ServerWorld serverWorld){
 			updateAnimations();
@@ -127,7 +125,6 @@ public class SentinelEntity extends PathAwareEntity implements Monster, RangedAt
     @Override protected SoundEvent getDeathSound(){ return SoundEvents.ENTITY_BEE_DEATH; }
 
     @Override public boolean isCollidable() { return true; }
-    @Override public boolean canBreatheInWater() { return true; }
 
 	@Override public void attack(LivingEntity target, float pullProgress) {
 		if(getAmmo() > 0){

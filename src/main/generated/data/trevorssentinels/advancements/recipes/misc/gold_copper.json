@@ -43,6 +43,5 @@
     "recipes": [
       "minecraft:gold_copper"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

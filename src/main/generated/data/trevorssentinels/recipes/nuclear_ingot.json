@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "trevorssentinels:nuclear_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "trevorssentinels:nuclear_ingot"
+  }
+}

@@ -42,7 +42,5 @@ public class ModEntities {
 		QuiltEntityTypeBuilder.<GrenadeEntity>create(SpawnGroup.MISC, GrenadeEntity::new)
 			.setDimensions(EntityDimensions.fixed(0.25F, 0.25F)).maxBlockTrackingRange(32).trackingTickInterval(10).build());
 
-	public static void registerModEntities(){
-		trevorssentinelsMain.LOGGER.info("Registering entities...");
-	}
+	public static void registerModEntities(){ trevorssentinelsMain.LOGGER.info("Registering entities..."); }
 }

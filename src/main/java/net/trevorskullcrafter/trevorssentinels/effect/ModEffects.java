@@ -2,6 +2,7 @@ package net.trevorskullcrafter.trevorssentinels.effect;
 
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectType;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -13,6 +14,7 @@ public class ModEffects {
     public static StatusEffect FLIGHT;
     public static StatusEffect COSMIC_FIRE;
     public static StatusEffect WELL_FED;
+    public static StatusEffect FORTIFIED;
     public static StatusEffect INFESTED;
     public static StatusEffect IRRADIATED;
 
@@ -37,6 +39,7 @@ public class ModEffects {
         FLIGHT = registerStatusEffect("flight", new FlightStatusEffect(StatusEffectType.BENEFICIAL, 0x5c7bc1));
         COSMIC_FIRE = registerStatusEffect("cosmic_fire", new FireStatusEffect(StatusEffectType.HARMFUL, 0xD31400));
         WELL_FED = registerStatusEffect("well_fed", new WellFedEffect(StatusEffectType.BENEFICIAL, 0x967117));
+        FORTIFIED = registerStatusEffect("fortified", new CureStatusEffect(StatusEffectType.BENEFICIAL, 0xdcd9c0, StatusEffects.WITHER));
         INFESTED = registerStatusEffect("infested", new InfestedStatusEffect(StatusEffectType.HARMFUL, 0x94AF61));
         IRRADIATED = registerStatusEffect("irradiated", new IrradiatedStatusEffect(StatusEffectType.HARMFUL, 0xDEE93B));
 

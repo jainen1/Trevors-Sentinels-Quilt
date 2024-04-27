@@ -1,7 +1,5 @@
 package net.trevorskullcrafter.trevorssentinels.entity.custom;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
@@ -36,12 +34,12 @@ public class ShardEntity extends ThrownItemEntity {
 		super.setVelocity(x, y, z, speed, divergence);
 	}
 
-    @Environment(EnvType.CLIENT) private ParticleEffect getParticleParameters() { // Not entirely sure, but probably has to do with the snowball's particles. (OPTIONAL)
+    private ParticleEffect getParticleParameters() { // Not entirely sure, but probably has to do with the snowball's particles. (OPTIONAL)
         ItemStack itemStack = TSItems.Tech.SCRAP_METAL_SHARD.getDefaultStack();
         return itemStack.isEmpty() ? ParticleTypes.ITEM_SNOWBALL : new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack);
     }
 
-    @Environment(EnvType.CLIENT) public void handleStatus(byte status) {
+    public void handleStatus(byte status) {
         if (status == 3) {
             ParticleEffect particleEffect = this.getParticleParameters();
             for(int i = 0; i < 8; ++i) getWorld().addParticle(particleEffect, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);

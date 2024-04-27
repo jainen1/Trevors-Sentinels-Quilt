@@ -1,5 +1,6 @@
 package net.trevorskullcrafter.trevorssentinels.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -22,7 +23,9 @@ import org.jetbrains.annotations.Nullable;
 public class HardLightBlock extends BlockWithEntity {
     public HardLightBlock(Settings settings) { super(settings); }
 
-    @Override public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+	@Override protected MapCodec<? extends BlockWithEntity> getCodec() { return null; }
+
+	@Override public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
         world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, SoundCategory.BLOCKS, 1.0F, 1.0F);
         super.onPlaced(world, pos, state, placer, itemStack);
     }

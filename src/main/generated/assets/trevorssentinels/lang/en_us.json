@@ -1093,19 +1093,19 @@
   ],
   "block.trevorssentinels.flesh_block": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Flesh Block"
     }
   ],
   "block.trevorssentinels.flesh_veins": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Flesh Veins"
     }
   ],
   "block.trevorssentinels.fleshy_eye": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Fleshy Eye"
     }
   ],
@@ -3649,6 +3649,11 @@
       "text": "Flight"
     }
   ],
+  "effect.trevorssentinels.fortified": [
+    {
+      "text": "Fortified"
+    }
+  ],
   "effect.trevorssentinels.infested": [
     {
       "text": "Infested"
@@ -3726,6 +3731,11 @@
   "gamerule.trevorssentinels:milkCuresPotionEffects": [
     {
       "text": "Drinking milk cures potion effects"
+    }
+  ],
+  "gamerule.trevorssentinels:milkCuresPotionEffects.description": [
+    {
+      "text": "If enabled, fall damage will be calculated based on velocity."
     }
   ],
   "gamerule.trevorssentinels:useVelocityFallDamage": [
@@ -4796,6 +4806,334 @@
       "text": "r"
     }
   ],
+  "item.trevorssentinels.custom_phaser.comet": [
+    {
+      "color": "#797979",
+      "text": "C"
+    },
+    {
+      "color": "#787877",
+      "text": "o"
+    },
+    {
+      "color": "#787776",
+      "text": "m"
+    },
+    {
+      "color": "#787675",
+      "text": "e"
+    },
+    {
+      "color": "#777573",
+      "text": "t"
+    },
+    {
+      "color": "#777472",
+      "text": " "
+    },
+    {
+      "color": "#777371",
+      "text": "P"
+    },
+    {
+      "color": "#767270",
+      "text": "h"
+    },
+    {
+      "color": "#76716e",
+      "text": "a"
+    },
+    {
+      "color": "#76716d",
+      "text": "s"
+    },
+    {
+      "color": "#75706c",
+      "text": "e"
+    },
+    {
+      "color": "#756f6a",
+      "text": " "
+    },
+    {
+      "color": "#756e69",
+      "text": "P"
+    },
+    {
+      "color": "#746d68",
+      "text": "i"
+    },
+    {
+      "color": "#746c67",
+      "text": "s"
+    },
+    {
+      "color": "#746b65",
+      "text": "t"
+    },
+    {
+      "color": "#736a64",
+      "text": "o"
+    },
+    {
+      "color": "#736963",
+      "text": "l"
+    }
+  ],
+  "item.trevorssentinels.custom_phaser.lunar": [
+    {
+      "color": "#ffcc33",
+      "text": "L"
+    },
+    {
+      "color": "#ffc52c",
+      "text": "u"
+    },
+    {
+      "color": "#ffbf26",
+      "text": "n"
+    },
+    {
+      "color": "#ffb81f",
+      "text": "a"
+    },
+    {
+      "color": "#ffb219",
+      "text": "r"
+    },
+    {
+      "color": "#ffac13",
+      "text": " "
+    },
+    {
+      "color": "#ffa50c",
+      "text": "P"
+    },
+    {
+      "color": "#ff9f06",
+      "text": "h"
+    },
+    {
+      "color": "#ff9900",
+      "text": "a"
+    },
+    {
+      "color": "#fa9300",
+      "text": "s"
+    },
+    {
+      "color": "#f68e00",
+      "text": "e"
+    },
+    {
+      "color": "#f18800",
+      "text": " "
+    },
+    {
+      "color": "#ed8300",
+      "text": "R"
+    },
+    {
+      "color": "#e97e00",
+      "text": "i"
+    },
+    {
+      "color": "#e47800",
+      "text": "f"
+    },
+    {
+      "color": "#e07300",
+      "text": "l"
+    }
+  ],
+  "item.trevorssentinels.custom_phaser.pandemic": [
+    {
+      "color": "#bdf796",
+      "text": "P"
+    },
+    {
+      "color": "#b7f590",
+      "text": "a"
+    },
+    {
+      "color": "#b2f38b",
+      "text": "n"
+    },
+    {
+      "color": "#acf186",
+      "text": "d"
+    },
+    {
+      "color": "#a7ef81",
+      "text": "e"
+    },
+    {
+      "color": "#a1ee7c",
+      "text": "m"
+    },
+    {
+      "color": "#9cec77",
+      "text": "i"
+    },
+    {
+      "color": "#96ea71",
+      "text": "c"
+    },
+    {
+      "color": "#91e86c",
+      "text": " "
+    },
+    {
+      "color": "#8be767",
+      "text": "P"
+    },
+    {
+      "color": "#86e562",
+      "text": "h"
+    },
+    {
+      "color": "#80e35d",
+      "text": "a"
+    },
+    {
+      "color": "#7be158",
+      "text": "s"
+    },
+    {
+      "color": "#76e053",
+      "text": "e"
+    },
+    {
+      "color": "#72de50",
+      "text": " "
+    },
+    {
+      "color": "#6edc4d",
+      "text": "A"
+    },
+    {
+      "color": "#6adb4b",
+      "text": "n"
+    },
+    {
+      "color": "#66d948",
+      "text": "n"
+    },
+    {
+      "color": "#62d846",
+      "text": "i"
+    },
+    {
+      "color": "#5ed643",
+      "text": "h"
+    },
+    {
+      "color": "#5bd541",
+      "text": "i"
+    },
+    {
+      "color": "#57d33e",
+      "text": "l"
+    },
+    {
+      "color": "#53d23c",
+      "text": "a"
+    },
+    {
+      "color": "#4fd039",
+      "text": "t"
+    },
+    {
+      "color": "#4bcf37",
+      "text": "o"
+    },
+    {
+      "color": "#47cd34",
+      "text": "r"
+    }
+  ],
+  "item.trevorssentinels.custom_phaser.serenity": [
+    {
+      "color": "#33cccc",
+      "text": "S"
+    },
+    {
+      "color": "#2dc6cb",
+      "text": "e"
+    },
+    {
+      "color": "#28c1cc",
+      "text": "r"
+    },
+    {
+      "color": "#23bccc",
+      "text": "e"
+    },
+    {
+      "color": "#1eb7cc",
+      "text": "n"
+    },
+    {
+      "color": "#19b2cc",
+      "text": "i"
+    },
+    {
+      "color": "#14adcc",
+      "text": "t"
+    },
+    {
+      "color": "#0fa8cc",
+      "text": "y"
+    },
+    {
+      "color": "#0aa3cc",
+      "text": " "
+    },
+    {
+      "color": "#059ecc",
+      "text": "P"
+    },
+    {
+      "color": "#0099cc",
+      "text": "h"
+    },
+    {
+      "color": "#0093c6",
+      "text": "a"
+    },
+    {
+      "color": "#008ec1",
+      "text": "s"
+    },
+    {
+      "color": "#0089bc",
+      "text": "e"
+    },
+    {
+      "color": "#0084b7",
+      "text": " "
+    },
+    {
+      "color": "#007fb2",
+      "text": "R"
+    },
+    {
+      "color": "#007aad",
+      "text": "i"
+    },
+    {
+      "color": "#0075a8",
+      "text": "f"
+    },
+    {
+      "color": "#0070a3",
+      "text": "l"
+    },
+    {
+      "color": "#006b9e",
+      "text": "e"
+    }
+  ],
   "item.trevorssentinels.cybernetic_stomach": [
     {
       "color": "#797979",
@@ -4900,7 +5238,7 @@
   ],
   "item.trevorssentinels.dubious_bacon": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Dubious Bacon"
     }
   ],
@@ -4924,7 +5262,7 @@
   ],
   "item.trevorssentinels.eye_of_ruin": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Eye Of Ruin"
     }
   ],
@@ -6002,6 +6340,12 @@
     {
       "color": "#55ffff",
       "text": "The Master's Sword"
+    }
+  ],
+  "item.trevorssentinels.meat_pellet": [
+    {
+      "color": "#c8e164",
+      "text": "Meat Pellet"
     }
   ],
   "item.trevorssentinels.midas_boat": [
@@ -10076,7 +10420,7 @@
   ],
   "item.trevorssentinels.vile_spitter": [
     {
-      "color": "#bf5755",
+      "color": "#c8e164",
       "text": "Vile Spitter"
     }
   ],
@@ -11319,6 +11663,11 @@
       "text": "From a distant universe..."
     }
   ],
+  "tooltip.item.trevorssentinels.meat_pellet": [
+    {
+      "text": "Only a vile creature would crave this..."
+    }
+  ],
   "tooltip.item.trevorssentinels.midas_fruit": [
     {
       "text": "22 karats"
@@ -11469,14 +11818,14 @@
       "text": "Style: "
     }
   ],
-  "tooltip.trevorssentinels.style_switch.1": [
+  "tooltip.trevorssentinels.style_switch1": [
     {
-      "text": "1"
+      "text": "Style Switch1"
     }
   ],
-  "tooltip.trevorssentinels.style_switch.2": [
+  "tooltip.trevorssentinels.style_switch2": [
     {
-      "text": "2"
+      "text": "Style Switch2"
     }
   ],
   "tooltip.trevorssentinels:milkCuresPotionEffects": [
@@ -11621,7 +11970,7 @@
   ],
   "trevorssentinels:assassination_upload": [
     {
-      "text": "null plays"
+      "text": "Scrapped Cassette plays"
     }
   ],
   "trevorssentinels:bio_reload": [
@@ -11631,7 +11980,7 @@
   ],
   "trevorssentinels:blaster_shoot": [
     {
-      "text": "Shot projectile"
+      "text": "Projectile fired"
     }
   ],
   "trevorssentinels:database_flip": [
@@ -11651,7 +12000,7 @@
   ],
   "trevorssentinels:lapse_in_judgement": [
     {
-      "text": "null plays"
+      "text": "War-Torn Music Disc plays"
     }
   ],
   "trevorssentinels:notch_up": [
@@ -11661,7 +12010,7 @@
   ],
   "trevorssentinels:ode_to_tranquility": [
     {
-      "text": "null plays"
+      "text": "Music Disc plays"
     }
   ],
   "trevorssentinels:pistol_reload": [
@@ -11671,7 +12020,7 @@
   ],
   "trevorssentinels:recital": [
     {
-      "text": "null plays"
+      "text": "Aged Cassette plays"
     }
   ],
   "trevorssentinels:shotgun_reload": [

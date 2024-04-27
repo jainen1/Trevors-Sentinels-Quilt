@@ -1,7 +1,5 @@
 package net.trevorskullcrafter.trevorssentinels.particle;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.DefaultParticleType;
@@ -39,7 +37,6 @@ public class ModSuspendParticle extends SpriteBillboardParticle {
         }
     }
 
-    @Environment(EnvType.CLIENT)
     public static class FleshPusFactory implements ParticleFactory<DefaultParticleType> {
         private final SpriteProvider spriteProvider;
         public FleshPusFactory(SpriteProvider spriteProvider) { this.spriteProvider = spriteProvider; }
@@ -56,7 +53,6 @@ public class ModSuspendParticle extends SpriteBillboardParticle {
         }
     }
 
-    @Environment(EnvType.CLIENT)
     public static class MuzzleFlashFactory implements ParticleFactory<DefaultParticleType> {
         private final SpriteProvider spriteProvider;
         public MuzzleFlashFactory(SpriteProvider spriteProvider) { this.spriteProvider = spriteProvider; }

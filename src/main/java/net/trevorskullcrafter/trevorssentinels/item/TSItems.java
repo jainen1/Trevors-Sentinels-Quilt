@@ -16,7 +16,6 @@ import net.trevorskullcrafter.trevorssentinels.effect.ModEffects;
 import net.trevorskullcrafter.trevorssentinels.item.custom.*;
 import net.trevorskullcrafter.trevorssentinels.item.custom.unique.*;
 import net.trevorskullcrafter.trevorssentinels.sound.ModSounds;
-import net.trevorskullcrafter.trevorssentinels.util.Gunclasses;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
@@ -105,40 +104,12 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item ZENITHIUM_SHOVEL = new ShovelItem(ModToolMaterials.ZENITHIUM, 1.5f, -3f, new QuiltItemSettings().fireproof());
 		public static final Item ZENITHIUM_HOE = new HoeItem(ModToolMaterials.ZENITHIUM, 0, -3f, new QuiltItemSettings().fireproof());
 
-
-	/*public static final Item LASER_TASER = registerItem("laser_taser", new GunItem(new QuiltItemSettings().maxDamage(5), Gunclasses.PISTOL,
-		1, 2f, 3.0f, 0.5f, 0.01f, 100, 20, 10, 1, 3, TextUtil.BLUE,
-		new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 9)));
-
-	public static final Item LASER_SNIPER_ECHO = registerItem("laser_sniper_echo", new GunItem(new QuiltItemSettings().maxDamage(4), Gunclasses.SNIPER,
-		1, 2f, 1.0f, 5.0f, 0.09f,  20, 120, 52,  10, 1, TextUtil.YELLOW));
-
-	public static final Item LASER_MINIGUN = registerItem("laser_minigun", new GunItem(new QuiltItemSettings().maxDamage(65), Gunclasses.SHOTGUN,
-		3, 2f, 12.0f, 5.0f, 0.04f, 3, 200, 40,  2, 1, TextUtil.AQUA));
-
-	public static final Item LASER_SHOTGUN = registerItem("laser_shotgun", new GunItem(new QuiltItemSettings().maxDamage(5), Gunclasses.SHOTGUN,
-		6, 3f, 15.0f, 5.0f, 0.035f, 20, 100, 7, 12, 1, TextUtil.HELLFIRE));
-
-	public static final Item LASER_SNIPER = registerItem("laser_sniper", new GunItem(new QuiltItemSettings().maxDamage(2), Gunclasses.SNIPER,
-		1, 4f, 0.1f, 20.0f, 0.18f, 19, 200, 96, 20, 1, TextUtil.DARK_PURPLE));
-
-	public static final Item LASER_HEALER = registerItem("laser_healer", new GunItem(new QuiltItemSettings().maxDamage(8), Gunclasses.PISTOL,
-		1, 1f, 2.5f, 2.5f, 0.05f, 40, 150, 16, -1, 2, TextUtil.BLOOD_RED,
-		new StatusEffectInstance(StatusEffects.REGENERATION, 60, 1), new StatusEffectInstance(StatusEffects.GLOWING, 60)));
-
-	public static final Item LASER_SPREADER = registerItem("laser_spreader", new GunItem(new QuiltItemSettings().maxDamage(13), Gunclasses.GAS_LAUNCHER,
-		1, 0.25f, 10.0f, 5.0f, 0.05f, 3, 150, 32, 2, 2, TextUtil.NUCLEAR,
-		new StatusEffectInstance(StatusEffects.WITHER, 100, 1), new StatusEffectInstance(StatusEffects.BLINDNESS, 40)));
-
-	public static final Item LASER_RIFLE = registerItem("laser_rifle", new GunItem(new QuiltItemSettings().maxDamage(21), Gunclasses.SHOTGUN,
-		1, 2f, 2.5f, 2.5f, 0.035f, 3, 30, 48, 3, 1, TextUtil.GREEN));
-
-	public static final Item LASER_REVOLVER = registerItem("laser_revolver", new GunItem(new QuiltItemSettings().maxDamage(7), Gunclasses.SHOTGUN,
-		1, 3f, 15.0f, 5.0f, 0.075f, 3, 90, 48, 12, 3, Color.decode("11184810")));*/
-
 		public static final Item LIFEFORM_TRACER = new DistanceTrackerItem(new QuiltItemSettings().maxCount(1));
 
 		public static final Item PLASMA_CELL = new Item(new QuiltItemSettings());
+		public static final Item MEAT_PELLET = new Item(new QuiltItemSettings().food(new FoodComponent.Builder().hunger(1).meat().snack()
+			.statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 40), 0.3f).build()));
+
 		public static final Item PAINT_PACK = new PaintPackItem(new QuiltItemSettings());
 		public static final Item PHOTONIC_LENS = new PhotonicLensItem(new QuiltItemSettings().maxCount(1));
 		public static final Item COUNTERFORCE_DIFFUSER = new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
@@ -165,12 +136,12 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item SCRAP_METAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 3, 1, 10, 50, 0.01f, 4.0f, 5, 60, 4);
 		public static final Item INDUSTRIAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 4, 3, 20, 100, 0.03f, 12.0f, 6, 7, 4);
 		public static final Item STARSTEEL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 50, 0.025f, 2.0f, 7, 60, 8);
-		public static final Item NUCLEAR_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 7, 1, 10, 50, 0.025f, 2.0f, 9, 60, 8);
+		public static final Item NUCLEAR_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 7, 1, 10, 50, 0.025f, 2.0f, 9, 60, 8,
+			new StatusEffectInstance(ModEffects.IRRADIATED, 60));
 		public static final Item NANOTECH_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 0.035f, 1.0f, 12, 60, 12);
-		public static final Item ZENITHIUM_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 0.04f, 0.0f, 16, 60, 16);
-		public static final Item VILE_SPITTER = new GunItem(new QuiltItemSettings().maxDamage(8), Gunclasses.VILE_SPITTER,
-			1, 2f, 4.0f, 2.0f, 0.035f, 11, 60, 48, 8, 3, TextUtil.FLESH_PUS,
-			new StatusEffectInstance(ModEffects.INFESTED, 20));
+		public static final Item ZENITHIUM_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 0.04f, 0.2f, 16, 60, 16);
+		public static final Item VILE_SPITTER = new LivingPhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 60, 0.035f, 4.0f, 8, 48, 7,
+			new StatusEffectInstance(ModEffects.INFESTED, 60));
 
 		public static final Item HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.HARD_LIGHT, TextUtil.SENTINEL_AQUA1, 128, new QuiltItemSettings().maxCount(1));
 		public static final Item CAUTION_HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.CAUTION_HARD_LIGHT, TextUtil.SENTINEL_GOLD1, 128, new QuiltItemSettings().maxCount(1));
@@ -178,13 +149,14 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item NUCLEAR_ROCKET = new NuclearRocketItem(new QuiltItemSettings().maxCount(1), 128);
 
 		public static final Item EMPTY_CAN = new Item(new QuiltItemSettings());
-		public static final Item BEETROOT_SOUP_CAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.6f).build()));
-		public static final Item MUSHROOM_STEW_CAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.6f).build()));
-		public static final Item RABBIT_STEW_CAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(5).saturationModifier(0.6f).build()));
-		public static final Item MILK_CAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
-		public static final Item COLA_ORANGE = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
-		public static final Item COLA_GREEN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
-		public static final Item COLA_CYAN = new CannedItem(new QuiltItemSettings().food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
+		public static final Item BEETROOT_SOUP_CAN = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.6f).build()));
+		public static final Item MUSHROOM_STEW_CAN = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.6f).build()));
+		public static final Item RABBIT_STEW_CAN = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(5).saturationModifier(0.6f).build()));
+		public static final Item MILK_CAN = new CannedMilkItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder()
+			.statusEffect(new StatusEffectInstance(ModEffects.FORTIFIED, 360), 0.2f).alwaysEdible().build()));
+		public static final Item COLA_ORANGE = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
+		public static final Item COLA_GREEN = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
+		public static final Item COLA_CYAN = new CannedItem(new QuiltItemSettings().maxCount(16).food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.3f).build()));
 
 		public static final Item MUSIC_DISC_ASSASSINATION_UPLOAD = new MusicDiscItem(7, ModSounds.ASSASSINATION_UPLOAD, new QuiltItemSettings().maxCount(1).rarity(Rarity.RARE), 190);
 		public static final Item MUSIC_DISC_ODE_TO_TRANQUILITY = new MusicDiscItem(7, ModSounds.ODE_TO_TRANQUILITY, new QuiltItemSettings().maxCount(1).rarity(Rarity.RARE), 80);

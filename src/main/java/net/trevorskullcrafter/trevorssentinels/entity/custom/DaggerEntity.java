@@ -39,15 +39,15 @@ public class DaggerEntity extends PersistentProjectileEntity {
     private float destroyChance;
     private boolean dealtDamage;
 
-    public DaggerEntity(EntityType<? extends DaggerEntity> entityType, World world) { super(entityType, world); }
+    public DaggerEntity(EntityType<? extends DaggerEntity> entityType, World world) { super(entityType, world, new ItemStack(TSItems.Tech.SCRAP_METAL_KNIFE)); }
 
     public DaggerEntity(World world, LivingEntity owner, ItemStack stack, float damage, float destroyChance, StatusEffectInstance... effects) {
-        super(ModEntities.DAGGER_PROJECTILE, owner, world);
+        super(ModEntities.DAGGER_PROJECTILE, owner, world, stack);
         this.dataTracker.set(STORED_STACK, stack.copy()); this.setDamage(damage); this.effects = effects; this.destroyChance = destroyChance;
     }
 
     public DaggerEntity(World world, double x, double y, double z, ItemStack stack, float damage, float destroyChance, StatusEffectInstance... effects) {
-        super(ModEntities.DAGGER_PROJECTILE, x, y, z, world);
+        super(ModEntities.DAGGER_PROJECTILE, x, y, z, world, stack);
         this.dataTracker.set(STORED_STACK, stack.copy()); this.setDamage(damage); this.effects = effects; this.destroyChance = destroyChance;
     }
 

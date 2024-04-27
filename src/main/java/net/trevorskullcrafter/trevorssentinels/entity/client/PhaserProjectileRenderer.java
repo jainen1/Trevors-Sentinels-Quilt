@@ -1,8 +1,6 @@
 package net.trevorskullcrafter.trevorssentinels.entity.client;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -16,7 +14,6 @@ import net.trevorskullcrafter.trevorssentinels.entity.custom.PhaserProjectileEnt
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 import org.joml.Vector3f;
 
-@Environment(EnvType.CLIENT)
 public class PhaserProjectileRenderer extends EntityRenderer<PhaserProjectileEntity> {
     private final PhaserProjectileModel model;
 
@@ -33,7 +30,9 @@ public class PhaserProjectileRenderer extends EntityRenderer<PhaserProjectileEnt
             VertexConsumer vertexConsumer = vertexConsumerProvider.getBuffer(this.model.getLayer(this.getTexture(projectile)));
             Vector3f color = Vec3d.unpackRgb(projectile.getColor()).toVector3f();
 			int ticksLeft = projectile.getLifetime() - projectile.getAge();
-			this.model.render(matrixStack, vertexConsumer, 15, OverlayTexture.DEFAULT_UV, color.x(), color.y(), color.z(), (ticksLeft <= 10)? Math.max(0, ticksLeft * 0.1f) : 1.0f);
+			int speed = (int) (projectile.getVelocity().length() * 10);
+			this.model.render(matrixStack, vertexConsumer, 15, OverlayTexture.DEFAULT_UV, color.x(), color.y(), color.z(),
+				((ticksLeft <= 10)? Math.max(0, ticksLeft * 0.1f) : 1.0f) * ((speed <= 20)? Math.max(0, speed * 0.05f) : 1.0f));
             matrixStack.pop();
             super.render(projectile, f, g, matrixStack, vertexConsumerProvider, 15);
         }

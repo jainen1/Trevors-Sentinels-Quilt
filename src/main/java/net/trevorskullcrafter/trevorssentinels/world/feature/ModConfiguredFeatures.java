@@ -28,10 +28,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_CERULII_TREE = registerKey("fancy_cerulii");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIDAS_TREE = registerKey("midas");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_MIDAS_TREE = registerKey("fancy_midas");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> VIRIDESCENT_TREE = registerKey("viridescent");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_VIRIDESCENT_TREE = registerKey("fancy_viridescent");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> YGGDRASIL_TREE = registerKey("yggdrasil");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_YGGDRASIL_TREE = registerKey("fancy_yggdrasil");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> VIRIDIAN_TREE = registerKey("viridian");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_VIRIDIAN_TREE = registerKey("fancy_viridian");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PALE_TREE = registerKey("pale");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FANCY_PALE_TREE = registerKey("fancy_pale");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context){
         register(context, CERULII_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
@@ -58,25 +58,25 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.MIDAS_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).build());
-        register(context, VIRIDESCENT_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, VIRIDIAN_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.VIRIDIAN_LOG),
                 new StraightTrunkPlacer(3, 1, 1),
                 BlockStateProvider.of(ModBlocks.VIRIDIAN_LEAVES),
                 new PineFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), ConstantIntProvider.create(2)),
                 new TwoLayersFeatureSize(1, 0, 1)).dirtProvider(BlockStateProvider.of(Blocks.COARSE_DIRT)).forceDirt().build());
-        register(context, FANCY_VIRIDESCENT_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, FANCY_VIRIDIAN_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.VIRIDIAN_LOG),
                 new StraightTrunkPlacer(4, 2, 1),
                 BlockStateProvider.of(ModBlocks.VIRIDIAN_LEAVES),
                 new PineFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), ConstantIntProvider.create(4)),
                 new TwoLayersFeatureSize(1, 0, 1)).dirtProvider(BlockStateProvider.of(Blocks.COARSE_DIRT)).forceDirt().build());
-        register(context, YGGDRASIL_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, PALE_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALE_LOG),
                 new StraightTrunkPlacer(4, 3, 3),
                 BlockStateProvider.of(ModBlocks.PALE_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).build());
-        register(context, FANCY_YGGDRASIL_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, FANCY_PALE_TREE, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALE_LOG),
                 new BendingTrunkPlacer(4, 3, 3, 5, ConstantIntProvider.create(3)),
                 BlockStateProvider.of(ModBlocks.PALE_LEAVES),

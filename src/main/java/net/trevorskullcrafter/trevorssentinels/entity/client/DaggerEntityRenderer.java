@@ -1,7 +1,5 @@
 package net.trevorskullcrafter.trevorssentinels.entity.client;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -16,7 +14,6 @@ import net.minecraft.util.math.MathHelper;
 import net.trevorskullcrafter.trevorssentinels.entity.custom.DaggerEntity;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
 
-@Environment(EnvType.CLIENT)
 public class DaggerEntityRenderer<T extends DaggerEntity> extends EntityRenderer<T> {
     private final ItemRenderer itemRenderer; private final float scale; private final boolean lit;
 

@@ -26,11 +26,11 @@ public class HardLightProjectorItem extends AliasedBlockItem implements Fuelable
 		super(block,settings); this.color = color; this.maxFuel = maxFuel; if (block == null) throw new RuntimeException();
 	}
 
-	@Override public ItemStack getDefaultStack() {
+	/*@Override public ItemStack getDefaultStack() {
 		ItemStack stack = super.getDefaultStack();
 		setFuel(stack, getMaxFuel(stack));
 		return stack;
-	}
+	}*/
 
 	@Override public ActionResult place(ItemPlacementContext context) {
 		BlockPos blockPos = context.getBlockPos();
