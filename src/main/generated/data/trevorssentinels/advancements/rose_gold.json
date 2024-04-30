@@ -1,0 +1,35 @@
+{
+  "parent": "trevorssentinels:a_new_age",
+  "criteria": {
+    "got_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:rose_gold_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "trevorssentinels:textures/block/steel_block.png",
+    "description": {
+      "translate": "advancements.trevorssentinels.rose_gold.desc"
+    },
+    "icon": {
+      "item": "trevorssentinels:rose_gold_ingot"
+    },
+    "title": {
+      "translate": "advancements.trevorssentinels.rose_gold.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

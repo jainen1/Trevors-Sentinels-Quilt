@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "on_join": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:mad_scientists_lab_coat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "trevorssentinels:textures/block/steel_block.png",
+    "description": {
+      "translate": "advancements.trevorssentinels.trevorssentinels.desc"
+    },
+    "icon": {
+      "item": "trevorssentinels:scrap_metal_shard"
+    },
+    "title": {
+      "translate": "advancements.trevorssentinels.trevorssentinels.title"
+    }
+  },
+  "requirements": [
+    [
+      "on_join"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "trevorssentinels:grant_database"
+    ]
+  },
+  "sends_telemetry_event": true
+}

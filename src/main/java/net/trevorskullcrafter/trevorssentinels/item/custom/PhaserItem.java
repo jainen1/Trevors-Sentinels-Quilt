@@ -26,11 +26,10 @@ import net.trevorskullcrafter.trevorssentinels.entity.ModEntities;
 import net.trevorskullcrafter.trevorssentinels.entity.custom.PhaserProjectileEntity;
 import net.trevorskullcrafter.trevorssentinels.item.TSItems;
 import net.trevorskullcrafter.trevorssentinels.item.custom.unique.LivingPhaserItem;
+import net.trevorskullcrafter.trevorssentinels.item.custom.unique.PaintPackItem;
+import net.trevorskullcrafter.trevorssentinels.item.custom.unique.PhotonicLensItem;
 import net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain;
-import net.trevorskullcrafter.trevorssentinels.util.Gunclass;
-import net.trevorskullcrafter.trevorssentinels.util.Gunclasses;
-import net.trevorskullcrafter.trevorssentinels.util.StyleUtil;
-import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
+import net.trevorskullcrafter.trevorssentinels.util.*;
 import org.jetbrains.annotations.Nullable;
 
 import java.awt.Color;
@@ -39,9 +38,7 @@ import java.util.List;
 import java.util.Vector;
 
 public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloadable, StorageItem, FuelableItem {
-    private boolean mainHandLast = false; int slots;
-
-	int count; int shotCooldown; int reloadCooldown; float recoil; float divergence; int damage; int maxAge; int maxAmmo; StatusEffectInstance[] effects;
+    int slots; int count; int shotCooldown; int reloadCooldown; float recoil; float divergence; int damage; int maxAge; int maxAmmo; StatusEffectInstance[] effects;
 
     public PhaserItem(Settings settings, int slots, int count, int shotCooldown, int reloadCooldown, float recoil,
 					  float divergence, int damage, int maxAge, int maxAmmo, StatusEffectInstance... effects) {
@@ -51,16 +48,16 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 
 	@Override public int getSlots() { return Math.max(2, slots); }
 
-	public static ItemStack getPreloadedStack(ItemConvertible item, String key, int customModelData, Color lensColor, ItemStack... slotStacks){
+	public static ItemStack getPreloadedStack(ItemConvertible item, String key, Color skinColor, Color lensColor, ItemStack... slotStacks){
 		if(item instanceof PhaserItem phaser) {
 			ItemStack phaserStack = new ItemStack(phaser, 1);
 			if(key != null) { phaserStack.getOrCreateNbt().putString("trevorssentinels:custom_key", "item." + trevorssentinelsMain.MOD_ID + ".custom_phaser." + key); }
 			Vector<NbtCompound> slots = new Vector<>();
 
 			ItemStack skin;
-			if (customModelData > 0) {
+			if (skinColor != null) {
 				skin = new ItemStack(TSItems.Tech.PAINT_PACK);
-				skin.getOrCreateNbt().putInt("CustomModelData", customModelData);
+				((PaintPackItem) skin.getItem()).setColor(skin, skinColor.getRGB());
 			} else { skin = new ItemStack(Items.AIR); }
 			ItemStack lens;
 			if (lensColor != null) {
@@ -83,8 +80,6 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 		if(stack.getNbt() == null){ initializeStats(stack); }
 	}
 
-	@Override public boolean isUsedOnRelease(ItemStack stack) { return true; }
-
 	public static void initializeStats(ItemStack phaserStack){
 		ItemStack skin = StorageItem.getStackInSlot(phaserStack, 0);
 		if(skin != ItemStack.EMPTY) { phaserStack.getOrCreateNbt().putInt("CustomModelData", skin.getOrCreateNbt().getInt("CustomModelData")); }
@@ -106,40 +101,36 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 
     @Override public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand){
         if(isDualWielding(user)) {
-            if (!mainHandLast) { shoot(world, user, Hand.MAIN_HAND); }
-            else { shoot(world, user, Hand.OFF_HAND); }
-            if(world instanceof ServerWorld) { mainHandLast = !mainHandLast; }
+            shoot(world, user, Hand.MAIN_HAND);
+            shoot(world, user, Hand.OFF_HAND);
         }
         else { shoot(world, user, hand); }
         return super.use(world, user, hand);
     }
 
-    public PhaserProjectileEntity getProjectile(ItemStack stack, World world, PlayerEntity user){
-        return new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, getMaxAge(stack), getDamage(stack), getColor(stack).getRGB(), effects);
-    }
-
 	public void shoot(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
-        if (world instanceof ServerWorld serverWorld) {
-            if (!getLocked(stack)) {
-				PhaserProjectileEntity projectile;
-				world.playSoundFromEntity(null, user, getGunclass(stack).getShootSound(), SoundCategory.PLAYERS, 1, 1);
-				for (int i = 1; i <= getCount(stack); i++) {
-					projectile = getProjectile(stack, serverWorld, user);
+		if (!getLocked(stack)) {
+			world.playSoundFromEntity(null, user, getGunclass(stack).getShootSound(), SoundCategory.PLAYERS, 1, 1);
+
+			for (int i = 1; i <= getCount(stack); i++) {
+				PhaserProjectileEntity projectile = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, getMaxAge(stack), getDamage(stack),
+					getProjectileColor(stack).getRGB(), effects);
+				if(world instanceof ServerWorld serverWorld){
 					projectile.setVelocity(user.getPitch(), user.getYaw(), 0.0F, 2.0f, getDivergence(stack) + (isDualWielding(user) ? 3f : 0f));
 					serverWorld.spawnEntity(projectile);
-					user.addVelocity(projectile.getVelocity().multiply(getRecoil(stack) * (isDualWielding(user) ? 1.3 : 1.1)).negate());
 				}
-				if (user instanceof ServerPlayerEntity serverPlayerEntity) { serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(stack.getItem())); }
-				user.fallDistance = (float) Math.abs(user.getVelocity().y) * 4;
-				if (!user.getAbilities().creativeMode) { setFuel(stack, getFuel(stack) - 1); }
-				if(getFuel(stack) < 1){ setLocked(stack, true); }
-				user.sendMessage(fuelText(stack), true);
-			} else {
-				world.playSoundFromEntity(null, user, getGunclass(stack).getShootFailSound(), SoundCategory.PLAYERS, 1, 1);
-				//triggerAnim(user, GeoItem.getOrAssignId(user.getStackInHand(hand), serverWorld), "shootController", "shoot");
-			} user.getItemCooldownManager().set(this, getShotCooldown(stack));
-		}
+				user.addVelocity(projectile.getVelocity().multiply(getRecoil(stack)).negate());
+			}
+			if (user instanceof ServerPlayerEntity serverPlayerEntity) { serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(stack.getItem())); }
+			user.fallDistance = (float) Math.abs(user.getVelocity().y) * 4;
+			if (!user.getAbilities().creativeMode) { setFuel(stack, getFuel(stack) - 1); }
+			if(getFuel(stack) < 1){ setLocked(stack, true); }
+			user.sendMessage(fuelText(stack), true);
+		} else {
+			world.playSoundFromEntity(null, user, getGunclass(stack).getShootFailSound(), SoundCategory.PLAYERS, 1, 1);
+			//triggerAnim(user, GeoItem.getOrAssignId(user.getStackInHand(hand), serverWorld), "shootController", "shoot");
+		} user.getItemCooldownManager().set(this, getShotCooldown(stack));
     }
 
     @Override public void reload(ItemStack stack, World world, Entity user) {
@@ -183,7 +174,8 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 			.append(Text.literal("\uD83D\uDD25 "+ firingRateString).formatted(TextUtil.quotientToolTipFormatting(firingRate, 5))));
 		if(Screen.hasShiftDown()) {
 			tooltip.add(Text.translatable("tooltip.item.trevorssentinels.phaser.stats"));
-			tooltip.add(TextUtil.coloredText("Projectile Color: #" + Integer.toHexString(getColor(stack).getRGB()).substring(2), getColor(stack)));
+			tooltip.add(TextUtil.coloredText("Decal Color: #" + Integer.toHexString(getSkinColor(stack).getRGB()).substring(2), getSkinColor(stack)));
+			tooltip.add(TextUtil.coloredText("Projectile Color: #" + Integer.toHexString(getProjectileColor(stack).getRGB()).substring(2), getProjectileColor(stack)));
 			tooltip.add(Text.literal("Projectile Lifetime: " + getMaxAge(stack)).formatted(TextUtil.quotientToolTipFormatting(getMaxAge(stack), 4)));
 			tooltip.add(Text.literal("Burst Inaccuracy: " + getDivergence(stack)).formatted(TextUtil.quotientToolTipFormatting(getDivergence(stack), 4,
 				TextUtil.reverseFormattings)));
@@ -232,18 +224,22 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 	public int getCount(ItemStack stack) { return MathHelper.clamp(count + getIntModifier(stack, "Count"), 1, 8); }
     public int getShotCooldown(ItemStack stack) { return MathHelper.clamp(shotCooldown + getIntModifier(stack, "ShotCooldown"), 0, 100); }
     public int getReloadCooldown(ItemStack stack) { return MathHelper.clamp(reloadCooldown + getIntModifier(stack, "ReloadCooldown"), 1, 200); }
-    public float getRecoil(ItemStack stack) { return MathHelper.clamp(recoil + getFloatModifier(stack, "Recoil"), -1.0f, 1.0f); }
+    public float getRecoil(ItemStack stack) { return MathHelper.clamp(recoil + getFloatModifier(stack, "Recoil"), -0.0f, 0.5f); }
     public float getDivergence(ItemStack stack) { return MathHelper.clamp(divergence + getFloatModifier(stack, "Divergence"), 0.0f, 15.0f); }
     public int getMaxAge(ItemStack stack) { return MathHelper.clamp(maxAge + getIntModifier(stack, "MaxAge"), 10, 100); }
     public float getDamage(ItemStack stack){ return MathHelper.clamp(damage + getFloatModifier(stack, "Damage"), -40f, 40f); }
 	@Override public int getMaxFuel(ItemStack stack) {return MathHelper.clamp(maxAmmo + getIntModifier(stack, "MaxAmmo"), 1, 64);	}
 
 	@Override public int getStyles(ItemStack stack) { return MathHelper.clamp(getIntModifier(stack, "Styles"), 1, 2); }
-    public Color getColor(ItemStack stack) {
+	public Color getSkinColor(ItemStack stack) {
+		ItemStack stack2 = StorageItem.getStackInSlot(stack, 0);
+		return new Color(!(stack2.getItem() instanceof PaintPackItem pack) ? TextUtil.WHITE.getRGB() : pack.getColor(stack2));
+	}
+    public Color getProjectileColor(ItemStack stack) {
 		ItemStack stack2 = StorageItem.getStackInSlot(stack, 1);
 		return new Color(!(stack2.getItem() instanceof PhotonicLensItem lens) ? TextUtil.PURE.getRGB() : lens.getColor(stack2));
 	}
-	@Override public int getItemBarColor(ItemStack stack) { return getLocked(stack)? Color.GRAY.getRGB() : getColor(stack).getRGB(); }
+	@Override public int getItemBarColor(ItemStack stack) { return getLocked(stack)? Color.GRAY.getRGB() : getProjectileColor(stack).getRGB(); }
 	@Override public boolean isItemBarVisible(ItemStack stack) { return true; }
     @Override public int getItemBarStep(ItemStack stack) { return Math.round(getFuel(stack) * 13.0F / getMaxFuel(stack)); }
     @Override public UseAction getUseAction(ItemStack stack) { return UseAction.CROSSBOW; }

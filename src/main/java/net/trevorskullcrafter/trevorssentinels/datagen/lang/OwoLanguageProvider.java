@@ -125,9 +125,10 @@ public class OwoLanguageProvider extends FabricLanguageProvider {
 			for (int i = 0; i < nums.length; i++) { add(new TranslationInfo(parent.key+(i+1)).text(nums[i].text)); }
 		}
 
-		default void add(String advancement, JsonTextObject[] title, JsonTextObject[] desc) {
-			add(new TranslationInfo("advancements." + MOD_ID + "." + advancement + ".title").text(title));
-			add(new TranslationInfo("advancements." + MOD_ID + "." + advancement + ".desc").text(desc));
+		default void addAdvancement(String advancement, TranslationInfo title, TranslationInfo description) {
+			title.key = "advancements." + MOD_ID + "." + advancement + ".title";
+			description.key = "advancements." + MOD_ID + "." + advancement + ".desc";
+			add(title, description);
 		}
 
 		default void addPottedPlant(ItemConvertible r, ItemConvertible p, String name, String tooltip, Color color){

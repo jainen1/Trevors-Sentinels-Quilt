@@ -15,8 +15,8 @@ import java.awt.*;
 import static net.trevorskullcrafter.trevorssentinels.trevorssentinelsMain.MOD_ID;
 import static net.trevorskullcrafter.trevorssentinels.util.TextUtil.*;
 
-public class EnglishLangGenerator extends OwoLanguageProvider {
-    public EnglishLangGenerator(FabricDataOutput dataOutput) { super(dataOutput, "en_us"); }
+public class EN_US_Generator extends OwoLanguageProvider {
+    public EN_US_Generator(FabricDataOutput dataOutput) { super(dataOutput, "en_us"); }
 
 	@Override public void generateRichTranslations(OwoTranslationBuilder translationBuilder) { //tu fui, ego eris - I will be /you/ will be me
 		//Magic Equipment
@@ -522,21 +522,24 @@ public class EnglishLangGenerator extends OwoLanguageProvider {
         translationBuilder.add(new TranslationInfo("trevorssentinels.database.desc").text("Your guide to this world of magic and technology, " +
 			"this database will store all information that may be useful on your adventure."));
 
-		/*translationBuilder.add("trevorssentinels", stringToJsonArray("Trevor's Sentinels"), stringToJsonArray("Obtain a Scrap Metal Shard"));
-		translationBuilder.add("industrial", stringToJsonArray("Industrial"), stringToJsonArray("Obtain any industrial-tier item"));
-		translationBuilder.add("ancient_metal", stringToJsonArray("Ancient Metal"), stringToJsonArray("Obtain an ingot of Imperial Alloy"));
-		translationBuilder.add("ancient_metal2", stringToJsonArray("Good Soldiers Follow Orders"), stringToJsonArray("Obtain equipment made from Imperial Alloy"));
-		translationBuilder.add("rose_gold", stringToJsonArray("Every Rose..."), stringToJsonArray("Obtain equipment made from Rose Gold"));
-		translationBuilder.add("thanatu", stringToJsonArray("...Has its Thorn"), stringToJsonArray("Acquire the tools of the demon lord"));
-		translationBuilder.add("cerberus", stringToJsonArray("False Idol"), stringToJsonArray("Defeat Cerberus, and release the seal on ancient forces"));
-		translationBuilder.add("uranium", stringToJsonArray("Nuclear Age"), stringToJsonArray("Obtain equipment made from Nuclear Ingots"));
-		translationBuilder.add("zenithium", stringToJsonArray("Infinity Squared"), stringToJsonArray("Acquire a cluster of Zenithium"));
-		translationBuilder.add("zenithium2", stringToJsonArray("Infinity+1 Everything"), stringToJsonArray("\"Honey, where's my super suit?\""));
+		translationBuilder.addAdvancement("trevorssentinels",new TranslationInfo().text("Trevor's Sentinels").underlined()
+			.textColor(SENTINEL_AQUA3, SENTINEL_AQUA2, SENTINEL_AQUA1, SENTINEL_GOLD2, SENTINEL_CRIMSON1, SENTINEL_CRIMSON2, SENTINEL_CRIMSON3), new TranslationInfo().text("A fading world"));
+		translationBuilder.addAdvancement("a_new_age",new TranslationInfo().text("A New Age"), new TranslationInfo().text("Obtain a shard of scrap metal"));
+		translationBuilder.addAdvancement("industrial", new TranslationInfo().text("Industrial"), new TranslationInfo().text("Obtain any industrial-tier item"));
+		translationBuilder.addAdvancement("ancient_metal", new TranslationInfo().text("Ancient Metal"), new TranslationInfo().text("Obtain an ingot of Imperial Alloy"));
+		translationBuilder.addAdvancement("ancient_metal2", new TranslationInfo().text("Good Soldiers Follow Orders"),
+			new TranslationInfo().text("Obtain equipment made from Imperial Alloy"));
+		translationBuilder.addAdvancement("rose_gold", new TranslationInfo().text("Every Rose..."), new TranslationInfo().text("Obtain equipment made from Rose Gold"));
+		translationBuilder.addAdvancement("thanatu", new TranslationInfo().text("...Has its Thorn"), new TranslationInfo().text("Acquire the tools of the demon lord"));
+		translationBuilder.addAdvancement("cerberus", new TranslationInfo().text("False Idol"), new TranslationInfo().text("Defeat Cerberus, and release the seal on ancient forces"));
+		translationBuilder.addAdvancement("uranium", new TranslationInfo().text("Nuclear Age"), new TranslationInfo().text("Obtain equipment made from Nuclear Ingots"));
+		translationBuilder.addAdvancement("zenithium", new TranslationInfo().text("Infinity Squared"), new TranslationInfo().text("Acquire a cluster of Zenithium"));
+		translationBuilder.addAdvancement("zenithium2", new TranslationInfo().text("Infinity+1 Everything"), new TranslationInfo().text("\"Honey, where's my super suit?\""));
 
-		translationBuilder.add("brownie", stringToJsonArray("This Edible Ain't Shi-"), stringToJsonArray("Consume a Brownie"));
-		translationBuilder.add("chainsaw", stringToJsonArray("Chainsaws, Man"), stringToJsonArray("Craft a Scrap Metal Chainsaw"));
-		translationBuilder.add("bacon_and_eggs", stringToJsonArray("Bacon and Eggs"), stringToJsonArray("Part of a complete breakfast!"));
-		translationBuilder.add("spf", stringToJsonArray("SPF 50+"), stringToJsonArray("Obtain a Banana Boat"));*/
+		translationBuilder.addAdvancement("brownie", new TranslationInfo().text("This Edible Ain't Shi-"), new TranslationInfo().text("Consume a Brownie"));
+		translationBuilder.addAdvancement("chainsaw", new TranslationInfo().text("Chainsaws, Man"), new TranslationInfo().text("Craft a Scrap Metal Chainsaw"));
+		translationBuilder.addAdvancement("bacon_and_eggs", new TranslationInfo().text("Bacon and Eggs"), new TranslationInfo().text("Part of a complete breakfast!"));
+		translationBuilder.addAdvancement("spf", new TranslationInfo().text("SPF 50+"), new TranslationInfo().text("Obtain a Banana Boat"));
 
 		translationBuilder.add(new TranslationInfo("pillar.trevorssentinels.chaos").text("Chaos").textColor(Color.RED));
 		translationBuilder.add(new TranslationInfo("pillar.trevorssentinels.truth").text("Truth").textColor(Color.ORANGE));
@@ -589,7 +592,8 @@ public class EnglishLangGenerator extends OwoLanguageProvider {
 			new JsonTextObject().index(2), //%3$s
 			new JsonTextObject().text(" a bad name"));
 
-        translationBuilder.add(new TranslationInfo("key.category.trevorssentinels.trevorssentinels").text("Trevor's Sentinels"));
+        translationBuilder.add(new TranslationInfo("key.category.trevorssentinels.trevorssentinels").text("Trevor's Sentinels").underlined()
+			.textColor(SENTINEL_AQUA3, SENTINEL_AQUA2, SENTINEL_AQUA1, SENTINEL_GOLD2, SENTINEL_CRIMSON1, SENTINEL_CRIMSON2, SENTINEL_CRIMSON3));
         translationBuilder.add(new TranslationInfo("key.trevorssentinels.style_switch").text("Style Switch"));
         translationBuilder.add(new TranslationInfo("key.trevorssentinels.reload").text("Reload"));
 

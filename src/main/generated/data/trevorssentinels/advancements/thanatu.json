@@ -1,0 +1,97 @@
+{
+  "parent": "trevorssentinels:rose_gold_2",
+  "criteria": {
+    "got_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:thanatu_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:thanatu_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:thanatu_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:thanatu_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:thanatu_blade"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "trevorssentinels:textures/block/steel_block.png",
+    "description": {
+      "translate": "advancements.trevorssentinels.thanatu.desc"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "trevorssentinels:thanatu_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.trevorssentinels.thanatu.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_sword"
+    ],
+    [
+      "got_helmet"
+    ],
+    [
+      "got_chestplate"
+    ],
+    [
+      "got_leggings"
+    ],
+    [
+      "got_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

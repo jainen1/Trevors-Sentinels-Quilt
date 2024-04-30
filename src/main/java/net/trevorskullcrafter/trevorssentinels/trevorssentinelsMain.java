@@ -4,7 +4,6 @@ import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.itemgroup.gui.ItemGroupButton;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
-import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleFactory;
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -118,7 +117,7 @@ public class trevorssentinelsMain implements ModInitializer {
 			entries.addItem(TSItems.Tech.SCRAP_METAL_SWORD);
 			entries.addItem(TSItems.Tech.SCRAP_METAL_KNIFE);
 			entries.addItem(TSItems.Tech.SCRAP_METAL_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.SCRAP_METAL_PHASER, "comet", 0, TextUtil.SENTINEL_CRIMSON2,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.SCRAP_METAL_PHASER, "comet", TextUtil.TRANQUIL, TextUtil.SENTINEL_CRIMSON2,
 				new ItemStack(TSItems.Tech.COUNTERFORCE_DIFFUSER)));
 			entries.addItem(TSItems.Tech.SCRAP_METAL_DRILL);
 			entries.addItem(TSItems.Tech.SCRAP_METAL_CHAINSAW);
@@ -142,14 +141,16 @@ public class trevorssentinelsMain implements ModInitializer {
 			entries.addItem(TSItems.Tech.STARSTEEL_BOOTS);
 
 			entries.addItem(TSItems.Tech.INDUSTRIAL_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.STARSTEEL_PHASER, "lunar", 0, TextUtil.SENTINEL_GOLD1,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.STARSTEEL_PHASER, "lunar", TextUtil.SENTINEL_AQUA1, TextUtil.SENTINEL_GOLD1,
+				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER)));
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.STARSTEEL_PHASER, "lunar", TextUtil.SENTINEL_GOLD1, TextUtil.NUCLEAR1,
 				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER)));
 			entries.addItem(TSItems.Tech.NUCLEAR_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NUCLEAR_PHASER, "pandemic", 0, TextUtil.NUCLEAR3,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NUCLEAR_PHASER, "pandemic", TextUtil.NUCLEAR2, TextUtil.NUCLEAR3,
 				new ItemStack(TSItems.Tech.POISON_CAPSULE), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER), new ItemStack(TSItems.Tech.AUXILIARY_PLASMA_CHAMBER),
 				new ItemStack(TSItems.Tech.WITHER_CAPSULE), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM)));
 			entries.addItem(TSItems.Tech.NANOTECH_PHASER);
-			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NANOTECH_PHASER, "serenity", 0, TextUtil.SENTINEL_AQUA1,
+			entries.addStack(PhaserItem.getPreloadedStack(TSItems.Tech.NANOTECH_PHASER, "serenity", null, TextUtil.SENTINEL_AQUA1,
 				new ItemStack(TSItems.Tech.PHASE_ASSIMILATOR), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM),
 				new ItemStack(TSItems.Tech.COUNTERFORCE_DIFFUSER), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM), new ItemStack(TSItems.Tech.ADVANCED_BREECH_MECHANISM)));
 

@@ -52,16 +52,4 @@ public class ModSuspendParticle extends SpriteBillboardParticle {
             return suspendParticle;
         }
     }
-
-    public static class MuzzleFlashFactory implements ParticleFactory<DefaultParticleType> {
-        private final SpriteProvider spriteProvider;
-        public MuzzleFlashFactory(SpriteProvider spriteProvider) { this.spriteProvider = spriteProvider; }
-
-        public Particle createParticle(DefaultParticleType defaultParticleType, ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
-            ModSuspendParticle suspendParticle = new ModSuspendParticle(clientWorld, d, e, f, 0, 0, 0);
-            suspendParticle.setSprite(this.spriteProvider);
-            suspendParticle.setColor((float) g, (float) h, (float) i);
-            return suspendParticle;
-        }
-    }
 }

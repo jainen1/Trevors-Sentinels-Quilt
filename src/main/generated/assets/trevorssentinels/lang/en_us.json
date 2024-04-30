@@ -1,4 +1,241 @@
 {
+  "advancements.trevorssentinels.a_new_age.desc": [
+    {
+      "text": "Obtain a shard of scrap metal"
+    }
+  ],
+  "advancements.trevorssentinels.a_new_age.title": [
+    {
+      "text": "A New Age"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal.desc": [
+    {
+      "text": "Obtain an ingot of Imperial Alloy"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal.title": [
+    {
+      "text": "Ancient Metal"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal2.desc": [
+    {
+      "text": "Obtain equipment made from Imperial Alloy"
+    }
+  ],
+  "advancements.trevorssentinels.ancient_metal2.title": [
+    {
+      "text": "Good Soldiers Follow Orders"
+    }
+  ],
+  "advancements.trevorssentinels.bacon_and_eggs.desc": [
+    {
+      "text": "Part of a complete breakfast!"
+    }
+  ],
+  "advancements.trevorssentinels.bacon_and_eggs.title": [
+    {
+      "text": "Bacon and Eggs"
+    }
+  ],
+  "advancements.trevorssentinels.brownie.desc": [
+    {
+      "text": "Consume a Brownie"
+    }
+  ],
+  "advancements.trevorssentinels.brownie.title": [
+    {
+      "text": "This Edible Ain't Shi-"
+    }
+  ],
+  "advancements.trevorssentinels.cerberus.desc": [
+    {
+      "text": "Defeat Cerberus, and release the seal on ancient forces"
+    }
+  ],
+  "advancements.trevorssentinels.cerberus.title": [
+    {
+      "text": "False Idol"
+    }
+  ],
+  "advancements.trevorssentinels.chainsaw.desc": [
+    {
+      "text": "Craft a Scrap Metal Chainsaw"
+    }
+  ],
+  "advancements.trevorssentinels.chainsaw.title": [
+    {
+      "text": "Chainsaws, Man"
+    }
+  ],
+  "advancements.trevorssentinels.industrial.desc": [
+    {
+      "text": "Obtain any industrial-tier item"
+    }
+  ],
+  "advancements.trevorssentinels.industrial.title": [
+    {
+      "text": "Industrial"
+    }
+  ],
+  "advancements.trevorssentinels.rose_gold.desc": [
+    {
+      "text": "Obtain equipment made from Rose Gold"
+    }
+  ],
+  "advancements.trevorssentinels.rose_gold.title": [
+    {
+      "text": "Every Rose..."
+    }
+  ],
+  "advancements.trevorssentinels.spf.desc": [
+    {
+      "text": "Obtain a Banana Boat"
+    }
+  ],
+  "advancements.trevorssentinels.spf.title": [
+    {
+      "text": "SPF 50+"
+    }
+  ],
+  "advancements.trevorssentinels.thanatu.desc": [
+    {
+      "text": "Acquire the tools of the demon lord"
+    }
+  ],
+  "advancements.trevorssentinels.thanatu.title": [
+    {
+      "text": "...Has its Thorn"
+    }
+  ],
+  "advancements.trevorssentinels.trevorssentinels.desc": [
+    {
+      "text": "A fading world"
+    }
+  ],
+  "advancements.trevorssentinels.trevorssentinels.title": [
+    {
+      "color": "#006699",
+      "text": "T",
+      "underlined": true
+    },
+    {
+      "color": "#0076aa",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#0088bb",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#0099cc",
+      "text": "v",
+      "underlined": true
+    },
+    {
+      "color": "#11aacb",
+      "text": "o",
+      "underlined": true
+    },
+    {
+      "color": "#22bbcc",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#33cccc",
+      "text": "'",
+      "underlined": true
+    },
+    {
+      "color": "#77ba87",
+      "text": "s",
+      "underlined": true
+    },
+    {
+      "color": "#bbaa43",
+      "text": " ",
+      "underlined": true
+    },
+    {
+      "color": "#ff9900",
+      "text": "S",
+      "underlined": true
+    },
+    {
+      "color": "#fe7611",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ff5522",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#ff3333",
+      "text": "t",
+      "underlined": true
+    },
+    {
+      "color": "#ed2121",
+      "text": "i",
+      "underlined": true
+    },
+    {
+      "color": "#dd1010",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#cc0000",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ba0000",
+      "text": "l",
+      "underlined": true
+    },
+    {
+      "color": "#aa0000",
+      "text": "s",
+      "underlined": true
+    }
+  ],
+  "advancements.trevorssentinels.uranium.desc": [
+    {
+      "text": "Obtain equipment made from Nuclear Ingots"
+    }
+  ],
+  "advancements.trevorssentinels.uranium.title": [
+    {
+      "text": "Nuclear Age"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium.desc": [
+    {
+      "text": "Acquire a cluster of Zenithium"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium.title": [
+    {
+      "text": "Infinity Squared"
+    }
+  ],
+  "advancements.trevorssentinels.zenithium2.desc": [
+    {
+      "text": "\"Honey, where's my super suit?\""
+    }
+  ],
+  "advancements.trevorssentinels.zenithium2.title": [
+    {
+      "text": "Infinity+1 Everything"
+    }
+  ],
   "block.trevorssentinels.battery": [
     {
       "text": "Battery"
@@ -11403,7 +11640,94 @@
   ],
   "key.category.trevorssentinels.trevorssentinels": [
     {
-      "text": "Trevor's Sentinels"
+      "color": "#006699",
+      "text": "T",
+      "underlined": true
+    },
+    {
+      "color": "#0076aa",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#0088bb",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#0099cc",
+      "text": "v",
+      "underlined": true
+    },
+    {
+      "color": "#11aacb",
+      "text": "o",
+      "underlined": true
+    },
+    {
+      "color": "#22bbcc",
+      "text": "r",
+      "underlined": true
+    },
+    {
+      "color": "#33cccc",
+      "text": "'",
+      "underlined": true
+    },
+    {
+      "color": "#77ba87",
+      "text": "s",
+      "underlined": true
+    },
+    {
+      "color": "#bbaa43",
+      "text": " ",
+      "underlined": true
+    },
+    {
+      "color": "#ff9900",
+      "text": "S",
+      "underlined": true
+    },
+    {
+      "color": "#fe7611",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ff5522",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#ff3333",
+      "text": "t",
+      "underlined": true
+    },
+    {
+      "color": "#ed2121",
+      "text": "i",
+      "underlined": true
+    },
+    {
+      "color": "#dd1010",
+      "text": "n",
+      "underlined": true
+    },
+    {
+      "color": "#cc0000",
+      "text": "e",
+      "underlined": true
+    },
+    {
+      "color": "#ba0000",
+      "text": "l",
+      "underlined": true
+    },
+    {
+      "color": "#aa0000",
+      "text": "s",
+      "underlined": true
     }
   ],
   "key.trevorssentinels.reload": [

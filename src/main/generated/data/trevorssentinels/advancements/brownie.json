@@ -1,0 +1,37 @@
+{
+  "parent": "trevorssentinels:a_new_age",
+  "criteria": {
+    "consumed_brownie": {
+      "conditions": {
+        "item": {
+          "items": [
+            "trevorssentinels:brownie"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "trevorssentinels:textures/block/steel_block.png",
+    "description": {
+      "translate": "advancements.trevorssentinels.brownie.desc"
+    },
+    "frame": "goal",
+    "icon": {
+      "item": "trevorssentinels:brownie"
+    },
+    "title": {
+      "translate": "advancements.trevorssentinels.brownie.title"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_brownie"
+    ]
+  ],
+  "rewards": {
+    "experience": 420
+  },
+  "sends_telemetry_event": true
+}

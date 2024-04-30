@@ -166,8 +166,8 @@ public class ModRegistries {
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
             server.getCommandManager();
+			handler.player.getAdvancementTracker().grantCriterion(server.getAdvancementLoader().getHolder(new Identifier(MOD_ID, "trevorssentinels")), "on_join");
             handler.player.sendMessage(Text.literal("Welcome back, " + handler.player.getName()+"!").formatted(Formatting.GREEN), false);
-            //handler.player.sendMessage(Text.translatable(new Identifier(MOD_ID, "join.");
         });
     }
 
@@ -175,5 +175,6 @@ public class ModRegistries {
 
     public static void registerParticles(){
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(MOD_ID, "flesh_pus"), FLESH_PUS);
+        Registry.register(Registries.PARTICLE_TYPE, new Identifier(MOD_ID, "muzzle_flash"), MUZZLE_FLASH);
     }
 }

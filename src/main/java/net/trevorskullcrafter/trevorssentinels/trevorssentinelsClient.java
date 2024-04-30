@@ -15,9 +15,12 @@ import net.trevorskullcrafter.trevorssentinels.entity.client.*;
 import net.trevorskullcrafter.trevorssentinels.event.KeyInputHandler;
 import net.trevorskullcrafter.trevorssentinels.item.ModItems;
 import net.trevorskullcrafter.trevorssentinels.item.TSItems;
-import net.trevorskullcrafter.trevorssentinels.item.custom.PhotonicLensItem;
+import net.trevorskullcrafter.trevorssentinels.item.custom.PhaserItem;
+import net.trevorskullcrafter.trevorssentinels.item.custom.unique.PaintPackItem;
+import net.trevorskullcrafter.trevorssentinels.item.custom.unique.PhotonicLensItem;
 import net.trevorskullcrafter.trevorssentinels.networking.ModMessages;
 import net.trevorskullcrafter.trevorssentinels.particle.ModSuspendParticle;
+import net.trevorskullcrafter.trevorssentinels.particle.MuzzleFlashParticle;
 import net.trevorskullcrafter.trevorssentinels.util.ModRegistries;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
 import org.quiltmc.loader.api.ModContainer;
@@ -29,6 +32,24 @@ public class trevorssentinelsClient implements ClientModInitializer {
 	@Override public void onInitializeClient(ModContainer mod) {
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0xCFF8FF, ModItems.VENDOR_TOKEN);
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.DARK_PURPLE.getRGB(), ModItems.LEGENDARY_TOKEN);
+
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PaintPackItem) stack.getItem()).getColor(stack)), TSItems.Tech.PAINT_PACK);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhotonicLensItem) stack.getItem()).getColor(stack)), TSItems.Tech.PHOTONIC_LENS);
+
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.SCRAP_METAL_PHASER);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.INDUSTRIAL_PHASER);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.STARSTEEL_PHASER);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.NUCLEAR_PHASER);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.NANOTECH_PHASER);
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(),
+			((PhaserItem) stack.getItem()).getSkinColor(stack).getRGB(), ((PhaserItem) stack.getItem()).getProjectileColor(stack).getRGB()), TSItems.Tech.ZENITHIUM_PHASER);
 
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_AQUA1, TextUtil.SENTINEL_AQUA3),
 			ModBlocks.HARD_LIGHT, ModBlocks.HARD_LIGHT_BARRIER);
@@ -42,10 +63,6 @@ public class trevorssentinelsClient implements ClientModInitializer {
 			ModBlocks.SENTINEL_HARD_LIGHT, ModBlocks.SENTINEL_HARD_LIGHT_BARRIER);
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> TextUtil.tintByIndex(tintIndex, TextUtil.SENTINEL_CRIMSON1, TextUtil.SENTINEL_CRIMSON3),
 			ModBlocks.SENTINEL_HARD_LIGHT_BARRIER);
-
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) ->
-			TextUtil.tintByIndex(tintIndex, TextUtil.WHITE.getRGB(), ((PhotonicLensItem) stack.getItem()).getColor(stack)), TSItems.Tech.PHOTONIC_LENS);
-
 
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.PALE_LEAVES, ModBlocks.PALE_SAPLING, ModBlocks.POTTED_PALE_SAPLING, ModBlocks.PALE_DOOR, ModBlocks.PALE_TRAPDOOR);
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.CHARRED_DOOR, ModBlocks.CHARRED_TRAPDOOR);
@@ -77,7 +94,7 @@ public class trevorssentinelsClient implements ClientModInitializer {
 		EntityRendererRegistry.register(ModEntities.PHASER_PROJECTILE, PhaserProjectileRenderer::new);
 
 		ParticleFactoryRegistry.getInstance().register(ModRegistries.FLESH_PUS, ModSuspendParticle.FleshPusFactory::new);
-		ParticleFactoryRegistry.getInstance().register(ModRegistries.MUZZLE_FLASH, ModSuspendParticle.MuzzleFlashFactory::new);
+		ParticleFactoryRegistry.getInstance().register(ModRegistries.MUZZLE_FLASH, MuzzleFlashParticle.Factory::new);
 
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.PALE_SIGN_TEXTURE));
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.PALE_HANGING_SIGN_TEXTURE));

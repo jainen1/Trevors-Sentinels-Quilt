@@ -17,6 +17,6 @@ public class LivingPhaserItem extends PhaserItem {
 	}
 
 	@Override public Item getFuelItem() { return TSItems.Tech.MEAT_PELLET; }
-	@Override public Color getColor(ItemStack stack) { return TextUtil.FLESH_PUS; }
+	@Override public Color getProjectileColor(ItemStack stack) { return TextUtil.FLESH_PUS; }
 	@Override public void playFuelSound(Entity entity) { entity.playSound(SoundEvents.ENTITY_GENERIC_EAT, 1f, 2f + entity.getWorld().getRandom().nextFloat() * 0.4F); }
 }

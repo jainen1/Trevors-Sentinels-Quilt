@@ -25,7 +25,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.trevorskullcrafter.trevorssentinels.datagen.BlockTagGenerator;
 import net.trevorskullcrafter.trevorssentinels.entity.damage.ModDamageSources;
+import net.trevorskullcrafter.trevorssentinels.util.ModRegistries;
 import net.trevorskullcrafter.trevorssentinels.util.TextUtil;
+
+import java.awt.*;
 
 public class PhaserProjectileEntity extends ThrownEntity {
     private static final TrackedData<Integer> COLOR = DataTracker.registerData(PhaserProjectileEntity.class, TrackedDataHandlerRegistry.INTEGER);
@@ -58,6 +61,12 @@ public class PhaserProjectileEntity extends ThrownEntity {
 		if(!getWorld().isClient()) {
 			if(this.getAge() >= getLifetime() || getVelocity().length() <= 0.2f) { this.discard(); }
 			else { this.setAge(this.getAge()+1); }
+		} else {
+			if(this.getAge() == 0){
+				Color color = new Color(getColor());
+				getWorld().addImportantParticle(ModRegistries.MUZZLE_FLASH, getX(), getY(), getZ(),
+					(double) color.getRed() /255, (double) color.getGreen() /255, (double) color.getBlue() /255);
+			}
 		}
 	}
 

@@ -1,0 +1,35 @@
+{
+  "parent": "trevorssentinels:trevorssentinels",
+  "criteria": {
+    "got_sentinum_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "trevorssentinels:scrap_metal_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "trevorssentinels:textures/block/steel_block.png",
+    "description": {
+      "translate": "advancements.trevorssentinels.a_new_age.desc"
+    },
+    "icon": {
+      "item": "trevorssentinels:scrap_metal_shard"
+    },
+    "title": {
+      "translate": "advancements.trevorssentinels.a_new_age.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_sentinum_shard"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

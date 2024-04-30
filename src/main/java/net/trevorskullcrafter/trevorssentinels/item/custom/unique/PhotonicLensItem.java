@@ -1,4 +1,4 @@
-package net.trevorskullcrafter.trevorssentinels.item.custom;
+package net.trevorskullcrafter.trevorssentinels.item.custom.unique;
 
 import net.minecraft.item.DyeableItem;
 import net.minecraft.item.Item;

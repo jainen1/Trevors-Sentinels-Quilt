@@ -98,7 +98,8 @@ public class TextUtil {
 
 	public static final Color PLASMA = new Color(25, 221, 223); //#19DDDF
 	public static final Color PURE = new Color(249, 231, 159); //#FEF9E7
-    public static final Color FLESH_PUS = new Color(200, 225, 100, 255); //#C8E164
+	public static final Color PURE2 = new Color(255, 200, 200); //#FFC8C8
+	public static final Color FLESH_PUS = new Color(200, 225, 100, 255); //#C8E164
 
     public static MutableText coloredText(String textContent, Color color) { return coloredText(Text.translatable(textContent), color); }
     public static MutableText coloredText(Text textContent, Color color) { return textContent.copy().fillStyle(color == null? Style.EMPTY : Style.EMPTY.withColor(color.getRGB())); }

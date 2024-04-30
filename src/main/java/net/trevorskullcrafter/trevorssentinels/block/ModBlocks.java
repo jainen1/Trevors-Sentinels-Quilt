@@ -46,6 +46,7 @@ public class ModBlocks {
 		.sounds(ModSounds.STEEL_SOUNDS).strength(6f, 8f).requiresTool()));
     public static final Block VENDOR = registerBlock("vendor", new VendorBlock(QuiltBlockSettings.copyOf(ModBlocks.STARSTEEL_BLOCK).mapColor(MapColor.RED).luminance((state) -> 5)));
     public static final Block FANCY_COMPUTER = registerBlock("fancy_computer", new DirectionalBlock(QuiltBlockSettings.copyOf(ModBlocks.STARSTEEL_BLOCK).nonOpaque()));
+	public static final Block SCRAP_BARREL = registerBlock("scrap_barrel", new BarrelBlock(QuiltBlockSettings.copyOf(ModBlocks.SCRAP_METAL_BLOCK)));
 
 	public static final BlockFamily STARSTEEL_FAMILY = BlockFamilies.register(ModBlocks.STARSTEEL_BLOCK).chiseled(ModBlocks.CHISELED_STARSTEEL_BLOCK)
 		.polished(ModBlocks.STAINLESS_STEEL_BLOCK).cracked(ModBlocks.RUSTED_STEEL_BLOCK).pressurePlate(ModBlocks.BIG_RED_PLATE).button(ModBlocks.BIG_RED_BUTTON)
