@@ -13,6 +13,7 @@ public class SentinelEntityRenderer extends MobEntityRenderer<SentinelEntity, Se
 
 	public SentinelEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new SentinelEntityModel<>(context.getPart(ModEntityModelLayers.SENTINEL)), 0.6f);
+		addFeature(new SentinelEyeFeatureRenderer<>(this));
 	}
 
 	@Override public Identifier getTexture(SentinelEntity entity) { return TEXTURE; }

@@ -12037,6 +12037,11 @@
       "text": "As good as gold."
     }
   ],
+  "tooltip.item.trevorssentinels.phaser.modifiers": [
+    {
+      "text": "Phaser Modifiers:"
+    }
+  ],
   "tooltip.item.trevorssentinels.phaser.stats": [
     {
       "text": "Phaser Stats:"
@@ -12299,7 +12304,7 @@
   ],
   "trevorssentinels:bio_reload": [
     {
-      "text": "Trevorssentinels:bio Reload"
+      "text": "Phaser reloads"
     }
   ],
   "trevorssentinels:blaster_shoot": [
@@ -12339,7 +12344,7 @@
   ],
   "trevorssentinels:pistol_reload": [
     {
-      "text": "Trevorssentinels:pistol Reload"
+      "text": "Phaser reloads"
     }
   ],
   "trevorssentinels:recital": [
@@ -12349,12 +12354,12 @@
   ],
   "trevorssentinels:shotgun_reload": [
     {
-      "text": "Trevorssentinels:shotgun Reload"
+      "text": "Phaser reloads"
     }
   ],
   "trevorssentinels:sniper_reload": [
     {
-      "text": "Trevorssentinels:sniper Reload"
+      "text": "Phaser reloads"
     }
   ]
 }

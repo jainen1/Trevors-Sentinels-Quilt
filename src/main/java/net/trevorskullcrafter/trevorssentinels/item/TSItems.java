@@ -28,6 +28,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item SCRAP_METAL_LEGGINGS = new ArmorItem(ModArmorMaterials.SCRAP_METAL, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings());
 		public static final Item SCRAP_METAL_BOOTS = new ArmorItem(ModArmorMaterials.SCRAP_METAL, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings());
 		public static final Item SCRAP_METAL_SWORD = new SwordItem(ModToolMaterials.SCRAP_METAL, 1, -2.4f, new QuiltItemSettings());
+		public static final Item SCRAP_METAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 3, 1, 10, 50, 5f, 4.0f, 5, 60, 4);
 		public static final Item SCRAP_METAL_KNIFE = new DaggerItem(ModToolMaterials.SCRAP_METAL, 1, 0, 0.9f, new QuiltItemSettings());
 		public static final Item SCRAP_METAL_DRILL = new PickaxeItem(ModToolMaterials.SCRAP_METAL, 1, -2.8f, new QuiltItemSettings());
 		public static final Item SCRAP_METAL_CHAINSAW = new ChainsawItem(ModToolMaterials.SCRAP_METAL, 3, -3f, new QuiltItemSettings());
@@ -39,6 +40,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item INDUSTRIAL_PANTS = new ArmorItem(ModArmorMaterials.STARSTEEL, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_BOOTS = new ArmorItem(ModArmorMaterials.STARSTEEL, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_CROWBAR = new SwordItem(ModToolMaterials.STARSTEEL, 3, -2.4f, new QuiltItemSettings());
+		public static final Item INDUSTRIAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 4, 3, 20, 100, 5f, 12.0f, 6, 7, 4);
 		public static final Item INDUSTRIAL_KNIFE = new DaggerItem(ModToolMaterials.STARSTEEL, 3, 1.5f, 0.5f, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_DRILL = new PickaxeItem(ModToolMaterials.STARSTEEL, 1, 0f, new QuiltItemSettings());
 		public static final Item INDUSTRIAL_AXE = new AxeItem(ModToolMaterials.STARSTEEL, 3, -2.8f, new QuiltItemSettings());
@@ -60,6 +62,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item STARSTEEL_LEGGINGS = new ArmorItem(ModArmorMaterials.STARSTEEL, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings());
 		public static final Item STARSTEEL_BOOTS = new ArmorItem(ModArmorMaterials.STARSTEEL, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings());
 		public static final Item STARSTEEL_SWORD = new SwordItem(ModToolMaterials.STARSTEEL, 0, -2.4f, new QuiltItemSettings());
+		public static final Item STARSTEEL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 50, 3f, 2.0f, 7, 60, 8);
 		public static final Item STARSTEEL_KNIFE = new DaggerItem(ModToolMaterials.STARSTEEL, 2, 0.5f, 0.3f, new QuiltItemSettings());
 		public static final Item STARSTEEL_DRILL = new PickaxeItem(ModToolMaterials.STARSTEEL, 0, -2.8f, new QuiltItemSettings());
 		public static final Item STARSTEEL_AXE = new AxeItem(ModToolMaterials.STARSTEEL, 3, -3f, new QuiltItemSettings());
@@ -72,9 +75,10 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item NUCLEAR_LEGGINGS = new ArmorItem(ModArmorMaterials.NUCLEAR, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings().fireproof());
 		public static final Item NUCLEAR_BOOTS = new ArmorItem(ModArmorMaterials.NUCLEAR, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings().fireproof());
 		public static final Item NUCLEAR_SWORD = new SwordItem(ModToolMaterials.NUCLEAR, 3, -2.4f, new QuiltItemSettings().fireproof());
-		public static final Item NUCLEAR_VIBROKNIFE =
-			new DaggerItem(ModToolMaterials.NUCLEAR, 1, 2.5f, 0.15f, new QuiltItemSettings().maxCount(16).fireproof(),
-				new StatusEffectInstance(ModEffects.IRRADIATED, 60, 0));
+		public static final Item NUCLEAR_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 7, 1, 10, 50, 3.5f, 2.0f, 9, 60, 8,
+			new StatusEffectInstance(ModEffects.IRRADIATED, 60));
+		public static final Item NUCLEAR_VIBROKNIFE = new DaggerItem(ModToolMaterials.NUCLEAR, 1, 2.5f, 0.15f,
+			new QuiltItemSettings().maxCount(16).fireproof(), new StatusEffectInstance(ModEffects.IRRADIATED, 60, 0));
 		public static final Item NUCLEAR_DRILL = new PickaxeItem(ModToolMaterials.NUCLEAR, 0, 0, new QuiltItemSettings().fireproof());
 		public static final Item NUCLEAR_AXE = new AxeItem(ModToolMaterials.NUCLEAR, 3, -3.1f, new QuiltItemSettings().fireproof());
 		public static final Item NUCLEAR_SHOVEL = new ShovelItem(ModToolMaterials.NUCLEAR, 1.5f, -3f, new QuiltItemSettings().fireproof());
@@ -86,6 +90,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item NANOTECH_LEGGINGS = new ArmorItem(ModArmorMaterials.NANOTECH, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings().fireproof());
 		public static final Item NANOTECH_BOOTS = new ArmorItem(ModArmorMaterials.NANOTECH, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings().fireproof());
 		public static final Item NANOTECH_SWORD = new SwordItem(ModToolMaterials.NANOTECH, 3, -2.4f, new QuiltItemSettings().fireproof());
+		public static final Item NANOTECH_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 2.5f, 1.0f, 12, 60, 12);
 		public static final Item NANOTECH_VIBROKNIFE = new DaggerItem(ModToolMaterials.NANOTECH, 1, 3f, 0.15f, new QuiltItemSettings().fireproof());
 		public static final Item NANOTECH_DRILL = new PickaxeItem(ModToolMaterials.NANOTECH, 0, 0, new QuiltItemSettings().fireproof());
 		public static final Item NANOTECH_AXE = new AxeItem(ModToolMaterials.NANOTECH, 3, -3.1f, new QuiltItemSettings().fireproof());
@@ -98,6 +103,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item ZENITHIUM_LEGGINGS = new ArmorItem(ModArmorMaterials.ZENITHIUM, ArmorItem.ArmorSlot.LEGGINGS, new QuiltItemSettings().fireproof());
 		public static final Item ZENITHIUM_BOOTS = new ArmorItem(ModArmorMaterials.ZENITHIUM, ArmorItem.ArmorSlot.BOOTS, new QuiltItemSettings());
 		public static final Item ZENITHIUM_SWORD = new SwordItem(ModToolMaterials.ZENITHIUM, 3, -2.4f, new QuiltItemSettings().fireproof());
+		public static final Item ZENITHIUM_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 2f, 0.2f, 16, 60, 16);
 		public static final Item ZENITHIUM_DAGGER = new DaggerItem(ModToolMaterials.ZENITHIUM, 1, 4f, 0, new QuiltItemSettings().fireproof());
 		public static final Item ZENITHIUM_PICKAXE = new PickaxeItem(ModToolMaterials.ZENITHIUM, 1, -2.8f, new QuiltItemSettings().fireproof());
 		public static final Item ZENITHIUM_AXE = new AxeItem(ModToolMaterials.ZENITHIUM, 6, -3f, new QuiltItemSettings().fireproof());
@@ -113,7 +119,7 @@ public class TSItems implements ItemRegistryContainer {
 		public static final Item PAINT_PACK = new PaintPackItem(new QuiltItemSettings());
 		public static final Item PHOTONIC_LENS = new PhotonicLensItem(new QuiltItemSettings().maxCount(1));
 		public static final Item COUNTERFORCE_DIFFUSER = new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
-			1, -2, 0, 0, -3.0f, 2.0f, 0, 0, false, false);
+			1, -2, 0, 0, -5.0f, 2.0f, 0, 0, false, false);
 		public static final Item PHASE_ASSIMILATOR = new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
 			-2, 4, 0, 0, 2.0f, -3.0f, 2, 0, false, false);
 		public static final Item AUXILIARY_PLASMA_CHAMBER = new PhaserAttachmentItem(new QuiltItemSettings().maxCount(1),
@@ -133,14 +139,7 @@ public class TSItems implements ItemRegistryContainer {
 			0, 0, 0, 0, 0, 0, 0, 0, false, false,
 			new StatusEffectInstance(StatusEffects.REGENERATION, 40, 1));
 
-		public static final Item SCRAP_METAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 3, 1, 10, 50, 0.01f, 4.0f, 5, 60, 4);
-		public static final Item INDUSTRIAL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 4, 3, 20, 100, 0.03f, 12.0f, 6, 7, 4);
-		public static final Item STARSTEEL_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 50, 0.025f, 2.0f, 7, 60, 8);
-		public static final Item NUCLEAR_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 7, 1, 10, 50, 0.025f, 2.0f, 9, 60, 8,
-			new StatusEffectInstance(ModEffects.IRRADIATED, 60));
-		public static final Item NANOTECH_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 0.035f, 1.0f, 12, 60, 12);
-		public static final Item ZENITHIUM_PHASER = new PhaserItem(new QuiltItemSettings().maxCount(1), 9, 1, 10, 50, 0.04f, 0.2f, 16, 60, 16);
-		public static final Item VILE_SPITTER = new LivingPhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 60, 0.035f, 4.0f, 8, 48, 7,
+		public static final Item VILE_SPITTER = new LivingPhaserItem(new QuiltItemSettings().maxCount(1), 5, 1, 10, 60, 3f, 4.0f, 8, 48, 7,
 			new StatusEffectInstance(ModEffects.INFESTED, 60));
 
 		public static final Item HARD_LIGHT_PROJECTOR = new HardLightProjectorItem(ModBlocks.HARD_LIGHT, TextUtil.SENTINEL_AQUA1, 128, new QuiltItemSettings().maxCount(1));

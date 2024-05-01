@@ -116,7 +116,8 @@ public class OwoLanguageProvider extends FabricLanguageProvider {
 			for (TranslationInfo entry : entries) { if(entry != null && entry.key != null) {
 				if(entry.tooltip == null) { entry.tooltip(parent.tooltip); }
 				if(entry.textColor == null) { entry.textColor(parent.textColor); }
-				if(entry.text == null) { entry.text(parent.text); }
+				if(entry.text == null && parent.text != null) { entry.text(parent.text); }
+				else if(entry.rawText == null) { entry.text(parent.rawText); }
 				add(entry);
 			}}
 		}

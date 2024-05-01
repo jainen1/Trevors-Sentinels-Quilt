@@ -634,6 +634,7 @@ public class EN_US_Generator extends OwoLanguageProvider {
 		translationBuilder.add(new TranslationInfo("item." + MOD_ID + ".custom_phaser.serenity").text("Serenity Phase Rifle").textColor(SENTINEL_AQUA));
 
 		translationBuilder.add(new TranslationInfo("tooltip.item.trevorssentinels.phaser.stats").text("Phaser Stats:"));
+		translationBuilder.add(new TranslationInfo("tooltip.item.trevorssentinels.phaser.modifiers").text("Phaser Modifiers:"));
 
 		translationBuilder.add(new TranslationInfo("tooltip." + MOD_ID + ".set_bonus_active").text("Set bonus active!"));
 		translationBuilder.add(new TranslationInfo("tooltip." + MOD_ID + ".set_bonus_inactive").text("Set bonus inactive!"));

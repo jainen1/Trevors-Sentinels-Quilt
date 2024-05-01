@@ -116,11 +116,13 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 			for (int i = 1; i <= getCount(stack); i++) {
 				PhaserProjectileEntity projectile = new PhaserProjectileEntity(ModEntities.PHASER_PROJECTILE, world, user, getMaxAge(stack), getDamage(stack),
 					getProjectileColor(stack).getRGB(), effects);
-				if(world instanceof ServerWorld serverWorld){
-					projectile.setVelocity(user.getPitch(), user.getYaw(), 0.0F, 2.0f, getDivergence(stack) + (isDualWielding(user) ? 3f : 0f));
-					serverWorld.spawnEntity(projectile);
+				if(world instanceof ServerWorld){
+					projectile.setVelocity(user.getPitch(), user.getYaw(), 0.0F, 1.5f, getDivergence(stack) + (isDualWielding(user) ? 3f : 0f));
+					world.spawnEntity(projectile);
+
 				}
-				user.addVelocity(projectile.getVelocity().multiply(getRecoil(stack)).negate());
+				user.updateTrackedPositionAndAngles(user.getX(), user.getY(), user.getZ(), user.getYaw(), user.getPitch()-10, 3);
+				user.setPitch(user.getPitch()-getRecoil(stack));
 			}
 			if (user instanceof ServerPlayerEntity serverPlayerEntity) { serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(stack.getItem())); }
 			user.fallDistance = (float) Math.abs(user.getVelocity().y) * 4;
@@ -179,9 +181,12 @@ public class PhaserItem extends Item implements StyleUtil.StyleSwitcher, Reloada
 			tooltip.add(Text.literal("Projectile Lifetime: " + getMaxAge(stack)).formatted(TextUtil.quotientToolTipFormatting(getMaxAge(stack), 4)));
 			tooltip.add(Text.literal("Burst Inaccuracy: " + getDivergence(stack)).formatted(TextUtil.quotientToolTipFormatting(getDivergence(stack), 4,
 				TextUtil.reverseFormattings)));
-			tooltip.add(Text.literal("Burst Recoil: " + getRecoil(stack)).formatted(TextUtil.quotientToolTipFormatting(getRecoil(stack), 4)));
-			tooltip.add(Text.literal("Burst Cooldown: " + getShotCooldown(stack)).formatted(TextUtil.quotientToolTipFormatting(getShotCooldown(stack), 4)));
-			tooltip.add(Text.literal("Reload Cooldown: " + getReloadCooldown(stack)).formatted(TextUtil.quotientToolTipFormatting(getReloadCooldown(stack), 4)));
+			tooltip.add(Text.literal("Burst Recoil: " + getRecoil(stack)).formatted(TextUtil.quotientToolTipFormatting(getRecoil(stack), 4,
+				TextUtil.reverseFormattings)));
+			tooltip.add(Text.literal("Burst Cooldown: " + getShotCooldown(stack)).formatted(TextUtil.quotientToolTipFormatting(getShotCooldown(stack), 4,
+				TextUtil.reverseFormattings)));
+			tooltip.add(Text.literal("Reload Cooldown: " + getReloadCooldown(stack)).formatted(TextUtil.quotientToolTipFormatting(getReloadCooldown(stack), 4,
+				TextUtil.reverseFormattings)));
 			PotionUtil.method_47372(stack, tooltip, 1.0f, 1.0f);
 		}
 		else { tooltip.add(Text.empty().append(Text.keyBind("SHIFT").formatted(Formatting.YELLOW)).append(Text.literal(" for advanced view").formatted(Formatting.DARK_GRAY))); }

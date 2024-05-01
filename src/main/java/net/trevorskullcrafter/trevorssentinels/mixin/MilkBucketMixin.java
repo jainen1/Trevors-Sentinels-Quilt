@@ -3,7 +3,6 @@ package net.trevorskullcrafter.trevorssentinels.mixin;
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.MilkBucketItem;
 import net.minecraft.text.Text;
@@ -33,7 +32,7 @@ public abstract class MilkBucketMixin extends ItemMixin {
     @Override public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context, CallbackInfo ci) {
 		boolean cures = world != null && world.getGameRules().getBooleanValue(MILK_CURES_POTION_EFFECTS);
 		if(cures){ tooltip.add(Text.translatable("tooltip.trevorssentinels:milkCuresPotionEffects").formatted(Formatting.RED)); }
-		trevorssentinelsMain.LOGGER.info("milk cures potion effects: " + cures);
+		trevorssentinelsMain.LOGGER.info("milk cures potion effects: {}", cures);
 		super.appendTooltip(stack, world, tooltip, context, ci);
     }
 }

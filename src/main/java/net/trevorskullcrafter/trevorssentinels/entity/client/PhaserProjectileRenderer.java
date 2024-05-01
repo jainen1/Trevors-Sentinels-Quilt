@@ -26,13 +26,11 @@ public class PhaserProjectileRenderer extends EntityRenderer<PhaserProjectileEnt
         if(projectile.getAge() > 1) {
             matrixStack.push();
             matrixStack.multiply(Axis.Y_POSITIVE.rotationDegrees(MathHelper.lerp(g, projectile.prevYaw, projectile.getYaw()) - 90.0F));
-            matrixStack.multiply(Axis.Z_POSITIVE.rotationDegrees(MathHelper.lerp(g, projectile.prevPitch, projectile.getPitch()) + 90.0F));
+			matrixStack.multiply(Axis.Z_POSITIVE.rotationDegrees(MathHelper.lerp(g, projectile.prevPitch, projectile.getPitch()) + 90.0F));
             VertexConsumer vertexConsumer = vertexConsumerProvider.getBuffer(this.model.getLayer(this.getTexture(projectile)));
             Vector3f color = Vec3d.unpackRgb(projectile.getColor()).toVector3f();
 			int ticksLeft = projectile.getLifetime() - projectile.getAge();
-			int speed = (int) (projectile.getVelocity().length() * 10);
-			this.model.render(matrixStack, vertexConsumer, 15, OverlayTexture.DEFAULT_UV, color.x(), color.y(), color.z(),
-				((ticksLeft <= 10)? Math.max(0, ticksLeft * 0.1f) : 1.0f) * ((speed <= 20)? Math.max(0, speed * 0.05f) : 1.0f));
+			this.model.render(matrixStack, vertexConsumer, 15, OverlayTexture.DEFAULT_UV, color.x(), color.y(), color.z(), (ticksLeft <= 10)? Math.max(0, ticksLeft * 0.1f) : 1.0f);
             matrixStack.pop();
             super.render(projectile, f, g, matrixStack, vertexConsumerProvider, 15);
         }
